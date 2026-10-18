@@ -6293,5 +6293,14 @@
     ]
    }
   ]
- }
+ },
+ "audios": [
+  {
+   "sem": 9,
+   "title": "Cómo funcionan las externalidades",
+   "file": "audios/micro-s09.mp3",
+   "secs": 1467,
+   "desc": "Resumen tipo podcast de la semana 9 (externalidades, Pigou, permisos y Coase), hecho con NotebookLM."
+  }
+ ]
 }

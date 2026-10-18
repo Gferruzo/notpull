@@ -18,6 +18,13 @@
    "file": "audios/comunicacion2-s09.mp3",
    "secs": 1056,
    "desc": "Resumen tipo podcast de la semana 9, hecho con NotebookLM a partir de la guía del curso."
+  },
+  {
+   "sem": 11,
+   "title": "La garantía invisible del modelo Toulmin",
+   "file": "audios/comunicacion2-s11.mp3",
+   "secs": 882,
+   "desc": "Resumen tipo podcast sobre el modelo de Toulmin (tesis, datos, garantía, respaldo, cualificador y refutación), hecho con NotebookLM."
   }
  ],
  "topics": [
