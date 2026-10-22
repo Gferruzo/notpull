@@ -13,7 +13,7 @@ import json, re, sys, glob, os
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(RAIZ)
 
-TIPOS = {"num", "expr", "cls", "code", "mat", "tap", "ptab", "order", "sql", "esc",
+TIPOS = {"hueco", "bug", "slice", "mtx", "traza", "num", "expr", "cls", "code", "mat", "tap", "ptab", "order", "sql", "esc",
          "shift", "vecdraw", "cols", "tlc", "fill", "dcl", "tt", "econf", "fit",
          "fix", "signs", "star", "mem", "acum", "usub", "tri", "lab", "tree", "mkt", "tira", "micro", "espec",
          "val", "ley", "arg", "mundo", "venn"}
