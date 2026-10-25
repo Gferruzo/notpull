@@ -5,15 +5,2298 @@
  "exam": "EA3 (semana 11)",
  "short": "EA3",
  "sub": "Sem. 11",
- "soon": true,
- "form": "",
- "formSim": false,
- "topics": [],
+ "form": "<p class=\"note\">Hoja de repaso de la EA3 (semana 11).</p>\n<div class=\"fgrid\">\n<div><b>Fracciones parciales</b><br>propia → factorizar → caso I/II/III → Heaviside o coeficientes</div>\n<div><b>Casos</b><br>\\(\\frac{A}{x-a}\\) · \\(\\frac{A}{x-a}+\\frac{B}{(x-a)^2}\\) · \\(\\frac{Ax+B}{x^2+px+q}\\)</div>\n<div><b>arctan</b><br>\\(\\int\\frac{dx}{x^2+a^2}=\\frac1a\\arctan\\frac xa\\) · completar cuadrados</div>\n<div><b>Potencias trig.</b><br>impar: separar un factor · par: \\(\\sin^2=\\frac{1-\\cos2x}2\\), \\(\\cos^2=\\frac{1+\\cos2x}2\\)</div>\n<div><b>Sust. trigonométrica</b><br>\\(\\sqrt{a^2-x^2}\\to a\\sin\\theta\\) · \\(\\sqrt{a^2+x^2}\\to a\\tan\\theta\\) · \\(\\sqrt{x^2-a^2}\\to a\\sec\\theta\\)</div>\n<div><b>Otras</b><br>racionalizadora \\(u=\\sqrt[n]{ax+b}\\) · Weierstrass \\(t=\\tan\\frac x2\\)</div>\n</div>",
+ "formSim": true,
+ "topics": [
+  {
+   "id": "w11fp",
+   "name": "Sem. 11 · Fracciones parciales (casos I, II y III)",
+   "teo": "<p>Las <strong>fracciones parciales</strong> sirven para integrar funciones racionales \\(\\frac{P(x)}{Q(x)}\\) que resisten sustitución y partes. Se descompone en sumandos simples que dan logaritmos y arcotangentes.</p><p><b>Preparación obligatoria:</b> (1) verificar que sea <b>propia</b>, \\(\\deg P<\\deg Q\\) (si no, dividir primero); (2) factorizar completamente \\(Q\\); (3) clasificar el caso; (4) escribir la descomposición con el número correcto de incógnitas.</p><div class=\"tbl\"><table><tr><th>Caso</th><th>Denominador</th><th>Se escribe</th></tr><tr><td>I</td><td>lineales distintos</td><td>\\(\\frac{A}{x-a}+\\frac{B}{x-b}\\)</td></tr><tr><td>II</td><td>lineal repetido</td><td>\\(\\frac{A}{x-a}+\\frac{B}{(x-a)^2}\\)</td></tr><tr><td>III</td><td>cuadrático irreducible</td><td>\\(\\frac{Ax+B}{x^2+px+q}\\)</td></tr><tr><td>IV</td><td>cuadrático repetido</td><td>\\(\\frac{A_1x+B_1}{x^2+px+q}+\\frac{A_2x+B_2}{(x^2+px+q)^2}\\)</td></tr></table></div><p><b>Heaviside (tapar el factor):</b> para un factor lineal \\((x-a)\\), se tapa en la fracción original y se evalúa lo que queda en \\(x=a\\). En el Caso II sirve para la potencia más alta; las demás constantes salen dando un valor a x o igualando coeficientes.</p><p class=\"ej\"><b>Ejemplo de clase:</b> \\(\\frac{5x-3}{(x-2)(x+2)}\\): \\(A=\\frac{5(2)-3}{2+2}=\\frac74\\), \\(B=\\frac{5(-2)-3}{-2-2}=\\frac{13}4\\). Así \\(\\int\\frac{5x-3}{x^2-4}dx=\\) \\(\\frac74\\ln|x-2|+\\frac{13}4\\ln|x+2|+C\\).</p><p><b>En el curso</b> solo se evalúan fracciones <b>propias</b> (casos I a III); el Caso IV se ve en la práctica. Una aplicación clave es la <b>EDO logística</b> \\(P'=rP\\left(1-\\frac PK\\right)\\), cuya integral \\(\\int\\frac{dP}{P(K-P)}\\) se resuelve con fracciones parciales.</p>",
+   "form": [
+    "Propia: \\(\\deg P<\\deg Q\\); si no, dividir primero",
+    "Caso I: \\(\\frac{A}{x-a}+\\frac{B}{x-b}\\) · Heaviside: tapar y evaluar en \\(x=a\\)",
+    "Caso II: \\(\\frac{A}{x-a}+\\frac{B}{(x-a)^2}\\) · \\(\\int\\frac{B}{(x-a)^2}=-\\frac{B}{x-a}\\)",
+    "Caso III: \\(\\frac{Ax+B}{x^2+px+q}\\) → ln y arctan",
+    "\\(\\int\\frac{dx}{x^2+a^2}=\\frac1a\\arctan\\frac xa\\)",
+    "Logística: \\(P=\\frac{KP_0}{P_0+(K-P_0)e^{-rt}}\\)"
+   ],
+   "lesson": "<h3>Idea central</h3><p>Integrar es <b>clasificar antes de calcular</b>. Antes de escribir un símbolo: ¿es propia?, ¿cómo se factoriza el denominador?, ¿qué caso es? Con eso la descomposición se escribe sola.</p><h3>Cómo resolverlo</h3><ol><li>Si \\(\\deg P\\ge\\deg Q\\), divide: \\(\\frac PQ=C(x)+\\frac RQ\\).</li><li>Factoriza \\(Q\\) en lineales y cuadráticos irreducibles (\\(p^2-4q<0\\)).</li><li>Escribe la suma según el caso y halla las constantes (Heaviside en los lineales; un valor de x o coeficientes para el resto).</li><li>Integra cada sumando y <b>verifica derivando</b>.</li></ol><div class=\"err\"><b>Errores frecuentes:</b> descomponer una fracción impropia sin dividir; escribir solo \\(\\frac{A}{(x-a)^2}\\) en el Caso II (falta \\(\\frac{B}{x-a}\\)); poner solo \\(A\\) sobre un cuadrático (necesita \\(Ax+B\\)); y olvidar el valor absoluto en los logaritmos.</div>",
+   "ex": [
+    {
+     "id": "w11f1",
+     "lvl": 1,
+     "title": "¿Qué caso es?",
+     "q": "<p>Clasifica cada fracción según su caso de fracciones parciales.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Caso I",
+        "Caso II",
+        "Caso III",
+        "Caso IV"
+       ],
+       "items": [
+        {
+         "x": "\\(\\frac{3x-1}{(x-1)(x+2)}\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(\\frac{x+1}{(x-2)^2(x+3)}\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\frac{2x}{(x^2+4)(x-1)}\\)",
+         "c": 2,
+         "e": "\\(x^2+4\\) no se factoriza en \\(\\mathbb R\\) (discriminante negativo): es cuadrático irreducible."
+        },
+        {
+         "x": "\\(\\frac{1}{(x^2+1)^2}\\)",
+         "c": 3
+        },
+        {
+         "x": "\\(\\frac{6}{x^2-9}\\)",
+         "c": 0,
+         "e": "\\(x^2-9=(x-3)(x+3)\\): dos lineales distintos."
+        },
+        {
+         "x": "\\(\\frac{x}{(x-2)^3(x+1)}\\)",
+         "c": 1
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Primero se factoriza el denominador: \\(x^2-9=(x-3)(x+3)\\) es Caso I aunque no lo parezca.",
+      "Lineal repetido → Caso II; cuadrático sin raíces reales → Caso III; ese cuadrático repetido → Caso IV. Si hay varios tipos, se usan todos los términos que correspondan."
+     ],
+     "ans": "I, II, III, IV, I, II",
+     "hint": "Factoriza antes de clasificar.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "fpcaso"
+      ],
+      [
+       "fpcaso"
+      ]
+     ]
+    },
+    {
+     "id": "w11f2",
+     "lvl": 1,
+     "title": "¿Hay que dividir primero?",
+     "q": "<p>¿En cuál de estas integrales <strong>es indispensable</strong> hacer la división de polinomios antes de usar fracciones parciales?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "\\(\\int\\frac{x^3}{x^2-1}dx\\)",
+        "\\(\\int\\frac{5x-3}{x^2-4}dx\\)",
+        "\\(\\int\\frac{x^2+1}{x(x-1)^2}dx\\)",
+        "\\(\\int\\frac{2x+1}{x(x^2+1)}dx\\)",
+        "\\(\\int\\frac{6}{x^2-9}dx\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "Se divide cuando \\(\\deg P\\ge\\deg Q\\) (fracción impropia).",
+      "En \\(\\frac{x^3}{x^2-1}\\), grado 3 ≥ 2: \\(\\frac{x^3}{x^2-1}=x+\\frac{x}{x^2-1}\\). En las demás el numerador tiene menor grado que el denominador (ojo: \\(x(x-1)^2\\) es de grado 3)."
+     ],
+     "ans": "\\(\\int\\frac{x^3}{x^2-1}dx\\)",
+     "hint": "Compara grados.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "fpdiv"
+      ],
+      [
+       "fpdiv"
+      ]
+     ]
+    },
+    {
+     "id": "w11f3",
+     "lvl": 1,
+     "title": "Tapa el factor (ejemplo de clase)",
+     "q": "<p>Descompón \\(\\frac{5x-3}{x^2-4}=\\) \\(\\frac{5x-3}{(x-2)(x+2)}\\) con el método de Heaviside y luego integra.</p>",
+     "checks": [
+      {
+       "t": "heav",
+       "p": "Tapa cada factor y escribe su coeficiente",
+       "num": [
+        5,
+        -3
+       ],
+       "r": [
+        2,
+        -2
+       ]
+      },
+      {
+       "t": "expr",
+       "p": "Ahora integra (con + C).",
+       "f": [
+        {
+         "a": "7/4*ln(abs(x-2))+13/4*ln(abs(x+2))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           2.3,
+           6
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Para A se tapa \\((x-2)\\) y se evalúa en \\(x=2\\): \\(A=\\frac{5(2)-3}{2+2}=\\frac74\\).",
+      "Para B se tapa \\((x+2)\\) y se evalúa en \\(x=-2\\): \\(B=\\frac{5(-2)-3}{-2-2}=\\) \\(\\frac{-13}{-4}=\\) \\(\\frac{13}4\\).",
+      "\\(\\int\\frac{7/4}{x-2}+\\frac{13/4}{x+2}dx=\\) \\(\\frac74\\ln|x-2|+\\frac{13}4\\ln|x+2|+C\\). Verificación: derivando se recupera el integrando; hay un logaritmo por cada factor lineal."
+     ],
+     "ans": "\\(\\frac74\\ln|x-2|+\\frac{13}4\\ln|x+2|+C\\)",
+     "hint": "Tapa (x − 2) y evalúa en x = 2.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "heav"
+      ],
+      [
+       "heav"
+      ],
+      [
+       "fpcaso"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11f4",
+     "lvl": 1,
+     "title": "\\(\\int\\frac{6}{x^2-9}dx\\)",
+     "q": "<p>Ejercicio de la guía: calcula \\(\\int\\frac{6}{x^2-9}dx\\).</p>",
+     "checks": [
+      {
+       "t": "heav",
+       "p": "Tapa cada factor y escribe su coeficiente",
+       "num": [
+        6
+       ],
+       "r": [
+        3,
+        -3
+       ]
+      },
+      {
+       "t": "expr",
+       "p": "Integra (con + C).",
+       "f": [
+        {
+         "a": "ln(abs(x-3))-ln(abs(x+3))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           3.5,
+           8
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x^2-9=(x-3)(x+3)\\). Tapando \\((x-3)\\): \\(A=\\frac{6}{3+3}=1\\). Tapando \\((x+3)\\): \\(B=\\frac{6}{-3-3}=-1\\).",
+      "\\(\\int\\frac{1}{x-3}-\\frac1{x+3}\\,dx=\\) \\(\\ln|x-3|-\\ln|x+3|+C\\) \\(=\\ln\\left|\\frac{x-3}{x+3}\\right|+C\\)."
+     ],
+     "ans": "\\(\\ln\\left|\\frac{x-3}{x+3}\\right|+C\\)",
+     "hint": "El numerador es la constante 6.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "heav"
+      ],
+      [
+       "fpcaso"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11f5",
+     "lvl": 2,
+     "title": "Factoriza y tapa",
+     "q": "<p>Ejercicio de clase: calcula \\(\\int\\frac{3x+2}{x^2-3x+2}dx\\).</p>",
+     "checks": [
+      {
+       "t": "heav",
+       "p": "Tapa cada factor y escribe su coeficiente",
+       "num": [
+        3,
+        2
+       ],
+       "r": [
+        1,
+        2
+       ]
+      },
+      {
+       "t": "expr",
+       "p": "Integra (con + C).",
+       "f": [
+        {
+         "a": "-5*ln(abs(x-1))+8*ln(abs(x-2))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           2.3,
+           6
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x^2-3x+2=(x-1)(x-2)\\). Tapando \\((x-1)\\), en \\(x=1\\): \\(A=\\frac{3+2}{1-2}=-5\\).",
+      "Tapando \\((x-2)\\), en \\(x=2\\): \\(B=\\frac{6+2}{2-1}=8\\).",
+      "\\(\\int\\frac{-5}{x-1}+\\frac{8}{x-2}dx=\\) \\(-5\\ln|x-1|+8\\ln|x-2|+C\\)."
+     ],
+     "ans": "\\(-5\\ln|x-1|+8\\ln|x-2|+C\\)",
+     "hint": "Primero factoriza el trinomio.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "heav"
+      ],
+      [
+       "heav"
+      ],
+      [
+       "fpcaso"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11f6",
+     "lvl": 2,
+     "title": "Caso II: factor repetido",
+     "q": "<p>Ejemplo de clase: \\(\\frac{x+3}{(x-1)^2(x+2)}=\\) \\(\\frac{A}{x-1}+\\frac{B}{(x-1)^2}+\\frac{C}{x+2}\\). Halla las constantes e integra.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Constantes (puedes escribir fracciones como -1/9)",
+       "f": [
+        {
+         "l": "A =",
+         "a": -0.1111111111111111,
+         "tol": 0.002,
+         "e": "Con B y C hallados, da a x un valor cómodo (x = 0) en la identidad."
+        },
+        {
+         "l": "B =",
+         "a": 1.3333333333333333,
+         "tol": 0.002,
+         "e": "Tapa \\((x-1)^2\\) entero y evalúa en x = 1."
+        },
+        {
+         "l": "C =",
+         "a": 0.1111111111111111,
+         "tol": 0.002,
+         "e": "Tapa \\((x+2)\\) y evalúa en x = −2."
+        }
+       ]
+      },
+      {
+       "t": "expr",
+       "p": "Integra (con + C).",
+       "f": [
+        {
+         "a": "-1/9*ln(abs(x-1))-4/(3*(x-1))+1/9*ln(abs(x+2))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           1.3,
+           5
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Heaviside directo sirve para la potencia más alta y para el otro lineal: \\(B=\\frac{1+3}{1+2}=\\frac43\\), \\(C=\\frac{-2+3}{(-2-1)^2}=\\frac19\\).",
+      "Para A: \\(x+3=A(x-1)(x+2)+B(x+2)+C(x-1)^2\\). Con \\(x=0\\): \\(3=-2A+2B+C\\) \\(\\Rightarrow3=-2A+\\frac83+\\frac19\\Rightarrow A=-\\frac19\\).",
+      "\\(\\int\\frac{B}{(x-1)^2}dx=-\\frac{B}{x-1}\\): \\(-\\frac19\\ln|x-1|-\\frac{4}{3(x-1)}+\\frac19\\ln|x+2|+C\\)."
+     ],
+     "ans": "\\(-\\frac19\\ln|x-1|-\\frac{4}{3(x-1)}+\\frac19\\ln|x+2|+C\\)",
+     "hint": "A no sale con Heaviside: usa x = 0.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "fp2"
+      ],
+      [
+       "fp2"
+      ],
+      [
+       "fp2"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11f7",
+     "lvl": 2,
+     "title": "Caso II de la práctica",
+     "q": "<p>Ejercicio 6 de la clase: \\(\\frac{2x+3}{(x-1)^2(x+2)}=\\) \\(\\frac{A}{x-1}+\\frac{B}{(x-1)^2}+\\frac{C}{x+2}\\). Halla las constantes e integra.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Constantes",
+       "f": [
+        {
+         "l": "A =",
+         "a": 0.1111111111111111,
+         "tol": 0.002,
+         "e": "Con B y C hallados, usa x = 0 en la identidad."
+        },
+        {
+         "l": "B =",
+         "a": 1.6666666666666667,
+         "tol": 0.002
+        },
+        {
+         "l": "C =",
+         "a": -0.1111111111111111,
+         "tol": 0.002,
+         "e": "En x = −2: 2(−2) + 3 = −1 y (−2 − 1)² = 9."
+        }
+       ]
+      },
+      {
+       "t": "expr",
+       "p": "Integra (con + C).",
+       "f": [
+        {
+         "a": "1/9*ln(abs(x-1))-5/(3*(x-1))-1/9*ln(abs(x+2))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           1.3,
+           5
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Tapando \\((x-1)^2\\), en \\(x=1\\): \\(B=\\frac{2+3}{1+2}=\\frac53\\). Tapando \\((x+2)\\), en \\(x=-2\\): \\(C=\\frac{-4+3}{(-3)^2}=-\\frac19\\).",
+      "Con \\(x=0\\) en \\(2x+3=\\) \\(A(x-1)(x+2)+B(x+2)+C(x-1)^2\\): \\(3=-2A+\\frac{10}3-\\frac19\\Rightarrow A=\\frac19\\).",
+      "\\(\\frac19\\ln|x-1|-\\frac{5}{3(x-1)}-\\frac19\\ln|x+2|+C\\)."
+     ],
+     "ans": "\\(\\frac19\\ln|x-1|-\\frac{5}{3(x-1)}-\\frac19\\ln|x+2|+C\\)",
+     "hint": "Primero B y C; A con x = 0.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "fp2"
+      ],
+      [
+       "fp2"
+      ],
+      [
+       "fp2"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11f8",
+     "lvl": 2,
+     "title": "Caso III: arctan",
+     "q": "<p>Ejemplo de clase: \\(\\frac{2x+1}{x(x^2+1)}=\\) \\(\\frac{A}{x}+\\frac{Bx+C}{x^2+1}\\). Halla las constantes e integra.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Constantes",
+       "f": [
+        {
+         "l": "A =",
+         "a": 1
+        },
+        {
+         "l": "B =",
+         "a": -1
+        },
+        {
+         "l": "C =",
+         "a": 2
+        }
+       ]
+      },
+      {
+       "t": "expr",
+       "p": "Integra (con + C).",
+       "f": [
+        {
+         "a": "ln(abs(x))-1/2*ln(x^2+1)+2*arctan(x)",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           0.3,
+           4
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(2x+1=\\) \\(A(x^2+1)+(Bx+C)x=\\) \\((A+B)x^2+Cx+A\\).",
+      "Igualando coeficientes: \\(A=1\\), \\(C=2\\), \\(A+B=0\\Rightarrow B=-1\\).",
+      "\\(\\int\\frac1x-\\frac{x}{x^2+1}+\\frac{2}{x^2+1}dx=\\) \\(\\ln|x|-\\frac12\\ln(x^2+1)+2\\arctan x+C\\)."
+     ],
+     "ans": "\\(\\ln|x|-\\frac12\\ln(x^2+1)+2\\arctan x+C\\)",
+     "hint": "Iguala coeficientes.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "fp3"
+      ],
+      [
+       "fp3"
+      ],
+      [
+       "fp3"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11f9",
+     "lvl": 3,
+     "title": "Caso III con constantes feas",
+     "q": "<p>Ejercicio 12 de la clase: \\(\\frac{3x+5}{(x+1)(x^2+4)}=\\) \\(\\frac{A}{x+1}+\\frac{Bx+C}{x^2+4}\\). Halla A, B y C.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Constantes (fracciones o decimales)",
+       "f": [
+        {
+         "l": "A =",
+         "a": 0.4,
+         "tol": 0.002,
+         "e": "Tapa \\((x+1)\\) y evalúa en x = −1."
+        },
+        {
+         "l": "B =",
+         "a": -0.4,
+         "tol": 0.002
+        },
+        {
+         "l": "C =",
+         "a": 3.4,
+         "tol": 0.002
+        }
+       ]
+      },
+      {
+       "t": "expr",
+       "p": "Integra (con + C).",
+       "f": [
+        {
+         "a": "2/5*ln(abs(x+1))-1/5*ln(x^2+4)+17/10*arctan(x/2)",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           0,
+           4
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Heaviside para el lineal: \\(A=\\frac{3(-1)+5}{(-1)^2+4}=\\frac25\\).",
+      "\\(3x+5=\\) \\(A(x^2+4)+(Bx+C)(x+1)\\). Coeficiente de \\(x^2\\): \\(A+B=0\\Rightarrow B=-\\frac25\\). Término independiente: \\(4A+C=5\\Rightarrow C=\\frac{17}5\\).",
+      "\\(\\int\\frac{-\\frac25x}{x^2+4}dx=\\) \\(-\\frac15\\ln(x^2+4)\\) y \\(\\int\\frac{17/5}{x^2+4}dx=\\frac{17}{10}\\arctan\\frac x2\\)."
+     ],
+     "ans": "\\(\\frac25\\ln|x+1|-\\frac15\\ln(x^2+4)+\\frac{17}{10}\\arctan\\frac x2+C\\)",
+     "hint": "Usa \\(\\int\\frac{dx}{x^2+a^2}=\\frac1a\\arctan\\frac xa\\).",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "heav"
+      ],
+      [
+       "fp3"
+      ],
+      [
+       "fp3"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11f10",
+     "lvl": 2,
+     "title": "Completar cuadrados",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{x^2+2x+5}\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "1/2*arctan((x+1)/2)",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -3,
+           3
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "El discriminante \\(4-20<0\\): es irreducible. Se completa cuadrados: \\(x^2+2x+5=(x+1)^2+4\\).",
+      "Con \\(u=x+1\\): \\(\\int\\frac{du}{u^2+2^2}=\\frac12\\arctan\\frac u2+C=\\) \\(\\frac12\\arctan\\frac{x+1}{2}+C\\). (Ojo: el \\(\\frac12\\) viene de \\(\\frac1a\\) con \\(a=2\\).)"
+     ],
+     "ans": "\\(\\frac12\\arctan\\frac{x+1}2+C\\)",
+     "hint": "(x + 1)² + 4.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "compcuad"
+      ],
+      [
+       "fp3"
+      ]
+     ]
+    },
+    {
+     "id": "w11f11",
+     "lvl": 1,
+     "title": "Error típico del Caso II",
+     "q": "<p>Un estudiante escribe \\(\\frac{x+1}{(x-2)^2}=\\frac{A}{(x-2)^2}\\). ¿Cuál es el problema?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Falta el término \\(\\frac{B}{x-2}\\): un factor repetido necesita una fracción por cada potencia",
+        "Debió escribir \\(\\frac{Ax+B}{(x-2)^2}\\) porque es cuadrático irreducible",
+        "No hay problema: con A basta",
+        "Debió dividir primero porque es impropia",
+        "Debió escribir \\(\\frac{A}{x-2}+\\frac{B}{x+2}\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "\\((x-2)^2\\) es un lineal repetido (Caso II): se escribe \\(\\frac{A}{x-2}+\\frac{B}{(x-2)^2}\\).",
+      "Con un solo término no hay suficientes incógnitas: aquí \\(x+1=A(x-2)+B\\Rightarrow A=1,\\ B=3\\). No es irreducible (tiene raíz 2) y es propia (grado 1 < 2)."
+     ],
+     "ans": "Falta \\(\\frac{B}{x-2}\\)",
+     "hint": "Una fracción por cada potencia.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "fp2"
+      ],
+      [
+       "fp2"
+      ]
+     ]
+    },
+    {
+     "id": "w11f12",
+     "lvl": 2,
+     "title": "EDO logística",
+     "q": "<p>Una población cumple \\(\\frac{dP}{dt}=0{,}5\\,P\\left(1-\\frac{P}{1000}\\right)\\) con \\(P(0)=100\\) (t en años). Usa \\(P(t)=\\frac{KP_0}{P_0+(K-P_0)e^{-rt}}\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "P(4) ≈",
+         "a": 450.85,
+         "tol": 0.6,
+         "e": "K = 1000, P₀ = 100, r = 0,5 y t = 4."
+        },
+        {
+         "l": "lím P(t) =",
+         "a": 1000,
+         "e": "Cuando t → ∞, \\(e^{-rt}\\to0\\)."
+        }
+       ]
+      },
+      {
+       "p": "¿Qué técnica se usa al separar variables?",
+       "o": [
+        "Fracciones parciales: \\(\\frac{1}{P(K-P)}=\\frac1K\\left(\\frac1P+\\frac1{K-P}\\right)\\)",
+        "Sustitución trigonométrica",
+        "Integración por partes",
+        "Weierstrass",
+        "Ángulo doble"
+       ]
+      }
+     ],
+     "steps": [
+      "Separando: \\(\\int\\frac{dP}{P(K-P)}=\\int\\frac rK\\,dt\\). La izquierda se resuelve con fracciones parciales (Caso I).",
+      "Despejando y usando \\(P(0)=P_0\\) sale la fórmula dada. Con los datos: \\(P(4)=\\) \\(\\frac{100\\,000}{100+900e^{-2}}\\approx\\) \\(450{,}85\\).",
+      "Cuando \\(t\\to\\infty\\), \\(P\\to K=1000\\): la capacidad de carga."
+     ],
+     "ans": "P(4) ≈ 450,9; tiende a 1000",
+     "hint": "Reemplaza en la fórmula.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "logist"
+      ],
+      [
+       "logist"
+      ],
+      [
+       "logist"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11f13",
+     "lvl": 3,
+     "title": "Impropia: divide primero",
+     "q": "<p>Calcula \\(\\int\\frac{x^3}{x^2-1}dx\\) (de la guía; las impropias no se evalúan en clase, pero salen en la guía).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "x^2/2+1/2*ln(abs(x^2-1))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           1.3,
+           4
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "División: \\(x^3=(x^2-1)\\cdot x+x\\), así que \\(\\frac{x^3}{x^2-1}=x+\\frac{x}{x^2-1}\\).",
+      "\\(\\int x\\,dx=\\frac{x^2}2\\) y \\(\\int\\frac{x}{x^2-1}dx=\\frac12\\ln|x^2-1|\\) (sustitución \\(u=x^2-1\\)). Resultado: \\(\\frac{x^2}2+\\frac12\\ln|x^2-1|+C\\)."
+     ],
+     "ans": "\\(\\frac{x^2}2+\\frac12\\ln|x^2-1|+C\\)",
+     "hint": "x³ ÷ (x² − 1).",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "fpdiv"
+      ],
+      [
+       "fpdiv"
+      ]
+     ]
+    }
+   ],
+   "tools": [
+    {
+     "w": "heav",
+     "t": "Tapar el factor (Heaviside)",
+     "p": "Toca cada factor: se tapa y lo que queda se evalúa en su raíz.",
+     "o": {
+      "num": [
+       5,
+       -3
+      ],
+      "r": [
+       2,
+       -2
+      ]
+     }
+    },
+    {
+     "w": "heav",
+     "t": "Con tres factores",
+     "p": "\\(\\frac{x^2+1}{x(x-1)(x+2)}\\)",
+     "o": {
+      "num": [
+       1,
+       0,
+       1
+      ],
+      "r": [
+       0,
+       1,
+       -2
+      ]
+     }
+    },
+    {
+     "w": "campo",
+     "t": "Logística: P′ = 0,5·P·(1 − P/10)",
+     "p": "Toca un punto para elegir P(0): todas las soluciones positivas se acercan a K = 10.",
+     "o": {
+      "f": "0.5*y*(1-y/10)",
+      "tr": [
+       0,
+       16
+      ],
+      "yr": [
+       0,
+       14
+      ],
+      "ic": [
+       0,
+       1
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "w11pot",
+   "name": "Sem. 11 · Potencias trigonométricas y ángulo doble",
+   "teo": "<div class=\"tbl\"><table><tr><th>Integrando</th><th>Exponente impar</th><th>Exponente par</th></tr><tr><td>\\(\\sin^n x\\)</td><td>separar un \\(\\sin x\\), \\(u=\\cos x\\)</td><td>ángulo doble</td></tr><tr><td>\\(\\cos^n x\\)</td><td>separar un \\(\\cos x\\), \\(u=\\sin x\\)</td><td>ángulo doble</td></tr><tr><td>\\(\\sin^m x\\cos^n x\\)</td><td>separar del impar, \\(u=\\) el otro</td><td>ambos pares: ángulo doble</td></tr><tr><td>\\(\\tan^m x\\sec^n x\\)</td><td>m impar: separar \\(\\sec x\\tan x\\), \\(u=\\sec x\\)</td><td>n par: separar \\(\\sec^2x\\), \\(u=\\tan x\\)</td></tr></table></div><p><b>Ángulo doble:</b> \\(\\sin^2x=\\frac{1-\\cos2x}2\\), \\(\\cos^2x=\\frac{1+\\cos2x}2\\), \\(\\sin x\\cos x=\\frac{\\sin2x}2\\). <b>Pitagóricas:</b> \\(\\sin^2x=1-\\cos^2x\\), \\(\\sec^2x=1+\\tan^2x\\).</p><p class=\"ej\"><b>Ejemplo (guía):</b> \\(\\int\\sin^3x\\cos^5x\\,dx\\): el seno es impar, se separa \\(\\sin x\\) y \\(u=\\cos x\\): \\(-\\int(1-u^2)u^5du=\\) \\(-\\frac{\\cos^6x}6+\\frac{\\cos^8x}8+C\\).</p><p>La EA3 (semana 11) cerró fracciones parciales y potencias trigonométricas.</p>",
+   "form": [
+    "Impar: separa un factor y cambia el resto con \\(\\sin^2+\\cos^2=1\\)",
+    "Par: \\(\\sin^2x=\\frac{1-\\cos2x}2\\), \\(\\cos^2x=\\frac{1+\\cos2x}2\\)",
+    "\\(\\tan^m\\sec^n\\): n par → \\(u=\\tan x\\); m impar → \\(u=\\sec x\\)",
+    "\\(\\int\\sin^2x\\,dx=\\frac x2-\\frac{\\sin2x}4+C\\)"
+   ],
+   "lesson": "<h3>Idea central</h3><p>La paridad del exponente decide: con un exponente <b>impar</b> sobra un factor que hace de \\(du\\); con todos <b>pares</b> no hay \\(du\\) disponible y se baja el grado con ángulo doble.</p><div class=\"err\"><b>Errores frecuentes:</b> usar \\(u=\\sin x\\) cuando el impar es el seno (el \\(du\\) que sobra es \\(\\sin x\\,dx\\), así que \\(u=\\cos x\\)); olvidar el signo de \\(du=-\\sin x\\,dx\\); y en ángulo doble olvidar dividir entre 2 al integrar \\(\\cos2x\\).</div>",
+   "ex": [
+    {
+     "id": "w11p1",
+     "lvl": 1,
+     "title": "¿Qué estrategia?",
+     "q": "<p>Clasifica cada integral según la estrategia que corresponde.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Separar sin x, u = cos x",
+        "Separar cos x, u = sin x",
+        "Ángulo doble",
+        "Separar sec²x, u = tan x"
+       ],
+       "items": [
+        {
+         "x": "\\(\\int\\sin^3x\\,dx\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(\\int\\cos^5x\\,dx\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\int\\sin^4x\\,dx\\)",
+         "c": 2
+        },
+        {
+         "x": "\\(\\int\\sin^2x\\cos^2x\\,dx\\)",
+         "c": 2
+        },
+        {
+         "x": "\\(\\int\\tan^3x\\sec^4x\\,dx\\)",
+         "c": 3,
+         "e": "La secante tiene exponente par: separa \\(\\sec^2x\\) y usa \\(u=\\tan x\\)."
+        },
+        {
+         "x": "\\(\\int\\sin^3x\\cos^2x\\,dx\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(\\int\\sec^4x\\,dx\\)",
+         "c": 3
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Exponente impar en seno → se separa un \\(\\sin x\\) (será parte de \\(du\\) con \\(u=\\cos x\\)); impar en coseno → al revés.",
+      "Todos pares → ángulo doble. Secante par → \\(\\sec^2x\\) es la derivada de \\(\\tan x\\)."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "Mira qué exponente es impar.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "pottrig"
+      ],
+      [
+       "angdob"
+      ]
+     ]
+    },
+    {
+     "id": "w11p2",
+     "lvl": 1,
+     "title": "\\(\\int\\sin^2x\\,dx\\)",
+     "q": "<p>Calcula \\(\\int\\sin^2x\\,dx\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "x/2-sin(2*x)/4",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2,
+           2
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Exponente par: \\(\\sin^2x=\\frac{1-\\cos2x}{2}\\).",
+      "\\(\\int\\frac12-\\frac{\\cos2x}2dx=\\) \\(\\frac x2-\\frac{\\sin2x}{4}+C\\)."
+     ],
+     "ans": "\\(\\frac x2-\\frac{\\sin2x}4+C\\)",
+     "hint": "Ángulo doble.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "angdob"
+      ],
+      [
+       "angdob"
+      ]
+     ]
+    },
+    {
+     "id": "w11p3",
+     "lvl": 1,
+     "title": "\\(\\int\\sin^3x\\,dx\\)",
+     "q": "<p>Calcula \\(\\int\\sin^3x\\,dx\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "-cos(x)+cos(x)^3/3",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2,
+           2
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Impar: \\(\\sin^3x=\\sin^2x\\sin x=(1-\\cos^2x)\\sin x\\). Con \\(u=\\cos x\\), \\(du=-\\sin x\\,dx\\).",
+      "\\(-\\int(1-u^2)du=\\) \\(-u+\\frac{u^3}3+C=\\) \\(-\\cos x+\\frac{\\cos^3x}3+C\\)."
+     ],
+     "ans": "\\(-\\cos x+\\frac{\\cos^3x}3+C\\)",
+     "hint": "Separa un sen x.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "pottrig"
+      ],
+      [
+       "pottrig"
+      ]
+     ]
+    },
+    {
+     "id": "w11p4",
+     "lvl": 2,
+     "title": "\\(\\int\\cos^3x\\,dx\\)",
+     "q": "<p>Calcula \\(\\int\\cos^3x\\,dx\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "sin(x)-sin(x)^3/3",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2,
+           2
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(\\cos^3x=(1-\\sin^2x)\\cos x\\); con \\(u=\\sin x\\), \\(du=\\cos x\\,dx\\).",
+      "\\(\\int(1-u^2)du=\\sin x-\\frac{\\sin^3x}3+C\\)."
+     ],
+     "ans": "\\(\\sin x-\\frac{\\sin^3x}3+C\\)",
+     "hint": "Separa un cos x.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "pottrig"
+      ],
+      [
+       "pottrig"
+      ]
+     ]
+    },
+    {
+     "id": "w11p5",
+     "lvl": 2,
+     "title": "\\(\\int\\sin^4x\\,dx\\) (ejemplo de la guía)",
+     "q": "<p>Calcula \\(\\int\\sin^4x\\,dx\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "3*x/8-sin(2*x)/4+sin(4*x)/32",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2,
+           2
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(\\sin^4x=\\left(\\frac{1-\\cos2x}2\\right)^2=\\) \\(\\frac{1-2\\cos2x+\\cos^22x}{4}\\), y otra vez \\(\\cos^22x=\\frac{1+\\cos4x}2\\).",
+      "\\(\\sin^4x=\\frac38-\\frac{\\cos2x}2+\\frac{\\cos4x}8\\) ⇒ \\(\\int=\\frac{3x}8-\\frac{\\sin2x}4+\\frac{\\sin4x}{32}+C\\)."
+     ],
+     "ans": "\\(\\frac{3x}8-\\frac{\\sin2x}4+\\frac{\\sin4x}{32}+C\\)",
+     "hint": "Ángulo doble dos veces.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "angdob"
+      ],
+      [
+       "angdob"
+      ]
+     ]
+    },
+    {
+     "id": "w11p6",
+     "lvl": 2,
+     "title": "Impar por par",
+     "q": "<p>Calcula \\(\\int\\sin^3x\\cos^5x\\,dx\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "-cos(x)^6/6+cos(x)^8/8",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2,
+           2
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "p": "¿Por qué \\(u=\\cos x\\)?",
+       "o": [
+        "Porque el seno tiene exponente impar: el \\(\\sin x\\) separado forma \\(du\\)",
+        "Porque el coseno tiene el exponente más grande",
+        "Porque así se usa ángulo doble",
+        "Porque \\(u=\\sin x\\) daría un error de signo",
+        "Da igual elegir \\(u=\\sin x\\) o \\(u=\\cos x\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "El seno tiene exponente impar: se separa \\(\\sin x\\) y \\(\\sin^2x=1-\\cos^2x\\). Con \\(u=\\cos x\\), \\(du=-\\sin x\\,dx\\).",
+      "\\(-\\int(1-u^2)u^5du=\\) \\(-\\frac{u^6}6+\\frac{u^8}8+C=\\) \\(-\\frac{\\cos^6x}6+\\frac{\\cos^8x}8+C\\)."
+     ],
+     "ans": "\\(-\\frac{\\cos^6x}6+\\frac{\\cos^8x}8+C\\)",
+     "hint": "Separa del impar.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "pottrig"
+      ],
+      [
+       "pottrig"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11p7",
+     "lvl": 2,
+     "title": "Tangente y secante",
+     "q": "<p>Calcula \\(\\int\\tan^3x\\sec^4x\\,dx\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "tan(x)^4/4+tan(x)^6/6",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -1,
+           1
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "La secante tiene exponente par: \\(\\sec^4x=\\sec^2x\\cdot\\sec^2x=(1+\\tan^2x)\\sec^2x\\). Con \\(u=\\tan x\\), \\(du=\\sec^2x\\,dx\\).",
+      "\\(\\int u^3(1+u^2)du=\\) \\(\\frac{u^4}4+\\frac{u^6}6+C=\\) \\(\\frac{\\tan^4x}4+\\frac{\\tan^6x}6+C\\)."
+     ],
+     "ans": "\\(\\frac{\\tan^4x}4+\\frac{\\tan^6x}6+C\\)",
+     "hint": "Separa sec²x.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "pottrig"
+      ],
+      [
+       "pottrig"
+      ]
+     ]
+    },
+    {
+     "id": "w11p8",
+     "lvl": 2,
+     "title": "Ambos pares",
+     "q": "<p>Calcula \\(\\int\\sin^2x\\cos^2x\\,dx\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "x/8-sin(4*x)/32",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2,
+           2
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(\\sin x\\cos x=\\) \\(\\frac{\\sin2x}2\\Rightarrow\\) \\(\\sin^2x\\cos^2x=\\) \\(\\frac{\\sin^22x}4=\\) \\(\\frac{1-\\cos4x}{8}\\).",
+      "\\(\\int=\\frac x8-\\frac{\\sin4x}{32}+C\\)."
+     ],
+     "ans": "\\(\\frac x8-\\frac{\\sin4x}{32}+C\\)",
+     "hint": "Usa \\(\\sin x\\cos x=\\frac{\\sin 2x}2\\).",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "angdob"
+      ],
+      [
+       "angdob"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w11tri",
+   "name": "Sem. 11 · Sustitución trigonométrica y completar cuadrados",
+   "teo": "<p>La <strong>sustitución trigonométrica</strong> elimina radicales cuadráticos usando las identidades pitagóricas:</p><div class=\"tbl\"><table><tr><th>Radical</th><th>Sustitución</th><th>Queda</th></tr><tr><td>\\(\\sqrt{a^2-x^2}\\)</td><td>\\(x=a\\sin\\theta\\)</td><td>\\(a\\cos\\theta\\)</td></tr><tr><td>\\(\\sqrt{a^2+x^2}\\)</td><td>\\(x=a\\tan\\theta\\)</td><td>\\(a\\sec\\theta\\)</td></tr><tr><td>\\(\\sqrt{x^2-a^2}\\)</td><td>\\(x=a\\sec\\theta\\)</td><td>\\(a\\tan\\theta\\)</td></tr></table></div><p><b>Protocolo:</b> (1) identificar el radical (si el trinomio no está ordenado, <b>completar cuadrados</b>); (2) sustituir \\(x\\) y \\(dx\\); (3) integrar en \\(\\theta\\); (4) volver a \\(x\\) con el <b>triángulo de referencia</b>.</p><p class=\"ej\"><b>Ejemplo de clase:</b> \\(\\int\\frac{dx}{\\sqrt{x^2+4x+13}}\\): \\(x^2+4x+13=(x+2)^2+9\\); con \\(u=x+2=3\\tan\\theta\\) queda \\(\\int\\sec\\theta\\,d\\theta=\\ln|\\sec\\theta+\\tan\\theta|\\), y con el triángulo: \\(\\ln\\left|x+2+\\sqrt{x^2+4x+13}\\right|+C\\).</p><div class=\"err\"><b>Ojo con la lámina:</b> en el caso secante el resultado debe decir \\(\\sqrt{x^2-4}-2\\,\\mathrm{arcsec}\\frac x2+C\\) (al volver, \\(\\theta=\\mathrm{arcsec}\\frac x2\\)); en el PDF se perdió el «arcsec».</div>",
+   "form": [
+    "\\(\\sqrt{a^2-x^2}\\): \\(x=a\\sin\\theta\\) · \\(\\sqrt{a^2+x^2}\\): \\(x=a\\tan\\theta\\) · \\(\\sqrt{x^2-a^2}\\): \\(x=a\\sec\\theta\\)",
+    "Completar cuadrados: \\(x^2+bx+c=\\left(x+\\frac b2\\right)^2+\\left(c-\\frac{b^2}4\\right)\\)",
+    "\\(\\int\\sec\\theta\\,d\\theta=\\ln|\\sec\\theta+\\tan\\theta|+C\\)",
+    "Volver a x: dibuja el triángulo con la sustitución"
+   ],
+   "lesson": "<h3>Idea central</h3><p>La raíz \\(\\sqrt{a^2-x^2}\\) es el cateto de un triángulo rectángulo de hipotenusa \\(a\\): por eso un ángulo \\(\\theta\\) la vuelve un coseno y la raíz desaparece.</p><h3>Para volver a x</h3><p>Escribe la sustitución como razón (\\(\\sin\\theta=\\frac xa\\), \\(\\tan\\theta=\\frac xa\\) o \\(\\sec\\theta=\\frac xa\\)), dibuja el triángulo, completa el tercer lado con Pitágoras (es la raíz original) y lee la razón que necesitas.</p><div class=\"err\"><b>Errores frecuentes:</b> elegir la sustitución mirando solo el signo de \\(x^2\\) (en \\(\\sqrt{x^2-4}\\) es secante, no seno); olvidar cambiar \\(dx\\); y aplicar sustitución trigonométrica cuando basta una simple (\\(\\int\\frac{x}{\\sqrt{x^2+4}}dx\\) es \\(u=x^2+4\\)).</div>",
+   "ex": [
+    {
+     "id": "w11t1",
+     "lvl": 1,
+     "title": "¿Qué sustitución?",
+     "q": "<p>Clasifica cada integral según la sustitución trigonométrica que conviene.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "x = a·sen θ",
+        "x = a·tan θ",
+        "x = a·sec θ"
+       ],
+       "items": [
+        {
+         "x": "\\(\\int\\frac{dx}{\\sqrt{4-x^2}}\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(\\int\\frac{dx}{x^2\\sqrt{9+x^2}}\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\int\\frac{\\sqrt{x^2-16}}{x}dx\\)",
+         "c": 2
+        },
+        {
+         "x": "\\(\\int\\sqrt{9-x^2}\\,dx\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(\\int\\frac{dx}{(x^2+4)^{3/2}}\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\int\\frac{dx}{x\\sqrt{x^2-1}}\\)",
+         "c": 2
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(a^2-x^2\\) → seno; \\(a^2+x^2\\) → tangente; \\(x^2-a^2\\) → secante.",
+      "Lo que decide es la forma del radical (qué se resta de qué), no lo que hay afuera."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "¿Qué se resta de qué?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "sustrig"
+      ],
+      [
+       "sustrig"
+      ]
+     ]
+    },
+    {
+     "id": "w11t2",
+     "lvl": 1,
+     "title": "Arma el triángulo",
+     "q": "<p>Para \\(\\int\\frac{dx}{x^2\\sqrt{4+x^2}}\\) (ejemplo de clase), arma la sustitución y el triángulo.</p>",
+     "checks": [
+      {
+       "t": "tri",
+       "p": "Completa",
+       "a": 2,
+       "k": "suma",
+       "ask": [
+        "sen"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(\\sqrt{4+x^2}=\\sqrt{2^2+x^2}\\) → \\(x=2\\tan\\theta\\): \\(\\tan\\theta=\\frac x2\\), cateto opuesto x, adyacente 2.",
+      "La hipotenusa es \\(\\sqrt{4+x^2}\\), así que \\(\\sin\\theta=\\frac{x}{\\sqrt{4+x^2}}\\), justo lo que pide el resultado \\(-\\frac{1}{4\\sin\\theta}\\)."
+     ],
+     "ans": "x = 2 tan θ; sen θ = x/√(4 + x²)",
+     "hint": "tan θ = opuesto/adyacente.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "triref"
+      ],
+      [
+       "triref"
+      ]
+     ]
+    },
+    {
+     "id": "w11t3",
+     "lvl": 1,
+     "title": "Caso seno",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{\\sqrt{9-x^2}}\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "arcsin(x/3)",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2.5,
+           2.5
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x=3\\sin\\theta\\), \\(dx=3\\cos\\theta\\,d\\theta\\), \\(\\sqrt{9-x^2}=3\\cos\\theta\\).",
+      "\\(\\int\\frac{3\\cos\\theta}{3\\cos\\theta}d\\theta=\\theta+C=\\arcsin\\frac x3+C\\)."
+     ],
+     "ans": "\\(\\arcsin\\frac x3+C\\)",
+     "hint": "x = 3 sen θ.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "sustrig"
+      ],
+      [
+       "triref"
+      ]
+     ]
+    },
+    {
+     "id": "w11t4",
+     "lvl": 2,
+     "title": "Caso tangente",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{x^2\\sqrt{4+x^2}}\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "-sqrt(4+x^2)/(4*x)",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           0.4,
+           4
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x=2\\tan\\theta\\), \\(dx=2\\sec^2\\theta\\,d\\theta\\), \\(\\sqrt{4+x^2}=2\\sec\\theta\\): \\(\\int\\frac{2\\sec^2\\theta}{4\\tan^2\\theta\\cdot2\\sec\\theta}d\\theta=\\) \\(\\frac14\\int\\frac{\\cos\\theta}{\\sin^2\\theta}d\\theta\\).",
+      "Con \\(w=\\sin\\theta\\): \\(-\\frac{1}{4\\sin\\theta}\\). Del triángulo \\(\\sin\\theta=\\frac{x}{\\sqrt{4+x^2}}\\): \\(-\\frac{\\sqrt{4+x^2}}{4x}+C\\)."
+     ],
+     "ans": "\\(-\\frac{\\sqrt{4+x^2}}{4x}+C\\)",
+     "hint": "x = 2 tan θ.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "sustrig"
+      ],
+      [
+       "triref"
+      ]
+     ]
+    },
+    {
+     "id": "w11t5",
+     "lvl": 2,
+     "title": "Caso secante",
+     "q": "<p>Calcula \\(\\int\\frac{\\sqrt{x^2-4}}{x}dx\\) (para \\(x>2\\)).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "sqrt(x^2-4)-2*arcsec(x/2)",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           2.3,
+           6
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x=2\\sec\\theta\\), \\(dx=2\\sec\\theta\\tan\\theta\\,d\\theta\\), \\(\\sqrt{x^2-4}=2\\tan\\theta\\): \\(\\int\\frac{2\\tan\\theta\\cdot2\\sec\\theta\\tan\\theta}{2\\sec\\theta}d\\theta=\\) \\(2\\int\\tan^2\\theta\\,d\\theta\\).",
+      "\\(2\\int(\\sec^2\\theta-1)d\\theta=2(\\tan\\theta-\\theta)\\). Triángulo: \\(\\tan\\theta=\\frac{\\sqrt{x^2-4}}2\\), \\(\\theta=\\mathrm{arcsec}\\frac x2\\): \\(\\sqrt{x^2-4}-2\\,\\mathrm{arcsec}\\frac x2+C\\)."
+     ],
+     "ans": "\\(\\sqrt{x^2-4}-2\\,\\mathrm{arcsec}\\frac x2+C\\)",
+     "hint": "x = 2 sec θ.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "sustrig"
+      ],
+      [
+       "triref"
+      ]
+     ]
+    },
+    {
+     "id": "w11t6",
+     "lvl": 2,
+     "title": "Completar cuadrados",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{\\sqrt{x^2+4x+13}}\\).</p>",
+     "checks": [
+      {
+       "t": "usub",
+       "p": "Primer paso",
+       "int": "\\int\\frac{dx}{\\sqrt{x^2+4x+13}}",
+       "opts": [
+        {
+         "u": "x+2",
+         "du": "dx",
+         "new": "\\int\\frac{du}{\\sqrt{u^2+9}}",
+         "ok": true,
+         "e": "Completando cuadrados: \\(x^2+4x+13=(x+2)^2+9\\)."
+        },
+        {
+         "u": "x^2+4x+13",
+         "du": "(2x+4)\\,dx",
+         "new": "\\int\\frac{du}{(2x+4)\\sqrt u}",
+         "ok": false,
+         "e": "Falta \\((2x+4)\\) en el numerador: queda una x suelta."
+        },
+        {
+         "u": "\\sqrt{x^2+4x+13}",
+         "du": "\\frac{x+2}{\\sqrt{x^2+4x+13}}dx",
+         "new": "\\int\\frac{du}{x+2}",
+         "ok": false,
+         "e": "Queda x + 2 sin eliminar."
+        }
+       ]
+      },
+      {
+       "t": "expr",
+       "p": "Ahora integra (con + C).",
+       "f": [
+        {
+         "a": "ln(x+2+sqrt(x^2+4*x+13))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -4,
+           4
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x^2+4x+13=(x+2)^2+9\\). Con \\(u=x+2\\): \\(\\int\\frac{du}{\\sqrt{u^2+3^2}}\\).",
+      "\\(u=3\\tan\\theta\\): \\(\\int\\sec\\theta\\,d\\theta=\\ln|\\sec\\theta+\\tan\\theta|\\) \\(=\\ln\\left|\\frac{\\sqrt{u^2+9}}3+\\frac u3\\right|\\).",
+      "El \\(\\frac13\\) se absorbe en la constante: \\(\\ln\\left(x+2+\\sqrt{x^2+4x+13}\\right)+C\\) (siempre positivo)."
+     ],
+     "ans": "\\(\\ln\\left(x+2+\\sqrt{x^2+4x+13}\\right)+C\\)",
+     "hint": "(x + 2)² + 9.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "compcuad"
+      ],
+      [
+       "sustrig"
+      ],
+      [
+       "triref"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "w11t7",
+     "lvl": 2,
+     "title": "Área de un semicírculo",
+     "q": "<p>Calcula \\(\\int\\sqrt{1-x^2}\\,dx\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "1/2*(arcsin(x)+x*sqrt(1-x^2))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -0.9,
+           0.9
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x=\\sin\\theta\\), \\(dx=\\cos\\theta\\,d\\theta\\): \\(\\int\\cos^2\\theta\\,d\\theta=\\frac\\theta2+\\frac{\\sin2\\theta}4\\) (ángulo doble).",
+      "\\(\\sin2\\theta=2\\sin\\theta\\cos\\theta=2x\\sqrt{1-x^2}\\): \\(\\frac12\\left(\\arcsin x+x\\sqrt{1-x^2}\\right)+C\\)."
+     ],
+     "ans": "\\(\\frac12(\\arcsin x+x\\sqrt{1-x^2})+C\\)",
+     "hint": "x = sen θ y luego ángulo doble.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "sustrig"
+      ],
+      [
+       "angdob"
+      ]
+     ]
+    },
+    {
+     "id": "w11t8",
+     "lvl": 2,
+     "title": "Potencia 3/2",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{(x^2+4)^{3/2}}\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "x/(4*sqrt(x^2+4))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -3,
+           3
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x=2\\tan\\theta\\): \\((x^2+4)^{3/2}=8\\sec^3\\theta\\) y \\(dx=2\\sec^2\\theta\\,d\\theta\\) ⇒ \\(\\frac14\\int\\cos\\theta\\,d\\theta=\\frac14\\sin\\theta\\).",
+      "Triángulo: \\(\\sin\\theta=\\frac{x}{\\sqrt{x^2+4}}\\) ⇒ \\(\\frac{x}{4\\sqrt{x^2+4}}+C\\)."
+     ],
+     "ans": "\\(\\frac{x}{4\\sqrt{x^2+4}}+C\\)",
+     "hint": "x = 2 tan θ.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "sustrig"
+      ],
+      [
+       "triref"
+      ]
+     ]
+    },
+    {
+     "id": "w11t9",
+     "lvl": 2,
+     "title": "Integrales equivalentes",
+     "q": "<p>De la clase: con la sustitución adecuada, ¿a qué integral en \\(\\theta\\) se reduce \\(\\int\\sqrt{9-x^2}\\,dx\\)?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "\\(9\\int\\cos^2\\theta\\,d\\theta\\)",
+        "\\(3\\int\\cos\\theta\\,d\\theta\\)",
+        "\\(\\int d\\theta\\)",
+        "\\(3\\int\\tan^2\\theta\\,d\\theta\\)",
+        "\\(\\int\\sec\\theta\\,d\\theta\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x=3\\sin\\theta\\): \\(\\sqrt{9-x^2}=3\\cos\\theta\\) y \\(dx=3\\cos\\theta\\,d\\theta\\).",
+      "El producto da \\(9\\cos^2\\theta\\,d\\theta\\) (que luego se integra con ángulo doble). Ojo: no se cancela, como sí pasa en \\(\\int\\frac{dx}{\\sqrt{9-x^2}}\\to\\int d\\theta\\)."
+     ],
+     "ans": "\\(9\\int\\cos^2\\theta\\,d\\theta\\)",
+     "hint": "Multiplica raíz por dx.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "sustrig"
+      ],
+      [
+       "sustrig"
+      ]
+     ]
+    },
+    {
+     "id": "w11t10",
+     "lvl": 2,
+     "title": "¿Trigonométrica o simple?",
+     "q": "<p>¿Cuál de estas integrales se resuelve mejor con una sustitución <strong>simple</strong> (no trigonométrica)?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "\\(\\int\\frac{x}{\\sqrt{x^2+4}}dx\\)",
+        "\\(\\int\\frac{dx}{\\sqrt{x^2+4}}\\)",
+        "\\(\\int\\frac{dx}{x^2\\sqrt{4+x^2}}\\)",
+        "\\(\\int\\sqrt{4-x^2}\\,dx\\)",
+        "\\(\\int\\frac{dx}{(x^2+4)^{3/2}}\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "En \\(\\int\\frac{x}{\\sqrt{x^2+4}}dx\\) aparece \\(x\\,dx\\), que es la mitad de la derivada de \\(x^2+4\\).",
+      "Con \\(u=x^2+4\\): \\(\\frac12\\int u^{-1/2}du=\\sqrt{x^2+4}+C\\). Las demás no tienen esa x afuera: ahí sí va la trigonométrica."
+     ],
+     "ans": "\\(\\int\\frac{x}{\\sqrt{x^2+4}}dx\\)",
+     "hint": "Busca la derivada de lo de adentro.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "eleccion"
+      ],
+      [
+       "sustrig"
+      ]
+     ]
+    }
+   ],
+   "tools": [
+    {
+     "w": "tri",
+     "t": "Triángulo de referencia",
+     "p": "Elige el tipo de raíz y lee las seis razones en términos de x.",
+     "o": {
+      "a": 3
+     }
+    },
+    {
+     "w": "usub",
+     "t": "¿Qué cambio conviene?",
+     "p": "Toca cada opción y mira cómo queda la integral.",
+     "o": {
+      "int": "\\int\\frac{x\\,dx}{\\sqrt{9-x^2}}",
+      "opts": [
+       {
+        "u": "9-x^2",
+        "du": "-2x\\,dx",
+        "new": "-\\frac12\\int u^{-1/2}du",
+        "ok": true,
+        "e": "Aparece \\(x\\,dx\\): basta una sustitución simple."
+       },
+       {
+        "u": "3\\sin\\theta",
+        "du": "3\\cos\\theta\\,d\\theta",
+        "new": "3\\int\\sin\\theta\\,d\\theta",
+        "ok": true,
+        "e": "También funciona, pero es más larga."
+       },
+       {
+        "u": "x",
+        "du": "dx",
+        "new": "\\int\\frac{x\\,dx}{\\sqrt{9-x^2}}",
+        "ok": false,
+        "e": "No cambia nada."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "w11otros",
+   "name": "Sem. 11 · Racionalizadora, Weierstrass y elección de técnica",
+   "teo": "<p><strong>Sustitución racionalizadora</strong> (radicales algebraicos): con \\(\\sqrt[n]{ax+b}\\) se toma \\(u=\\sqrt[n]{ax+b}\\) (\\(u^n=ax+b\\)); con raíces de índices distintos \\(\\sqrt[n]x,\\sqrt[m]x\\) se toma \\(x=u^k\\), \\(k=\\mathrm{mcm}(n,m)\\). Siempre queda una función racional en \\(u\\).</p><p class=\"ej\"><b>Ejemplo (guía):</b> \\(\\int\\frac{x}{\\sqrt{x+1}}dx\\) con \\(u=\\sqrt{x+1}\\), \\(x=u^2-1\\), \\(dx=2u\\,du\\): \\(2\\int(u^2-1)du=\\) \\(\\frac23(x-2)\\sqrt{x+1}+C\\).</p><p><strong>Weierstrass</strong> (último recurso para funciones racionales en \\(\\sin x\\) y \\(\\cos x\\)): \\(t=\\tan\\frac x2\\), \\(\\sin x=\\frac{2t}{1+t^2}\\), \\(\\cos x=\\frac{1-t^2}{1+t^2}\\), \\(dx=\\frac{2\\,dt}{1+t^2}\\).</p><p><strong>Árbol de decisión:</strong> (1) simplificar con álgebra o identidades; (2) ¿hay \\(u\\) cuya derivada aparece? → sustitución; (3) clasificar: trigonométricas → identidades/Weierstrass, racionales → fracciones parciales, producto o inversas → partes (ILATE), radicales → trigonométrica o racionalizadora; (4) si no sale, manipular o combinar. Algunas no tienen antiderivada elemental (\\(e^{-x^2}\\), \\(\\frac{\\sin x}x\\)).</p><p>En clase estas técnicas quedaron como «reto» y se profundizan en la guía.</p>",
+   "form": [
+    "Racionalizadora: \\(u=\\sqrt[n]{ax+b}\\) · índices distintos: \\(x=u^{\\mathrm{mcm}}\\)",
+    "Weierstrass: \\(t=\\tan\\frac x2\\), \\(dx=\\frac{2dt}{1+t^2}\\)",
+    "Árbol: simplificar → sustitución → clasificar (trig, racional, producto, radical) → combinar"
+   ],
+   "lesson": "<h3>Idea central</h3><p>Ninguna técnica es «la mejor»: la eficiente depende de la forma del integrando. Clasificar primero ahorra intentos inútiles.</p><div class=\"err\"><b>Errores frecuentes:</b> olvidar el factor \\(\\frac{2}{1+t^2}\\) de \\(dx\\) en Weierstrass; en la racionalizadora no despejar \\(x\\) y \\(dx\\) en términos de \\(u\\); y usar Weierstrass cuando una sustitución simple bastaba.</div><div class=\"err\"><b>Ojo con la guía (Ejemplo 24):</b> en \\(y'=\\frac{y}{\\sqrt{y+1}}\\) con \\(y(0)=0\\), la «singularidad» aparece porque al separar se divide entre \\(y\\). En realidad \\(y\\equiv0\\) es la solución (equilibrio): \\(y'=0\\) y \\(y(0)=0\\).</div>",
+   "ex": [
+    {
+     "id": "w11o1",
+     "lvl": 1,
+     "title": "Árbol de decisión",
+     "q": "<p>Clasifica cada integral según la técnica más eficiente (de la guía).</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Sustitución simple",
+        "Fracciones parciales",
+        "Por partes",
+        "Sust. trigonométrica",
+        "Racionalizadora"
+       ],
+       "items": [
+        {
+         "x": "\\(\\int\\frac{x}{x^2-1}dx\\)",
+         "c": 0,
+         "e": "El numerador es la mitad de la derivada del denominador."
+        },
+        {
+         "x": "\\(\\int\\frac{dx}{x^2-5x+6}\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\int x\\ln x\\,dx\\)",
+         "c": 2
+        },
+        {
+         "x": "\\(\\int\\frac{dx}{\\sqrt{x^2+4x+13}}\\)",
+         "c": 3
+        },
+        {
+         "x": "\\(\\int\\frac{\\sqrt x}{1+\\sqrt[3]x}dx\\)",
+         "c": 4
+        },
+        {
+         "x": "\\(\\int x\\arctan x\\,dx\\)",
+         "c": 2
+        },
+        {
+         "x": "\\(\\int\\frac{dx}{x\\sqrt{x+9}}\\)",
+         "c": 4
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Primero se busca una sustitución obvia (derivada presente). Si no, se clasifica por la forma.",
+      "Racional → fracciones parciales; producto de tipos distintos → partes; radical cuadrático → trigonométrica; radical algebraico → racionalizadora."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "Sigue el árbol de decisión.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "eleccion"
+      ],
+      [
+       "eleccion"
+      ]
+     ]
+    },
+    {
+     "id": "w11o2",
+     "lvl": 2,
+     "title": "Racionalizadora",
+     "q": "<p>Calcula \\(\\int\\frac{x}{\\sqrt{x+1}}dx\\) (ejemplo de la guía).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "2/3*(x-2)*sqrt(x+1)",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           0,
+           5
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(u=\\sqrt{x+1}\\Rightarrow x=u^2-1\\), \\(dx=2u\\,du\\).",
+      "\\(\\int\\frac{u^2-1}{u}2u\\,du=\\) \\(2\\left(\\frac{u^3}3-u\\right)=\\) \\(\\frac{2u(u^2-3)}3=\\) \\(\\frac23(x-2)\\sqrt{x+1}+C\\)."
+     ],
+     "ans": "\\(\\frac23(x-2)\\sqrt{x+1}+C\\)",
+     "hint": "u = √(x + 1).",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "racio"
+      ],
+      [
+       "racio"
+      ]
+     ]
+    },
+    {
+     "id": "w11o3",
+     "lvl": 2,
+     "title": "\\(\\int\\frac{dx}{1+\\sqrt x}\\)",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{1+\\sqrt x}\\) (para \\(x>0\\)).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "2*sqrt(x)-2*ln(1+sqrt(x))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           0.2,
+           6
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(u=\\sqrt x\\Rightarrow x=u^2\\), \\(dx=2u\\,du\\): \\(\\int\\frac{2u}{1+u}du=\\) \\(2\\int\\left(1-\\frac1{1+u}\\right)du\\).",
+      "\\(=2u-2\\ln(1+u)+C=\\) \\(2\\sqrt x-2\\ln(1+\\sqrt x)+C\\)."
+     ],
+     "ans": "\\(2\\sqrt x-2\\ln(1+\\sqrt x)+C\\)",
+     "hint": "u = √x.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "racio"
+      ],
+      [
+       "racio"
+      ]
+     ]
+    },
+    {
+     "id": "w11o4",
+     "lvl": 3,
+     "title": "Racionalizadora + fracciones parciales",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{x\\sqrt{x+4}}\\) (para \\(x>0\\)).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "1/2*ln((sqrt(x+4)-2)/(sqrt(x+4)+2))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           0.3,
+           6
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(u=\\sqrt{x+4}\\Rightarrow x=u^2-4\\), \\(dx=2u\\,du\\): \\(\\int\\frac{2u\\,du}{(u^2-4)u}=\\) \\(2\\int\\frac{du}{u^2-4}\\).",
+      "\\(\\frac{1}{(u-2)(u+2)}=\\) \\(\\frac14\\left(\\frac1{u-2}-\\frac1{u+2}\\right)\\) ⇒ \\(\\frac12\\ln\\left|\\frac{u-2}{u+2}\\right|=\\) \\(\\frac12\\ln\\left|\\frac{\\sqrt{x+4}-2}{\\sqrt{x+4}+2}\\right|+C\\)."
+     ],
+     "ans": "\\(\\frac12\\ln\\left|\\frac{\\sqrt{x+4}-2}{\\sqrt{x+4}+2}\\right|+C\\)",
+     "hint": "Después de u queda un Caso I.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "racio"
+      ],
+      [
+       "heav"
+      ]
+     ]
+    },
+    {
+     "id": "w11o5",
+     "lvl": 2,
+     "title": "Weierstrass",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{1+\\cos x}\\) con \\(t=\\tan\\frac x2\\).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "tan(x/2)",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2.5,
+           2.5
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(1+\\cos x=\\) \\(1+\\frac{1-t^2}{1+t^2}=\\) \\(\\frac{2}{1+t^2}\\) y \\(dx=\\frac{2dt}{1+t^2}\\).",
+      "\\(\\int\\frac{1+t^2}{2}\\cdot\\frac{2dt}{1+t^2}=\\) \\(\\int dt=t+C=\\) \\(\\tan\\frac x2+C\\)."
+     ],
+     "ans": "\\(\\tan\\frac x2+C\\)",
+     "hint": "Reemplaza cos x y dx.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "weier"
+      ],
+      [
+       "weier"
+      ]
+     ]
+    },
+    {
+     "id": "w11o6",
+     "lvl": 3,
+     "title": "Weierstrass con completar cuadrados",
+     "q": "<p>Calcula \\(\\int\\frac{dx}{2+\\sin x}\\) (en \\(-\\pi<x<\\pi\\)).</p>",
+     "checks": [
+      {
+       "t": "expr",
+       "p": "Escribe el resultado (con + C).",
+       "f": [
+        {
+         "a": "2/sqrt(3)*arctan((2*tan(x/2)+1)/sqrt(3))",
+         "v": [
+          "x"
+         ],
+         "l": "∫ =",
+         "mode": "anti",
+         "dom": {
+          "x": [
+           -2.5,
+           2.5
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(2+\\frac{2t}{1+t^2}=\\) \\(\\frac{2(t^2+t+1)}{1+t^2}\\) ⇒ \\(\\int\\frac{dt}{t^2+t+1}\\).",
+      "\\(t^2+t+1=\\left(t+\\frac12\\right)^2+\\frac34\\) ⇒ \\(\\frac{2}{\\sqrt3}\\arctan\\frac{2t+1}{\\sqrt3}+C\\) con \\(t=\\tan\\frac x2\\)."
+     ],
+     "ans": "\\(\\frac2{\\sqrt3}\\arctan\\frac{2\\tan(x/2)+1}{\\sqrt3}+C\\)",
+     "hint": "Completa cuadrados en t.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "weier"
+      ],
+      [
+       "compcuad"
+      ]
+     ]
+    },
+    {
+     "id": "w11o7",
+     "lvl": 2,
+     "title": "Fármaco con eliminación saturable (IRCA)",
+     "q": "<p>Guía: \\(\\frac{dC}{dt}=-\\frac{kC}{1+C}\\), \\(C(0)=4\\) mg/L, \\(k=0{,}5\\) h⁻¹. Separando queda \\(C+\\ln C=4+\\ln4-0{,}5\\,t\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "t para C = 2 mg/L ≈",
+         "a": 5.39,
+         "u": "h",
+         "tol": 0.02,
+         "e": "Reemplaza C = 2 y despeja t."
+        },
+        {
+         "l": "lím C(t) =",
+         "a": 0,
+         "u": "mg/L"
+        }
+       ]
+      },
+      {
+       "p": "¿Qué integrando aparece al separar?",
+       "o": [
+        "\\(\\frac{1+C}{C}=\\frac1C+1\\): función racional simple",
+        "Sustitución trigonométrica",
+        "Weierstrass",
+        "Partes con \\(u=\\ln C\\)",
+        "Ángulo doble"
+       ]
+      }
+     ],
+     "steps": [
+      "<b>I–R:</b> separando, \\(\\int\\frac{1+C}{C}dC=-\\int k\\,dt\\), y \\(\\frac{1+C}C=\\frac1C+1\\).",
+      "<b>C:</b> \\(\\ln C+C=-kt+K\\); con \\(C(0)=4\\): \\(K=4+\\ln4\\). Para \\(C=2\\): \\(t=\\frac{4+\\ln4-2-\\ln2}{0{,}5}=\\) \\(\\frac{2+\\ln2}{0{,}5}\\approx\\) \\(5{,}39\\) h.",
+      "<b>A:</b> si \\(t\\to\\infty\\) el lado derecho \\(\\to-\\infty\\), lo que solo pasa si \\(C\\to0^+\\). La solución es implícita (no se despeja C con funciones elementales)."
+     ],
+     "ans": "t ≈ 5,39 h; C → 0",
+     "hint": "C = 2 en la solución implícita.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "irca"
+      ],
+      [
+       "irca"
+      ],
+      [
+       "irca"
+      ]
+     ],
+     "chain": true
+    }
+   ],
+   "tools": [
+    {
+     "w": "usub",
+     "t": "Racionalizar",
+     "p": "¿Qué cambio quita las dos raíces de \\(\\int\\frac{\\sqrt x}{1+\\sqrt[3]x}dx\\)?",
+     "o": {
+      "int": "\\int\\frac{\\sqrt x}{1+\\sqrt[3]x}dx",
+      "opts": [
+       {
+        "u": "x^{1/6}",
+        "du": "\\tfrac16x^{-5/6}dx",
+        "new": "6\\int\\frac{u^8}{1+u^2}du",
+        "ok": true,
+        "e": "Con \\(x=u^6\\) (mcm de 2 y 3): \\(\\sqrt x=u^3\\), \\(\\sqrt[3]x=u^2\\)."
+       },
+       {
+        "u": "\\sqrt x",
+        "du": "\\frac{dx}{2\\sqrt x}",
+        "new": "\\int\\frac{2u^2}{1+u^{2/3}}du",
+        "ok": false,
+        "e": "Queda \\(u^{2/3}\\): la raíz cúbica no se fue."
+       },
+       {
+        "u": "\\sqrt[3]x",
+        "du": "\\frac{dx}{3x^{2/3}}",
+        "new": "\\int\\frac{3u^{7/2}}{1+u}du",
+        "ok": false,
+        "e": "Queda \\(u^{7/2}\\): la raíz cuadrada no se fue."
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
  "figs": {},
- "concepts": {},
+ "concepts": {
+  "fpcaso": {
+   "n": "Casos de fracciones parciales",
+   "f": "I lineales · II repetidos · III cuadráticos · IV cuadrático repetido",
+   "x": "Se clasifica después de factorizar el denominador.",
+   "home": "w11fp"
+  },
+  "fpdiv": {
+   "n": "División previa",
+   "f": "Si \\(\\deg P\\ge\\deg Q\\): \\(\\frac PQ=C(x)+\\frac RQ\\)",
+   "x": "Solo las propias se descomponen.",
+   "home": "w11fp"
+  },
+  "heav": {
+   "n": "Heaviside",
+   "f": "Tapar \\((x-a)\\) y evaluar en \\(x=a\\)",
+   "x": "Da la constante de cada lineal (y la de la potencia más alta).",
+   "home": "w11fp"
+  },
+  "fp2": {
+   "n": "Caso II",
+   "f": "\\(\\frac{A}{x-a}+\\frac{B}{(x-a)^2}\\)",
+   "x": "Una fracción por cada potencia del factor repetido.",
+   "home": "w11fp"
+  },
+  "fp3": {
+   "n": "Caso III",
+   "f": "\\(\\frac{Ax+B}{x^2+px+q}\\)",
+   "x": "Dos incógnitas por cada cuadrático; da ln y arctan.",
+   "home": "w11fp"
+  },
+  "logist": {
+   "n": "EDO logística",
+   "f": "\\(P=\\frac{KP_0}{P_0+(K-P_0)e^{-rt}}\\)",
+   "x": "Se separa e integra con fracciones parciales; P → K.",
+   "home": "w11fp"
+  },
+  "pottrig": {
+   "n": "Potencias trigonométricas",
+   "f": "Impar: separar un factor · \\(\\tan^m\\sec^n\\)",
+   "x": "El factor separado forma el du.",
+   "home": "w11pot"
+  },
+  "angdob": {
+   "n": "Ángulo doble",
+   "f": "\\(\\sin^2x=\\frac{1-\\cos2x}2\\), \\(\\cos^2x=\\frac{1+\\cos2x}2\\)",
+   "x": "Para exponentes pares.",
+   "home": "w11pot"
+  },
+  "sustrig": {
+   "n": "Sustitución trigonométrica",
+   "f": "\\(a\\sin\\theta\\), \\(a\\tan\\theta\\), \\(a\\sec\\theta\\)",
+   "x": "Según \\(\\sqrt{a^2-x^2}\\), \\(\\sqrt{a^2+x^2}\\), \\(\\sqrt{x^2-a^2}\\).",
+   "home": "w11tri"
+  },
+  "triref": {
+   "n": "Triángulo de referencia",
+   "f": "Volver de \\(\\theta\\) a x",
+   "x": "El lado que falta es la raíz original.",
+   "home": "w11tri"
+  },
+  "compcuad": {
+   "n": "Completar cuadrados",
+   "f": "\\(x^2+bx+c=(x+\\frac b2)^2+(c-\\frac{b^2}4)\\)",
+   "x": "Antes de arctan o sustitución trigonométrica.",
+   "home": "w11tri"
+  },
+  "eleccion": {
+   "n": "Elegir la técnica",
+   "f": "Simplificar → sustitución → clasificar → combinar",
+   "x": "Clasificar antes de calcular.",
+   "home": "w11otros"
+  },
+  "racio": {
+   "n": "Sustitución racionalizadora",
+   "f": "\\(u=\\sqrt[n]{ax+b}\\)",
+   "x": "Deja una función racional en u.",
+   "home": "w11otros"
+  },
+  "weier": {
+   "n": "Weierstrass",
+   "f": "\\(t=\\tan\\frac x2\\), \\(dx=\\frac{2dt}{1+t^2}\\)",
+   "x": "Último recurso para racionales en sen y cos.",
+   "home": "w11otros"
+  },
+  "irca": {
+   "n": "Esquema IRCA",
+   "f": "Interpretación → Representación → Cálculo → Análisis",
+   "x": "I: variables, tasa y condición inicial. R: EDO y separación. C: integrar y hallar constantes. A: verificar, límite a largo plazo y conclusión en contexto.",
+   "home": "w10edo"
+  }
+ },
  "simEx": [],
  "sim": {
-  "minutes": 0,
-  "slots": []
- }
+  "minutes": 50,
+  "slots": [
+   {
+    "pts": 4,
+    "name": "Fracciones parciales: caso I",
+    "pool": [
+     "w11f3",
+     "w11f4",
+     "w11f5"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Fracciones parciales: caso II",
+    "pool": [
+     "w11f6",
+     "w11f7"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Fracciones parciales: caso III y completar cuadrados",
+    "pool": [
+     "w11f8",
+     "w11f9",
+     "w11f10"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Potencias trigonométricas: exponente impar",
+    "pool": [
+     "w11p3",
+     "w11p4",
+     "w11p6",
+     "w11p7"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Potencias trigonométricas: ángulo doble",
+    "pool": [
+     "w11p2",
+     "w11p5",
+     "w11p8"
+    ]
+   }
+  ],
+  "intro": "Simulacro de la EA3: 50 minutos, cinco preguntas de 4 puntos (fracciones parciales propias y potencias trigonométricas)."
+ },
+ "intro": "Bloque de la <b>EA3</b> (semana 11; ya se rindió: 50 min, individual y sin apuntes). Cerró <b>fracciones parciales</b> (solo propias, casos I a III) y <b>potencias trigonométricas</b>. También están la sustitución trigonométrica (que entra a la ED4) y las técnicas «reto» de la guía (racionalizadora y Weierstrass). Toca un factor para taparlo con el método de Heaviside y arma el triángulo de la sustitución trigonométrica. Todos los temas están abiertos.",
+ "guide": true,
+ "free": true
 }

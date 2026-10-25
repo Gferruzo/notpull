@@ -7,8 +7,8 @@
  "short": "Examen final",
  "sub": "Todo el curso",
  "free": true,
- "intro": "Repaso acumulado con los temas ordenados por semana y todos abiertos desde el inicio. El examen final pone el énfasis en las semanas 9 en adelante (POO en C++): ya están la semana 9 (clases, constructores y destructores) y la 10 (arreglos de objetos, punteros dobles y relaciones entre clases, con un mapa de memoria para ver el stack y el heap). El simulacro tiene la mayoría de preguntas de esas semanas y una parte de repaso. Se actualiza cada vez que se agrega una semana nueva. Igual que en el parcial, elige si practicar en computadora o escrito.",
- "form": "<p class=\"note\">Hoja de repaso del examen final: semanas 1 a 7 y, al final, lo nuevo desde la semana 9.</p>\n<div class=\"fgrid\">\n<div><b>Esqueleto</b><br><code>#include &lt;iostream&gt;</code> · <code>using namespace std;</code> · <code>int main() { … return 0; }</code></div>\n<div><b>Entrada/salida</b><br><code>cin &gt;&gt; x;</code> · <code>cout &lt;&lt; x &lt;&lt; endl;</code> · <code>getline(cin, s)</code></div>\n<div><b>Decimales</b><br><code>#include &lt;iomanip&gt;</code> · <code>cout &lt;&lt; fixed &lt;&lt; setprecision(2)</code></div>\n<div><b>Tipos</b><br>int · long long · float · double · char · bool · string</div>\n<div><b>Operadores</b><br><code>/</code> (entera entre int) · <code>%</code> · <code>++ --</code> · <code>&amp;&amp; || !</code> · <code>== !=</code></div>\n<div><b>Conversión</b><br><code>static_cast&lt;double&gt;(x)</code> · <code>(int)x</code> trunca</div>\n<div><b>Selectivas</b><br><code>if / else if / else</code> · <code>switch</code> con <code>break</code> y <code>default</code></div>\n<div><b>Repetitivas</b><br><code>for</code> · <code>while</code> · <code>do { } while ();</code> · <code>break</code> · <code>continue</code></div>\n<div><b>Funciones</b><br><code>tipo f(int valor, int &amp;ref)</code> · prototipo antes del main · sobrecarga</div>\n<div><b>Recursión</b><br><code>if (caso base) return …; return … f(n − 1) …;</code></div>\n<div><b>Punteros</b><br><code>int *p = &amp;a;</code> · <code>*p</code> · <code>nullptr</code> · <code>int **pp</code></div>\n<div><b>Memoria dinámica</b><br><code>new int(5)</code> / <code>delete p</code> · <code>new int[n]</code> / <code>delete[] v</code></div>\n<div><b>Arreglos</b><br><code>v[i] ≡ *(v + i)</code> · pasar <code>(int *v, int n)</code></div>\n<div><b>Matriz dinámica</b><br><code>int **m = new int*[f]; m[i] = new int[c];</code> · liberar filas y luego m</div>\n<div><b>vector</b><br><code>#include &lt;vector&gt;</code> · <code>push_back · insert(v.begin()+i, x) · erase(v.begin()+i) · pop_back · size</code></div>\n<div><b>Aleatorios</b><br><code>#include &lt;cstdlib&gt; &lt;ctime&gt;</code> · <code>srand(time(0));</code> · <code>rand() % 6 + 1</code></div>\n<div><b>Clase</b><br><code>class X { private: int a; public: X(int a) { this-&gt;a = a; } int getA() { return a; } };</code></div>\n<div><b>Destructor</b><br><code>~X() { }</code> · orden inverso a la creación · <code>delete p</code> lo llama</div>\n<div><b>Objetos dinámicos</b><br><code>X *p = new X(1); p-&gt;getA(); delete p;</code> · arreglo <code>new X[n]</code> / <code>delete[]</code></div>\n<div><b>Punteros dobles</b><br><code>X** v = new X*[n];</code> · <code>v[i] = new X(…);</code> · liberar <code>delete v[i]</code> → <code>delete[] v</code> → <code>v = nullptr</code></div>\n<div><b>vector y shared_ptr</b><br><code>vector&lt;X&gt;</code> solo · <code>vector&lt;X*&gt;</code> delete a cada uno · <code>make_shared&lt;X&gt;(…)</code> solo</div>\n<div><b>Relaciones</b><br>Asociación «usa un» <code>X*</code> + set · Composición «es parte de» <code>: parte(…)</code> · Agregación «tiene un» <code>vector&lt;X*&gt;</code></div>\n</div>",
+ "intro": "Repaso acumulado con los temas ordenados por semana y todos abiertos desde el inicio. El examen final pone el énfasis en las semanas 9 en adelante (POO en C++): ya están la semana 9 (clases, constructores y destructores), la 10 (arreglos de objetos, punteros dobles y relaciones entre clases, con un mapa de memoria) y la 11 (herencia, funciones virtuales y clases abstractas, con un simulador de «¿qué método se llama?»). El simulacro tiene la mayoría de preguntas de esas semanas y una parte de repaso. Se actualiza cada vez que se agrega una semana nueva. Igual que en el parcial, elige si practicar en computadora o escrito.",
+ "form": "<p class=\"note\">Hoja de repaso del examen final: semanas 1 a 7 y, al final, lo nuevo desde la semana 9.</p>\n<div class=\"fgrid\">\n<div><b>Esqueleto</b><br><code>#include &lt;iostream&gt;</code> · <code>using namespace std;</code> · <code>int main() { … return 0; }</code></div>\n<div><b>Entrada/salida</b><br><code>cin &gt;&gt; x;</code> · <code>cout &lt;&lt; x &lt;&lt; endl;</code> · <code>getline(cin, s)</code></div>\n<div><b>Decimales</b><br><code>#include &lt;iomanip&gt;</code> · <code>cout &lt;&lt; fixed &lt;&lt; setprecision(2)</code></div>\n<div><b>Tipos</b><br>int · long long · float · double · char · bool · string</div>\n<div><b>Operadores</b><br><code>/</code> (entera entre int) · <code>%</code> · <code>++ --</code> · <code>&amp;&amp; || !</code> · <code>== !=</code></div>\n<div><b>Conversión</b><br><code>static_cast&lt;double&gt;(x)</code> · <code>(int)x</code> trunca</div>\n<div><b>Selectivas</b><br><code>if / else if / else</code> · <code>switch</code> con <code>break</code> y <code>default</code></div>\n<div><b>Repetitivas</b><br><code>for</code> · <code>while</code> · <code>do { } while ();</code> · <code>break</code> · <code>continue</code></div>\n<div><b>Funciones</b><br><code>tipo f(int valor, int &amp;ref)</code> · prototipo antes del main · sobrecarga</div>\n<div><b>Recursión</b><br><code>if (caso base) return …; return … f(n − 1) …;</code></div>\n<div><b>Punteros</b><br><code>int *p = &amp;a;</code> · <code>*p</code> · <code>nullptr</code> · <code>int **pp</code></div>\n<div><b>Memoria dinámica</b><br><code>new int(5)</code> / <code>delete p</code> · <code>new int[n]</code> / <code>delete[] v</code></div>\n<div><b>Arreglos</b><br><code>v[i] ≡ *(v + i)</code> · pasar <code>(int *v, int n)</code></div>\n<div><b>Matriz dinámica</b><br><code>int **m = new int*[f]; m[i] = new int[c];</code> · liberar filas y luego m</div>\n<div><b>vector</b><br><code>#include &lt;vector&gt;</code> · <code>push_back · insert(v.begin()+i, x) · erase(v.begin()+i) · pop_back · size</code></div>\n<div><b>Aleatorios</b><br><code>#include &lt;cstdlib&gt; &lt;ctime&gt;</code> · <code>srand(time(0));</code> · <code>rand() % 6 + 1</code></div>\n<div><b>Clase</b><br><code>class X { private: int a; public: X(int a) { this-&gt;a = a; } int getA() { return a; } };</code></div>\n<div><b>Destructor</b><br><code>~X() { }</code> · orden inverso a la creación · <code>delete p</code> lo llama</div>\n<div><b>Objetos dinámicos</b><br><code>X *p = new X(1); p-&gt;getA(); delete p;</code> · arreglo <code>new X[n]</code> / <code>delete[]</code></div>\n<div><b>Punteros dobles</b><br><code>X** v = new X*[n];</code> · <code>v[i] = new X(…);</code> · liberar <code>delete v[i]</code> → <code>delete[] v</code> → <code>v = nullptr</code></div>\n<div><b>vector y shared_ptr</b><br><code>vector&lt;X&gt;</code> solo · <code>vector&lt;X*&gt;</code> delete a cada uno · <code>make_shared&lt;X&gt;(…)</code> solo</div>\n<div><b>Relaciones</b><br>Asociación «usa un» <code>X*</code> + set · Composición «es parte de» <code>: parte(…)</code> · Agregación «tiene un» <code>vector&lt;X*&gt;</code></div>\n<div><b>Herencia</b><br>«es un» · <code>class D : public B</code> · <code>D(…) : B(…) {}</code> · base primero, destructores al revés · protected lo ve la hija</div>\n<div><b>Virtual</b><br><code>virtual</code> → manda el objeto real · <code>virtual ~B()</code> · <code>= 0</code> → abstracta (no se instancia)</div>\n</div>",
  "formSim": true,
  "formLabel": "📋 Hoja de repaso",
  "keyLabel": "Claves del tema",
@@ -3066,6 +3066,1070 @@
     }
    ],
    "lesson": "<h3>Idea central</h3><p>Lo que cambia entre las tres relaciones es <b>quién vive cuánto</b>: en la composición las partes mueren con el todo; en la asociación y la agregación cada objeto tiene vida propia.</p><h3>Conceptos clave</h3><ul><li>Asociación: «usa un» · flecha · atributo puntero + set.</li><li>Composición: «es parte de» · rombo lleno · atributos objeto + lista de inicialización.</li><li>Agregación: «tiene un(os)» · rombo vacío · vector de punteros + agregar.</li></ul><div class=\"ej\"><b>Ejemplo:</b> <code>CEvent e(6, 0, 12, 25, 2019, \"Navidad\");</code> construye primero <code>m_Time</code> y <code>m_Day</code>, y luego el cuerpo del constructor de CEvent.</div><div class=\"err\"><b>Error común:</b> en una composición asignar las partes dentro de las llaves del constructor cuando no tienen constructor sin parámetros: no compila. Van en la lista de inicialización, después de los dos puntos.</div>"
+  },
+  {
+   "id": "w11her",
+   "name": "Sem. 11 · Herencia: clase base, derivada y constructores",
+   "teo": "<p><b>Herencia</b> es la relación <b>«es un»</b>: una <i>subclase</i> (clase derivada, hija) hereda todos los atributos y métodos de una <i>superclase</i> (clase base, padre) y puede agregar los suyos. Sirve para no repetir código. Se valida con la frase: un pájaro <i>es un</i> animal, un ingeniero <i>es una</i> persona, un autobús <i>es un</i> medio de transporte terrestre (y, a su vez, un medio de transporte).</p><p>En UML se dibuja con una línea y un <b>triángulo vacío</b> que apunta a la clase base.</p><p><b>Sintaxis:</b> <code>class Ingeniero : public Persona { … };</code>. El nivel de acceso de la herencia (<code>public</code>, <code>protected</code> o <code>private</code>) limita cómo quedan los miembros heredados; con <code>public</code> (el habitual) conservan su visibilidad.</p><div class=\"tbl\"><table><tr><th>Miembro en la base</th><th>¿Lo usa la derivada?</th><th>¿Lo usa el main?</th></tr><tr><td><code>public</code></td><td>sí</td><td>sí</td></tr><tr><td><code>protected</code></td><td>sí</td><td>no</td></tr><tr><td><code>private</code></td><td>no (solo con getters)</td><td>no</td></tr></table></div><p><b>Constructores:</b> la subclase define los suyos. Al crear un objeto derivado, <b>primero se construye la parte de la base</b>: el constructor de la derivada llama al de la base en la <b>lista de inicialización</b>: <code>Ingeniero(string n, int e, string t) : Persona(n, e) { titulo = t; }</code>. Si no lo llamas, el compilador llama al constructor por defecto de la base (y si no existe, no compila). Los destructores corren al revés: primero el de la derivada y luego el de la base.</p><p>Para usar la versión de la base de un método que la derivada sobrescribe: <code>Persona::mostrar();</code> (operador de resolución de ámbito).</p><div class=\"err\"><b>Ojo con las láminas:</b> en el ejemplo, el constructor de <code>Persona</code> aparece como <code>CPersona(…)</code> (un constructor debe llamarse igual que su clase), <code>Ingeniero</code> declara otra vez <code>string nombre</code> (esconde el de la base y queda vacío), el constructor asigna a <code>título</code> con tilde aunque el atributo es <code>titulo</code>, y <code>get_nombre() const</code> se define con <code>const</code> pero se declara sin él. Ninguno de esos códigos compila o funciona tal cual: abajo están corregidos.</div>",
+   "form": [
+    "Herencia: «es un» · <code>class D : public B { … };</code> · triángulo △ hacia la base",
+    "Constructor: <code>D(…) : B(…) { … }</code> · primero la base, luego la derivada",
+    "Destructores: al revés (derivada, luego base)",
+    "<code>protected</code>: lo ve la derivada, no el main · <code>private</code>: solo la base",
+    "Versión de la base: <code>B::metodo()</code>"
+   ],
+   "ex": [
+    {
+     "id": "p11h1",
+     "lvl": 1,
+     "title": "¿Herencia u otra relación?",
+     "q": "<p>Clasifica cada pareja con las frases «es un», «es parte de» y «usa un».</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "cats": [
+        "Herencia («es un»)",
+        "Composición («es parte de»)",
+        "Asociación («usa un»)"
+       ],
+       "items": [
+        {
+         "x": "Gato – Mamífero",
+         "c": 0
+        },
+        {
+         "x": "Ingeniero – Persona",
+         "c": 0
+        },
+        {
+         "x": "Lancha – Medio de transporte marítimo",
+         "c": 0
+        },
+        {
+         "x": "Motor – Auto",
+         "c": 1,
+         "e": "El motor es parte del auto, no «es un» auto."
+        },
+        {
+         "x": "Fecha – Evento",
+         "c": 1
+        },
+        {
+         "x": "Chofer – Taxi",
+         "c": 2,
+         "e": "El taxi usa un chofer; ninguno «es un» el otro."
+        },
+        {
+         "x": "Futbolista – Persona",
+         "c": 0
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Herencia solo si la frase «X es un Y» tiene sentido: un gato es un mamífero, un ingeniero es una persona.",
+      "Si X es una pieza de Y, es composición (semana 10); si solo trabajan juntos, asociación."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "Prueba la frase «es un».",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "her"
+      ],
+      [
+       "her"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11h2",
+     "lvl": 1,
+     "title": "Sintaxis de la herencia",
+     "q": "<p>¿Cuál es la forma correcta de declarar que <code>Ingeniero</code> hereda públicamente de <code>Persona</code>?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "<code>class Ingeniero : public Persona { … };</code>",
+        "<code>class Ingeniero extends Persona { … };</code>",
+        "<code>class Persona : public Ingeniero { … };</code>",
+        "<code>class Ingeniero(Persona) { … };</code>",
+        "<code>class Ingeniero :: Persona { … };</code>"
+       ]
+      }
+     ],
+     "steps": [
+      "La derivada va primero y después de los dos puntos el nivel de acceso y la base: <code>class Derivada : public Base</code>.",
+      "<code>extends</code> es de Java y <code>class Ingeniero(Persona)</code> es de Python; <code>::</code> es el operador de ámbito, no de herencia."
+     ],
+     "ans": "<code>class Ingeniero : public Persona</code>",
+     "hint": "La hija va a la izquierda.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "her"
+      ],
+      [
+       "her"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11h3",
+     "lvl": 2,
+     "title": "Constructores en cadena",
+     "q": "<pre class=\"cpp\"><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\nclass Vehiculo {\npublic:\n    Vehiculo() { cout &lt;&lt; \"V+ \"; }\n    ~Vehiculo() { cout &lt;&lt; \"V- \"; }\n};\n\nclass Terrestre : public Vehiculo {\npublic:\n    Terrestre() { cout &lt;&lt; \"T+ \"; }\n    ~Terrestre() { cout &lt;&lt; \"T- \"; }\n};\n\nclass Bus : public Terrestre {\npublic:\n    Bus() { cout &lt;&lt; \"B+ \"; }\n    ~Bus() { cout &lt;&lt; \"B- \"; }\n};\n\nint main() {\n    Bus b;\n    cout &lt;&lt; \"| \";\n    return 0;\n}</code></pre><p>¿Qué imprime este programa?</p>",
+     "checks": [
+      {
+       "p": "Salida",
+       "o": [
+        "<code class=\"out\">V+ T+ B+ | B- T- V- </code>",
+        "<code class=\"out\">B+ T+ V+ | V- T- B- </code>",
+        "<code class=\"out\">V+ T+ B+ | V- T- B- </code>",
+        "<code class=\"out\">B+ | B- </code>",
+        "<code class=\"out\">B+ T+ V+ | B- T- V- </code>"
+       ]
+      }
+     ],
+     "steps": [
+      "Un <code>Bus</code> es un <code>Terrestre</code> que es un <code>Vehiculo</code>: para construirlo se construye primero la base más alta. Orden: V+, T+, B+.",
+      "Al terminar el main se destruye en orden inverso: B-, T-, V-. Es lo mismo que con la composición: lo que se construye primero muere último."
+     ],
+     "ans": "<code class=\"out\">V+ T+ B+ | B- T- V- </code>",
+     "hint": "La base se construye primero.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "ctorher"
+      ],
+      [
+       "ctorher"
+      ]
+     ],
+     "lang": "cpp",
+     "play": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Vehiculo {\npublic:\n    Vehiculo() { cout << \"V+ \"; }\n    ~Vehiculo() { cout << \"V- \"; }\n};\n\nclass Terrestre : public Vehiculo {\npublic:\n    Terrestre() { cout << \"T+ \"; }\n    ~Terrestre() { cout << \"T- \"; }\n};\n\nclass Bus : public Terrestre {\npublic:\n    Bus() { cout << \"B+ \"; }\n    ~Bus() { cout << \"B- \"; }\n};\n\nint main() {\n    Bus b;\n    cout << \"| \";\n    return 0;\n}"
+    },
+    {
+     "id": "p11h4",
+     "lvl": 1,
+     "title": "Ordena las llamadas",
+     "q": "<p>Con <code>class Ingeniero : public Persona</code>, ordena lo que pasa en este bloque:</p><pre class=\"cpp\"><code>{\n    Ingeniero ing(\"Ana\", 25, \"Electrónica\");\n}   // aquí termina el bloque</code></pre>",
+     "checks": [
+      {
+       "t": "order",
+       "p": "Toca los pasos en orden",
+       "items": [
+        "Se ejecuta el constructor de Persona (desde la lista de inicialización)",
+        "Se ejecuta el cuerpo del constructor de Ingeniero",
+        "Al cerrar la llave se ejecuta ~Ingeniero()",
+        "Se ejecuta ~Persona()"
+       ]
+      }
+     ],
+     "steps": [
+      "El constructor de Ingeniero llama primero a <code>Persona(n, e)</code> en su lista de inicialización y recién después corre su cuerpo.",
+      "Al salir del bloque el objeto se destruye al revés: primero la parte derivada y luego la base."
+     ],
+     "ans": "Base → derivada → ~derivada → ~base",
+     "hint": "Piensa en una muñeca rusa.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "ctorher"
+      ],
+      [
+       "ctorher"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11h5",
+     "lvl": 1,
+     "title": "Encuentra el error (de la lámina)",
+     "q": "<p>Este código viene del ejemplo de la clase y no compila.</p>",
+     "checks": [
+      {
+       "t": "bug",
+       "p": "Encuentra el error",
+       "code": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Persona {\n    string nombre;\nprotected:\n    int edad;\npublic:\n    CPersona(string n, int e) {\n        nombre = n;\n        edad = e;\n    }\n};\n\nint main() {\n    Persona p(\"Ana\", 20);\n    return 0;\n}",
+       "l": [
+        10
+       ],
+       "o": [
+        "El constructor debe llamarse igual que la clase: Persona(…), no CPersona(…)",
+        "Falta poner public: antes de string nombre",
+        "edad no puede ser protected",
+        "Un constructor debe devolver void",
+        "Hay que crear el objeto con new"
+       ],
+       "out": "error: ISO C++ forbids declaration of 'CPersona' with no type"
+      }
+     ],
+     "steps": [
+      "Un constructor no tiene tipo de retorno y se llama exactamente como la clase. <code>CPersona</code> el compilador lo lee como un método sin tipo: error.",
+      "Corregido: <code>Persona(string n, int e) : nombre(n), edad(e) {}</code>. Lo demás está bien: los atributos pueden ser private o protected y el objeto puede crearse en el stack."
+     ],
+     "ans": "El constructor se llama como la clase",
+     "hint": "Compara el nombre de la clase con el del constructor.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "ctorher"
+      ],
+      [
+       "ctorher"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11h6",
+     "lvl": 2,
+     "title": "¿Por qué sale vacío?",
+     "q": "<p>Versión corregida de la lámina: compila, pero el nombre sale vacío.</p>",
+     "checks": [
+      {
+       "t": "bug",
+       "p": "Encuentra el error",
+       "code": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Persona {\nprivate:\n    string nombre;\nprotected:\n    int edad;\npublic:\n    Persona(string n, int e) : nombre(n), edad(e) {}\n    string getNombre() const { return nombre; }\n};\n\nclass Ingeniero : public Persona {\n    string nombre;\n    string titulo;\npublic:\n    Ingeniero(string n, int e, string t) : Persona(n, e) { titulo = t; }\n    string getNombre() const { return nombre; }\n};\n\nint main() {\n    Ingeniero i(\"Ana\", 25, \"Electronica\");\n    cout << \"[\" << i.getNombre() << \"]\" << endl;\n    return 0;\n}",
+       "l": [
+        16
+       ],
+       "o": [
+        "Ingeniero vuelve a declarar string nombre: esconde el de Persona y nunca se llena",
+        "Falta llamar a Persona(n, e) en el constructor",
+        "getNombre() no puede ser const",
+        "titulo debería ser protected",
+        "Hay que imprimir con printf"
+       ],
+       "out": "[]",
+       "e": "Quita el segundo string nombre y el getNombre() de Ingeniero: se usará el de Persona."
+      }
+     ],
+     "steps": [
+      "<code>Persona(n, e)</code> sí guarda «Ana», pero en el <code>nombre</code> de la base. Ingeniero declara <b>otro</b> <code>nombre</code> propio, vacío.",
+      "Su <code>getNombre()</code> devuelve el atributo de Ingeniero (el de más adentro), por eso imprime <code>[]</code>. Solución: no repetir atributos de la base y no sobrescribir <code>getNombre()</code>."
+     ],
+     "ans": "El atributo duplicado esconde el de la base",
+     "hint": "¿Cuántos «nombre» tiene un Ingeniero?",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "her"
+      ],
+      [
+       "her"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11h7",
+     "lvl": 1,
+     "title": "¿Qué puede usar la derivada?",
+     "q": "<p>Con la clase <code>Persona</code> de abajo y <code>class Ingeniero : public Persona</code>, ¿qué puede escribir un método de <code>Ingeniero</code>?</p><pre class=\"cpp\"><code>class Persona {\nprivate:\n    string nombre;\nprotected:\n    int edad;\npublic:\n    Persona(string n, int e) : nombre(n), edad(e) {}\n    string getNombre() const { return nombre; }\n};</code></pre>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "<code>edad + 1</code> y <code>getNombre()</code>, pero no <code>nombre</code>",
+        "<code>nombre</code>, <code>edad</code> y <code>getNombre()</code>",
+        "Solo <code>getNombre()</code>",
+        "<code>nombre</code> y <code>edad</code>, pero no <code>getNombre()</code>",
+        "Nada: lo heredado solo lo usa el main"
+       ]
+      }
+     ],
+     "steps": [
+      "<code>protected</code> (edad) y <code>public</code> (getNombre) son accesibles desde la derivada.",
+      "<code>private</code> (nombre) existe dentro del objeto, pero solo lo toca la propia Persona: la hija debe usar <code>getNombre()</code>."
+     ],
+     "ans": "edad y getNombre(), no nombre",
+     "hint": "private es solo de la base.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "acceso"
+      ],
+      [
+       "acceso"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11h8",
+     "lvl": 2,
+     "title": "Reutilizar el método de la base",
+     "q": "<pre class=\"cpp\"><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\nclass Persona {\nprotected:\n    string nombre;\npublic:\n    Persona(string n) : nombre(n) {}\n    void mostrar() { cout &lt;&lt; nombre; }\n};\n\nclass Medico : public Persona {\n    string esp;\npublic:\n    Medico(string n, string e) : Persona(n), esp(e) {}\n    void mostrar() {\n        cout &lt;&lt; \"Dr. \";\n        Persona::mostrar();\n        cout &lt;&lt; \" (\" &lt;&lt; esp &lt;&lt; \")\";\n    }\n};\n\nint main() {\n    Medico m(\"Rosa\", \"pediatra\");\n    m.mostrar();\n    cout &lt;&lt; endl;\n    Persona p = m;\n    p.mostrar();\n    return 0;\n}</code></pre><p>¿Qué imprime este programa?</p>",
+     "checks": [
+      {
+       "p": "Salida",
+       "o": [
+        "<code class=\"out\">Dr. Rosa (pediatra)\nRosa</code>",
+        "<code class=\"out\">Dr. Rosa (pediatra)\nDr. Rosa (pediatra)</code>",
+        "<code class=\"out\">Rosa (pediatra)\nRosa</code>",
+        "<code class=\"out\">Dr. (pediatra)\nRosa</code>",
+        "<code class=\"out\">Dr. Rosa (pediatra)\nRosa (pediatra)</code>"
+       ]
+      }
+     ],
+     "steps": [
+      "<code>m.mostrar()</code> usa la versión de Medico, que imprime «Dr. », llama a <code>Persona::mostrar()</code> (el nombre) y luego la especialidad.",
+      "<code>Persona p = m;</code> copia solo la parte Persona del médico (se «rebana»). Como <code>mostrar()</code> no es virtual y p es una Persona, imprime solo «Rosa»."
+     ],
+     "ans": "<code class=\"out\">Dr. Rosa (pediatra)\nRosa</code>",
+     "hint": "Persona:: llama a la versión de la base.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "her"
+      ],
+      [
+       "her",
+       "virt"
+      ]
+     ],
+     "lang": "cpp",
+     "play": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Persona {\nprotected:\n    string nombre;\npublic:\n    Persona(string n) : nombre(n) {}\n    void mostrar() { cout << nombre; }\n};\n\nclass Medico : public Persona {\n    string esp;\npublic:\n    Medico(string n, string e) : Persona(n), esp(e) {}\n    void mostrar() {\n        cout << \"Dr. \";\n        Persona::mostrar();\n        cout << \" (\" << esp << \")\";\n    }\n};\n\nint main() {\n    Medico m(\"Rosa\", \"pediatra\");\n    m.mostrar();\n    cout << endl;\n    Persona p = m;\n    p.mostrar();\n    return 0;\n}"
+    },
+    {
+     "id": "p11h9",
+     "lvl": 2,
+     "title": "Herencia protected",
+     "q": "<p><code>class B { public: void f(); };</code> y <code>class D : protected B { };</code>. En el <code>main</code>, con <code>D d;</code>, ¿qué pasa con <code>d.f();</code>?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "No compila: con herencia protected, f() queda protected en D",
+        "Compila y llama a B::f()",
+        "Compila solo si f() es virtual",
+        "No compila porque B no tiene constructor",
+        "Compila, pero f() hace nada"
+       ]
+      }
+     ],
+     "steps": [
+      "El nivel de acceso de la herencia es un <b>tope</b>: con <code>protected</code>, lo que era public en B pasa a ser protected en D.",
+      "Desde el main no se puede llamar a algo protected. Con <code>class D : public B</code> sí compilaría."
+     ],
+     "ans": "No compila",
+     "hint": "El nivel de la herencia es un tope.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "acceso"
+      ],
+      [
+       "acceso"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11h10",
+     "lvl": 2,
+     "title": "Estudiante es una Persona",
+     "q": "<p>Completa la clase <code>Estudiante</code>, que <b>hereda</b> de <code>Persona</code> y agrega <code>carrera</code>:</p><ul><li>Constructor <code>Estudiante(string n, int e, string c)</code> usando la lista de inicialización.</li><li><code>string ficha()</code>: devuelve <code>Ana (19) - Electronica</code> (usa <code>to_string</code>).</li><li><code>bool esMayor()</code>: <code>true</code> si la edad es al menos 18.</li></ul>",
+     "checks": [
+      {
+       "t": "code",
+       "lang": "cpp",
+       "p": "Escribe tu código y compruébalo con las pruebas",
+       "start": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Persona {\nprotected:\n    string nombre;\n    int edad;\npublic:\n    Persona(string n, int e) : nombre(n), edad(e) {}\n    string getNombre() { return nombre; }\n};\n\n// completa la clase Estudiante: hereda de Persona y agrega string carrera\n// - Estudiante(string n, int e, string c)\n// - string ficha(): devuelve \"Ana (19) - Electronica\"\n// - bool esMayor(): true si edad >= 18\nclass Estudiante : public Persona {\n    // ...\n};\n",
+       "tests": [
+        {
+         "n": "Ficha",
+         "main": "Estudiante e(\"Ana\", 19, \"Electronica\");\ncout << e.ficha() << endl;",
+         "out": "Ana (19) - Electronica"
+        },
+        {
+         "n": "Hereda getNombre",
+         "main": "Estudiante e(\"Luis\", 17, \"Mecatronica\");\ncout << e.getNombre() << \" \" << e.esMayor() << endl;",
+         "out": "Luis 0"
+        },
+        {
+         "n": "Mayor de edad",
+         "main": "Estudiante e(\"Rosa\", 18, \"Bioingenieria\");\ncout << e.esMayor() << endl;",
+         "out": "1"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "La clase empieza con <code>class Estudiante : public Persona</code> y solo declara lo nuevo (<code>carrera</code>).",
+      "El constructor llama a <code>Persona(n, e)</code> en la lista de inicialización; nombre y edad son protected, así que los métodos los usan directo.",
+      "Una solución posible:<pre class=\"cpp\"><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\nclass Persona {\nprotected:\n    string nombre;\n    int edad;\npublic:\n    Persona(string n, int e) : nombre(n), edad(e) {}\n    string getNombre() { return nombre; }\n};\n\n// completa la clase Estudiante: hereda de Persona y agrega string carrera\n// - Estudiante(string n, int e, string c)\n// - string ficha(): devuelve \"Ana (19) - Electronica\"\n// - bool esMayor(): true si edad &gt;= 18\nclass Estudiante : public Persona {\n    string carrera;\npublic:\n    Estudiante(string n, int e, string c) : Persona(n, e), carrera(c) {}\n    string ficha() { return nombre + \" (\" + to_string(edad) + \") - \" + carrera; }\n    bool esMayor() { return edad &gt;= 18; }\n};\n</code></pre>"
+     ],
+     "ans": "Tu código pasa todas las pruebas",
+     "hint": "Lista de inicialización: : Persona(n, e), carrera(c)",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "ctorher"
+      ],
+      [
+       "acceso"
+      ],
+      [
+       "acceso"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11h11",
+     "lvl": 3,
+     "title": "Cuenta de ahorro",
+     "q": "<p><code>CuentaAhorro</code> hereda de <code>Cuenta</code> (como en el lab de POO, pero en C++). Completa el constructor, <code>aplicarInteres()</code> y <code>retirar(m)</code> según los comentarios.</p>",
+     "checks": [
+      {
+       "t": "code",
+       "lang": "cpp",
+       "p": "Escribe tu código y compruébalo con las pruebas",
+       "start": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Cuenta {\nprotected:\n    string titular;\n    double saldo;\npublic:\n    Cuenta(string t, double s) : titular(t), saldo(s) {}\n    void depositar(double m) { if (m > 0) saldo += m; }\n    double getSaldo() { return saldo; }\n};\n\nclass CuentaAhorro : public Cuenta {\n    double tasa;  // por ejemplo 0.05 = 5 %\npublic:\n    // completa: constructor CuentaAhorro(string t, double s, double tasa)\n    // completa: void aplicarInteres()  -> saldo aumenta saldo * tasa\n    // completa: bool retirar(double m) -> solo si m > 0 y deja al menos 100 de saldo; devuelve si pudo\n};\n",
+       "tests": [
+        {
+         "n": "Interés",
+         "main": "CuentaAhorro c(\"Ana\", 1000, 0.05);\nc.aplicarInteres();\ncout << c.getSaldo() << endl;",
+         "out": "1050"
+        },
+        {
+         "n": "Deposita (heredado) y retira",
+         "main": "CuentaAhorro c(\"Luis\", 300, 0.1);\nc.depositar(200);\ncout << c.retirar(350) << \" \" << c.getSaldo() << endl;",
+         "out": "1 150"
+        },
+        {
+         "n": "No deja menos de 100",
+         "main": "CuentaAhorro c(\"Rosa\", 300, 0.1);\ncout << c.retirar(250) << \" \" << c.retirar(-5) << \" \" << c.getSaldo() << endl;",
+         "out": "0 0 300"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "El constructor reenvía titular y saldo a <code>Cuenta(t, s)</code> y guarda su propia tasa.",
+      "<code>saldo</code> es protected: la hija lo modifica directo. <code>depositar</code> y <code>getSaldo</code> se heredan sin escribirlos.",
+      "Una solución posible:<pre class=\"cpp\"><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\nclass Cuenta {\nprotected:\n    string titular;\n    double saldo;\npublic:\n    Cuenta(string t, double s) : titular(t), saldo(s) {}\n    void depositar(double m) { if (m &gt; 0) saldo += m; }\n    double getSaldo() { return saldo; }\n};\n\nclass CuentaAhorro : public Cuenta {\n    double tasa;  // por ejemplo 0.05 = 5 %\npublic:\n    CuentaAhorro(string t, double s, double tasa) : Cuenta(t, s), tasa(tasa) {}\n    void aplicarInteres() { saldo += saldo * tasa; }\n    bool retirar(double m) {\n        if (m &lt;= 0 || saldo - m &lt; 100) return false;\n        saldo -= m;\n        return true;\n    }\n};\n</code></pre>"
+     ],
+     "ans": "Tu código pasa todas las pruebas",
+     "hint": "saldo es protected: úsalo directo.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "ctorher"
+      ],
+      [
+       "acceso"
+      ],
+      [
+       "acceso"
+      ]
+     ],
+     "lang": "cpp"
+    }
+   ],
+   "lesson": "<h3>Idea central</h3><p>Un objeto derivado <b>contiene</b> un objeto base adentro: por eso la base se construye primero y se destruye al final, y por eso un <code>Ingeniero</code> puede usarse donde se pide una <code>Persona</code>.</p><h3>Receta para escribir una subclase</h3><ol><li><code>class Hija : public Padre {</code> con solo los atributos nuevos.</li><li>Constructor con lista de inicialización: <code>Hija(…) : Padre(…), nuevo(x) {}</code>.</li><li>Sobrescribe lo que cambia (mismo nombre y parámetros) y reutiliza lo de la base con <code>Padre::metodo()</code>.</li></ol><div class=\"err\"><b>Errores frecuentes:</b> volver a declarar en la hija un atributo que ya está en la base (queda duplicado y el de la base nunca se llena); querer usar un atributo <code>private</code> de la base desde la hija (hazlo <code>protected</code> o usa un getter); y olvidar llamar al constructor de la base cuando esta no tiene constructor por defecto.</div>"
+  },
+  {
+   "id": "w11vir",
+   "name": "Sem. 11 · Funciones virtuales, clases abstractas y herencia múltiple",
+   "teo": "<p>Un puntero (o referencia) a la base puede apuntar a un objeto derivado: <code>Animal* p = new Perro;</code>. La pregunta es qué versión de un método corre con <code>p-&gt;hablar()</code>.</p><ul><li><b>Sin <code>virtual</code></b> (ligadura estática): manda el <b>tipo del puntero</b> → <code>Animal::hablar()</code>.</li><li><b>Con <code>virtual</code></b> en la base (ligadura dinámica): manda el <b>objeto real</b> → <code>Perro::hablar()</code>. Esto es el <b>polimorfismo</b>.</li></ul><p>Un método virtual de la base es virtual en <b>todas</b> las subclases. Al sobrescribirlo hay que mantener la misma lista de parámetros (se recomienda escribir <code>override</code>).</p><p><b>Constructores:</b> no pueden ser virtuales (no se heredan). <b>Destructores:</b> si la clase va a ser base, su destructor debe ser <code>virtual</code>; si no, <code>delete p</code> con <code>Animal* p = new Perro</code> solo ejecuta <code>~Animal()</code> y lo que Perro pidió con <code>new</code> nunca se libera. Las funciones <code>friend</code> no pueden ser virtuales (no son miembros).</p><p><b>Función virtual pura:</b> <code>virtual void ProduceSonido(ostream&amp; os) = 0;</code> (sin cuerpo; la implementa la subclase). Una clase con al menos una virtual pura es <b>abstracta</b>: no se puede instanciar, solo sirve como base. La subclase debe implementar <b>todas</b> las virtuales puras para ser concreta.</p><p><b>Herencia múltiple:</b> <code>class C : public A, public B</code>; las bases se construyen en el orden en que se escriben.</p>",
+   "form": [
+    "<code>virtual</code> en la base → manda el objeto real (ligadura dinámica)",
+    "Sin virtual → manda el tipo del puntero (ligadura estática)",
+    "Destructor de una base: <code>virtual ~B()</code> (si no, fuga)",
+    "Virtual pura: <code>virtual void f() = 0;</code> → clase abstracta, no se instancia",
+    "Constructores y friend: nunca virtuales",
+    "Herencia múltiple: <code>class C : public A, public B</code> → A, B, C"
+   ],
+   "ex": [
+    {
+     "id": "p11v1",
+     "lvl": 1,
+     "title": "Haz que ladre",
+     "q": "<p>El puntero es <code>Animal*</code> y apunta a un <code>Perro</code>. Activa lo necesario para que <code>p-&gt;hablar()</code> imprima <b>Guau</b>.</p>",
+     "checks": [
+      {
+       "t": "virt",
+       "p": "Haz que imprima Guau",
+       "B": "Animal",
+       "D": "Perro",
+       "m": "hablar",
+       "bo": "...",
+       "do": "Guau",
+       "ini": {
+        "vm": false,
+        "pure": false,
+        "vd": false,
+        "ptr": "B",
+        "obj": "D"
+       },
+       "lock": [
+        "ptr",
+        "obj"
+       ],
+       "want": {
+        "out": "Guau"
+       },
+       "sol": {
+        "vm": true,
+        "pure": false,
+        "vd": false,
+        "ptr": "B",
+        "obj": "D"
+       },
+       "e": "Sin virtual manda el tipo del puntero (Animal)."
+      }
+     ],
+     "steps": [
+      "Sin <code>virtual</code>, el compilador decide por el tipo del puntero: <code>Animal::hablar()</code> → «...».",
+      "Con <code>virtual void hablar()</code> en Animal, se decide en ejecución por el objeto real (Perro): «Guau»."
+     ],
+     "ans": "virtual en hablar()",
+     "hint": "¿Quién decide: el puntero o el objeto?",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "virt"
+      ],
+      [
+       "virt"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v2",
+     "lvl": 2,
+     "title": "Sin fugas",
+     "q": "<p>Ya ladra, pero hay un problema al hacer <code>delete p</code>. Déjalo ladrando y <b>sin fuga de memoria</b>.</p>",
+     "checks": [
+      {
+       "t": "virt",
+       "p": "Arregla la fuga",
+       "B": "Animal",
+       "D": "Perro",
+       "m": "hablar",
+       "bo": "...",
+       "do": "Guau",
+       "ini": {
+        "vm": true,
+        "pure": false,
+        "vd": false,
+        "ptr": "B",
+        "obj": "D"
+       },
+       "lock": [
+        "ptr",
+        "obj"
+       ],
+       "want": {
+        "out": "Guau",
+        "leak": false
+       },
+       "sol": {
+        "vm": true,
+        "pure": false,
+        "vd": true,
+        "ptr": "B",
+        "obj": "D"
+       },
+       "e": "Mira qué destructores se ejecutan."
+      }
+     ],
+     "steps": [
+      "Con <code>~Animal()</code> no virtual, <code>delete p</code> (un Animal*) solo llama a <code>~Animal()</code>: el <code>delete[] datos</code> de Perro nunca corre.",
+      "Con <code>virtual ~Animal()</code> se ejecuta <code>~Perro()</code> y luego <code>~Animal()</code>: no hay fuga. Regla: toda clase base lleva destructor virtual."
+     ],
+     "ans": "virtual en el destructor",
+     "hint": "Mira los destructores en la salida.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "dvirt"
+      ],
+      [
+       "dvirt"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v3",
+     "lvl": 2,
+     "title": "Animal abstracto",
+     "q": "<p>Haz que <code>Animal</code> sea una <b>clase abstracta</b>, que <code>p-&gt;hablar()</code> imprima <b>Guau</b> y que no haya fugas. (Ahora sí puedes cambiar el objeto: ¿qué pasa con <code>new Animal</code>?)</p>",
+     "checks": [
+      {
+       "t": "virt",
+       "p": "Abstracta, ladrando y sin fugas",
+       "B": "Animal",
+       "D": "Perro",
+       "m": "hablar",
+       "bo": "...",
+       "do": "Guau",
+       "ini": {
+        "vm": false,
+        "pure": false,
+        "vd": false,
+        "ptr": "B",
+        "obj": "D"
+       },
+       "lock": [
+        "ptr"
+       ],
+       "want": {
+        "out": "Guau",
+        "leak": false,
+        "abs": true
+       },
+       "sol": {
+        "vm": true,
+        "pure": true,
+        "vd": true,
+        "ptr": "B",
+        "obj": "D"
+       },
+       "e": "Una función virtual pura se marca con = 0."
+      }
+     ],
+     "steps": [
+      "<code>virtual void hablar() = 0;</code> hace que Animal sea abstracta: ya no se puede hacer <code>new Animal</code> (prueba elegirlo: no compila).",
+      "Con <code>new Perro</code>, el puntero Animal* llama a <code>Perro::hablar()</code>, y con el destructor virtual no hay fuga."
+     ],
+     "ans": "= 0, virtual ~Animal() y new Perro",
+     "hint": "= 0 y destructor virtual.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "abst"
+      ],
+      [
+       "abst",
+       "dvirt"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v4",
+     "lvl": 2,
+     "title": "Virtual vs. no virtual",
+     "q": "<pre class=\"cpp\"><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\nclass Figura {\npublic:\n    void nombre() { cout &lt;&lt; \"Figura \"; }\n    virtual void dibujar() { cout &lt;&lt; \"? \"; }\n    virtual ~Figura() {}\n};\n\nclass Circulo : public Figura {\npublic:\n    void nombre() { cout &lt;&lt; \"Circulo \"; }\n    void dibujar() override { cout &lt;&lt; \"O \"; }\n};\n\nint main() {\n    Figura* f = new Circulo;\n    f-&gt;nombre();\n    f-&gt;dibujar();\n    Circulo c;\n    c.nombre();\n    delete f;\n    return 0;\n}</code></pre><p>¿Qué imprime este programa?</p>",
+     "checks": [
+      {
+       "p": "Salida",
+       "o": [
+        "<code class=\"out\">Figura O Circulo </code>",
+        "<code class=\"out\">Circulo O Circulo </code>",
+        "<code class=\"out\">Figura ? Circulo </code>",
+        "<code class=\"out\">Circulo ? Figura </code>",
+        "<code class=\"out\">Figura O Figura </code>"
+       ]
+      }
+     ],
+     "steps": [
+      "<code>nombre()</code> no es virtual: con un <code>Figura*</code> se llama <code>Figura::nombre()</code> → «Figura ».",
+      "<code>dibujar()</code> sí es virtual: manda el objeto real (Circulo) → «O ». Con <code>c</code>, que es un Circulo (no puntero a base), se llama <code>Circulo::nombre()</code>."
+     ],
+     "ans": "<code class=\"out\">Figura O Circulo </code>",
+     "hint": "Solo lo virtual mira el objeto real.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "virt"
+      ],
+      [
+       "virt"
+      ]
+     ],
+     "lang": "cpp",
+     "play": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Figura {\npublic:\n    void nombre() { cout << \"Figura \"; }\n    virtual void dibujar() { cout << \"? \"; }\n    virtual ~Figura() {}\n};\n\nclass Circulo : public Figura {\npublic:\n    void nombre() { cout << \"Circulo \"; }\n    void dibujar() override { cout << \"O \"; }\n};\n\nint main() {\n    Figura* f = new Circulo;\n    f->nombre();\n    f->dibujar();\n    Circulo c;\n    c.nombre();\n    delete f;\n    return 0;\n}"
+    },
+    {
+     "id": "p11v5",
+     "lvl": 1,
+     "title": "¿Qué no puede ser virtual?",
+     "q": "<p>Según la clase, ¿qué de esto <strong>no</strong> puede declararse <code>virtual</code>?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "El constructor",
+        "El destructor",
+        "Un método que devuelve void",
+        "Un método con parámetros",
+        "Un método que se sobrescribe en la hija"
+       ]
+      }
+     ],
+     "steps": [
+      "El constructor no se hereda: cada clase define el suyo y llama al de su base. Por eso no puede ser virtual (tampoco una función friend, que no es miembro).",
+      "El destructor <b>sí</b> puede y <b>debe</b> ser virtual en una clase base; cualquier método normal puede ser virtual."
+     ],
+     "ans": "El constructor",
+     "hint": "¿Qué no se hereda?",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "virt"
+      ],
+      [
+       "dvirt"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v6",
+     "lvl": 2,
+     "title": "Encuentra el error: abstracta",
+     "q": "<p>Este programa no compila.</p>",
+     "checks": [
+      {
+       "t": "bug",
+       "p": "Encuentra el error",
+       "code": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Figura {\npublic:\n    virtual double area() = 0;\n    virtual ~Figura() {}\n};\n\nclass Cuadrado : public Figura {\n    double l;\npublic:\n    Cuadrado(double l) : l(l) {}\n    double area() override { return l * l; }\n};\n\nint main() {\n    Figura* a = new Cuadrado(2);\n    Figura* b = new Figura;\n    cout << a->area() << endl;\n    delete a;\n    delete b;\n    return 0;\n}",
+       "l": [
+        20
+       ],
+       "o": [
+        "Figura es abstracta (area() = 0): no se puede crear con new Figura",
+        "Un Figura* no puede apuntar a un Cuadrado",
+        "Falta virtual en area() de Cuadrado",
+        "El destructor no puede ser virtual",
+        "override no existe en C++"
+       ],
+       "out": "error: invalid new-expression of abstract class type 'Figura'"
+      }
+     ],
+     "steps": [
+      "<code>area() = 0</code> es virtual pura, así que <code>Figura</code> es abstracta y no se puede instanciar: falla <code>new Figura</code>.",
+      "Lo demás está bien: un puntero a la base sí puede apuntar a un Cuadrado (es una Figura), y en la hija <code>virtual</code> es opcional porque ya es virtual en la base."
+     ],
+     "ans": "No se instancia una clase abstracta",
+     "hint": "¿Cuál de las clases tiene = 0?",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "abst"
+      ],
+      [
+       "abst"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v7",
+     "lvl": 1,
+     "title": "¿Abstracta o concreta?",
+     "q": "<p>Clasifica cada clase (supón <code>class Ave { public: virtual void volar() = 0; virtual void comer() = 0; };</code>).</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "cats": [
+        "Abstracta (no se puede instanciar)",
+        "Concreta (sí se puede)"
+       ],
+       "items": [
+        {
+         "x": "<code>Ave</code>",
+         "c": 0
+        },
+        {
+         "x": "<code>class Buho : public Ave { void volar() override; void comer() override; };</code>",
+         "c": 1
+        },
+        {
+         "x": "<code>class Gallina : public Ave { void comer() override; };</code>",
+         "c": 0,
+         "e": "Le falta implementar volar(): sigue teniendo una virtual pura."
+        },
+        {
+         "x": "<code>class Animal { public: virtual void sonido() { } };</code>",
+         "c": 1,
+         "e": "Virtual no es lo mismo que virtual pura: esta tiene cuerpo."
+        },
+        {
+         "x": "<code>class Felino { public: virtual void cazar() = 0; void dormir(); };</code>",
+         "c": 0
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Una clase es abstracta si tiene (o hereda sin implementar) al menos una función virtual pura <code>= 0</code>.",
+      "Para que una hija sea concreta debe implementar <b>todas</b> las virtuales puras; si le falta una, sigue siendo abstracta."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "Busca = 0 sin implementar.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "abst"
+      ],
+      [
+       "abst"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v8",
+     "lvl": 2,
+     "title": "Figuras polimórficas",
+     "q": "<p><code>Figura</code> es abstracta. Escribe <code>Rectangulo(b, h)</code> y <code>Circulo(r)</code> (con π = 3.14) que implementen <code>area()</code> y <code>nombre()</code>, y la función <code>areaTotal</code> que suma las áreas de un <code>vector&lt;Figura*&gt;</code>.</p>",
+     "checks": [
+      {
+       "t": "code",
+       "lang": "cpp",
+       "p": "Escribe tu código y compruébalo con las pruebas",
+       "start": "#include <iostream>\n#include <string>\nusing namespace std;\n\n#include <vector>\n\nclass Figura {\npublic:\n    virtual double area() = 0;\n    virtual string nombre() = 0;\n    virtual ~Figura() {}\n};\n\n// completa: class Rectangulo (base b, altura h) y class Circulo (radio r, usa 3.14)\n// completa: double areaTotal(vector<Figura*> v) -> suma de las areas\n",
+       "tests": [
+        {
+         "n": "Áreas",
+         "main": "Rectangulo r(3, 4);\nCirculo c(1);\ncout << r.area() << \" \" << c.area() << endl;",
+         "out": "12 3.14"
+        },
+        {
+         "n": "Polimorfismo",
+         "main": "vector<Figura*> v = {new Rectangulo(2, 5), new Circulo(2)};\nfor (Figura* f : v) cout << f->nombre() << \" \";\ncout << areaTotal(v) << endl;\nfor (Figura* f : v) delete f;",
+         "out": "Rectangulo Circulo 22.56"
+        },
+        {
+         "n": "Vacío",
+         "main": "vector<Figura*> v;\ncout << areaTotal(v) << endl;",
+         "out": "0"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Cada hija hereda públicamente de Figura e implementa las <b>dos</b> virtuales puras; si falta una, sigue siendo abstracta y no se puede crear.",
+      "<code>areaTotal</code> no sabe qué figura es cada una: llama <code>f-&gt;area()</code> y la ligadura dinámica elige la versión correcta.",
+      "Una solución posible:<pre class=\"cpp\"><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\n#include &lt;vector&gt;\n\nclass Figura {\npublic:\n    virtual double area() = 0;\n    virtual string nombre() = 0;\n    virtual ~Figura() {}\n};\n\n// completa: class Rectangulo (base b, altura h) y class Circulo (radio r, usa 3.14)\n// completa: double areaTotal(vector&lt;Figura*&gt; v) -&gt; suma de las areas\nclass Rectangulo : public Figura {\n    double b, h;\npublic:\n    Rectangulo(double b, double h) : b(b), h(h) {}\n    double area() override { return b * h; }\n    string nombre() override { return \"Rectangulo\"; }\n};\n\nclass Circulo : public Figura {\n    double r;\npublic:\n    Circulo(double r) : r(r) {}\n    double area() override { return 3.14 * r * r; }\n    string nombre() override { return \"Circulo\"; }\n};\n\ndouble areaTotal(vector&lt;Figura*&gt; v) {\n    double s = 0;\n    for (Figura* f : v) s += f-&gt;area();\n    return s;\n}\n</code></pre>"
+     ],
+     "ans": "Tu código pasa todas las pruebas",
+     "hint": "Implementa las dos virtuales puras en cada hija.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "abst"
+      ],
+      [
+       "virt"
+      ],
+      [
+       "virt"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v9",
+     "lvl": 3,
+     "title": "Planilla de empleados",
+     "q": "<p><code>Empleado</code> es abstracta y su <code>boleta()</code> usa <code>sueldo()</code>, que es virtual pura. Escribe <code>Planilla(nombre, fijo)</code>, <code>PorHoras(nombre, horas, pagoPorHora)</code> y <code>planillaTotal</code>.</p>",
+     "checks": [
+      {
+       "t": "code",
+       "lang": "cpp",
+       "p": "Escribe tu código y compruébalo con las pruebas",
+       "start": "#include <iostream>\n#include <string>\nusing namespace std;\n\n#include <vector>\n\nclass Empleado {\nprotected:\n    string nombre;\npublic:\n    Empleado(string n) : nombre(n) {}\n    virtual double sueldo() = 0;\n    string boleta() { return nombre + \": \" + to_string((int)sueldo()); }\n    virtual ~Empleado() {}\n};\n\n// completa: class Planilla (sueldo fijo mensual)\n//           class PorHoras (horas trabajadas y pago por hora)\n// completa: double planillaTotal(vector<Empleado*> v)\n",
+       "tests": [
+        {
+         "n": "Boletas",
+         "main": "Planilla a(\"Ana\", 3000);\nPorHoras b(\"Luis\", 40, 25);\ncout << a.boleta() << \" | \" << b.boleta() << endl;",
+         "out": "Ana: 3000 | Luis: 1000"
+        },
+        {
+         "n": "Total",
+         "main": "vector<Empleado*> v = {new Planilla(\"Ana\", 3000), new PorHoras(\"Luis\", 10, 30), new PorHoras(\"Rosa\", 5, 20)};\ncout << planillaTotal(v) << endl;\nfor (Empleado* e : v) delete e;",
+         "out": "3400"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Cada subclase llama a <code>Empleado(n)</code> en su lista de inicialización y solo implementa <code>sueldo()</code>.",
+      "<code>boleta()</code> está escrita una sola vez en la base, pero como llama a una función virtual, cada empleado muestra su propio sueldo.",
+      "Una solución posible:<pre class=\"cpp\"><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\n#include &lt;vector&gt;\n\nclass Empleado {\nprotected:\n    string nombre;\npublic:\n    Empleado(string n) : nombre(n) {}\n    virtual double sueldo() = 0;\n    string boleta() { return nombre + \": \" + to_string((int)sueldo()); }\n    virtual ~Empleado() {}\n};\n\n// completa: class Planilla (sueldo fijo mensual)\n//           class PorHoras (horas trabajadas y pago por hora)\n// completa: double planillaTotal(vector&lt;Empleado*&gt; v)\nclass Planilla : public Empleado {\n    double fijo;\npublic:\n    Planilla(string n, double f) : Empleado(n), fijo(f) {}\n    double sueldo() override { return fijo; }\n};\n\nclass PorHoras : public Empleado {\n    int horas;\n    double pago;\npublic:\n    PorHoras(string n, int h, double p) : Empleado(n), horas(h), pago(p) {}\n    double sueldo() override { return horas * pago; }\n};\n\ndouble planillaTotal(vector&lt;Empleado*&gt; v) {\n    double s = 0;\n    for (Empleado* e : v) s += e-&gt;sueldo();\n    return s;\n}\n</code></pre>"
+     ],
+     "ans": "Tu código pasa todas las pruebas",
+     "hint": "La base ya tiene boleta(): solo falta sueldo().",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "ctorher",
+       "abst"
+      ],
+      [
+       "virt"
+      ],
+      [
+       "virt"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v10",
+     "lvl": 1,
+     "title": "¿Por qué destructor virtual?",
+     "q": "<p>¿Cuándo es necesario declarar <code>virtual ~Base()</code>?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Cuando se borra un objeto derivado a través de un puntero a la base",
+        "Siempre que la clase tenga constructor",
+        "Solo si la clase es abstracta",
+        "Cuando la clase no tiene atributos",
+        "Nunca: los destructores no se pueden heredar"
+       ]
+      }
+     ],
+     "steps": [
+      "<code>delete p</code> con <code>Base* p = new Derivada</code> llama al destructor según el tipo del puntero si no es virtual: solo corre <code>~Base()</code>.",
+      "Si la derivada liberaba memoria en su destructor, esa memoria se pierde. Con <code>virtual ~Base()</code> se ejecutan ambos (derivada y luego base)."
+     ],
+     "ans": "Al borrar por un puntero a la base",
+     "hint": "Piensa en delete p con p de tipo Base*.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "dvirt"
+      ],
+      [
+       "dvirt"
+      ]
+     ],
+     "lang": "cpp"
+    },
+    {
+     "id": "p11v11",
+     "lvl": 2,
+     "title": "Herencia múltiple",
+     "q": "<pre class=\"cpp\"><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\nclass Volador {\npublic:\n    Volador() { cout &lt;&lt; \"V \"; }\n};\n\nclass Nadador {\npublic:\n    Nadador() { cout &lt;&lt; \"N \"; }\n};\n\nclass Pato : public Nadador, public Volador {\npublic:\n    Pato() { cout &lt;&lt; \"P \"; }\n};\n\nint main() {\n    Pato p;\n    return 0;\n}</code></pre><p>¿Qué imprime este programa?</p>",
+     "checks": [
+      {
+       "p": "Salida",
+       "o": [
+        "<code class=\"out\">N V P </code>",
+        "<code class=\"out\">V N P </code>",
+        "<code class=\"out\">P N V </code>",
+        "<code class=\"out\">P V N </code>",
+        "<code class=\"out\">N P V </code>"
+       ]
+      }
+     ],
+     "steps": [
+      "Con herencia múltiple <code>class Pato : public Nadador, public Volador</code>, las bases se construyen <b>en el orden en que se escriben</b>: primero Nadador, luego Volador.",
+      "El cuerpo del constructor de Pato corre al final. (El orden de las clases en el archivo no importa: importa el de la lista de herencia.)"
+     ],
+     "ans": "<code class=\"out\">N V P </code>",
+     "hint": "El orden de la lista de herencia.",
+     "fig": null,
+     "draw": false,
+     "open": false,
+     "solfig": null,
+     "tags": [
+      [
+       "hmult"
+      ],
+      [
+       "hmult"
+      ]
+     ],
+     "lang": "cpp",
+     "play": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Volador {\npublic:\n    Volador() { cout << \"V \"; }\n};\n\nclass Nadador {\npublic:\n    Nadador() { cout << \"N \"; }\n};\n\nclass Pato : public Nadador, public Volador {\npublic:\n    Pato() { cout << \"P \"; }\n};\n\nint main() {\n    Pato p;\n    return 0;\n}"
+    }
+   ],
+   "lesson": "<h3>Idea central</h3><p>Con <code>virtual</code>, una lista de <code>Figura*</code> puede tener rectángulos y círculos y cada uno calcula <b>su</b> área: escribes el código una vez para la base y funciona para todas las hijas.</p><h3>Para decidir qué se imprime</h3><ol><li>¿El método es virtual en la base? Si no: tipo del puntero.</li><li>Si es virtual: el tipo del objeto creado con <code>new</code>.</li><li>Al hacer <code>delete</code> con un puntero a la base: ¿el destructor es virtual? Si no, solo corre el de la base.</li></ol><div class=\"err\"><b>Errores frecuentes:</b> olvidar <code>virtual</code> y sorprenderse de que se llame la versión de la base; intentar <code>new Figura</code> cuando Figura es abstracta; cambiar los parámetros al sobrescribir (eso crea otro método, no sobrescribe); y no hacer virtual el destructor de la base.</div>",
+   "tools": [
+    {
+     "w": "virt",
+     "t": "¿Qué método se llama?",
+     "p": "Activa o quita <code>virtual</code>, <code>= 0</code> y el destructor virtual, cambia el tipo del puntero y del objeto, y mira la salida y la memoria.",
+     "o": {
+      "B": "Animal",
+      "D": "Perro",
+      "m": "hablar",
+      "bo": "...",
+      "do": "Guau"
+     }
+    }
+   ]
   }
  ],
  "figs": {},
@@ -3303,6 +4367,48 @@
    "f": "→ asociación · ◆ composición · ◇ agregación",
    "x": "El rombo va junto a la clase «todo».",
    "home": "w10rel"
+  },
+  "her": {
+   "n": "Herencia",
+   "f": "«es un» · <code>class D : public B</code>",
+   "x": "La derivada hereda atributos y métodos de la base y agrega los suyos.",
+   "home": "w11her"
+  },
+  "ctorher": {
+   "n": "Constructores en herencia",
+   "f": "<code>D(…) : B(…) { … }</code>",
+   "x": "Primero se construye la base; los destructores van al revés.",
+   "home": "w11her"
+  },
+  "acceso": {
+   "n": "public, protected y private",
+   "f": "protected: lo ve la hija, no el main",
+   "x": "private es solo de la base; el nivel de la herencia es un tope.",
+   "home": "w11her"
+  },
+  "virt": {
+   "n": "Función virtual",
+   "f": "<code>virtual void f();</code> → ligadura dinámica",
+   "x": "Con un puntero a la base, manda el objeto real; sin virtual, el tipo del puntero.",
+   "home": "w11vir"
+  },
+  "dvirt": {
+   "n": "Destructor virtual",
+   "f": "<code>virtual ~Base()</code>",
+   "x": "Sin él, delete por un puntero a la base no ejecuta el destructor de la hija (fuga).",
+   "home": "w11vir"
+  },
+  "abst": {
+   "n": "Clase abstracta",
+   "f": "<code>virtual void f() = 0;</code>",
+   "x": "Tiene una virtual pura: no se instancia; la hija concreta implementa todas.",
+   "home": "w11vir"
+  },
+  "hmult": {
+   "n": "Herencia múltiple",
+   "f": "<code>class C : public A, public B</code>",
+   "x": "Las bases se construyen en el orden de la lista.",
+   "home": "w11vir"
   }
  },
  "simEx": [],
@@ -3310,7 +4416,7 @@
   "minutes": 100,
   "slots": [
    {
-    "pts": 4,
+    "pts": 3,
     "name": "Clases: atributos, constructores y métodos (sem. 9)",
     "pool": [
      "oo10",
@@ -3318,7 +4424,7 @@
     ]
    },
    {
-    "pts": 5,
+    "pts": 4,
     "name": "Objetos dinámicos, arreglos de objetos y punteros dobles (sem. 9–10)",
     "pool": [
      "oo12",
@@ -3327,7 +4433,7 @@
     ]
    },
    {
-    "pts": 7,
+    "pts": 5,
     "name": "Relaciones entre clases (sem. 10)",
     "pool": [
      "p10c2",
@@ -3336,7 +4442,17 @@
     ]
    },
    {
-    "pts": 4,
+    "pts": 6,
+    "name": "Herencia y polimorfismo (sem. 11)",
+    "pool": [
+     "p11h10",
+     "p11h11",
+     "p11v8",
+     "p11v9"
+    ]
+   },
+   {
+    "pts": 2,
     "name": "Repaso: arreglos dinámicos y punteros",
     "pool": [
      "fpc_temps",
@@ -3345,15 +4461,15 @@
     ]
    }
   ],
-  "intro": "Simulacro acumulativo del examen final: la mayor parte es de las semanas 9 y 10 y una pregunta de repaso. Se actualiza cada semana.",
+  "intro": "Simulacro acumulativo del examen final: la mayor parte es de las semanas 9 a 11 y una pregunta de repaso. Se actualiza cada semana.",
   "versions": [
    {
     "name": "💻 En computadora",
-    "desc": "Cuatro programas en 100 minutos, con compilador.",
+    "desc": "Cinco programas en 100 minutos, con compilador.",
     "minutes": 100,
     "slots": [
      {
-      "pts": 4,
+      "pts": 3,
       "name": "Clases: atributos, constructores y métodos (sem. 9)",
       "pool": [
        "oo10",
@@ -3361,7 +4477,7 @@
       ]
      },
      {
-      "pts": 5,
+      "pts": 4,
       "name": "Objetos dinámicos, arreglos de objetos y punteros dobles (sem. 9–10)",
       "pool": [
        "oo12",
@@ -3370,7 +4486,7 @@
       ]
      },
      {
-      "pts": 7,
+      "pts": 5,
       "name": "Relaciones entre clases (sem. 10)",
       "pool": [
        "p10c2",
@@ -3379,7 +4495,17 @@
       ]
      },
      {
-      "pts": 4,
+      "pts": 6,
+      "name": "Herencia y polimorfismo (sem. 11)",
+      "pool": [
+       "p11h10",
+       "p11h11",
+       "p11v8",
+       "p11v9"
+      ]
+     },
+     {
+      "pts": 2,
       "name": "Repaso: arreglos dinámicos y punteros",
       "pool": [
        "fpc_temps",
@@ -3388,7 +4514,7 @@
       ]
      }
     ],
-    "intro": "Simulacro acumulativo del examen final: la mayor parte es de las semanas 9 y 10 y una pregunta de repaso. Se actualiza cada semana."
+    "intro": "Simulacro acumulativo del examen final: la mayor parte es de las semanas 9 a 11 y una pregunta de repaso. Se actualiza cada semana."
    },
    {
     "name": "✍️ Escrito",
@@ -3414,17 +4540,6 @@
      },
      {
       "pts": 1,
-      "name": "Encapsulamiento y lectura de clases",
-      "pool": [
-       "oo1",
-       "oo5",
-       "oo7",
-       "oo8",
-       "oo9"
-      ]
-     },
-     {
-      "pts": 1,
       "name": "Memoria: new, delete y delete[] (sem. 10)",
       "pool": [
        "p10m1",
@@ -3445,21 +4560,39 @@
      },
      {
       "pts": 1,
-      "name": "Tipos de relación y UML (sem. 10)",
+      "name": "Relaciones entre clases (sem. 10)",
       "pool": [
        "p10r1",
        "p10r2",
        "p10r3",
-       "p10r4"
+       "p10r4",
+       "p10r5",
+       "p10r6",
+       "p10r7"
       ]
      },
      {
       "pts": 1,
-      "name": "Composición y agregación en código (sem. 10)",
+      "name": "Herencia: constructores y acceso (sem. 11)",
       "pool": [
-       "p10r5",
-       "p10r6",
-       "p10r7"
+       "p11h3",
+       "p11h4",
+       "p11h6",
+       "p11h7",
+       "p11h8",
+       "p11h9"
+      ]
+     },
+     {
+      "pts": 2,
+      "name": "Virtual, abstractas y herencia múltiple (sem. 11)",
+      "pool": [
+       "p11v2",
+       "p11v3",
+       "p11v4",
+       "p11v6",
+       "p11v7",
+       "p11v11"
       ]
      },
      {
@@ -3477,23 +4610,27 @@
       ]
      },
      {
-      "pts": 6,
-      "name": "Escribe una clase o un arreglo de objetos (a mano)",
+      "pts": 5,
+      "name": "Clases, arreglos de objetos o relaciones (a mano)",
       "pool": [
        "oo10",
        "oo11",
        "oo12",
        "oo13",
-       "p10c1"
+       "p10c1",
+       "p10c2",
+       "p10c3",
+       "p10c4"
       ]
      },
      {
       "pts": 6,
-      "name": "Relaciones entre clases (a mano)",
+      "name": "Herencia y polimorfismo (a mano)",
       "pool": [
-       "p10c2",
-       "p10c3",
-       "p10c4"
+       "p11h10",
+       "p11h11",
+       "p11v8",
+       "p11v9"
       ]
      }
     ],

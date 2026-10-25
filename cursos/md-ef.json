@@ -8,8 +8,8 @@
  "sub": "Todo el curso",
  "guide": true,
  "free": true,
- "intro": "Repaso acumulado con todos los temas abiertos: primero los temas del parcial, luego <b>la semana 9: conjuntos I</b> (definición y notación, cardinal, subconjuntos e igualdad con demostraciones, diagramas de Venn y operaciones) y <b>la semana 10: conjuntos II y relaciones</b> (producto cartesiano, conjunto potencia, cardinalidad, álgebra de conjuntos con demostraciones, relaciones, inversa y digrafo), que pesa más en el simulacro. En el examen real debes justificar todo: aquí marcas y luego revisas la justificación en «Ver solución». Se actualiza cada semana.",
- "form": "<p class=\"note\">Hoja de repaso del examen final: lo del parcial y, desde la semana 9, conjuntos.</p><div class=\"fgrid\"><div><b>Conjunto</b><br>No ordenado, bien definido, sin repetidos</div><div><b>Notación</b><br>Extensión \\(\\{1,2\\}\\) · comprensión \\(\\{x\\in A:P(x)\\}\\)</div><div><b>Cardinal</b><br>\\(|\\varnothing|=0\\), \\(|\\{\\varnothing\\}|=1\\)</div><div><b>Subconjunto</b><br>\\(\\forall x(x\\in A\\to x\\in B)\\) · demostrar con \\(x\\) arbitrario</div><div><b>No subconjunto</b><br>\\(\\exists x(x\\in A\\wedge x\\notin B)\\) · contraejemplo</div><div><b>Igualdad</b><br>\\(A\\subseteq B\\wedge B\\subseteq A\\)</div><div><b>Operaciones</b><br>\\(\\cup\\leftrightarrow\\vee\\), \\(\\cap\\leftrightarrow\\wedge\\), \\(\\overline A=U-A\\)</div><div><b>Contar</b><br>\\(|A\\cup B|=|A|+|B|-|A\\cap B|\\)</div><div><b>Producto cartesiano</b><br>\\(|A\\times B|=|A|\\cdot|B|\\) · \\((a,b)\\ne(b,a)\\)</div><div><b>Potencia</b><br>\\(X\\in\\mathcal P(A)\\iff X\\subseteq A\\) · \\(|\\mathcal P(A)|=2^n\\)</div><div><b>Leyes</b><br>De Morgan · distributiva · absorción · \\(A-B=A\\cap\\overline B\\)</div><div><b>Relación</b><br>\\(R\\subseteq A\\times B\\) · \\(2^{|A||B|}\\) relaciones</div><div><b>Inversa y digrafo</b><br>\\(R^{-1}\\): voltear pares · bucle si \\(xRx\\)</div></div>",
+ "intro": "Repaso acumulado con todos los temas abiertos: primero los temas del parcial, luego <b>la semana 9: conjuntos I</b> (definición y notación, cardinal, subconjuntos e igualdad con demostraciones, diagramas de Venn y operaciones), <b>la semana 10: conjuntos II y relaciones</b> (producto cartesiano, conjunto potencia, cardinalidad, álgebra de conjuntos, relaciones, inversa y digrafo) y <b>la semana 11: relaciones II</b> (reflexiva, simétrica, antisimétrica y transitiva; relaciones de equivalencia y de orden parcial), que pesa más en el simulacro. En el examen real debes justificar todo: aquí marcas y luego revisas la justificación en «Ver solución». Se actualiza cada semana.",
+ "form": "<p class=\"note\">Hoja de repaso del examen final: lo del parcial y, desde la semana 9, conjuntos.</p><div class=\"fgrid\"><div><b>Conjunto</b><br>No ordenado, bien definido, sin repetidos</div><div><b>Notación</b><br>Extensión \\(\\{1,2\\}\\) · comprensión \\(\\{x\\in A:P(x)\\}\\)</div><div><b>Cardinal</b><br>\\(|\\varnothing|=0\\), \\(|\\{\\varnothing\\}|=1\\)</div><div><b>Subconjunto</b><br>\\(\\forall x(x\\in A\\to x\\in B)\\) · demostrar con \\(x\\) arbitrario</div><div><b>No subconjunto</b><br>\\(\\exists x(x\\in A\\wedge x\\notin B)\\) · contraejemplo</div><div><b>Igualdad</b><br>\\(A\\subseteq B\\wedge B\\subseteq A\\)</div><div><b>Operaciones</b><br>\\(\\cup\\leftrightarrow\\vee\\), \\(\\cap\\leftrightarrow\\wedge\\), \\(\\overline A=U-A\\)</div><div><b>Contar</b><br>\\(|A\\cup B|=|A|+|B|-|A\\cap B|\\)</div><div><b>Producto cartesiano</b><br>\\(|A\\times B|=|A|\\cdot|B|\\) · \\((a,b)\\ne(b,a)\\)</div><div><b>Potencia</b><br>\\(X\\in\\mathcal P(A)\\iff X\\subseteq A\\) · \\(|\\mathcal P(A)|=2^n\\)</div><div><b>Leyes</b><br>De Morgan · distributiva · absorción · \\(A-B=A\\cap\\overline B\\)</div><div><b>Relación</b><br>\\(R\\subseteq A\\times B\\) · \\(2^{|A||B|}\\) relaciones</div><div><b>Inversa y digrafo</b><br>\\(R^{-1}\\): voltear pares · bucle si \\(xRx\\)</div><div><b>Propiedades</b><br>reflexiva (bucles) · simétrica (vuelta) · antisimétrica (sin ida y vuelta) · transitiva (atajos)</div><div><b>Equivalencia</b><br>reflexiva + simétrica + transitiva → bloques</div><div><b>Orden parcial</b><br>reflexiva + antisimétrica + transitiva → CPO; puede haber incomparables</div></div>",
  "topics": [
   {
    "id": "reales",
@@ -7384,9 +7384,1042 @@
      ]
     }
    ]
+  },
+  {
+   "id": "c11prop",
+   "name": "Sem. 11 · Relaciones II: reflexiva, simétrica, antisimétrica y transitiva",
+   "teo": "<p>Sea R una relación sobre un conjunto A (\\(R\\subseteq A\\times A\\)).</p><div class=\"tbl\"><table><tr><th>Propiedad</th><th>Definición</th><th>En el digrafo</th></tr><tr><td>Reflexiva</td><td>\\(\\forall x\\in A:(x,x)\\in R\\)</td><td>bucle en cada elemento</td></tr><tr><td>Simétrica</td><td>\\((x,y)\\in R\\Rightarrow(y,x)\\in R\\)</td><td>toda flecha tiene vuelta</td></tr><tr><td>Antisimétrica</td><td>\\((x,y),(y,x)\\in R\\Rightarrow x=y\\)</td><td>nunca ida y vuelta entre distintos</td></tr><tr><td>Transitiva</td><td>\\((x,y),(y,z)\\in R\\Rightarrow(x,z)\\in R\\)</td><td>todo camino de 2 flechas tiene atajo</td></tr></table></div><p class=\"ej\"><b>Ejemplos de la clase:</b> en \\(A=\\{1,2,4\\}\\), \\(R=\\{(1,1),(2,4),(4,4),(2,1),(2,2)\\}\\) es reflexiva. \\(x\\le y\\) en \\(\\mathbb R\\) es reflexiva. «Misma paridad» en \\(\\mathbb Z\\) es reflexiva, simétrica y transitiva. \\(x\\mid y\\) en \\(\\mathbb Z^+\\) es reflexiva y transitiva, pero no simétrica (\\(2\\mid4\\), \\(4\\nmid2\\)).</p><p>Para que R <b>no</b> sea reflexiva basta <b>un</b> \\(a\\in A\\) con \\((a,a)\\notin R\\): \\(x+y\\le4\\) en \\(\\{0,\\dots,4\\}\\) falla en \\((4,4)\\) (y en \\((3,3)\\)).</p><p>Forma equivalente de antisimétrica: si \\((x,y)\\in R\\) y \\(x\\ne y\\), entonces \\((y,x)\\notin R\\).</p>",
+   "form": [
+    "Reflexiva: \\((x,x)\\in R\\) para todo \\(x\\) · bucles",
+    "Simétrica: \\(xRy\\Rightarrow yRx\\) · flechas de ida y vuelta",
+    "Antisimétrica: \\(xRy\\wedge yRx\\Rightarrow x=y\\)",
+    "Transitiva: \\(xRy\\wedge yRz\\Rightarrow xRz\\) · atajos",
+    "No simétrica \\(\\not\\Rightarrow\\) antisimétrica"
+   ],
+   "lesson": "<h3>Idea central</h3><p>Cada propiedad es un <strong>para todo</strong>: para afirmarla hay que revisar todos los casos, pero para negarla basta <strong>un contraejemplo</strong> (un bucle que falta, un par sin su vuelta, un camino sin atajo).</p><h3>Cómo revisar una relación finita</h3><ol><li><b>Reflexiva:</b> mira la diagonal de la matriz (o los bucles).</li><li><b>Simétrica:</b> la matriz debe coincidir con su reflejo en la diagonal.</li><li><b>Antisimétrica:</b> fuera de la diagonal, nunca dos ● reflejados.</li><li><b>Transitiva:</b> por cada par de flechas encadenadas \\(x\\to y\\to z\\), busca \\(x\\to z\\) (también cuando \\(x=z\\): \\((1,3),(3,1)\\) exige \\((1,1)\\)).</li></ol><div class=\"err\"><b>Errores frecuentes:</b> creer que «no simétrica» significa «antisimétrica» (son independientes: \\(\\{(1,1)\\}\\) es ambas y \\(\\{(1,2),(2,1),(2,3)\\}\\) no es ninguna); olvidar que una propiedad que no tiene casos que revisar se cumple por vacuidad (\\(x>y\\) es antisimétrica porque nunca pasan \\(x>y\\) y \\(y>x\\) a la vez); y en la transitividad olvidar el caso \\(x\\to y\\to x\\), que exige el bucle \\((x,x)\\).</div>",
+   "ex": [
+    {
+     "id": "rp1",
+     "lvl": 1,
+     "title": "¿Por qué no es reflexiva?",
+     "q": "<p>En \\(A=\\{0,1,2,3,4\\}\\) se define \\(R=\\{(x,y)\\in A\\times A: x+y\\le4\\}\\). ¿Cuál es una justificación correcta de que R <strong>no</strong> es reflexiva?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "\\((3,3)\\notin R\\), porque \\(3+3=6>4\\)",
+        "\\((0,4)\\in R\\) pero \\((4,0)\\notin R\\)",
+        "\\((2,2)\\notin R\\), porque \\(2+2>4\\)",
+        "Hay pares \\((x,y)\\) con \\(x\\ne y\\)",
+        "\\((4,4)\\in R\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "Reflexiva exige \\((a,a)\\in R\\) para <b>todo</b> \\(a\\in A\\); para negarla basta un \\(a\\) que falle.",
+      "\\(3+3=6>4\\) y \\(4+4=8>4\\): \\((3,3)\\) y \\((4,4)\\) no están. Con uno solo basta. \\((2,2)\\) sí está (\\(2+2=4\\le4\\)) y \\((4,0)\\) también está, así que esas opciones son falsas."
+     ],
+     "ans": "\\((3,3)\\notin R\\)",
+     "hint": "Busca un elemento sin bucle.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "refl"
+      ],
+      [
+       "refl"
+      ]
+     ]
+    },
+    {
+     "id": "rp2",
+     "lvl": 1,
+     "title": "Completa: reflexiva",
+     "q": "<p>\\(A=\\{1,2,3,4\\}\\) y \\(R=\\{(1,2),(2,2),(3,1)\\}\\). Agrega lo mínimo para que R sea reflexiva.</p>",
+     "checks": [
+      {
+       "t": "rel",
+       "p": "Agrega los pares mínimos para que R sea reflexiva.",
+       "A": [
+        1,
+        2,
+        3,
+        4
+       ],
+       "give": [
+        [
+         1,
+         2
+        ],
+        [
+         2,
+         2
+        ],
+        [
+         3,
+         1
+        ]
+       ],
+       "want": [
+        "ref"
+       ],
+       "a": [
+        [
+         1,
+         1
+        ],
+        [
+         3,
+         3
+        ],
+        [
+         4,
+         4
+        ]
+       ],
+       "e": "Reflexiva: cada elemento de A debe relacionarse consigo mismo (toda la diagonal)."
+      }
+     ],
+     "steps": [
+      "Reflexiva: hacen falta todos los \\((a,a)\\) con \\(a\\in A\\). Ya está \\((2,2)\\).",
+      "Faltan \\((1,1),(3,3),(4,4)\\). Los pares \\((1,2)\\) y \\((3,1)\\) no molestan: la reflexividad solo mira la diagonal."
+     ],
+     "ans": "\\(\\{(1,1),(3,3),(4,4)\\}\\)",
+     "hint": "Mira la diagonal.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "refl"
+      ],
+      [
+       "refl"
+      ]
+     ]
+    },
+    {
+     "id": "rp3",
+     "lvl": 2,
+     "title": "Completa: simétrica",
+     "q": "<p>\\(A=\\{1,2,3\\}\\) y \\(R=\\{(1,1),(1,3),(2,3)\\}\\). Agrega lo mínimo para que R sea simétrica.</p>",
+     "checks": [
+      {
+       "t": "rel",
+       "p": "Agrega los pares mínimos para que R sea simétrica.",
+       "A": [
+        1,
+        2,
+        3
+       ],
+       "give": [
+        [
+         1,
+         1
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ]
+       ],
+       "want": [
+        "sim"
+       ],
+       "a": [
+        [
+         3,
+         1
+        ],
+        [
+         3,
+         2
+        ]
+       ],
+       "e": "Simétrica: si está \\((x,y)\\), debe estar \\((y,x)\\). La matriz debe quedar igual a su reflejo en la diagonal."
+      }
+     ],
+     "steps": [
+      "Por cada par \\((x,y)\\) con \\(x\\ne y\\) hace falta su vuelta \\((y,x)\\). El bucle \\((1,1)\\) ya es su propia vuelta.",
+      "\\((1,3)\\to\\) falta \\((3,1)\\); \\((2,3)\\to\\) falta \\((3,2)\\). Se agregan \\(\\{(3,1),(3,2)\\}\\)."
+     ],
+     "ans": "\\(\\{(3,1),(3,2)\\}\\)",
+     "hint": "Refleja cada ● en la diagonal.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "simr"
+      ],
+      [
+       "simr"
+      ]
+     ]
+    },
+    {
+     "id": "rp4",
+     "lvl": 2,
+     "title": "Completa: transitiva",
+     "q": "<p>\\(A=\\{1,2,3,4\\}\\) y \\(R=\\{(1,2),(2,3),(3,4)\\}\\) (una cadena \\(1\\to2\\to3\\to4\\)). Agrega lo mínimo para que R sea transitiva.</p>",
+     "checks": [
+      {
+       "t": "rel",
+       "p": "Agrega los pares mínimos para que R sea transitiva.",
+       "A": [
+        1,
+        2,
+        3,
+        4
+       ],
+       "give": [
+        [
+         1,
+         2
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         3,
+         4
+        ]
+       ],
+       "want": [
+        "tra"
+       ],
+       "a": [
+        [
+         1,
+         3
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         2,
+         4
+        ]
+       ],
+       "e": "Transitiva: si hay camino \\(x\\to y\\to z\\), debe haber flecha directa \\(x\\to z\\). Ojo: los atajos nuevos también generan atajos."
+      }
+     ],
+     "steps": [
+      "\\(1\\to2\\to3\\) exige \\((1,3)\\); \\(2\\to3\\to4\\) exige \\((2,4)\\).",
+      "Con los nuevos atajos aparece \\(1\\to3\\to4\\), que exige \\((1,4)\\). Se repite hasta que no aparezca nada nuevo: \\(\\{(1,3),(1,4),(2,4)\\}\\). No hacen falta bucles porque no hay ida y vuelta."
+     ],
+     "ans": "\\(\\{(1,3),(1,4),(2,4)\\}\\)",
+     "hint": "Atajos de los atajos.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "trar"
+      ],
+      [
+       "trar"
+      ]
+     ]
+    },
+    {
+     "id": "rp5",
+     "lvl": 2,
+     "title": "Simétrica vs. antisimétrica",
+     "q": "<p>En \\(A=\\{1,2,3\\}\\), clasifica cada relación. ¿Es cierto que si una relación no es simétrica, entonces es antisimétrica?</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica cada relación",
+       "cats": [
+        "Simétrica y antisimétrica",
+        "Solo simétrica",
+        "Solo antisimétrica",
+        "Ni simétrica ni antisimétrica"
+       ],
+       "items": [
+        {
+         "x": "\\(\\{(1,1),(2,2)\\}\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(\\{(1,2),(2,1),(3,3)\\}\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\{(1,2),(1,3),(2,3)\\}\\)",
+         "c": 2
+        },
+        {
+         "x": "\\(\\{(1,2),(2,1),(2,3)\\}\\)",
+         "c": 3
+        },
+        {
+         "x": "\\(\\varnothing\\)",
+         "c": 0,
+         "e": "La vacía cumple ambas por vacuidad: no hay pares que revisar."
+        },
+        {
+         "x": "\\(\\{(1,3),(3,1)\\}\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\{(2,1),(3,1),(3,3)\\}\\)",
+         "c": 2
+        }
+       ]
+      },
+      {
+       "p": "Entonces, ¿no simétrica ⇒ antisimétrica?",
+       "o": [
+        "No: una relación puede no ser simétrica ni antisimétrica",
+        "Sí, siempre",
+        "Sí, salvo si es vacía",
+        "Solo si además es reflexiva",
+        "Solo en conjuntos finitos"
+       ]
+      }
+     ],
+     "steps": [
+      "Simétrica: toda flecha tiene vuelta. Antisimétrica: ninguna flecha entre distintos tiene vuelta.",
+      "Las relaciones que solo tienen bucles (o ninguna flecha) cumplen las dos. \\(\\{(1,2),(2,1),(2,3)\\}\\) no es simétrica (falta \\((3,2)\\)) ni antisimétrica (\\(1\\to2\\to1\\)).",
+      "Por eso la respuesta es <b>no</b>: son propiedades independientes."
+     ],
+     "ans": "No: son independientes",
+     "hint": "Busca un par de ida y vuelta y una flecha sin vuelta.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "simr",
+       "antir"
+      ],
+      [
+       "simr",
+       "antir"
+      ],
+      [
+       "antir"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "rp6",
+     "lvl": 2,
+     "title": "\\(x-y>0\\) en \\(\\mathbb R\\)",
+     "q": "<p>En \\(\\mathbb R\\) se define \\(xRy\\iff x-y>0\\). ¿Qué propiedades tiene?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Transitiva y antisimétrica, pero no reflexiva ni simétrica",
+        "Solo transitiva",
+        "Reflexiva y transitiva",
+        "Simétrica y transitiva",
+        "Ninguna"
+       ]
+      }
+     ],
+     "steps": [
+      "No reflexiva: \\(x-x=0\\not>0\\). No simétrica: \\(3R1\\) pero \\(1-3<0\\).",
+      "Transitiva: si \\(x-y>0\\) y \\(y-z>0\\), entonces \\(x-z=(x-y)+(y-z)\\) \\(>0\\).",
+      "Antisimétrica por vacuidad: nunca ocurren a la vez \\(x>y\\) y \\(y>x\\), así que la implicación no tiene casos que la falseen. (La clase solo menciona transitiva; la antisimetría también vale.)"
+     ],
+     "ans": "Transitiva y antisimétrica",
+     "hint": "La antisimetría puede cumplirse por vacuidad.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "refl",
+       "simr"
+      ],
+      [
+       "trar"
+      ],
+      [
+       "antir"
+      ]
+     ]
+    },
+    {
+     "id": "rp7",
+     "lvl": 2,
+     "title": "\\(x+y=7\\) en \\(\\{1,\\dots,6\\}\\)",
+     "q": "<p>\\(A=\\{1,2,3,4,5,6\\}\\) y \\(R_1=\\{(x,y)\\in A\\times A: x+y=7\\}\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1",
+       "f": [
+        {
+         "l": "\\(|R_1|=\\)",
+         "a": 6,
+         "e": "Para cada x hay exactamente un y = 7 − x en A."
+        }
+       ]
+      },
+      {
+       "p": "Parte 2: ¿es transitiva?",
+       "o": [
+        "No: \\((1,6)\\) y \\((6,1)\\) exigirían \\((1,1)\\)",
+        "Sí, porque es simétrica",
+        "Sí, porque no hay bucles",
+        "No, porque \\((3,4)\\notin R_1\\)",
+        "Sí, por vacuidad"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(R_1=\\{(1,6),(2,5),(3,4),\\) \\((4,3),(5,2),(6,1)\\}\\): 6 pares. Es simétrica (si \\(x+y=7\\), también \\(y+x=7\\)).",
+      "Transitividad: \\(1R6\\) y \\(6R1\\) exigirían \\(1R1\\), pero \\(1+1\\ne7\\). No es transitiva. (\\((3,4)\\) sí está.)"
+     ],
+     "ans": "6 pares; no es transitiva",
+     "hint": "Encadena una ida y su vuelta.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "simr"
+      ],
+      [
+       "trar"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "rp8",
+     "lvl": 1,
+     "title": "Divisibilidad en \\(\\mathbb Z^+\\)",
+     "q": "<p>En \\(\\mathbb Z^+\\), \\(xRy\\iff x\\mid y\\). ¿Qué propiedad <strong>no</strong> tiene?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Simétrica",
+        "Reflexiva",
+        "Transitiva",
+        "Antisimétrica",
+        "Las tiene todas"
+       ]
+      }
+     ],
+     "steps": [
+      "Reflexiva: \\(x\\mid x\\). Transitiva: \\(x\\mid y\\) y \\(y\\mid z\\Rightarrow y=kx,\\ z=my\\Rightarrow z=(km)x\\).",
+      "Antisimétrica en \\(\\mathbb Z^+\\): si \\(x\\mid y\\) y \\(y\\mid x\\), entonces \\(x\\le y\\le x\\), luego \\(x=y\\).",
+      "No simétrica: \\(2\\mid4\\) pero \\(4\\nmid2\\)."
+     ],
+     "ans": "Simétrica",
+     "hint": "Prueba con 2 y 4.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "refl",
+       "trar"
+      ],
+      [
+       "antir"
+      ],
+      [
+       "simr"
+      ]
+     ]
+    },
+    {
+     "id": "rp9",
+     "lvl": 3,
+     "title": "Lee el digrafo",
+     "q": "<p>El digrafo muestra la relación \\(R=\\{(1,1),(1,3),(3,1),(3,3),\\) \\((3,2),(3,4),(2,4),(1,2),(1,4)\\}\\) sobre \\(A=\\{1,2,3,4\\}\\). ¿Qué propiedades tiene?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Solo transitiva",
+        "Transitiva y reflexiva",
+        "Transitiva y antisimétrica",
+        "Simétrica y transitiva",
+        "Ninguna"
+       ]
+      }
+     ],
+     "steps": [
+      "No reflexiva: faltan los bucles en 2 y 4. No simétrica: \\((3,2)\\in R\\) y \\((2,3)\\notin R\\).",
+      "No antisimétrica: \\((1,3)\\) y \\((3,1)\\) con \\(1\\ne3\\).",
+      "Transitiva: cada camino de dos flechas tiene atajo; por ejemplo \\(3\\to1\\to2\\) con \\((3,2)\\), \\(1\\to3\\to1\\) con \\((1,1)\\) y \\(1\\to2\\to4\\) con \\((1,4)\\)."
+     ],
+     "ans": "Solo transitiva",
+     "hint": "Revisa los bucles y la ida y vuelta 1 ↔ 3.",
+     "fig": "md_rp9",
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "refl",
+       "simr"
+      ],
+      [
+       "antir"
+      ],
+      [
+       "trar"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c11eq",
+   "name": "Sem. 11 · Relaciones de equivalencia y de orden parcial",
+   "teo": "<p><strong>Relación de equivalencia:</strong> reflexiva, simétrica y transitiva. Ejemplos: «misma paridad» en \\(\\mathbb Z\\), \\(3\\mid(x-y)\\) en \\(\\mathbb Z\\), la igualdad.</p><p><strong>Relación de orden parcial:</strong> reflexiva, <b>anti</b>simétrica y transitiva. El par \\((A,R)\\) se llama <strong>conjunto parcialmente ordenado</strong> (CPO). Ejemplos: \\(\\le\\) en \\(\\mathbb R\\), \\(\\subseteq\\) en \\(\\mathcal P(S)\\), \\(\\mid\\) en \\(\\mathbb Z^+\\).</p><p>En un CPO, \\(a\\) y \\(b\\) son <strong>comparables</strong> si \\(aRb\\vee bRa\\), e <strong>incomparables</strong> si \\((a,b)\\notin R\\) y \\((b,a)\\notin R\\). Se llama «parcial» justamente porque puede haber incomparables: \\(\\{a\\}\\) y \\(\\{b\\}\\) con \\(\\subseteq\\), o 2 y 3 con \\(\\mid\\).</p><p class=\"ej\"><b>Ejercicios de la clase:</b> (1) \\(\\subseteq\\) en \\(\\mathcal P(S)\\) es orden parcial. (2) \\(x-y\\ge0\\) en \\(\\mathbb R\\) es orden parcial. (3) \\(3\\mid(x-y)\\) en \\(\\mathbb Z\\) es de equivalencia.</p>",
+   "form": [
+    "Equivalencia: reflexiva + simétrica + transitiva",
+    "Orden parcial: reflexiva + antisimétrica + transitiva → CPO \\((A,R)\\)",
+    "Comparables: \\(aRb\\vee bRa\\) · incomparables: ninguno",
+    "\\(3\\mid(x-y)\\): \\(x-z=(x-y)+(y-z)\\)"
+   ],
+   "lesson": "<h3>Idea central</h3><p>Las dos relaciones «estrella» comparten reflexiva y transitiva; las separa la tercera: <strong>simétrica</strong> (equivalencia: «se parecen») o <strong>antisimétrica</strong> (orden: «va antes que»).</p><h3>Cómo demostrar que es de equivalencia</h3><ol><li>Reflexiva: muestra que \\(xRx\\) siempre (\\(3\\mid0\\)).</li><li>Simétrica: de \\(xRy\\) deduce \\(yRx\\) (\\(y-x=-(x-y)\\)).</li><li>Transitiva: de \\(xRy\\) y \\(yRz\\) deduce \\(xRz\\) (suma: \\(x-z=(x-y)+(y-z)\\)).</li></ol><p>Una equivalencia sobre un conjunto finito se ve como <strong>bloques</strong>: dentro de cada bloque, todos con todos (incluidos los bucles); entre bloques, nada.</p><div class=\"err\"><b>Errores frecuentes:</b> olvidar los bucles de los elementos que no se relacionan con nadie (siguen necesitando \\((a,a)\\)); confundir antisimétrica con «no simétrica»; decir que \\(<\\) es orden parcial (no es reflexiva); y pensar que en un orden parcial todos los pares son comparables.</div>",
+   "ex": [
+    {
+     "id": "re1",
+     "lvl": 2,
+     "title": "Completa: equivalencia",
+     "q": "<p>\\(A=\\{1,2,3,4\\}\\) y \\(R=\\{(1,2),(2,2),(3,4)\\}\\). Agrega lo mínimo para que R sea de equivalencia.</p>",
+     "checks": [
+      {
+       "t": "rel",
+       "p": "Agrega los pares mínimos para que R sea de equivalencia.",
+       "A": [
+        1,
+        2,
+        3,
+        4
+       ],
+       "give": [
+        [
+         1,
+         2
+        ],
+        [
+         2,
+         2
+        ],
+        [
+         3,
+         4
+        ]
+       ],
+       "want": "eq",
+       "a": [
+        [
+         1,
+         1
+        ],
+        [
+         2,
+         1
+        ],
+        [
+         3,
+         3
+        ],
+        [
+         4,
+         3
+        ],
+        [
+         4,
+         4
+        ]
+       ],
+       "e": "Equivalencia = reflexiva + simétrica + transitiva: A se parte en bloques y dentro de cada bloque todos se relacionan con todos."
+      }
+     ],
+     "steps": [
+      "Los bloques salen de los pares dados: \\(\\{1,2\\}\\) y \\(\\{3,4\\}\\).",
+      "Dentro de cada bloque, todos con todos: \\((1,1),(2,1)\\) para el primero y \\((3,3),(4,3),(4,4)\\) para el segundo (ya estaban \\((1,2),(2,2),(3,4)\\)).",
+      "Resultado: \\(R=\\{(1,1),(1,2),(2,1),(2,2),\\) \\((3,3),(3,4),(4,3),(4,4)\\}\\)."
+     ],
+     "ans": "\\(\\{(1,1),(2,1),(3,3),(4,3),\\) \\((4,4)\\}\\)",
+     "hint": "Piensa en bloques.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "releq"
+      ],
+      [
+       "refl",
+       "simr"
+      ],
+      [
+       "releq"
+      ]
+     ]
+    },
+    {
+     "id": "re2",
+     "lvl": 3,
+     "title": "Completa: equivalencia con cadena",
+     "q": "<p>\\(A=\\{1,2,3,4,5\\}\\) y \\(R=\\{(1,2),(2,3),(4,4)\\}\\). Agrega lo mínimo para que R sea de equivalencia.</p>",
+     "checks": [
+      {
+       "t": "rel",
+       "p": "Agrega los pares mínimos para que R sea de equivalencia.",
+       "A": [
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "give": [
+        [
+         1,
+         2
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         4,
+         4
+        ]
+       ],
+       "want": "eq",
+       "a": [
+        [
+         1,
+         1
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         1
+        ],
+        [
+         2,
+         2
+        ],
+        [
+         3,
+         1
+        ],
+        [
+         3,
+         2
+        ],
+        [
+         3,
+         3
+        ],
+        [
+         5,
+         5
+        ]
+       ],
+       "e": "Como \\(1R2\\) y \\(2R3\\), el 1, el 2 y el 3 quedan en el mismo bloque. El 5 no se relaciona con nadie, pero igual necesita su bucle."
+      }
+     ],
+     "steps": [
+      "\\(1R2\\) y \\(2R3\\) ponen a 1, 2 y 3 en el mismo bloque (transitividad + simetría).",
+      "Bloques: \\(\\{1,2,3\\}\\) (9 pares), \\(\\{4\\}\\) y \\(\\{5\\}\\) (un bucle cada uno). El 5 no aparece en R, pero la reflexividad igual exige \\((5,5)\\).",
+      "Hay que agregar 8 pares: \\(\\{(1,1),(1,3),(2,1),(2,2),\\) \\((3,1),(3,2),(3,3),(5,5)\\}\\)."
+     ],
+     "ans": "8 pares",
+     "hint": "No te olvides del 5.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "releq"
+      ],
+      [
+       "refl"
+      ],
+      [
+       "releq"
+      ]
+     ]
+    },
+    {
+     "id": "re3",
+     "lvl": 2,
+     "title": "Completa: orden parcial",
+     "q": "<p>\\(A=\\{1,2,3,4\\}\\) y \\(R=\\{(1,2),(2,4),(1,3)\\}\\). Agrega lo mínimo para que R sea de orden parcial.</p>",
+     "checks": [
+      {
+       "t": "rel",
+       "p": "Agrega los pares mínimos para que R sea de orden parcial.",
+       "A": [
+        1,
+        2,
+        3,
+        4
+       ],
+       "give": [
+        [
+         1,
+         2
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         4
+        ]
+       ],
+       "want": "ord",
+       "a": [
+        [
+         1,
+         1
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         2,
+         2
+        ],
+        [
+         3,
+         3
+        ],
+        [
+         4,
+         4
+        ]
+       ],
+       "e": "Orden parcial = reflexiva + antisimétrica + transitiva. No agregues pares de vuelta: rompen la antisimetría."
+      }
+     ],
+     "steps": [
+      "Reflexiva: los cuatro bucles. Transitiva: \\(1\\to2\\to4\\) exige \\((1,4)\\).",
+      "Antisimétrica: no se agrega ninguna flecha de vuelta; el resultado no tiene ida y vuelta entre distintos.",
+      "Se agregan \\(\\{(1,1),(1,4),(2,2),(3,3),\\) \\((4,4)\\}\\). Ojo: 3 y 4 (y 2 y 3) quedan <b>incomparables</b>, y eso está permitido."
+     ],
+     "ans": "\\(\\{(1,1),(1,4),(2,2),(3,3),\\) \\((4,4)\\}\\)",
+     "hint": "Bucles + atajos, sin vueltas.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "refl",
+       "trar"
+      ],
+      [
+       "antir"
+      ],
+      [
+       "ordp",
+       "compar"
+      ]
+     ]
+    },
+    {
+     "id": "re4",
+     "lvl": 2,
+     "title": "¿Equivalencia, orden parcial o ninguna?",
+     "q": "<p>Clasifica cada relación.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Equivalencia",
+        "Orden parcial",
+        "Ninguna de las dos"
+       ],
+       "items": [
+        {
+         "x": "\\(3\\mid(x-y)\\) en \\(\\mathbb Z\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(X\\subseteq Y\\) en \\(\\mathcal P(S)\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(x-y\\ge0\\) en \\(\\mathbb R\\)",
+         "c": 1,
+         "e": "\\(x-y\\ge0\\) es \\(x\\ge y\\): reflexiva, antisimétrica y transitiva."
+        },
+        {
+         "x": "«misma paridad» en \\(\\mathbb Z\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(x\\mid y\\) en \\(\\mathbb Z^+\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(x<y\\) en \\(\\mathbb R\\)",
+         "c": 2,
+         "e": "No es reflexiva: \\(x<x\\) es falso."
+        },
+        {
+         "x": "\\(|x-y|=1\\) en \\(\\{1,\\dots,6\\}\\)",
+         "c": 2,
+         "e": "No es reflexiva ni transitiva (\\(1R2\\), \\(2R1\\) pero no \\(1R1\\))."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Equivalencia: reflexiva, simétrica y transitiva → \\(3\\mid(x-y)\\), misma paridad.",
+      "Orden parcial: reflexiva, antisimétrica y transitiva → \\(\\subseteq\\), \\(\\ge\\), divisibilidad en \\(\\mathbb Z^+\\).",
+      "\\(<\\) falla en la reflexividad y \\(|x-y|=1\\) falla en reflexividad y transitividad."
+     ],
+     "ans": "Ver clasificación",
+     "hint": "Primero revisa la reflexividad.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "releq"
+      ],
+      [
+       "ordp"
+      ],
+      [
+       "refl",
+       "trar"
+      ]
+     ]
+    },
+    {
+     "id": "re5",
+     "lvl": 2,
+     "title": "Ordena: \\(3\\mid(x-y)\\) es transitiva",
+     "q": "<p>Ordena la demostración de que \\(xRy\\iff3\\mid(x-y)\\) es transitiva en \\(\\mathbb Z\\).</p>",
+     "checks": [
+      {
+       "t": "order",
+       "p": "Toca los pasos en orden.",
+       "items": [
+        "Sean \\(x,y,z\\in\\mathbb Z\\) con \\(xRy\\) y \\(yRz\\).",
+        "Entonces \\(x-y=3k\\) y \\(y-z=3m\\) con \\(k,m\\in\\mathbb Z\\).",
+        "Sumando: \\(x-z=(x-y)+(y-z)=3k+3m\\).",
+        "Así \\(x-z=3(k+m)\\) con \\(k+m\\in\\mathbb Z\\).",
+        "Luego \\(3\\mid(x-z)\\), es decir \\(xRz\\). \\(\\blacksquare\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "Se parte de las hipótesis \\(xRy\\), \\(yRz\\) y se traducen con la definición de divisibilidad.",
+      "El truco es sumar: \\(x-z=(x-y)+(y-z)\\). Se factoriza el 3 y se concluye \\(xRz\\).",
+      "Con reflexiva (\\(x-x=0=3\\cdot0\\)) y simétrica (\\(y-x=3(-k)\\)) se completa que es de equivalencia (ejercicio 3 de la clase)."
+     ],
+     "ans": "Hipótesis → definición → suma → factorizar → concluir",
+     "hint": "Suma las dos diferencias.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "releq"
+      ],
+      [
+       "trar"
+      ],
+      [
+       "releq"
+      ]
+     ]
+    },
+    {
+     "id": "re6",
+     "lvl": 2,
+     "title": "\\(x-y\\ge0\\): ¿por qué antisimétrica?",
+     "q": "<p>Ejercicio 2 de la clase: en \\(\\mathbb R\\), \\(xRy\\iff x-y\\ge0\\). ¿Qué argumento prueba la antisimetría?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Si \\(x-y\\ge0\\) y \\(y-x\\ge0\\), entonces \\(x-y\\ge0\\) y \\(x-y\\le0\\), luego \\(x=y\\)",
+        "Si \\(x-y\\ge0\\), entonces \\(y-x\\ge0\\)",
+        "\\(x-x=0\\ge0\\)",
+        "Si \\(x-y\\ge0\\) y \\(y-z\\ge0\\), entonces \\(x-z\\ge0\\)",
+        "Como \\(2-1\\ge0\\) y \\(1-2<0\\), no es simétrica"
+       ]
+      }
+     ],
+     "steps": [
+      "Antisimétrica: hay que suponer \\(xRy\\) y \\(yRx\\) y llegar a \\(x=y\\).",
+      "\\(y-x\\ge0\\iff x-y\\le0\\). Junto con \\(x-y\\ge0\\) queda \\(x-y=0\\). Las otras opciones prueban reflexividad, transitividad o «no simétrica», que no es lo pedido."
+     ],
+     "ans": "\\(x-y\\ge0\\) y \\(x-y\\le0\\Rightarrow x=y\\)",
+     "hint": "Supón las dos direcciones.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "antir"
+      ],
+      [
+       "ordp"
+      ]
+     ]
+    },
+    {
+     "id": "re7",
+     "lvl": 1,
+     "title": "Incomparables con \\(\\subseteq\\)",
+     "q": "<p>En el CPO \\((\\mathcal P(\\{a,b,c\\}),\\subseteq)\\), ¿qué par es <strong>incomparable</strong>?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "\\(\\{a,b\\}\\) y \\(\\{b,c\\}\\)",
+        "\\(\\{a\\}\\) y \\(\\{a,b\\}\\)",
+        "\\(\\varnothing\\) y \\(\\{c\\}\\)",
+        "\\(\\{b\\}\\) y \\(\\{a,b,c\\}\\)",
+        "\\(\\{a,c\\}\\) y \\(\\{a,c\\}\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "Comparables: uno está contenido en el otro. \\(\\varnothing\\) está contenido en todo y todo está contenido en \\(\\{a,b,c\\}\\).",
+      "\\(\\{a,b\\}\\not\\subseteq\\{b,c\\}\\) (falta a) y \\(\\{b,c\\}\\not\\subseteq\\{a,b\\}\\) (falta c): son incomparables."
+     ],
+     "ans": "\\(\\{a,b\\}\\) y \\(\\{b,c\\}\\)",
+     "hint": "¿Alguno está dentro del otro?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "compar"
+      ],
+      [
+       "compar"
+      ]
+     ]
+    },
+    {
+     "id": "re8",
+     "lvl": 2,
+     "title": "Divisores de 12",
+     "q": "<p>En \\(D=\\{1,2,3,4,6,12\\}\\) con la relación \\(x\\mid y\\) (un orden parcial), ¿cuántos pares <strong>no ordenados</strong> \\(\\{a,b\\}\\) de elementos distintos son incomparables?</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Respuesta",
+       "f": [
+        {
+         "l": "Pares incomparables",
+         "a": 3,
+         "e": "Busca pares donde ninguno divide al otro."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "1 divide a todos y todos dividen a 12: esos nunca son incomparables.",
+      "Entre 2, 3, 4 y 6: \\(2\\mid4\\), \\(2\\mid6\\), \\(3\\mid6\\). No se relacionan \\(\\{2,3\\}\\), \\(\\{3,4\\}\\) y \\(\\{4,6\\}\\): son 3."
+     ],
+     "ans": "3",
+     "hint": "Revisa 2, 3, 4 y 6 entre sí.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "compar"
+      ],
+      [
+       "compar"
+      ]
+     ]
+    },
+    {
+     "id": "re9",
+     "lvl": 2,
+     "title": "Clases de \\(3\\mid(x-y)\\)",
+     "q": "<p>En \\(A=\\{0,1,\\dots,8\\}\\) se define \\(xRy\\iff3\\mid(x-y)\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1",
+       "f": [
+        {
+         "l": "Número de bloques (clases)",
+         "a": 3,
+         "e": "Dos números están en el mismo bloque si dejan el mismo resto al dividir entre 3."
+        },
+        {
+         "l": "\\(|R|=\\)",
+         "a": 27,
+         "e": "Cada bloque de k elementos aporta k² pares."
+        }
+       ]
+      },
+      {
+       "p": "Parte 2: ¿cuál es el bloque del 2?",
+       "o": [
+        "\\(\\{2,5,8\\}\\)",
+        "\\(\\{2,4,6,8\\}\\)",
+        "\\(\\{1,2\\}\\)",
+        "\\(\\{0,3,6,8\\}\\)",
+        "\\(\\{2\\}\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(3\\mid(x-y)\\iff x\\) e \\(y\\) dejan el mismo resto entre 3. Bloques: \\(\\{0,3,6\\}\\), \\(\\{1,4,7\\}\\), \\(\\{2,5,8\\}\\).",
+      "Cada bloque tiene 3 elementos y aporta \\(3^2=9\\) pares: \\(|R|=27\\).",
+      "El bloque del 2 es \\(\\{2,5,8\\}\\)."
+     ],
+     "ans": "3 bloques, 27 pares; \\(\\{2,5,8\\}\\)",
+     "hint": "Agrupa por el resto.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "releq"
+      ],
+      [
+       "releq"
+      ],
+      [
+       "releq"
+      ]
+     ],
+     "chain": true
+    }
+   ]
   }
  ],
- "figs": {},
+ "figs": {
+  "md_rp9": "<svg class=\"dg\" viewBox=\"0 0 220 180\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"mdar\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"gl2h\"/></marker></defs><circle class=\"gl\" cx=\"110.0\" cy=\"8.0\" r=\"9\"/><line class=\"gl\" x1=\"119.2\" y1=\"39.2\" x2=\"164.1\" y2=\"84.1\" marker-end=\"url(#mdar)\"/><line class=\"gl\" x1=\"105.0\" y1=\"43.0\" x2=\"105.0\" y2=\"144.0\" marker-end=\"url(#mdar)\"/><line class=\"gl\" x1=\"100.8\" y1=\"39.2\" x2=\"55.9\" y2=\"84.1\" marker-end=\"url(#mdar)\"/><line class=\"gl\" x1=\"161.0\" y1=\"94.0\" x2=\"60.0\" y2=\"94.0\" marker-end=\"url(#mdar)\"/><line class=\"gl\" x1=\"115.0\" y1=\"145.0\" x2=\"115.0\" y2=\"44.0\" marker-end=\"url(#mdar)\"/><line class=\"gl\" x1=\"119.2\" y1=\"148.8\" x2=\"164.1\" y2=\"103.9\" marker-end=\"url(#mdar)\"/><circle class=\"gl\" cx=\"110.0\" cy=\"180.0\" r=\"9\"/><line class=\"gl\" x1=\"100.8\" y1=\"148.8\" x2=\"55.9\" y2=\"103.9\" marker-end=\"url(#mdar)\"/><circle class=\"bx\" cx=\"110.0\" cy=\"30.0\" r=\"12\"/><text class=\"dl\" x=\"110.0\" y=\"34.5\" text-anchor=\"middle\">1</text><circle class=\"bx\" cx=\"174.0\" cy=\"94.0\" r=\"12\"/><text class=\"dl\" x=\"174.0\" y=\"98.5\" text-anchor=\"middle\">2</text><circle class=\"bx\" cx=\"110.0\" cy=\"158.0\" r=\"12\"/><text class=\"dl\" x=\"110.0\" y=\"162.5\" text-anchor=\"middle\">3</text><circle class=\"bx\" cx=\"46.0\" cy=\"94.0\" r=\"12\"/><text class=\"dl\" x=\"46.0\" y=\"98.5\" text-anchor=\"middle\">4</text></svg>"
+ },
  "concepts": {
   "racdef": {
    "n": "Definición de racional",
@@ -7633,6 +8666,48 @@
    "f": "Flecha x → y si xRy; bucle si xRx",
    "x": "Representa una relación sobre un conjunto A.",
    "home": "c10rel"
+  },
+  "refl": {
+   "n": "Relación reflexiva",
+   "f": "\\(\\forall x\\in A:(x,x)\\in R\\)",
+   "x": "Toda la diagonal; en el digrafo, un bucle en cada elemento. Basta un \\((a,a)\\notin R\\) para que no lo sea.",
+   "home": "c11prop"
+  },
+  "simr": {
+   "n": "Relación simétrica",
+   "f": "\\((x,y)\\in R\\Rightarrow(y,x)\\in R\\)",
+   "x": "Matriz simétrica respecto de la diagonal; en el digrafo, toda flecha tiene su flecha de vuelta.",
+   "home": "c11prop"
+  },
+  "antir": {
+   "n": "Relación antisimétrica",
+   "f": "\\((x,y)\\in R\\wedge(y,x)\\in R\\Rightarrow x=y\\)",
+   "x": "Nunca hay ida y vuelta entre elementos distintos. No es lo contrario de simétrica: puede ser ambas o ninguna.",
+   "home": "c11prop"
+  },
+  "trar": {
+   "n": "Relación transitiva",
+   "f": "\\((x,y),(y,z)\\in R\\Rightarrow(x,z)\\in R\\)",
+   "x": "Todo camino de dos flechas tiene su atajo directo.",
+   "home": "c11prop"
+  },
+  "releq": {
+   "n": "Relación de equivalencia",
+   "f": "Reflexiva + simétrica + transitiva",
+   "x": "Parte el conjunto en bloques (clases) donde todos se relacionan con todos.",
+   "home": "c11eq"
+  },
+  "ordp": {
+   "n": "Orden parcial",
+   "f": "Reflexiva + antisimétrica + transitiva",
+   "x": "\\((A,R)\\) es un conjunto parcialmente ordenado (CPO). Ejemplos: \\(\\le\\), \\(\\subseteq\\), divisibilidad en \\(\\mathbb Z^+\\).",
+   "home": "c11eq"
+  },
+  "compar": {
+   "n": "Elementos comparables",
+   "f": "\\(a,b\\) comparables si \\(aRb\\vee bRa\\)",
+   "x": "En un CPO puede haber elementos incomparables: ni \\(aRb\\) ni \\(bRa\\).",
+   "home": "c11eq"
   }
  },
  "simEx": [
@@ -8469,7 +9544,7 @@
     ]
    },
    {
-    "pts": 2,
+    "pts": 1,
     "name": "Sem. 9: definición y cardinal",
     "pool": [
      "cj3",
@@ -8479,7 +9554,7 @@
     ]
    },
    {
-    "pts": 3,
+    "pts": 2,
     "name": "Sem. 9: subconjuntos e igualdad",
     "pool": [
      "cs3",
@@ -8490,7 +9565,7 @@
     ]
    },
    {
-    "pts": 2,
+    "pts": 1,
     "name": "Sem. 9: operaciones y Venn",
     "pool": [
      "co3",
@@ -8504,7 +9579,7 @@
     ]
    },
    {
-    "pts": 3,
+    "pts": 2,
     "name": "Sem. 10: producto cartesiano y potencia",
     "pool": [
      "cp2",
@@ -8515,7 +9590,7 @@
     ]
    },
    {
-    "pts": 4,
+    "pts": 3,
     "name": "Sem. 10: álgebra de conjuntos",
     "pool": [
      "ca2",
@@ -8525,7 +9600,7 @@
     ]
    },
    {
-    "pts": 4,
+    "pts": 3,
     "name": "Sem. 10: relaciones",
     "pool": [
      "cr2",
@@ -8533,6 +9608,29 @@
      "cr5",
      "cr8",
      "cr9"
+    ]
+   },
+   {
+    "pts": 3,
+    "name": "Sem. 11: propiedades de las relaciones",
+    "pool": [
+     "rp3",
+     "rp4",
+     "rp6",
+     "rp7",
+     "rp9"
+    ]
+   },
+   {
+    "pts": 3,
+    "name": "Sem. 11: equivalencia y orden parcial",
+    "pool": [
+     "re1",
+     "re2",
+     "re3",
+     "re5",
+     "re8",
+     "re9"
     ]
    }
   ]

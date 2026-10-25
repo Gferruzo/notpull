@@ -16,7 +16,7 @@ os.chdir(RAIZ)
 TIPOS = {"hueco", "bug", "slice", "mtx", "traza", "num", "expr", "cls", "code", "mat", "tap", "ptab", "order", "sql", "esc",
          "shift", "vecdraw", "cols", "tlc", "fill", "dcl", "tt", "econf", "fit",
          "fix", "signs", "star", "mem", "acum", "usub", "tri", "lab", "tree", "mkt", "tira", "micro", "espec",
-         "val", "ley", "arg", "mundo", "venn"}
+         "val", "ley", "arg", "mundo", "venn", "rel", "heav", "virt"}
 OBLIG_CURSO = ["id", "code", "name", "exam", "short", "form", "topics", "concepts", "sim"]
 OBLIG_TEMA = ["id", "name", "teo", "form", "lesson", "ex"]
 OBLIG_EJ = ["id", "title", "q", "checks", "steps"]
