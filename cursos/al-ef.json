@@ -6,8 +6,8 @@
  "short": "Examen final",
  "sub": "Todo el curso",
  "guide": true,
- "intro": "Repaso acumulado del curso, con los temas ordenados por semana. Aquí todos los temas están abiertos desde el inicio. <b>El examen final vale 30 %</b> (100 min, semana 16). Por ahora están las semanas 1 a 7, 9 y 10; las semanas 11 a 15 se agregan a medida que lleguen sus guías y tendrán más peso en el simulacro.",
- "form": "<p class=\"note\">Hoja de repaso del final (por ahora, semanas 1 a 7 y 9).</p>\n<div class=\"fgrid\">\n<div><b>Producto</b><br>\\((m\\times n)(n\\times p)\\) \\(\\to(m\\times p)\\)</div>\n<div><b>Suma</b><br>Mismo orden, entrada por entrada</div>\n<div><b>No conmutativo</b><br>\\(AB\\neq BA\\)</div>\n<div><b>MATLAB</b><br>A*B producto · A.*B entrada a entrada · A' transpuesta</div>\n<div><b>Det 2×2</b><br>\\(ad-bc\\)</div>\n<div><b>Cofactor</b><br>\\(C_{ij}\\) \\(=(-1)^{i+j}M_{ij}\\)</div>\n<div><b>OEF y det</b><br>\\(\\leftrightarrow\\): −det · \\(kF_i\\): k·det · \\(F_i+kF_j\\): igual</div>\n<div><b>Propiedades</b><br>\\(\\det(AB)=\\det A\\det B\\), \\(\\det(kA)=k^n\\det A\\)</div>\n<div><b>Rango</b><br>n.º de pivotes; \\(\\det A=0\\iff r(A)\\lt n\\)</div>\n<div><b>Adjunta</b><br>\\(\\operatorname{adj}A\\) \\(=[C_{ij}]^T\\)</div>\n<div><b>Rouché–Frobenius</b><br>\\(r(A)=r(A|b)=n\\) única · \\(\\lt n\\) infinitas · \\(r(A)\\lt r(A|b)\\) ninguna</div>\n<div><b>Fila imposible</b><br>\\([0\\cdots0\\mid c\\neq0]\\)</div>\n<div><b>Libres</b><br>n − rango(A)</div>\n<div><b>Inversa</b><br>\\([A\\mid I]\\) \\(\\to[I\\mid A^{-1}]\\)</div>\n<div><b>Inversa 2×2</b><br>\\(\\frac1{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\)</div>\n<div><b>Invertible</b><br>\\(\\det A\\neq0\\iff r(A)=n\\)</div>\n<div><b>Sistema</b><br>\\(x=A^{-1}b\\)</div>\n<div><b>Subespacio</b><br>\\(0\\in W\\), cerrado en suma y escalar</div>\n<div><b>LI</b><br>\\(r[v_1\\cdots v_n]=n\\); cuadrada: \\(\\det\\neq0\\)</div>\n<div><b>Gen</b><br>\\(w\\in\\operatorname{Gen}\\) \\(\\iff\\) sistema consistente</div>\n<div><b>Col(A)</b><br>Columnas pivote de A original</div>\n<div><b>Row(A)</b><br>Filas no nulas de rref(A)</div>\n<div><b>Nul(A)</b><br>Resolver \\(Ax=0\\)</div>\n<div><b>Rango-nulidad</b><br>\\(r(A)\\) \\(+\\operatorname{nul}(A)\\) \\(=n\\)</div>\n<div><b>Existencia</b><br>\\(b\\in\\operatorname{Col}(A)\\)</div>\n<div><b>Unicidad</b><br>\\(\\operatorname{Nul}(A)\\) \\(=\\{0\\}\\)</div>\n<div><b>Solución general</b><br>\\(x=x_p+x_h\\)</div>\n<div><b>Lineal</b><br>\\(T(au+bv)=aT(u)+bT(v)\\)</div>\n<div><b>Descarte</b><br>\\(T(0)\\neq0\\Rightarrow\\) no lineal</div>\n<div><b>Matriz estándar</b><br>\\(A\\) \\(=[T(e_1)\\cdots T(e_n)]\\in\\mathbb R^{m\\times n}\\)</div>\n<div><b>Reflexiones</b><br>Eje x \\(\\operatorname{diag}(1,-1)\\) · eje y \\(\\operatorname{diag}(-1,1)\\)</div><div><b>Rotación</b><br>\\(R_\\theta=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\), \\(R^{-1}=R^T\\)</div><div><b>Proyección</b><br>\\(\\operatorname{diag}(1,0)\\): una dirección va a 0</div><div><b>Composición</b><br>Primero \\(A_1\\), luego \\(A_2\\): \\(A_2A_1\\)</div><div><b>Núcleo</b><br>\\(\\ker T\\): resolver \\(Ax=0\\)</div><div><b>Imagen</b><br>\\(\\operatorname{Im}T\\): columnas pivote de A</div><div><b>Dimensión</b><br>rango + nulidad = n</div><div><b>Sin pérdida</b><br>\\(\\ker T=\\{0\\}\\iff\\det A\\neq0\\)</div>\n<div><b>Reflexiones</b><br>Eje x \\(\\operatorname{diag}(1,-1)\\) · eje y \\(\\operatorname{diag}(-1,1)\\)</div><div><b>Rotación</b><br>\\(R_\\theta=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\), \\(R^{-1}=R^T\\)</div><div><b>Proyección</b><br>\\(\\operatorname{diag}(1,0)\\): una dirección va a 0</div><div><b>Composición</b><br>Primero \\(A_1\\), luego \\(A_2\\): \\(A_2A_1\\)</div><div><b>Núcleo</b><br>\\(\\ker T\\): resolver \\(Ax=0\\)</div><div><b>Imagen</b><br>\\(\\operatorname{Im}T\\): columnas pivote de A</div><div><b>Dimensión</b><br>rango + nulidad = n</div><div><b>Sin pérdida</b><br>\\(\\ker T=\\{0\\}\\iff\\det A\\neq0\\)</div>\n</div>",
+ "intro": "Repaso acumulado del curso, con los temas ordenados por semana. Aquí todos los temas están abiertos desde el inicio. <b>El examen final vale 30 %</b> (100 min, semana 16). Por ahora están las semanas 1 a 7, 9, 10 y 11 (valores y vectores propios); las semanas 12 a 15 se agregan a medida que lleguen sus guías y tendrán más peso en el simulacro.",
+ "form": "<p class=\"note\">Hoja de repaso del final (por ahora, semanas 1 a 7 y 9).</p>\n<div class=\"fgrid\">\n<div><b>Producto</b><br>\\((m\\times n)(n\\times p)\\) \\(\\to(m\\times p)\\)</div>\n<div><b>Suma</b><br>Mismo orden, entrada por entrada</div>\n<div><b>No conmutativo</b><br>\\(AB\\neq BA\\)</div>\n<div><b>MATLAB</b><br>A*B producto · A.*B entrada a entrada · A' transpuesta</div>\n<div><b>Det 2×2</b><br>\\(ad-bc\\)</div>\n<div><b>Cofactor</b><br>\\(C_{ij}\\) \\(=(-1)^{i+j}M_{ij}\\)</div>\n<div><b>OEF y det</b><br>\\(\\leftrightarrow\\): −det · \\(kF_i\\): k·det · \\(F_i+kF_j\\): igual</div>\n<div><b>Propiedades</b><br>\\(\\det(AB)=\\det A\\det B\\), \\(\\det(kA)=k^n\\det A\\)</div>\n<div><b>Rango</b><br>n.º de pivotes; \\(\\det A=0\\iff r(A)\\lt n\\)</div>\n<div><b>Adjunta</b><br>\\(\\operatorname{adj}A\\) \\(=[C_{ij}]^T\\)</div>\n<div><b>Rouché–Frobenius</b><br>\\(r(A)=r(A|b)=n\\) única · \\(\\lt n\\) infinitas · \\(r(A)\\lt r(A|b)\\) ninguna</div>\n<div><b>Fila imposible</b><br>\\([0\\cdots0\\mid c\\neq0]\\)</div>\n<div><b>Libres</b><br>n − rango(A)</div>\n<div><b>Inversa</b><br>\\([A\\mid I]\\) \\(\\to[I\\mid A^{-1}]\\)</div>\n<div><b>Inversa 2×2</b><br>\\(\\frac1{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\)</div>\n<div><b>Invertible</b><br>\\(\\det A\\neq0\\iff r(A)=n\\)</div>\n<div><b>Sistema</b><br>\\(x=A^{-1}b\\)</div>\n<div><b>Subespacio</b><br>\\(0\\in W\\), cerrado en suma y escalar</div>\n<div><b>LI</b><br>\\(r[v_1\\cdots v_n]=n\\); cuadrada: \\(\\det\\neq0\\)</div>\n<div><b>Gen</b><br>\\(w\\in\\operatorname{Gen}\\) \\(\\iff\\) sistema consistente</div>\n<div><b>Col(A)</b><br>Columnas pivote de A original</div>\n<div><b>Row(A)</b><br>Filas no nulas de rref(A)</div>\n<div><b>Nul(A)</b><br>Resolver \\(Ax=0\\)</div>\n<div><b>Rango-nulidad</b><br>\\(r(A)\\) \\(+\\operatorname{nul}(A)\\) \\(=n\\)</div>\n<div><b>Existencia</b><br>\\(b\\in\\operatorname{Col}(A)\\)</div>\n<div><b>Unicidad</b><br>\\(\\operatorname{Nul}(A)\\) \\(=\\{0\\}\\)</div>\n<div><b>Solución general</b><br>\\(x=x_p+x_h\\)</div>\n<div><b>Lineal</b><br>\\(T(au+bv)=aT(u)+bT(v)\\)</div>\n<div><b>Descarte</b><br>\\(T(0)\\neq0\\Rightarrow\\) no lineal</div>\n<div><b>Matriz estándar</b><br>\\(A\\) \\(=[T(e_1)\\cdots T(e_n)]\\in\\mathbb R^{m\\times n}\\)</div>\n<div><b>Reflexiones</b><br>Eje x \\(\\operatorname{diag}(1,-1)\\) · eje y \\(\\operatorname{diag}(-1,1)\\)</div><div><b>Rotación</b><br>\\(R_\\theta=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\), \\(R^{-1}=R^T\\)</div><div><b>Proyección</b><br>\\(\\operatorname{diag}(1,0)\\): una dirección va a 0</div><div><b>Composición</b><br>Primero \\(A_1\\), luego \\(A_2\\): \\(A_2A_1\\)</div><div><b>Núcleo</b><br>\\(\\ker T\\): resolver \\(Ax=0\\)</div><div><b>Imagen</b><br>\\(\\operatorname{Im}T\\): columnas pivote de A</div><div><b>Dimensión</b><br>rango + nulidad = n</div><div><b>Sin pérdida</b><br>\\(\\ker T=\\{0\\}\\iff\\det A\\neq0\\)</div>\n<div><b>Reflexiones</b><br>Eje x \\(\\operatorname{diag}(1,-1)\\) · eje y \\(\\operatorname{diag}(-1,1)\\)</div><div><b>Rotación</b><br>\\(R_\\theta=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\), \\(R^{-1}=R^T\\)</div><div><b>Proyección</b><br>\\(\\operatorname{diag}(1,0)\\): una dirección va a 0</div><div><b>Composición</b><br>Primero \\(A_1\\), luego \\(A_2\\): \\(A_2A_1\\)</div><div><b>Núcleo</b><br>\\(\\ker T\\): resolver \\(Ax=0\\)</div><div><b>Imagen</b><br>\\(\\operatorname{Im}T\\): columnas pivote de A</div><div><b>Dimensión</b><br>rango + nulidad = n</div><div><b>Sin pérdida</b><br>\\(\\ker T=\\{0\\}\\iff\\det A\\neq0\\)</div>\n<div><b>Valores propios</b><br>\\(Av=\\lambda v\\), \\(v\\ne0\\) · \\(p(\\lambda)=\\det(A-\\lambda I)\\)</div><div><b>Espacio propio</b><br>\\(E_\\lambda=\\operatorname{Nul}(A-\\lambda I)\\) · reduce A − λI, no A</div><div><b>Verificar</b><br>\\(\\operatorname{tr}A=\\sum\\lambda\\), \\(\\det A=\\prod\\lambda\\), \\(A^kv=\\lambda^kv\\)</div><div><b>Multiplicidades</b><br>\\(m_g=n-\\operatorname{rank}(A-\\lambda I)\\), \\(1\\le m_g\\le m_a\\)</div></div>",
  "formSim": false,
  "topics": [
   {
@@ -8337,6 +8337,1045 @@
      }
     }
    ]
+  },
+  {
+   "id": "s11",
+   "name": "Sem. 11 · Valores y vectores propios: polinomio, propiedades y multiplicidades",
+   "teo": "<p>Una matriz representa una transformación \\(T(x)=Ax\\). Un <strong>vector propio</strong> es una dirección que \\(A\\) no saca de su recta: solo la estira, encoge o invierte.</p><p><b>Definición:</b> \\(\\lambda\\) es <strong>valor propio</strong> de \\(A\\in\\mathbb R^{n\\times n}\\) si existe \\(v\\ne0\\) con \\(Av=\\lambda v\\); \\(v\\) es un vector propio asociado. \\(v=0\\) nunca es vector propio, pero \\(\\lambda=0\\) sí puede ser valor propio. Si \\(v\\) es propio, también \\(cv\\) (\\(c\\ne0\\)).</p><p><b>Cálculo:</b> \\(Av=\\lambda v,\\ v\\ne0\\iff(A-\\lambda I)v=0\\) no trivial \\(\\iff\\det(A-\\lambda I)=0\\).</p><ol><li>\\(p(\\lambda)=\\det(A-\\lambda I)\\) (polinomio característico, grado n).</li><li>Sus raíces son los valores propios.</li><li>Para cada \\(\\lambda\\), el <b>espacio propio</b> \\(E_\\lambda=\\operatorname{Nul}(A-\\lambda I)\\): se reduce \\(A-\\lambda I\\) (debe salir una fila nula).</li></ol><p class=\"ej\"><b>Ejemplo de clase:</b> \\(\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\): \\(p(\\lambda)=\\lambda^2-7\\lambda+10\\) \\(=(\\lambda-2)(\\lambda-5)\\); \\(E_2=\\operatorname{Gen}\\{(1,-2)\\}\\), \\(E_5=\\operatorname{Gen}\\{(1,1)\\}\\).</p><p><b>Propiedades</b> (en \\(\\mathbb C\\), contando multiplicidades): \\(\\operatorname{tr}A=\\lambda_1+\\dots+\\lambda_n\\), \\(\\det A=\\lambda_1\\cdots\\lambda_n\\); \\(A\\) invertible \\(\\iff0\\) no es valor propio. Si \\(Av=\\lambda v\\): \\(A^kv=\\lambda^kv\\), \\(A^{-1}v=\\frac1\\lambda v\\), \\((A+cI)v=(\\lambda+c)v\\), con el mismo vector propio. En 2 × 2: \\(p(\\lambda)=\\lambda^2-(\\operatorname{tr}A)\\lambda+\\det A\\).</p><div class=\"tbl\"><table><tr><th>Matriz</th><th>Valores propios</th></tr><tr><td>Triangular o diagonal</td><td>la diagonal</td></tr><tr><td>Singular</td><td>incluye 0</td></tr><tr><td>Reflexión en \\(\\mathbb R^2\\)</td><td>1 y −1</td></tr><tr><td>Rotación \\(\\theta\\ne0,\\pi\\)</td><td>complejos (ninguno real)</td></tr><tr><td>\\(kI\\)</td><td>k (doble)</td></tr></table></div><p><b>Multiplicidades:</b> algebraica \\(m_a(\\lambda)\\) = veces que \\(\\lambda\\) es raíz de \\(p\\); geométrica \\(m_g(\\lambda)=\\dim E_\\lambda=n-\\operatorname{rank}(A-\\lambda I)\\). Siempre \\(1\\le m_g\\le m_a\\).</p><p><b>MATLAB:</b> <code>poly(A)</code>, <code>roots(p)</code>, <code>[V,D] = eig(A)</code> (columnas de V normalizadas: múltiplos de tus vectores), <code>null(A - 2*eye(3), 'r')</code>, <code>3 - rank(A - 2*eye(3))</code>.</p>",
+   "form": [
+    "\\(Av=\\lambda v\\), \\(v\\ne0\\) (λ = 0 sí puede)",
+    "\\(p(\\lambda)=\\det(A-\\lambda I)\\) · 2 × 2: \\(\\lambda^2-\\operatorname{tr}A\\,\\lambda+\\det A\\)",
+    "\\(E_\\lambda=\\operatorname{Nul}(A-\\lambda I)\\)",
+    "\\(\\operatorname{tr}A=\\sum\\lambda_i\\), \\(\\det A=\\prod\\lambda_i\\)",
+    "\\(A^kv=\\lambda^kv\\), \\(A^{-1}v=\\frac1\\lambda v\\)",
+    "\\(m_g=n-\\operatorname{rank}(A-\\lambda I)\\), \\(1\\le m_g\\le m_a\\)",
+    "Triangular: λ en la diagonal (¡nunca leerlos de rref!)"
+   ],
+   "lesson": "<h3>Idea central</h3><p>El polinomio característico da los \\(\\lambda\\); el espacio nulo de \\(A-\\lambda I\\) da los vectores. Traza, determinante y potencias sirven para <b>anticipar y verificar</b> sin rehacer cálculos.</p><h3>Receta</h3><ol><li>\\(p(\\lambda)=\\det(A-\\lambda I)\\) y sus raíces (en 2 × 2 busca dos números con suma tr A y producto det A).</li><li>Comprueba: \\(\\sum\\lambda=\\operatorname{tr}A\\), \\(\\prod\\lambda=\\det A\\).</li><li>Para cada \\(\\lambda\\): reduce \\(A-\\lambda I\\); si no aparece una fila nula, el \\(\\lambda\\) está mal.</li><li>Base de \\(E_\\lambda\\) con las variables libres; \\(m_g\\) = número de libres.</li><li>Verifica \\(Av=\\lambda v\\).</li></ol><div class=\"err\"><b>Errores frecuentes (caza de errores del lab):</b> escalonar \\(A\\) y leer la diagonal (las operaciones por fila cambian los valores propios: \\(\\operatorname{rref}(B)=I\\) daría 1 y 1, pero son 3 y 4); decir que \\(\\lambda=0\\) no puede ser valor propio (lo prohibido es \\(v=0\\)); y suponer que una raíz doble da dos vectores propios independientes (\\(m_g\\) puede ser 1).</div>",
+   "ex": [
+    {
+     "id": "s11e1",
+     "lvl": 1,
+     "title": "¿Es o no es vector propio?",
+     "q": "<p>Ejemplo guiado 1: \\(A=\\)\\(\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\). Clasifica cada candidato y luego da su valor propio.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Calcula Av para cada uno",
+       "cats": [
+        "Vector propio",
+        "No es vector propio"
+       ],
+       "items": [
+        {
+         "x": "\\(u=(1,1)\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(w=(1,-2)\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(z=(1,0)\\)",
+         "c": 1,
+         "e": "\\(Az=(4,2)\\): cambia de recta (la 2.ª componente pasa de 0 a 2)."
+        },
+        {
+         "x": "\\(3u=(3,3)\\)",
+         "c": 0,
+         "e": "Todo múltiplo no nulo de un vector propio también lo es."
+        },
+        {
+         "x": "\\((0,0)\\)",
+         "c": 1,
+         "e": "El vector cero nunca es vector propio."
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Valores propios",
+       "f": [
+        {
+         "l": "λ de u",
+         "a": 5
+        },
+        {
+         "l": "λ de w",
+         "a": 2
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(Au=(5,5)=5u\\) y \\(Aw=(2,-4)=2w\\); \\(Az=(4,2)\\ne cz\\).",
+      "Comprobación: \\(5+2=7=\\operatorname{tr}A\\) y \\(5\\cdot2=10=\\det A\\): no falta ningún valor propio."
+     ],
+     "ans": "u y w (λ = 5 y 2); z no",
+     "hint": "Calcula Av y compara con v.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "vprop"
+      ],
+      [
+       "trdet"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e2",
+     "lvl": 1,
+     "title": "Si \\(Av=0\\) con \\(v\\ne0\\)…",
+     "q": "<p>Checkpoint de clase: se sabe que \\(Av=0\\) para cierto \\(v\\ne0\\). ¿Qué se puede afirmar con certeza?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "\\(\\lambda=0\\) es valor propio y \\(A\\) no es invertible",
+        "\\(A\\) es la matriz nula",
+        "\\(v\\) no puede ser vector propio porque \\(Av=0\\)",
+        "\\(A\\) no tiene valores propios",
+        "\\(\\det A\\ne0\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(Av=0=0\\cdot v\\) con \\(v\\ne0\\): \\(\\lambda=0\\) es valor propio y \\(v\\) es vector propio.",
+      "\\(\\operatorname{Nul}A\\ne\\{0\\}\\Rightarrow\\det A=0\\): A no es invertible. Lo prohibido es \\(v=0\\), no \\(\\lambda=0\\)."
+     ],
+     "ans": "λ = 0 es valor propio; A singular",
+     "hint": "Lo prohibido es v = 0.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "vprop"
+      ],
+      [
+       "trdet"
+      ]
+     ]
+    },
+    {
+     "id": "s11e3",
+     "lvl": 1,
+     "title": "Polinomio característico",
+     "q": "<p>Ejemplo guiado 2: halla \\(p(\\lambda)=\\det(A-\\lambda I)\\) para \\(A=\\)\\(\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\) y sus raíces.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Coeficientes",
+       "f": [
+        {
+         "l": "p(λ) = λ² + bλ + c:  b =",
+         "a": -7
+        },
+        {
+         "l": "c =",
+         "a": 10
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Valores propios",
+       "f": [
+        {
+         "l": "λ₁ (menor) =",
+         "a": 2
+        },
+        {
+         "l": "λ₂ (mayor) =",
+         "a": 5
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(\\det\\begin{pmatrix}4-\\lambda&1\\\\2&3-\\lambda\\end{pmatrix}=(4-\\lambda)(3-\\lambda)-2\\) \\(=\\lambda^2-7\\lambda+10\\).",
+      "\\(=(\\lambda-2)(\\lambda-5)\\). Fíjate: \\(7=\\operatorname{tr}A\\) y \\(10=\\det A\\); en 2 × 2 siempre \\(p(\\lambda)=\\lambda^2-\\operatorname{tr}A\\,\\lambda+\\det A\\)."
+     ],
+     "ans": "λ² − 7λ + 10; λ = 2 y 5",
+     "hint": "det de A − λI.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "polcar"
+      ],
+      [
+       "trdet"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e4",
+     "lvl": 2,
+     "title": "Del polinomio a los vectores",
+     "q": "<p>Ejercicio guiado 2 del lab: \\(B=\\)\\(\\begin{pmatrix}5&-2\\\\1&2\\end{pmatrix}\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1: valores propios (tr B = 7, det B = 12)",
+       "f": [
+        {
+         "l": "λ₁ (menor) =",
+         "a": 3
+        },
+        {
+         "l": "λ₂ (mayor) =",
+         "a": 4
+        }
+       ]
+      },
+      {
+       "t": "esc",
+       "p": "Parte 2: reduce \\(B-3I\\) hasta la forma escalonada reducida",
+       "m": [
+        [
+         2,
+         -2
+        ],
+        [
+         1,
+         -1
+        ]
+       ],
+       "na": 2,
+       "goal": "red",
+       "e": "Debe aparecer una fila de ceros."
+      },
+      {
+       "t": "num",
+       "p": "Parte 3: vectores propios",
+       "f": [
+        {
+         "l": "Si v = (x, 1) ∈ E₃, x =",
+         "a": 1
+        },
+        {
+         "l": "Si v = (x, 1) ∈ E₄, x =",
+         "a": 2
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Dos números con suma 7 y producto 12: 3 y 4. \\(p(\\lambda)=(5-\\lambda)(2-\\lambda)+2=\\lambda^2-7\\lambda+12\\).",
+      "\\(B-3I=\\begin{pmatrix}2&-2\\\\1&-1\\end{pmatrix}\\sim\\begin{pmatrix}1&-1\\\\0&0\\end{pmatrix}\\): \\(x_1=x_2\\), \\(E_3=\\operatorname{Gen}\\{(1,1)\\}\\).",
+      "\\(B-4I=\\begin{pmatrix}1&-2\\\\1&-2\\end{pmatrix}\\sim\\begin{pmatrix}1&-2\\\\0&0\\end{pmatrix}\\): \\(x_1=2x_2\\), \\(E_4=\\operatorname{Gen}\\{(2,1)\\}\\). Verificación: \\(B(2,1)=(8,4)=4(2,1)\\)."
+     ],
+     "ans": "λ = 3: (1, 1); λ = 4: (2, 1)",
+     "hint": "Suma 7, producto 12.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "polcar"
+      ],
+      [
+       "eesp"
+      ],
+      [
+       "eesp"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e5",
+     "lvl": 1,
+     "title": "La rotación de 90°",
+     "q": "<p>\\(R=\\)\\(\\begin{pmatrix}0&-1\\\\1&0\\end{pmatrix}\\) (rotación de 90°). ¿Qué pasa con sus valores propios?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "\\(p(\\lambda)=\\lambda^2+1\\): no tiene valores propios reales (son \\(\\pm i\\))",
+        "Tiene \\(\\lambda=1\\) doble",
+        "Tiene \\(\\lambda=1\\) y \\(\\lambda=-1\\)",
+        "Tiene \\(\\lambda=0\\) porque la diagonal es nula",
+        "Todo vector es propio"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(p(\\lambda)=\\det\\begin{pmatrix}-\\lambda&-1\\\\1&-\\lambda\\end{pmatrix}=\\lambda^2+1\\), sin raíces reales.",
+      "Geometría: girar 90° saca a todo vector no nulo de su recta. Los valores propios existen, pero en \\(\\mathbb C\\): \\(\\pm i\\)."
+     ],
+     "ans": "Ninguno real (±i)",
+     "hint": "¿Alguna recta queda fija al girar 90°?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "patron"
+      ],
+      [
+       "polcar"
+      ]
+     ]
+    },
+    {
+     "id": "s11e6",
+     "lvl": 1,
+     "title": "Patrones sin calcular",
+     "q": "<p>Clasifica cada matriz según sus valores propios (patrones de la clase).</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "1 y −1",
+        "Ninguno real",
+        "Incluye 0",
+        "Se leen en la diagonal"
+       ],
+       "items": [
+        {
+         "x": "\\(\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\)",
+         "c": 0,
+         "e": "Reflexión en y = x: fija esa recta (λ = 1) e invierte la perpendicular (λ = −1)."
+        },
+        {
+         "x": "\\(\\begin{pmatrix}0&-1\\\\1&0\\end{pmatrix}\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}\\)",
+         "c": 2,
+         "e": "Las filas son proporcionales: det = 0."
+        },
+        {
+         "x": "\\(\\begin{pmatrix}3&5\\\\0&-2\\end{pmatrix}\\)",
+         "c": 3
+        },
+        {
+         "x": "\\(\\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(\\begin{pmatrix}2&4\\\\1&2\\end{pmatrix}\\)",
+         "c": 2
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Reflexiones → ±1; rotaciones de 90° → complejos; matrices singulares → 0.",
+      "Triangulares: \\(\\det(A-\\lambda I)=\\prod(a_{ii}-\\lambda)\\), así que los λ son la diagonal (¡solo si la matriz original ya es triangular!)."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "Piensa en la geometría.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "patron"
+      ],
+      [
+       "patron"
+      ]
+     ]
+    },
+    {
+     "id": "s11e7",
+     "lvl": 1,
+     "title": "Traza y determinante",
+     "q": "<p>Una matriz 2 × 2 tiene \\(\\operatorname{tr}A=6\\) y \\(\\det A=8\\). Y una 3 × 3 tiene valores propios 1, 2 y \\(\\lambda_3\\) con \\(\\operatorname{tr}A=6\\).</p>",
+     "checks": [
+      {
+       "p": "Valores propios de la 2 × 2",
+       "o": [
+        "2 y 4",
+        "1 y 8",
+        "3 y 3",
+        "−2 y −4",
+        "6 y 8"
+       ]
+      },
+      {
+       "t": "num",
+       "p": "La 3 × 3",
+       "f": [
+        {
+         "l": "λ₃ =",
+         "a": 3
+        },
+        {
+         "l": "det A (3 × 3) =",
+         "a": 6
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Suma 6 y producto 8: \\(p(\\lambda)=\\lambda^2-6\\lambda+8=(\\lambda-2)(\\lambda-4)\\).",
+      "\\(1+2+\\lambda_3=6\\Rightarrow\\lambda_3=3\\); \\(\\det A=1\\cdot2\\cdot3=6\\)."
+     ],
+     "ans": "2 y 4; λ₃ = 3, det = 6",
+     "hint": "Suma = traza, producto = det.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "trdet"
+      ],
+      [
+       "trdet"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e8",
+     "lvl": 2,
+     "title": "Potencias e inversa sin calcular",
+     "q": "<p>Ejemplo guiado 4: \\(A=\\)\\(\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\) tiene valores propios 2 y 5, y \\(u=(1,1)\\in E_5\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula sin hallar A³",
+       "f": [
+        {
+         "l": "A³u: 1.ª comp.",
+         "a": 125
+        },
+        {
+         "l": "A³u: 2.ª comp.",
+         "a": 125
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Valores propios de A⁻¹",
+       "f": [
+        {
+         "l": "menor valor propio de A⁻¹",
+         "a": 0.2,
+         "tol": 0.002
+        },
+        {
+         "l": "mayor valor propio de A⁻¹",
+         "a": 0.5,
+         "tol": 0.002
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(A^3u=5^3u=(125,125)\\). (Con \\(A^3=\\begin{pmatrix}86&39\\\\78&47\\end{pmatrix}\\) da lo mismo: \\(86+39=125\\).)",
+      "Si \\(Av=\\lambda v\\), \\(A^{-1}v=\\frac1\\lambda v\\): los valores propios de \\(A^{-1}\\) son \\(\\frac12\\) y \\(\\frac15\\), con los mismos vectores propios."
+     ],
+     "ans": "(125, 125); 1/5 y 1/2",
+     "hint": "\\(A^kv=\\lambda^kv\\).",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "potp"
+      ],
+      [
+       "potp"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e9",
+     "lvl": 2,
+     "title": "Un proceso que se repite",
+     "q": "<p>Ejercicio guiado 3 del lab: \\(x_{k+1}=Bx_k\\) con \\(B=\\)\\(\\begin{pmatrix}5&-2\\\\1&2\\end{pmatrix}\\) (valores propios 3 y 4, vectores \\((1,1)\\) y \\((2,1)\\)).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1",
+       "f": [
+        {
+         "l": "x₃ con x₀ = (2, 1): 1.ª comp.",
+         "a": 128
+        },
+        {
+         "l": "2.ª comp.",
+         "a": 64
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Parte 2: y₀ = (1, 1) + (2, 1)",
+       "f": [
+        {
+         "l": "y₃ con y₀ = (3, 2): 1.ª comp.",
+         "a": 155
+        },
+        {
+         "l": "2.ª comp.",
+         "a": 91
+        }
+       ]
+      },
+      {
+       "p": "Parte 3: ¿cuál conserva su dirección?",
+       "o": [
+        "Solo x₀: es vector propio y el sistema solo lo escala",
+        "Solo y₀",
+        "Ambos",
+        "Ninguno",
+        "Depende de k"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(x_0=(2,1)\\in E_4\\): \\(x_3=4^3(2,1)=(128,64)\\).",
+      "\\(y_3=3^3(1,1)+4^3(2,1)\\) \\(=(27,27)+(128,64)\\) \\(=(155,91)\\).",
+      "\\(y_0\\) mezcla dos direcciones que crecen a ritmos distintos (\\(3^k\\) y \\(4^k\\)): su dirección cambia y se acerca a la de \\(\\lambda=4\\). Míralo en la herramienta «Aplicar A una y otra vez»."
+     ],
+     "ans": "(128, 64); (155, 91); solo x₀",
+     "hint": "Descompón en vectores propios.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "potp"
+      ],
+      [
+       "potp"
+      ],
+      [
+       "potp"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e10",
+     "lvl": 3,
+     "title": "Matriz 3 × 3 (ejemplo guiado 5)",
+     "q": "<p>\\(A=\\)\\(\\begin{pmatrix}4&-1&6\\\\2&1&6\\\\2&-1&8\\end{pmatrix}\\) con \\(p(\\lambda)=-(\\lambda-2)^2(\\lambda-9)\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1: autocontrol del polinomio",
+       "f": [
+        {
+         "l": "tr A =",
+         "a": 13
+        },
+        {
+         "l": "det A =",
+         "a": 36
+        }
+       ]
+      },
+      {
+       "t": "fill",
+       "p": "Parte 2: multiplicidades",
+       "head": [
+        "λ",
+        "m_a",
+        "rank(A − λI)",
+        "m_g"
+       ],
+       "rows": [
+        [
+         "2",
+         {
+          "a": 2
+         },
+         {
+          "a": 1
+         },
+         {
+          "a": 2
+         }
+        ],
+        [
+         "9",
+         {
+          "a": 1
+         },
+         {
+          "a": 2
+         },
+         {
+          "a": 1
+         }
+        ]
+       ]
+      },
+      {
+       "p": "Parte 3: base de E₂",
+       "o": [
+        "\\(E_2=\\operatorname{Gen}\\{(1,2,0),(-3,0,1)\\}\\)",
+        "\\(E_2=\\operatorname{Gen}\\{(1,1,1)\\}\\)",
+        "\\(E_2=\\operatorname{Gen}\\{(1,2,0)\\}\\)",
+        "\\(E_2=\\{0\\}\\)",
+        "\\(E_2=\\mathbb R^3\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(\\operatorname{tr}A=4+1+8=13=2+2+9\\) y \\(\\det A=36=2\\cdot2\\cdot9\\) ✓.",
+      "\\(A-2I\\) tiene las tres filas iguales a \\((2,-1,6)\\): rango 1, \\(m_g(2)=3-1=2\\). \\(A-9I\\) tiene rango 2: \\(m_g(9)=1\\).",
+      "\\(2x_1-x_2+6x_3=0\\) con \\(x_1,x_3\\) libres: \\(E_2=\\operatorname{Gen}\\{(1,2,0),(-3,0,1)\\}\\); \\(E_9=\\operatorname{Gen}\\{(1,1,1)\\}\\). En total, 3 vectores propios independientes."
+     ],
+     "ans": "13 y 36; m_g(2) = 2, m_g(9) = 1",
+     "hint": "mg = 3 − rank.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "trdet"
+      ],
+      [
+       "multip"
+      ],
+      [
+       "eesp"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e11",
+     "lvl": 2,
+     "title": "Mismo polinomio, distinta multiplicidad",
+     "q": "<p>Ejercicio guiado 4: \\(C=\\)\\(\\begin{pmatrix}2&1&0\\\\0&2&0\\\\0&0&3\\end{pmatrix}\\) y \\(D=\\)\\(\\begin{pmatrix}2&0&0\\\\0&2&0\\\\0&0&3\\end{pmatrix}\\). Ambas tienen \\(p(\\lambda)=(\\lambda-2)^2(\\lambda-3)\\).</p>",
+     "checks": [
+      {
+       "t": "fill",
+       "p": "Completa",
+       "head": [
+        "",
+        "m_a(2)",
+        "m_g(2)",
+        "m_a(3)",
+        "m_g(3)"
+       ],
+       "rows": [
+        [
+         "C",
+         {
+          "a": 2
+         },
+         {
+          "a": 1
+         },
+         {
+          "a": 1
+         },
+         {
+          "a": 1
+         }
+        ],
+        [
+         "D",
+         {
+          "a": 2
+         },
+         {
+          "a": 2
+         },
+         {
+          "a": 1
+         },
+         {
+          "a": 1
+         }
+        ]
+       ]
+      },
+      {
+       "p": "E₂ de C",
+       "o": [
+        "\\(\\operatorname{Gen}\\{(1,0,0)\\}\\)",
+        "\\(\\operatorname{Gen}\\{e_1,e_2\\}\\)",
+        "\\(\\operatorname{Gen}\\{(0,1,0)\\}\\)",
+        "\\(\\operatorname{Gen}\\{(0,0,1)\\}\\)",
+        "\\(\\{0\\}\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(C-2I=\\begin{pmatrix}0&1&0\\\\0&0&0\\\\0&0&1\\end{pmatrix}\\): rango 2, así que \\(m_g(2)=1\\); \\(x_2=x_3=0\\), \\(E_2=\\operatorname{Gen}\\{(1,0,0)\\}\\).",
+      "\\(D-2I\\) solo tiene la fila \\((0,0,1)\\): rango 1, \\(m_g(2)=2\\), \\(E_2=\\operatorname{Gen}\\{e_1,e_2\\}\\). El polinomio no decide cuántas direcciones hay: lo decide la reducción."
+     ],
+     "ans": "C: 2, 1, 1, 1 · D: 2, 2, 1, 1",
+     "hint": "Cuenta las variables libres.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "multip"
+      ],
+      [
+       "multip"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e12",
+     "lvl": 2,
+     "title": "Relaciona el rango con la conclusión",
+     "q": "<p>Checkpoint de clase: para un valor \\(\\lambda\\) y \\(A\\in\\mathbb R^{3\\times3}\\), relaciona cada dato con lo que se concluye.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "m_g(λ) = 2",
+        "dim E_λ = 1",
+        "λ no es valor propio"
+       ],
+       "items": [
+        {
+         "x": "\\(\\operatorname{rank}(A-\\lambda I)=1\\)",
+         "c": 0
+        },
+        {
+         "x": "\\(\\operatorname{rank}(A-\\lambda I)=2\\)",
+         "c": 1
+        },
+        {
+         "x": "\\(\\operatorname{rank}(A-\\lambda I)=3\\)",
+         "c": 2,
+         "e": "A − λI es invertible: solo la solución trivial."
+        },
+        {
+         "x": "\\(m_a(\\lambda)=1\\)",
+         "c": 1,
+         "e": "\\(1\\le m_g\\le m_a=1\\)."
+        },
+        {
+         "x": "\\(\\det(A-\\lambda I)\\ne0\\)",
+         "c": 2
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(m_g=3-\\operatorname{rank}(A-\\lambda I)\\): rango 1 → 2; rango 2 → 1; rango 3 → 0 (no es valor propio).",
+      "Si \\(m_a=1\\), la desigualdad \\(1\\le m_g\\le m_a\\) obliga a \\(m_g=1\\)."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "mg = n − rank.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "multip"
+      ],
+      [
+       "multip"
+      ]
+     ]
+    },
+    {
+     "id": "s11e13",
+     "lvl": 2,
+     "title": "Caza de errores: reducir antes",
+     "q": "<p>Un estudiante reduce \\(B=\\)\\(\\begin{pmatrix}5&-2\\\\1&2\\end{pmatrix}\\) por filas, obtiene \\(\\operatorname{rref}(B)=I\\) y concluye que los valores propios son 1 y 1. ¿Qué está mal?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Las operaciones por fila cambian la transformación (\\(\\operatorname{tr}I=2\\ne7\\)): no conservan los valores propios",
+        "Nada: \\(I\\) es triangular y sus valores propios son la diagonal",
+        "Debió reducir hasta la escalonada, no la reducida",
+        "Los valores propios son 1 y 1, pero los vectores cambian",
+        "Debió reducir \\(B^T\\)"
+       ]
+      }
+     ],
+     "steps": [
+      "Las operaciones por fila conservan el rango y \\(\\operatorname{Nul}B\\), pero no \\(Bv=\\lambda v\\). Los valores correctos son 3 y 4.",
+      "Se reduce \\(B-\\lambda I\\) (después de hallar \\(\\lambda\\)) para los vectores; leer la diagonal solo vale si la matriz original ya es triangular."
+     ],
+     "ans": "Reducir cambia los valores propios",
+     "hint": "Compara las trazas.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "patron"
+      ],
+      [
+       "eesp"
+      ]
+     ]
+    },
+    {
+     "id": "s11e14",
+     "lvl": 1,
+     "title": "Caza de errores: λ = 0",
+     "q": "<p>Un estudiante afirma: «λ = 0 no puede ser valor propio, porque el vector propio no puede ser cero». Con \\(A_0=\\)\\(\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}\\) y \\(w=(-2,1)\\):</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "A₀w: 1.ª comp.",
+         "a": 0
+        },
+        {
+         "l": "2.ª comp.",
+         "a": 0
+        }
+       ]
+      },
+      {
+       "p": "Conclusión",
+       "o": [
+        "w es vector propio con λ = 0: el estudiante confunde λ = 0 (permitido) con v = 0 (prohibido)",
+        "w no es vector propio porque A₀w = 0",
+        "A₀ no tiene valores propios",
+        "λ = 0 solo vale si A₀ es la matriz nula",
+        "w es vector propio con λ = 5"
+       ]
+      }
+     ],
+     "steps": [
+      "\\(A_0w=(-2+2,\\ -4+4)=(0,0)=0\\cdot w\\) con \\(w\\ne0\\).",
+      "\\(p(\\lambda)=\\lambda(\\lambda-5)\\), \\(\\det A_0=0\\) y \\(E_0=\\operatorname{Nul}A_0=\\operatorname{Gen}\\{(-2,1)\\}\\): el espacio propio de 0 es el núcleo."
+     ],
+     "ans": "λ = 0 sí; v = 0 no",
+     "hint": "Lo prohibido es el vector cero.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "vprop"
+      ],
+      [
+       "eesp"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "s11e15",
+     "lvl": 1,
+     "title": "MATLAB: ¿por qué no sale (2, 1)?",
+     "q": "<p>Con <code>[V, D] = eig(B)</code> para \\(B=\\)\\(\\begin{pmatrix}5&-2\\\\1&2\\end{pmatrix}\\), la columna de V asociada a 4 es aproximadamente <code>(0.8944, 0.4472)</code>. ¿Por qué es correcta aunque no sea \\((2,1)\\)?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "eig normaliza: es \\((2,1)/\\sqrt5\\), un múltiplo de \\((2,1)\\), y la recta es la misma",
+        "MATLAB redondea mal",
+        "Es otro valor propio",
+        "Porque B no es simétrica",
+        "Porque D está desordenada"
+       ]
+      }
+     ],
+     "steps": [
+      "Un vector propio no es único: cualquier múltiplo no nulo sirve. MATLAB elige el de norma 1: \\(\\frac{1}{\\sqrt5}(2,1)\\approx(0{,}894;\\ 0{,}447)\\).",
+      "Para verlo como en clase: <code>V(:,k)/V(2,k)</code>. Y <code>norm(B*V - V*D)</code> ≈ 0 confirma \\(BV=VD\\). MATLAB verifica; el razonamiento decide."
+     ],
+     "ans": "Es múltiplo de (2, 1)",
+     "hint": "Divide entre la 2.ª componente.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "eesp"
+      ],
+      [
+       "eesp"
+      ]
+     ]
+    }
+   ],
+   "tools": [
+    {
+     "w": "pot",
+     "t": "Aplicar A una y otra vez",
+     "p": "Toca ▶: si x₀ es vector propio, Aᵏx₀ nunca sale de su recta. Si mezcla dos direcciones, se va girando hacia la recta del λ más grande (punteadas: rectas propias).",
+     "o": {
+      "a": [
+       [
+        5,
+        -2
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "x0": [
+       3,
+       2
+      ],
+      "presets": [
+       [
+        "B, y₀ = (3, 2)",
+        {
+         "a": [
+          [
+           5,
+           -2
+          ],
+          [
+           1,
+           2
+          ]
+         ],
+         "x0": [
+          3,
+          2
+         ]
+        }
+       ],
+       [
+        "B, x₀ = (2, 1)",
+        {
+         "a": [
+          [
+           5,
+           -2
+          ],
+          [
+           1,
+           2
+          ]
+         ],
+         "x0": [
+          2,
+          1
+         ]
+        }
+       ],
+       [
+        "Placa [2 1; 1 2]",
+        {
+         "a": [
+          [
+           2,
+           1
+          ],
+          [
+           1,
+           2
+          ]
+         ],
+         "x0": [
+          1,
+          0
+         ]
+        }
+       ],
+       [
+        "Rotación 90°",
+        {
+         "a": [
+          [
+           0,
+           -1
+          ],
+          [
+           1,
+           0
+          ]
+         ],
+         "x0": [
+          1,
+          0
+         ]
+        }
+       ],
+       [
+        "[2 1; 0 2]",
+        {
+         "a": [
+          [
+           2,
+           1
+          ],
+          [
+           0,
+           2
+          ]
+         ],
+         "x0": [
+          0,
+          1
+         ]
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "w": "rref",
+     "t": "Escalonador: A − 2I del ejemplo 5",
+     "p": "Rango 1: dos variables libres, así que \\(m_g(2)=2\\).",
+     "o": {
+      "m": [
+       [
+        2,
+        -1,
+        6
+       ],
+       [
+        2,
+        -1,
+        6
+       ],
+       [
+        2,
+        -1,
+        6
+       ]
+      ],
+      "mode": "mat"
+     }
+    },
+    {
+     "w": "tl",
+     "t": "Visualizador: la placa deformada",
+     "p": "Con A = [[2, 1], [1, 2]], el vector (1, 1) solo se estira (λ = 3) y (1, −1) queda igual (λ = 1).",
+     "o": {
+      "a": [
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "v": [
+       1,
+       1
+      ]
+     }
+    }
+   ]
   }
  ],
  "figs": {
@@ -8682,6 +9721,48 @@
    "f": "\\(\\ker T=\\{0\\}\\iff\\) rango \\(=n\\)",
    "x": "En matrices cuadradas: ⇔ det A ≠ 0. Si ker T ≠ {0}, entradas distintas dan la misma salida.",
    "home": "s10"
+  },
+  "vprop": {
+   "n": "Valor y vector propio",
+   "f": "\\(Av=\\lambda v\\), \\(v\\ne0\\)",
+   "x": "v marca una dirección que A solo escala; λ = 0 está permitido, v = 0 no.",
+   "home": "s11"
+  },
+  "polcar": {
+   "n": "Polinomio característico",
+   "f": "\\(p(\\lambda)=\\det(A-\\lambda I)\\)",
+   "x": "Sus raíces son los valores propios. En 2 × 2: \\(\\lambda^2-\\operatorname{tr}A\\,\\lambda+\\det A\\).",
+   "home": "s11"
+  },
+  "eesp": {
+   "n": "Espacio propio",
+   "f": "\\(E_\\lambda=\\operatorname{Nul}(A-\\lambda I)\\)",
+   "x": "Se reduce A − λI (no A); debe salir una fila nula.",
+   "home": "s11"
+  },
+  "trdet": {
+   "n": "Traza y determinante",
+   "f": "\\(\\operatorname{tr}A=\\sum\\lambda_i\\), \\(\\det A=\\prod\\lambda_i\\)",
+   "x": "Sirven para anticipar y verificar. A invertible ⇔ 0 no es valor propio.",
+   "home": "s11"
+  },
+  "potp": {
+   "n": "Potencias e inversa",
+   "f": "\\(A^kv=\\lambda^kv\\), \\(A^{-1}v=\\frac1\\lambda v\\)",
+   "x": "Mismos vectores propios. Base de los sistemas dinámicos (S12).",
+   "home": "s11"
+  },
+  "multip": {
+   "n": "Multiplicidades",
+   "f": "\\(m_g=n-\\operatorname{rank}(A-\\lambda I)\\), \\(1\\le m_g\\le m_a\\)",
+   "x": "m_a se lee en el polinomio; m_g exige un rango.",
+   "home": "s11"
+  },
+  "patron": {
+   "n": "Patrones",
+   "f": "triangular → diagonal · reflexión → ±1 · rotación → complejos",
+   "x": "Nunca leer los λ de rref(A).",
+   "home": "s11"
   }
  },
  "simEx": [
@@ -9068,7 +10149,7 @@
     ]
    },
    {
-    "pts": 3,
+    "pts": 2,
     "name": "Sem. 7: solución general y aplicación IRVA",
     "pool": [
      "ep5",
@@ -9078,7 +10159,7 @@
     ]
    },
    {
-    "pts": 3,
+    "pts": 2,
     "name": "Sem. 9: ¿es lineal? y matriz estándar",
     "pool": [
      "s9e6",
@@ -9088,7 +10169,7 @@
     ]
    },
    {
-    "pts": 3,
+    "pts": 2,
     "name": "Sem. 9: transformaciones en contexto (IRVA)",
     "pool": [
      "s9e11",
@@ -9108,13 +10189,25 @@
     ]
    },
    {
-    "pts": 4,
+    "pts": 3,
     "name": "Sem. 10: transformaciones comunes en contexto (IRVA)",
     "pool": [
      "s10e7",
      "s10e17",
      "s10e19",
      "s10e20"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Sem. 11: valores y vectores propios",
+    "pool": [
+     "s11e4",
+     "s11e8",
+     "s11e9",
+     "s11e10",
+     "s11e11",
+     "s11e13"
     ]
    }
   ]

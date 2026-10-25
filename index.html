@@ -1289,6 +1289,15 @@ button.p1mc{cursor:pointer}
 .vtpre{margin:0;font-size:.8rem;background:var(--paper);padding:4px 8px;border-radius:6px}
 .vterr{color:var(--bad)}
 .vtok{color:var(--ok)}
+.potw .potsvg{width:100%;max-width:300px;height:auto;display:block}
+.potsvg .potax{stroke:var(--line);stroke-width:1}
+.potsvg .potei{stroke:var(--tan);stroke-width:1.4;stroke-dasharray:5 4}
+.potsvg .potv{stroke:var(--curve);stroke-width:2.2}
+.potsvg .potv.last{stroke:var(--bad);stroke-width:2.8}
+.potsvg .potah{fill:var(--ink)}
+.potsvg .potl{fill:var(--tan);font:600 10px Figtree,sans-serif}
+.potsvg .potl.b{fill:var(--bad);font-size:12px}
+.pott td,.pott th{padding:2px 8px;font-size:.85rem}
 /* S11-CSS-END */
 .acw,.usw,.triw{display:grid;gap:8px;min-width:0}
 .acsl{display:flex;align-items:center;gap:6px}.acsl .plrg{flex:1;min-width:0}.acsl b{min-width:3em;text-align:right}
@@ -5295,6 +5304,31 @@ IW.virt=(ch,o)=>{let touched=false;const u=virtUI(ch,()=>{touched=true;o.on&&o.o
     return bad.length?{f:0,msg:'Todavía no: '+bad.join('; ')+'.'+(ch.e?'<br>'+ch.e:'')}:{f:1,msg:''}};
   return{el:u.el,note:'Usa los interruptores y mira la salida del programa.',need:'Cambia algo primero.',okMsg:'¡Así se comporta como se pide!',filled:()=>touched||!!ch.free,
    grade:okR,mark(){},reveal(){u.set(ch.sol||{})},lock(){u.lock()}}};
+/* ---------- potencias: aplicar A una y otra vez (Álgebra Lineal, valores propios) ----------
+   LW.pot {"w":"pot","o":{"a":[[5,-2],[1,2]],"x0":[2,1],"presets":[[etiqueta,{"a":…,"x0":…}],…]}}: ▶ calcula x_{k+1} = A x_k; dibuja la dirección de cada x_k
+   (normalizada), las rectas propias reales (punteadas) y una tabla con los valores reales. Muestra si x_k sigue en la recta de x_0. */
+function potEig(A){const a=A[0][0],b=A[0][1],c=A[1][0],d=A[1][1];if(Math.abs(b)<1e-12&&Math.abs(c)<1e-12)return a===d?[{l:a,v:[1,0]},{l:a,v:[0,1]}]:[{l:a,v:[1,0]},{l:d,v:[0,1]}];const tr=a+d,de=a*d-b*c,D=tr*tr-4*de;if(D<-1e-12)return[];
+  const ls=D<1e-12?[tr/2]:[(tr+Math.sqrt(D))/2,(tr-Math.sqrt(D))/2];const out=[];
+  ls.forEach(l=>{let v=Math.abs(b)>1e-12?[b,l-a]:Math.abs(c)>1e-12?[l-d,c]:null;if(!v){out.push({l,v:[1,0]},{l,v:[0,1]});return}out.push({l,v})});return out}
+function potUI(o){const w=el('div','potw');const top=el('div','plctl');const fig=el('div','plfig');const ctl=el('div','plctl');const ro=el('div','acro');w.append(top,fig,ctl,ro);
+  let A=o.a,x0=o.x0,xs=[x0];const fmtN=v=>Math.abs(v)>=1e5?v.toExponential(2):fmtV(Math.round(v*1000)/1000);
+  const W=260,C=130,R=110,uid='pt'+Math.random().toString(36).slice(2,7);
+  function draw(){const ev=potEig(A);let s='<svg class="potsvg" viewBox="0 0 '+W+' '+W+'" xmlns="http://www.w3.org/2000/svg"><defs><marker id="'+uid+'" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" class="potah"/></marker></defs>';
+    s+='<line class="potax" x1="0" y1="'+C+'" x2="'+W+'" y2="'+C+'"/><line class="potax" x1="'+C+'" y1="0" x2="'+C+'" y2="'+W+'"/><circle class="potax" cx="'+C+'" cy="'+C+'" r="'+R+'" fill="none"/>';
+    ev.forEach(e=>{const n=Math.hypot(...e.v);const ux=e.v[0]/n,uy=e.v[1]/n;s+='<line class="potei" x1="'+(C-ux*W)+'" y1="'+(C+uy*W)+'" x2="'+(C+ux*W)+'" y2="'+(C-uy*W)+'"/><text class="potl" x="'+(C+ux*(R+8)+4)+'" y="'+(C-uy*(R+8))+'">λ='+fmtN(e.l)+'</text>'});
+    xs.forEach((x,k)=>{const n=Math.hypot(x[0],x[1])||1;const ux=x[0]/n,uy=x[1]/n;const last=k===xs.length-1;
+      s+='<line class="potv'+(last?' last':'')+'" style="opacity:'+(last?1:Math.max(.18,.6-.1*(xs.length-1-k)))+'" x1="'+C+'" y1="'+C+'" x2="'+(C+ux*R)+'" y2="'+(C-uy*R)+'" marker-end="url(#'+uid+')"/>';
+      if(last)s+='<text class="potl b" x="'+(C+ux*R*.6+6)+'" y="'+(C-uy*R*.6-6)+'">x'+(k?'<tspan baseline-shift="sub" font-size="9">'+k+'</tspan>':'<tspan baseline-shift="sub" font-size="9">0</tspan>')+'</text>'});
+    fig.innerHTML=s+'</svg>';
+    const x=xs[xs.length-1],cr=x0[0]*x[1]-x0[1]*x[0],same=Math.abs(cr)<1e-9*Math.max(1,Math.hypot(...x)*Math.hypot(...x0));
+    ro.innerHTML='<div class="tbl"><table class="pott"><tr><th>k</th><th>x<sub>k</sub> = A<sup>k</sup>x<sub>0</sub></th></tr>'+xs.map((v,k)=>'<tr><td>'+k+'</td><td>('+fmtN(v[0])+', '+fmtN(v[1])+')</td></tr>').join('')+'</table></div>'+
+      '<p>'+(xs.length<2?'Toca ▶ para aplicar A.':same?'✅ x<sub>'+(xs.length-1)+'</sub> sigue en la recta de x<sub>0</sub>: '+(ev.length?'x<sub>0</sub> es un vector propio y A solo lo escala.':'')+'':'↪️ x<sub>'+(xs.length-1)+'</sub> ya no está en la recta de x<sub>0</sub>'+(ev.length?': se va acercando a la recta del λ de mayor valor absoluto.':': sin valores propios reales, ninguna dirección se conserva.'))+'</p>';
+    nx.disabled=xs.length>12}
+  const nx=el('button','lwb on','▶ Aplicar A');nx.type='button';nx.onclick=()=>{const x=xs[xs.length-1];xs.push([A[0][0]*x[0]+A[0][1]*x[1],A[1][0]*x[0]+A[1][1]*x[1]]);draw()};
+  const rs=el('button','lwb','⟲ Reiniciar');rs.type='button';rs.onclick=()=>{xs=[x0];draw()};ctl.append(nx,rs);
+  (o.presets||[]).forEach(([l,p],i)=>{const b=el('button','lwb'+(i?'':' on'),l);b.type='button';b.onclick=()=>{top.querySelectorAll('.lwb').forEach(z=>z.classList.toggle('on',z===b));A=p.a;x0=p.x0;xs=[x0];draw()};top.append(b)});
+  draw();return{el:w}}
+LW.pot=(b,o)=>{b.append(potUI(o).el)};
 /* S11-JS-END */
 /* Práctica/guía: widget + botón Comprobar. cb={onTry,onBad,onGood} */
 function iwPractice(ch,box,fb,qi,pre,cb,e,key){const w=IW[ch.t](ch,{key,pre});box.append(w.el);
