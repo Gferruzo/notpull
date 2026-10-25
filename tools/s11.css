@@ -71,3 +71,17 @@
 .pzh{font-size:.9rem}
 .pzt td{white-space:nowrap}
 .pzend{border-left:4px solid var(--ok);padding:4px 10px;margin:.5em 0;background:var(--ok-bg);border-radius:6px}
+.exa{stroke:none}.exa.ec{fill:color-mix(in srgb,var(--cyan) 30%,transparent)}.exa.ep{fill:color-mix(in srgb,var(--tan) 32%,transparent)}
+.exa.rec{fill:color-mix(in srgb,var(--curve) 26%,transparent)}.exa.pi{fill:color-mix(in srgb,var(--bad) 40%,transparent)}.exa.tot{fill:color-mix(in srgb,var(--ok) 28%,transparent)}
+.exp{stroke:var(--ink);stroke-width:1.6;stroke-dasharray:6 3}
+.exk{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.exk.ec{background:color-mix(in srgb,var(--cyan) 45%,transparent)}.exk.ep{background:color-mix(in srgb,var(--tan) 50%,transparent)}.exk.rec{background:color-mix(in srgb,var(--curve) 40%,transparent)}
+.exk.pi{background:color-mix(in srgb,var(--bad) 55%,transparent)}.exk.tot{background:color-mix(in srgb,var(--ok) 45%,transparent)}
+.ext td:last-child{text-align:right;white-space:nowrap}
+.frc{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:.4em 0}
+.frh{font-weight:700;color:var(--muted);margin:.2em 0;font-size:.85rem}
+.frk{border:1.5px solid var(--line);border-radius:8px;padding:4px 7px;margin-bottom:4px;font-size:.78rem;display:grid;gap:1px}
+.frk span{color:var(--muted)}.frk em{font-style:normal;font-size:.74rem}
+.frk.got{border-color:var(--ok);background:var(--ok-bg)}.frk.miss{border-color:var(--bad);background:var(--bad-bg)}.frk.out{opacity:.6}
+.frr p{margin:.25em 0;font-size:.88rem}
+.frw .qm,.exw .qm{fill:none;stroke-width:2.2}

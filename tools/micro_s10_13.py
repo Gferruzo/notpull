@@ -82,7 +82,7 @@ G10_form = ["Excluible: se puede impedir el uso a quien no paga", "Rival: mi uso
             "Proveer si Σ valoraciones ≥ costo", "Comunes: se sobreexplotan → cuotas, vedas"]
 G10_lesson = lesson("Si no se puede excluir a nadie, nadie quiere pagar: el mercado falla y suele entrar el Estado.",
   ["<b>Dos preguntas</b> (¿excluible?, ¿rival?) dan los cuatro tipos de bienes.",
-   "<b>Polizón:</b> disfrutar sin pagar. Lo viviste en el juego: cuando uno deja de aportar, los demás también.",
+   "<b>Polizón:</b> disfrutar sin pagar. Lo ves en el juego: cuando uno deja de aportar, los demás también.",
    "<b>Costo–beneficio:</b> un bien público vale la pena si la <i>suma</i> de lo que vale para cada persona supera su costo.",
    "<b>Recursos comunes:</b> la anchoveta peruana se protege con cuotas y vedas del Produce para evitar la tragedia de los comunes."],
   "Bien público = no rival + no excluible → polizón → lo financia el Estado. Recurso común = rival + no excluible → sobreuso → cuotas.",
@@ -110,10 +110,10 @@ G10.append(E("g10e3", 1, "¿Qué significa «no rival»?",
   ["No rival: el consumo de uno no reduce el de otro. No excluible es otra cosa: no se puede impedir el uso.",
    "El faro es ambas cosas, por eso es el ejemplo clásico de bien público."],
   "Mi uso no reduce el tuyo", "Rival ≠ excluible.", [["tipbien"], ["tipbien"]]))
-G10.append(E("g10e4", 2, "Lo que pasó en el juego",
-  "<p>Después de jugar al polizón (arriba, en 🧪): en la primera ronda tú no aportaste y los vecinos sí, y el parque se construyó. ¿Por qué luego cayeron los aportes?</p>",
+G10.append(E("g10e4", 2, "El juego del polizón",
+  "<p>Imagina que juegas al polizón (arriba, en 🧪): en la primera ronda no aportas, los vecinos sí, y el parque se construye igual. En las rondas siguientes los aportes empiezan a caer. ¿Por qué?</p>",
   [O(["Los vecinos también vieron que les convenía no pagar si igual disfrutan el parque", "El parque se volvió rival", "El parque dejó de ser útil", "El Estado prohibió el parque", "Los vecinos se quedaron sin dinero"])],
-  ["Ser polizón te dio más en la ronda 1 (te quedaste tus S/ 10 y además disfrutaste el parque).",
+  ["Ser polizón te da más en la ronda 1 (te quedas tus S/ 10 y además disfrutas el parque).",
    "Pero los demás razonan igual: bajan sus aportes, no se junta lo necesario y todos terminan peor que si hubieran cooperado. Es el problema del polizón."],
   "Todos quieren que paguen los demás", "Piensa como un vecino más.", [["polizon"], ["polizon"]]))
 G10.append(E("g10e5", 2, "¿Vale la pena el alumbrado?",

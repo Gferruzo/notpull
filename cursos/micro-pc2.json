@@ -1173,7 +1173,7 @@
     "Proveer si Σ valoraciones ≥ costo",
     "Comunes: se sobreexplotan → cuotas, vedas"
    ],
-   "lesson": "<h3>La idea en una frase</h3><p>Si no se puede excluir a nadie, nadie quiere pagar: el mercado falla y suele entrar el Estado.</p><h3>Claves</h3><ul><li><b>Dos preguntas</b> (¿excluible?, ¿rival?) dan los cuatro tipos de bienes.</li><li><b>Polizón:</b> disfrutar sin pagar. Lo viviste en el juego: cuando uno deja de aportar, los demás también.</li><li><b>Costo–beneficio:</b> un bien público vale la pena si la <i>suma</i> de lo que vale para cada persona supera su costo.</li><li><b>Recursos comunes:</b> la anchoveta peruana se protege con cuotas y vedas del Produce para evitar la tragedia de los comunes.</li></ul><div class=\"ej\"><b>En 30 segundos:</b> Bien público = no rival + no excluible → polizón → lo financia el Estado. Recurso común = rival + no excluible → sobreuso → cuotas.</div><div class=\"err\"><b>Error común:</b> decir que un bien es público porque lo produce el Estado. Lo que importa son sus características: el agua potable de Sedapal es excluible (te pueden cortar) y rival.</div>",
+   "lesson": "<h3>La idea en una frase</h3><p>Si no se puede excluir a nadie, nadie quiere pagar: el mercado falla y suele entrar el Estado.</p><h3>Claves</h3><ul><li><b>Dos preguntas</b> (¿excluible?, ¿rival?) dan los cuatro tipos de bienes.</li><li><b>Polizón:</b> disfrutar sin pagar. Lo ves en el juego: cuando uno deja de aportar, los demás también.</li><li><b>Costo–beneficio:</b> un bien público vale la pena si la <i>suma</i> de lo que vale para cada persona supera su costo.</li><li><b>Recursos comunes:</b> la anchoveta peruana se protege con cuotas y vedas del Produce para evitar la tragedia de los comunes.</li></ul><div class=\"ej\"><b>En 30 segundos:</b> Bien público = no rival + no excluible → polizón → lo financia el Estado. Recurso común = rival + no excluible → sobreuso → cuotas.</div><div class=\"err\"><b>Error común:</b> decir que un bien es público porque lo produce el Estado. Lo que importa son sus características: el agua potable de Sedapal es excluible (te pueden cortar) y rival.</div>",
    "ex": [
     {
      "id": "g10e1",
@@ -1320,8 +1320,8 @@
     {
      "id": "g10e4",
      "lvl": 2,
-     "title": "Lo que pasó en el juego",
-     "q": "<p>Después de jugar al polizón (arriba, en 🧪): en la primera ronda tú no aportaste y los vecinos sí, y el parque se construyó. ¿Por qué luego cayeron los aportes?</p>",
+     "title": "El juego del polizón",
+     "q": "<p>Imagina que juegas al polizón (arriba, en 🧪): en la primera ronda no aportas, los vecinos sí, y el parque se construye igual. En las rondas siguientes los aportes empiezan a caer. ¿Por qué?</p>",
      "checks": [
       {
        "p": "Respuesta",
@@ -1335,7 +1335,7 @@
       }
      ],
      "steps": [
-      "Ser polizón te dio más en la ronda 1 (te quedaste tus S/ 10 y además disfrutaste el parque).",
+      "Ser polizón te da más en la ronda 1 (te quedas tus S/ 10 y además disfrutas el parque).",
       "Pero los demás razonan igual: bajan sus aportes, no se junta lo necesario y todos terminan peor que si hubieran cooperado. Es el problema del polizón."
      ],
      "ans": "Todos quieren que paguen los demás",

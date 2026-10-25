@@ -8,8 +8,8 @@
  "sub": "Todo el curso",
  "guide": true,
  "free": true,
- "intro": "Repaso acumulado con todos los temas abiertos: primero los 4 bloques del parcial, luego <b>la semana 9: externalidades</b> y las semanas 10 a 13: bienes públicos, maximización de beneficios y competencia perfecta, monopolio y competencia monopolística, y oligopolio con teoría de juegos. <b>📖 Las semanas 10 a 13 están adelantadas según el sílabo</b> (el profesor aún no sube esas clases): se hicieron con su bibliografía y se ajustarán cuando llegue su material. Hay juego del polizón, buscador del beneficio máximo y matriz de pagos interactiva. Se actualiza cada semana.",
- "form": "<p class=\"note\">Hoja de repaso del examen final: lo del parcial y, desde la semana 9, externalidades.</p><div class=\"fgrid\"><div><b>Externalidad</b><br>Efecto no compensado sobre un tercero</div><div><b>Negativa</b><br>Costo social &gt; privado · \\(Q_m\\gt Q^*\\) · impuesto</div><div><b>Positiva</b><br>Valor social &gt; privado · \\(Q_m\\lt Q^*\\) · subsidio</div><div><b>Gráfico</b><br>Negativa: sube la oferta · positiva: sube la demanda</div><div><b>Pigou</b><br>Impuesto por unidad = costo externo</div><div><b>Políticas públicas</b><br>Órdenes y controles · mercado (impuestos, subsidios, permisos) · educación</div><div><b>Permisos</b><br>Total fijo; reduce quien lo hace más barato</div><div><b>Coase</b><br>Negociación sin costos + derechos claros ⇒ eficiencia sin Estado</div><div><b>Tipos de bienes</b><br>¿excluible? ¿rival? · público: no y no → polizón</div><div><b>Costo–beneficio</b><br>proveer si Σ valoraciones ≥ costo</div><div><b>Máximo beneficio</b><br>\\(IMg=CMg\\) · \\(\\pi=(P-CMe)Q\\)</div><div><b>Competencia perfecta</b><br>\\(P=CMg\\) · largo plazo beneficio 0</div><div><b>Monopolio</b><br>\\(IMg=a-2bQ\\) · Q con IMg = CMg, P en la demanda · pérdida irrecuperable</div><div><b>Comp. monopolística</b><br>diferenciado + libre entrada → beneficio 0, P &gt; CMg</div><div><b>Teoría de juegos</b><br>subraya mejores respuestas → Nash · dominante · dilema del prisionero</div></div>",
+ "intro": "Repaso acumulado con todos los temas abiertos: primero los 4 bloques del parcial, luego <b>la semana 9: externalidades</b>, las semanas 10 a 13 (bienes públicos, maximización y competencia perfecta, monopolio y competencia monopolística, oligopolio y teoría de juegos) y la semana 15: <b>economía del bienestar</b> (excedentes y eficiencia). <b>📖 Las semanas 10 a 15 están adelantadas según el sílabo</b> (el profesor aún no sube esas clases): se hicieron con su bibliografía y se ajustarán cuando llegue su material. Hay juego del polizón, feria de chocotejas, excedentes en vivo, buscador del beneficio máximo y matriz de pagos interactiva.",
+ "form": "<p class=\"note\">Hoja de repaso del examen final: lo del parcial y, desde la semana 9, externalidades.</p><div class=\"fgrid\"><div><b>Externalidad</b><br>Efecto no compensado sobre un tercero</div><div><b>Negativa</b><br>Costo social &gt; privado · \\(Q_m\\gt Q^*\\) · impuesto</div><div><b>Positiva</b><br>Valor social &gt; privado · \\(Q_m\\lt Q^*\\) · subsidio</div><div><b>Gráfico</b><br>Negativa: sube la oferta · positiva: sube la demanda</div><div><b>Pigou</b><br>Impuesto por unidad = costo externo</div><div><b>Políticas públicas</b><br>Órdenes y controles · mercado (impuestos, subsidios, permisos) · educación</div><div><b>Permisos</b><br>Total fijo; reduce quien lo hace más barato</div><div><b>Coase</b><br>Negociación sin costos + derechos claros ⇒ eficiencia sin Estado</div><div><b>Tipos de bienes</b><br>¿excluible? ¿rival? · público: no y no → polizón</div><div><b>Costo–beneficio</b><br>proveer si Σ valoraciones ≥ costo</div><div><b>Máximo beneficio</b><br>\\(IMg=CMg\\) · \\(\\pi=(P-CMe)Q\\)</div><div><b>Competencia perfecta</b><br>\\(P=CMg\\) · largo plazo beneficio 0</div><div><b>Monopolio</b><br>\\(IMg=a-2bQ\\) · Q con IMg = CMg, P en la demanda · pérdida irrecuperable</div><div><b>Comp. monopolística</b><br>diferenciado + libre entrada → beneficio 0, P &gt; CMg</div><div><b>Teoría de juegos</b><br>subraya mejores respuestas → Nash · dominante · dilema del prisionero</div><div><b>Bienestar</b><br>EC bajo D sobre P · EP sobre O bajo P · equilibrio = eficiente · impuesto: recaudación + triángulo perdido</div></div>",
  "topics": [
   {
    "id": "b1",
@@ -5294,7 +5294,7 @@
     "Proveer si Σ valoraciones ≥ costo",
     "Comunes: se sobreexplotan → cuotas, vedas"
    ],
-   "lesson": "<h3>La idea en una frase</h3><p>Si no se puede excluir a nadie, nadie quiere pagar: el mercado falla y suele entrar el Estado.</p><h3>Claves</h3><ul><li><b>Dos preguntas</b> (¿excluible?, ¿rival?) dan los cuatro tipos de bienes.</li><li><b>Polizón:</b> disfrutar sin pagar. Lo viviste en el juego: cuando uno deja de aportar, los demás también.</li><li><b>Costo–beneficio:</b> un bien público vale la pena si la <i>suma</i> de lo que vale para cada persona supera su costo.</li><li><b>Recursos comunes:</b> la anchoveta peruana se protege con cuotas y vedas del Produce para evitar la tragedia de los comunes.</li></ul><div class=\"ej\"><b>En 30 segundos:</b> Bien público = no rival + no excluible → polizón → lo financia el Estado. Recurso común = rival + no excluible → sobreuso → cuotas.</div><div class=\"err\"><b>Error común:</b> decir que un bien es público porque lo produce el Estado. Lo que importa son sus características: el agua potable de Sedapal es excluible (te pueden cortar) y rival.</div>",
+   "lesson": "<h3>La idea en una frase</h3><p>Si no se puede excluir a nadie, nadie quiere pagar: el mercado falla y suele entrar el Estado.</p><h3>Claves</h3><ul><li><b>Dos preguntas</b> (¿excluible?, ¿rival?) dan los cuatro tipos de bienes.</li><li><b>Polizón:</b> disfrutar sin pagar. Lo ves en el juego: cuando uno deja de aportar, los demás también.</li><li><b>Costo–beneficio:</b> un bien público vale la pena si la <i>suma</i> de lo que vale para cada persona supera su costo.</li><li><b>Recursos comunes:</b> la anchoveta peruana se protege con cuotas y vedas del Produce para evitar la tragedia de los comunes.</li></ul><div class=\"ej\"><b>En 30 segundos:</b> Bien público = no rival + no excluible → polizón → lo financia el Estado. Recurso común = rival + no excluible → sobreuso → cuotas.</div><div class=\"err\"><b>Error común:</b> decir que un bien es público porque lo produce el Estado. Lo que importa son sus características: el agua potable de Sedapal es excluible (te pueden cortar) y rival.</div>",
    "ex": [
     {
      "id": "g10e1",
@@ -5441,8 +5441,8 @@
     {
      "id": "g10e4",
      "lvl": 2,
-     "title": "Lo que pasó en el juego",
-     "q": "<p>Después de jugar al polizón (arriba, en 🧪): en la primera ronda tú no aportaste y los vecinos sí, y el parque se construyó. ¿Por qué luego cayeron los aportes?</p>",
+     "title": "El juego del polizón",
+     "q": "<p>Imagina que juegas al polizón (arriba, en 🧪): en la primera ronda no aportas, los vecinos sí, y el parque se construye igual. En las rondas siguientes los aportes empiezan a caer. ¿Por qué?</p>",
      "checks": [
       {
        "p": "Respuesta",
@@ -5456,7 +5456,7 @@
       }
      ],
      "steps": [
-      "Ser polizón te dio más en la ronda 1 (te quedaste tus S/ 10 y además disfrutaste el parque).",
+      "Ser polizón te da más en la ronda 1 (te quedas tus S/ 10 y además disfrutas el parque).",
       "Pero los demás razonan igual: bajan sus aportes, no se junta lo necesario y todos terminan peor que si hubieran cooperado. Es el problema del polizón."
      ],
      "ans": "Todos quieren que paguen los demás",
@@ -7356,6 +7356,664 @@
      }
     }
    ]
+  },
+  {
+   "id": "b15",
+   "name": "Sem. 15 · 📖 Economía del bienestar: excedentes y eficiencia",
+   "teo": "<div class=\"note\" style=\"border-left:4px solid var(--tan);padding:6px 10px;margin-bottom:.6em\">📖 <b>Adelantado según el sílabo.</b> El profesor todavía no subió esta clase: este tema se armó con el orden del sílabo y su bibliografía (Krugman y Pindyck). Cuando suba su material, se ajustarán los ejemplos y la notación.</div><p>Hasta ahora viste <b>cuánto</b> se produce y a qué precio. Esta semana la pregunta es otra: <b>¿qué tan bien le va a la sociedad</b> con ese resultado?</p><h3>Excedente del consumidor (EC)</h3><p>Cada comprador tiene una <b>disposición a pagar</b>: lo máximo que pagaría. Si Ana pagaría S/ 10 por una chocoteja y la compra a S/ 6, gana S/ 4. Esa diferencia es su excedente. Sumando a todos, el EC es el <b>área bajo la demanda y sobre el precio</b>.</p><h3>Excedente del productor (EP)</h3><p>Cada vendedor tiene un <b>costo</b>: lo mínimo que aceptaría. Si a un puesto le cuesta S/ 2 hacerla y la vende a S/ 6, gana S/ 4. El EP es el <b>área sobre la oferta y bajo el precio</b>.</p><p>Con demanda y oferta lineales son triángulos: \\(EC=\\tfrac12\\,Q\\,(P_{máx}-P)\\) y \\(EP=\\tfrac12\\,Q\\,(P-P_{mín})\\), donde \\(P_{máx}\\) y \\(P_{mín}\\) son los cortes de la demanda y la oferta con el eje del precio.</p><h3>Bienestar y eficiencia</h3><p><b>Bienestar total = EC + EP</b> (más la recaudación del Estado, si hay impuesto). En el <b>equilibrio competitivo</b> el bienestar es el máximo posible: se hacen todos los intercambios en que alguien valora el bien más de lo que cuesta producirlo, y ninguno más. Eso es ser <b>eficiente</b>.</p><h3>¿Qué rompe la eficiencia?</h3><ul><li><b>Impuesto por unidad:</b> el comprador paga más, el vendedor recibe menos y se vende menos. Parte del excedente pasa al Estado (recaudación) y otra parte se pierde: la <b>pérdida irrecuperable</b>.</li><li><b>Precio máximo</b> (por debajo del equilibrio): se ofrece menos, hay <b>escasez</b>. Los que sí compran ganan, los productores pierden y se pierden intercambios.</li><li><b>Precio mínimo</b> (por encima del equilibrio): se compra menos, <b>sobra</b> producto. Los productores que venden ganan, los consumidores pierden.</li><li><b>Monopolio</b> (semana 12): produce menos para cobrar más → pérdida irrecuperable.</li><li><b>Externalidades</b> (semana 9): el mercado no cuenta el costo para terceros, así que el equilibrio ya no es eficiente.</li></ul><p>Un precio máximo o mínimo que está del lado «equivocado» del equilibrio (tope por encima, piso por debajo) <b>no es efectivo</b>: no cambia nada.</p>",
+   "form": [
+    "EC: área bajo D y sobre P · \\(\\tfrac12 Q(P_{máx}-P)\\)",
+    "EP: área sobre O y bajo P · \\(\\tfrac12 Q(P-P_{mín})\\)",
+    "Eficiencia: equilibrio competitivo → EC + EP máximo",
+    "Impuesto t: \\(P_c-P_v=t\\) · recaudación \\(t\\cdot Q\\) · triángulo perdido",
+    "Precio máximo debajo del equilibrio → escasez",
+    "Precio mínimo encima del equilibrio → sobra"
+   ],
+   "lesson": "<h3>La idea en una frase</h3><p>El excedente mide cuánto gana cada lado al intercambiar, y el mercado competitivo hace la «torta» lo más grande posible.</p><h3>Claves</h3><ul><li><b>EC:</b> lo que el comprador estaba dispuesto a pagar menos lo que pagó. En el gráfico: entre la demanda y el precio.</li><li><b>EP:</b> lo que cobra el vendedor menos su costo. En el gráfico: entre el precio y la oferta.</li><li><b>Eficiencia:</b> en el equilibrio se hacen justo los intercambios que valen la pena; ni uno más, ni uno menos.</li><li><b>Pérdida irrecuperable:</b> el triángulo de intercambios que valían la pena y ya no se hacen (por un impuesto, un tope, un piso o un monopolio).</li></ul><div class=\"ej\"><b>En 30 segundos:</b> EC + EP = bienestar. El equilibrio competitivo lo maximiza. Impuesto: una parte va al Estado y un triángulo se pierde. Tope bajo → escasez; piso alto → sobra. En los dos casos se pierde un triángulo.</div><div class=\"err\"><b>Error común:</b> pensar que un precio máximo siempre ayuda a los consumidores. Los que consiguen comprar ganan, pero otros se quedan sin el producto, y la sociedad pierde el triángulo de intercambios que ya no ocurren.</div>",
+   "ex": [
+    {
+     "id": "b15e1",
+     "lvl": 1,
+     "title": "Calentamiento: semana 13",
+     "q": "<p>Dos empresas de cemento forman un cartel y suben el precio. ¿Qué les pasa a los consumidores?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Pagan más y compran menos: pierden excedente",
+        "No les pasa nada: el precio lo deciden las empresas",
+        "Ganan, porque el producto es de más calidad",
+        "Compran más, porque hay menos competencia",
+        "Pierden solo si el cartel se rompe"
+       ]
+      }
+     ],
+     "steps": [
+      "Un cartel actúa como un monopolio: menos cantidad y precio más alto (semana 13).",
+      "Hoy verás cómo medir esa pérdida: el excedente del consumidor baja y aparece una pérdida irrecuperable."
+     ],
+     "ans": "Pagan más y compran menos",
+     "hint": "Piensa en el monopolio.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "cartel"
+      ],
+      [
+       "exccons"
+      ]
+     ]
+    },
+    {
+     "id": "b15e2",
+     "lvl": 1,
+     "title": "¿Cuánto gana cada uno?",
+     "q": "<p>Tres compradores valoran una chocoteja en S/ 10, S/ 8 y S/ 7, y la compran a S/ 6. Dos puestos la venden a S/ 6; producirla les cuesta S/ 3 y S/ 5.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "Excedente del que la valora en S/ 10",
+         "a": 4,
+         "u": "S/"
+        },
+        {
+         "l": "EC de los tres",
+         "a": 7,
+         "u": "S/"
+        },
+        {
+         "l": "EP de los dos puestos",
+         "a": 4,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Cada comprador gana su valoración menos el precio: 10 − 6 = 4, 8 − 6 = 2 y 7 − 6 = 1. EC = 4 + 2 + 1 = S/ 7.",
+      "Cada puesto gana el precio menos su costo: 6 − 3 = 3 y 6 − 5 = 1. EP = S/ 4."
+     ],
+     "ans": "4, 7 y 4",
+     "hint": "Valoración − precio; precio − costo.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "exccons"
+      ],
+      [
+       "excprod"
+      ]
+     ]
+    },
+    {
+     "id": "b15e3",
+     "lvl": 1,
+     "title": "Toca el excedente",
+     "q": "<p>El gráfico muestra un mercado en equilibrio (P = 40, Q = 30).</p>",
+     "checks": [
+      {
+       "t": "tap",
+       "p": "Parte 1: toca el excedente del consumidor",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V260H292\"/><text class=\"dl\" x=\"14\" y=\"20\">P</text><text class=\"dl\" x=\"282\" y=\"290\">Q</text><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"288.0\" y=\"206.0\" text-anchor=\"end\">D</text><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"281.7\" y=\"131.6\" text-anchor=\"end\">O</text><polygon data-z=\"A\" points=\"40.0,20.0 40.0,164.0 229.0,164.0\"/><polygon data-z=\"B\" points=\"40.0,164.0 229.0,164.0 40.0,236.0\"/><polygon data-z=\"C\" points=\"229.0,164.0 292.0,140.0 292.0,212.0\"/><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><line class=\"dsh\" x1=\"40.0\" y1=\"164.0\" x2=\"229.0\" y2=\"164.0\"/><line class=\"dsh\" x1=\"229.0\" y1=\"164.0\" x2=\"229.0\" y2=\"260.0\"/><text class=\"dm\" x=\"36\" y=\"168.0\" text-anchor=\"end\">40</text><text class=\"dm\" x=\"229.0\" y=\"274\" text-anchor=\"middle\">30</text><text class=\"dl\" x=\"90.4\" y=\"120.8\" text-anchor=\"middle\">A</text><text class=\"dl\" x=\"90.4\" y=\"190.4\" text-anchor=\"middle\">B</text><text class=\"dl\" x=\"273.1\" y=\"173.6\" text-anchor=\"middle\">C</text></svg>",
+       "a": [
+        "A"
+       ],
+       "e": "El EC está entre la demanda y el precio, a la izquierda de Q."
+      },
+      {
+       "t": "tap",
+       "p": "Parte 2: toca el excedente del productor",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V260H292\"/><text class=\"dl\" x=\"14\" y=\"20\">P</text><text class=\"dl\" x=\"282\" y=\"290\">Q</text><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"288.0\" y=\"206.0\" text-anchor=\"end\">D</text><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"281.7\" y=\"131.6\" text-anchor=\"end\">O</text><polygon data-z=\"A\" points=\"40.0,20.0 40.0,164.0 229.0,164.0\"/><polygon data-z=\"B\" points=\"40.0,164.0 229.0,164.0 40.0,236.0\"/><polygon data-z=\"C\" points=\"229.0,164.0 292.0,140.0 292.0,212.0\"/><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><line class=\"dsh\" x1=\"40.0\" y1=\"164.0\" x2=\"229.0\" y2=\"164.0\"/><line class=\"dsh\" x1=\"229.0\" y1=\"164.0\" x2=\"229.0\" y2=\"260.0\"/><text class=\"dm\" x=\"36\" y=\"168.0\" text-anchor=\"end\">40</text><text class=\"dm\" x=\"229.0\" y=\"274\" text-anchor=\"middle\">30</text><text class=\"dl\" x=\"90.4\" y=\"120.8\" text-anchor=\"middle\">A</text><text class=\"dl\" x=\"90.4\" y=\"190.4\" text-anchor=\"middle\">B</text><text class=\"dl\" x=\"273.1\" y=\"173.6\" text-anchor=\"middle\">C</text></svg>",
+       "a": [
+        "B"
+       ],
+       "e": "El EP está entre el precio y la oferta."
+      }
+     ],
+     "steps": [
+      "A: entre la demanda (lo que pagarían) y el precio (lo que pagan) → excedente del consumidor.",
+      "B: entre el precio y la oferta (su costo) → excedente del productor. C no es excedente: ahí producir cuesta más de lo que vale para los compradores."
+     ],
+     "ans": "A y B",
+     "hint": "Arriba del precio: consumidores.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "exccons"
+      ],
+      [
+       "excprod"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "b15e4",
+     "lvl": 2,
+     "title": "Toca las áreas con impuesto",
+     "q": "<p>En el mercado del gráfico se pone un impuesto de S/ 15 por unidad. La cantidad baja de 30 a 25; el comprador paga S/ 50 y el vendedor recibe S/ 35.</p>",
+     "checks": [
+      {
+       "t": "tap",
+       "p": "Parte 1: toca el excedente del consumidor con impuesto",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V260H292\"/><text class=\"dl\" x=\"14\" y=\"20\">P</text><text class=\"dl\" x=\"282\" y=\"290\">Q</text><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"288.0\" y=\"206.0\" text-anchor=\"end\">D</text><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"281.7\" y=\"131.6\" text-anchor=\"end\">O</text><polygon data-z=\"1\" points=\"40.0,20.0 40.0,140.0 197.5,140.0\"/><polygon data-z=\"2\" points=\"40.0,140.0 197.5,140.0 197.5,164.0 40.0,164.0\"/><polygon data-z=\"3\" points=\"197.5,140.0 229.0,164.0 197.5,164.0\"/><polygon data-z=\"4\" points=\"40.0,164.0 197.5,164.0 197.5,176.0 40.0,176.0\"/><polygon data-z=\"5\" points=\"197.5,164.0 229.0,164.0 197.5,176.0\"/><polygon data-z=\"6\" points=\"40.0,176.0 197.5,176.0 40.0,236.0\"/><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><line class=\"dsh\" x1=\"40.0\" y1=\"140.0\" x2=\"197.5\" y2=\"140.0\"/><line class=\"dsh\" x1=\"40.0\" y1=\"164.0\" x2=\"229.0\" y2=\"164.0\"/><line class=\"dsh\" x1=\"40.0\" y1=\"176.0\" x2=\"197.5\" y2=\"176.0\"/><line class=\"dsh\" x1=\"197.5\" y1=\"140.0\" x2=\"197.5\" y2=\"260.0\"/><text class=\"dm\" x=\"36\" y=\"144.0\" text-anchor=\"end\">50</text><text class=\"dm\" x=\"36\" y=\"168.0\" text-anchor=\"end\">40</text><text class=\"dm\" x=\"36\" y=\"180.0\" text-anchor=\"end\">35</text><text class=\"dm\" x=\"197.5\" y=\"274\" text-anchor=\"middle\">25</text><text class=\"dm\" x=\"229.0\" y=\"274\" text-anchor=\"middle\">30</text><text class=\"dl\" x=\"77.8\" y=\"111.2\" text-anchor=\"middle\">1</text><text class=\"dl\" x=\"103.0\" y=\"147.2\" text-anchor=\"middle\">2</text><text class=\"dl\" x=\"207.6\" y=\"158.5\" text-anchor=\"middle\">3</text><text class=\"dl\" x=\"103.0\" y=\"165.7\" text-anchor=\"middle\">4</text><text class=\"dl\" x=\"207.6\" y=\"171.2\" text-anchor=\"middle\">5</text><text class=\"dl\" x=\"77.8\" y=\"202.4\" text-anchor=\"middle\">6</text></svg>",
+       "a": [
+        "1"
+       ]
+      },
+      {
+       "t": "tap",
+       "p": "Parte 2: toca la recaudación del Estado (puede ser más de una zona)",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V260H292\"/><text class=\"dl\" x=\"14\" y=\"20\">P</text><text class=\"dl\" x=\"282\" y=\"290\">Q</text><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"288.0\" y=\"206.0\" text-anchor=\"end\">D</text><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"281.7\" y=\"131.6\" text-anchor=\"end\">O</text><polygon data-z=\"1\" points=\"40.0,20.0 40.0,140.0 197.5,140.0\"/><polygon data-z=\"2\" points=\"40.0,140.0 197.5,140.0 197.5,164.0 40.0,164.0\"/><polygon data-z=\"3\" points=\"197.5,140.0 229.0,164.0 197.5,164.0\"/><polygon data-z=\"4\" points=\"40.0,164.0 197.5,164.0 197.5,176.0 40.0,176.0\"/><polygon data-z=\"5\" points=\"197.5,164.0 229.0,164.0 197.5,176.0\"/><polygon data-z=\"6\" points=\"40.0,176.0 197.5,176.0 40.0,236.0\"/><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><line class=\"dsh\" x1=\"40.0\" y1=\"140.0\" x2=\"197.5\" y2=\"140.0\"/><line class=\"dsh\" x1=\"40.0\" y1=\"164.0\" x2=\"229.0\" y2=\"164.0\"/><line class=\"dsh\" x1=\"40.0\" y1=\"176.0\" x2=\"197.5\" y2=\"176.0\"/><line class=\"dsh\" x1=\"197.5\" y1=\"140.0\" x2=\"197.5\" y2=\"260.0\"/><text class=\"dm\" x=\"36\" y=\"144.0\" text-anchor=\"end\">50</text><text class=\"dm\" x=\"36\" y=\"168.0\" text-anchor=\"end\">40</text><text class=\"dm\" x=\"36\" y=\"180.0\" text-anchor=\"end\">35</text><text class=\"dm\" x=\"197.5\" y=\"274\" text-anchor=\"middle\">25</text><text class=\"dm\" x=\"229.0\" y=\"274\" text-anchor=\"middle\">30</text><text class=\"dl\" x=\"77.8\" y=\"111.2\" text-anchor=\"middle\">1</text><text class=\"dl\" x=\"103.0\" y=\"147.2\" text-anchor=\"middle\">2</text><text class=\"dl\" x=\"207.6\" y=\"158.5\" text-anchor=\"middle\">3</text><text class=\"dl\" x=\"103.0\" y=\"165.7\" text-anchor=\"middle\">4</text><text class=\"dl\" x=\"207.6\" y=\"171.2\" text-anchor=\"middle\">5</text><text class=\"dl\" x=\"77.8\" y=\"202.4\" text-anchor=\"middle\">6</text></svg>",
+       "a": [
+        "2",
+        "4"
+       ],
+       "multi": true,
+       "e": "La recaudación es t × Q: el rectángulo entre 50 y 35 hasta Q = 25."
+      },
+      {
+       "t": "tap",
+       "p": "Parte 3: toca la pérdida irrecuperable",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V260H292\"/><text class=\"dl\" x=\"14\" y=\"20\">P</text><text class=\"dl\" x=\"282\" y=\"290\">Q</text><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"288.0\" y=\"206.0\" text-anchor=\"end\">D</text><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"281.7\" y=\"131.6\" text-anchor=\"end\">O</text><polygon data-z=\"1\" points=\"40.0,20.0 40.0,140.0 197.5,140.0\"/><polygon data-z=\"2\" points=\"40.0,140.0 197.5,140.0 197.5,164.0 40.0,164.0\"/><polygon data-z=\"3\" points=\"197.5,140.0 229.0,164.0 197.5,164.0\"/><polygon data-z=\"4\" points=\"40.0,164.0 197.5,164.0 197.5,176.0 40.0,176.0\"/><polygon data-z=\"5\" points=\"197.5,164.0 229.0,164.0 197.5,176.0\"/><polygon data-z=\"6\" points=\"40.0,176.0 197.5,176.0 40.0,236.0\"/><line x1=\"40.0\" y1=\"20.0\" x2=\"292.0\" y2=\"212.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><line x1=\"40.0\" y1=\"236.0\" x2=\"292.0\" y2=\"140.0\" style=\"stroke:var(--bad);stroke-width:2.4\"/><line class=\"dsh\" x1=\"40.0\" y1=\"140.0\" x2=\"197.5\" y2=\"140.0\"/><line class=\"dsh\" x1=\"40.0\" y1=\"164.0\" x2=\"229.0\" y2=\"164.0\"/><line class=\"dsh\" x1=\"40.0\" y1=\"176.0\" x2=\"197.5\" y2=\"176.0\"/><line class=\"dsh\" x1=\"197.5\" y1=\"140.0\" x2=\"197.5\" y2=\"260.0\"/><text class=\"dm\" x=\"36\" y=\"144.0\" text-anchor=\"end\">50</text><text class=\"dm\" x=\"36\" y=\"168.0\" text-anchor=\"end\">40</text><text class=\"dm\" x=\"36\" y=\"180.0\" text-anchor=\"end\">35</text><text class=\"dm\" x=\"197.5\" y=\"274\" text-anchor=\"middle\">25</text><text class=\"dm\" x=\"229.0\" y=\"274\" text-anchor=\"middle\">30</text><text class=\"dl\" x=\"77.8\" y=\"111.2\" text-anchor=\"middle\">1</text><text class=\"dl\" x=\"103.0\" y=\"147.2\" text-anchor=\"middle\">2</text><text class=\"dl\" x=\"207.6\" y=\"158.5\" text-anchor=\"middle\">3</text><text class=\"dl\" x=\"103.0\" y=\"165.7\" text-anchor=\"middle\">4</text><text class=\"dl\" x=\"207.6\" y=\"171.2\" text-anchor=\"middle\">5</text><text class=\"dl\" x=\"77.8\" y=\"202.4\" text-anchor=\"middle\">6</text></svg>",
+       "a": [
+        "3",
+        "5"
+       ],
+       "multi": true,
+       "e": "Son las unidades entre 25 y 30 que ya no se venden."
+      }
+     ],
+     "steps": [
+      "Con impuesto el EC queda sobre el precio que paga el comprador (50): solo la zona 1.",
+      "Recaudación = 15 × 25 = S/ 375: los rectángulos 2 (lo pone el comprador) y 4 (lo pone el vendedor).",
+      "3 + 5: unidades entre 25 y 30 que se valoraban más que su costo y ya no se venden. No lo gana nadie: es la pérdida irrecuperable."
+     ],
+     "ans": "1 · 2 + 4 · 3 + 5",
+     "hint": "Ubica los dos precios: 50 y 35.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "exccons"
+      ],
+      [
+       "impexc"
+      ],
+      [
+       "dwl"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "b15e5",
+     "lvl": 2,
+     "title": "El balón de gas, paso a paso",
+     "q": "<p>Imagina el mercado de balones de gas de un distrito (miles de balones al mes): demanda \\(P=100-2Q\\) y oferta \\(P=10+Q\\), en soles.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1: equilibrio",
+       "f": [
+        {
+         "l": "Q de equilibrio",
+         "a": 30
+        },
+        {
+         "l": "P de equilibrio",
+         "a": 40,
+         "u": "S/"
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Parte 2: excedentes (miles de soles)",
+       "f": [
+        {
+         "l": "EC",
+         "a": 900,
+         "u": "S/"
+        },
+        {
+         "l": "EP",
+         "a": 450,
+         "u": "S/"
+        },
+        {
+         "l": "Bienestar total",
+         "a": 1350,
+         "u": "S/"
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Parte 3: impuesto de S/ 15 por balón",
+       "f": [
+        {
+         "l": "Q con impuesto",
+         "a": 25
+        },
+        {
+         "l": "Recaudación",
+         "a": 375,
+         "u": "S/"
+        },
+        {
+         "l": "Pérdida irrecuperable",
+         "a": 37.5,
+         "u": "S/",
+         "tol": 0.06
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Igualando: \\(100-2Q=10+Q\\Rightarrow Q=30\\), \\(P=40\\).",
+      "\\(EC=\\tfrac12\\cdot30\\cdot(100-40)=900\\) · \\(EP=\\tfrac12\\cdot30\\cdot(40-10)=450\\) · total 1350.",
+      "Con impuesto la oferta sube 15: \\(100-2Q=25+Q\\Rightarrow Q=25\\); paga 50, recibe 35. Recaudación \\(15\\cdot25=375\\); pérdida \\(\\tfrac12\\cdot(30-25)\\cdot15=37{,}5\\). Chequeo: EC 625 + EP 312,5 + 375 + 37,5 = 1350."
+     ],
+     "ans": "30 y 40 · 900, 450, 1350 · 25, 375, 37,5",
+     "hint": "Triángulos: ½ · base · altura.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "exccons"
+      ],
+      [
+       "exccons",
+       "excprod"
+      ],
+      [
+       "impexc"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "b15e6",
+     "lvl": 2,
+     "title": "Precio tope al balón",
+     "q": "<p>En el mismo mercado (\\(P=100-2Q\\), \\(P=10+Q\\)) imagina que se fija un <b>precio máximo de S/ 30</b>.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1: cantidades",
+       "f": [
+        {
+         "l": "Q ofrecida",
+         "a": 20
+        },
+        {
+         "l": "Q demandada",
+         "a": 35
+        },
+        {
+         "l": "Escasez",
+         "a": 15
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Parte 2: excedentes",
+       "f": [
+        {
+         "l": "EC",
+         "a": 1000,
+         "u": "S/"
+        },
+        {
+         "l": "EP",
+         "a": 200,
+         "u": "S/"
+        },
+        {
+         "l": "Pérdida irrecuperable",
+         "a": 150,
+         "u": "S/"
+        }
+       ]
+      },
+      {
+       "p": "Parte 3: ¿quién gana y quién pierde?",
+       "o": [
+        "Los consumidores que consiguen balón ganan, los productores pierden y la sociedad pierde S/ 150",
+        "Todos ganan, porque el gas es más barato",
+        "Solo pierden los productores; la sociedad no pierde nada",
+        "Los consumidores pierden todo su excedente",
+        "No cambia nada, porque el tope es menor que el equilibrio"
+       ]
+      }
+     ],
+     "steps": [
+      "Los productores ofrecen hasta donde \\(10+Q=30\\): \\(Q=20\\). Los consumidores quieren \\(100-2Q=30\\): \\(Q=35\\). Faltan 15.",
+      "Solo se venden 20. EC: el área entre la demanda y 30 hasta Q = 20, un trapecio de \\(\\tfrac{(70+30)}{2}\\cdot20=1000\\). EP: \\(\\tfrac12\\cdot20\\cdot(30-10)=200\\). Pérdida: \\(\\tfrac12\\cdot(30-20)\\cdot(60-30)=150\\). Chequeo: 1000 + 200 + 150 = 1350.",
+      "El EC sube de 900 a 1000 (para quien consigue balón), el EP cae de 450 a 200 y se pierden 150. Además, 15 mil familias se quedan sin balón."
+     ],
+     "ans": "Escasez 15 · 1000, 200, 150",
+     "hint": "Con tope, manda la oferta.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "intervp"
+      ],
+      [
+       "exccons",
+       "excprod",
+       "dwl"
+      ],
+      [
+       "intervp"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "b15e7",
+     "lvl": 2,
+     "title": "¿De quién es cada área?",
+     "q": "<p>Clasifica cada área según quién se la queda.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Consumidores",
+        "Productores",
+        "Estado",
+        "Nadie (se pierde)"
+       ],
+       "items": [
+        {
+         "x": "El área bajo la demanda y sobre el precio",
+         "c": 0
+        },
+        {
+         "x": "El área sobre la oferta y bajo el precio",
+         "c": 1
+        },
+        {
+         "x": "Impuesto por unidad × cantidad vendida",
+         "c": 2
+        },
+        {
+         "x": "El triángulo de unidades que dejan de venderse por un impuesto",
+         "c": 3
+        },
+        {
+         "x": "Con un precio máximo, el ahorro de quienes sí consiguen comprar",
+         "c": 0
+        },
+        {
+         "x": "Con un precio mínimo, lo que cobran de más los que sí venden",
+         "c": 1
+        },
+        {
+         "x": "Lo que la sociedad deja de ganar porque un monopolio produce menos",
+         "c": 3,
+         "e": "Es la pérdida irrecuperable del monopolio (semana 12)."
+        },
+        {
+         "x": "Lo que gana el monopolista por cobrar más que en competencia",
+         "c": 1,
+         "e": "Ese rectángulo pasa del consumidor al productor."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "El EC es de los consumidores y el EP de los productores; con impuesto aparece la recaudación (Estado).",
+      "La pérdida irrecuperable no la gana nadie: son intercambios que ya no ocurren, por impuestos, topes, pisos o monopolio."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "¿Alguien se lo queda?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "exccons",
+       "excprod"
+      ],
+      [
+       "dwl"
+      ]
+     ]
+    },
+    {
+     "id": "b15e8",
+     "lvl": 1,
+     "title": "¿Por qué es eficiente?",
+     "q": "<p>¿Por qué se dice que el equilibrio de un mercado competitivo es <b>eficiente</b>?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Porque maximiza EC + EP: se hacen todos los intercambios que valen más de lo que cuestan, y ninguno más",
+        "Porque el precio es el más bajo posible",
+        "Porque los consumidores tienen el máximo excedente posible",
+        "Porque todas las empresas ganan lo mismo",
+        "Porque no hay impuestos"
+       ]
+      }
+     ],
+     "steps": [
+      "A la izquierda del equilibrio, cada unidad vale para algún comprador más de lo que cuesta: conviene producirla.",
+      "A la derecha, cuesta más de lo que vale. El equilibrio deja justo las que suman: el bienestar total es el máximo. No significa que el precio sea el más bajo ni que el reparto sea «justo»."
+     ],
+     "ans": "Maximiza EC + EP",
+     "hint": "Compara valor y costo de cada unidad.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "eficien"
+      ],
+      [
+       "eficien"
+      ]
+     ]
+    },
+    {
+     "id": "b15e9",
+     "lvl": 2,
+     "title": "Precio mínimo a la papa",
+     "q": "<p>En el mercado \\(P=100-2Q\\), \\(P=10+Q\\) imagina que se fija un <b>precio mínimo de S/ 50</b> para apoyar a los productores.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1: cantidades",
+       "f": [
+        {
+         "l": "Q que se compra",
+         "a": 25
+        },
+        {
+         "l": "Q que se ofrece",
+         "a": 40
+        },
+        {
+         "l": "Excedente de oferta (sobra)",
+         "a": 15
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Parte 2: excedentes",
+       "f": [
+        {
+         "l": "EC",
+         "a": 625,
+         "u": "S/"
+        },
+        {
+         "l": "Pérdida irrecuperable",
+         "a": 37.5,
+         "u": "S/",
+         "tol": 0.06
+        }
+       ]
+      },
+      {
+       "p": "Parte 3: balance",
+       "o": [
+        "Los consumidores pierden; los productores que venden ganan, pero sobran 15 y se pierde bienestar",
+        "Ganan todos los productores, incluso los que no venden",
+        "No hay pérdida, porque el dinero se queda en el país",
+        "Los consumidores ganan, porque hay más producto",
+        "No es efectivo"
+       ]
+      }
+     ],
+     "steps": [
+      "Los consumidores compran donde \\(100-2Q=50\\): \\(Q=25\\). Los productores querrían vender donde \\(10+Q=50\\): \\(Q=40\\). Sobran 15.",
+      "Se venden 25. \\(EC=\\tfrac12\\cdot25\\cdot(100-50)=625\\) (antes 900). EP = 687,5 (antes 450). Pérdida \\(\\tfrac12\\cdot(30-25)\\cdot(50-35)=37{,}5\\).",
+      "Los consumidores pierden 275; los productores que logran vender ganan, pero el producto que sobra nadie lo compra. Chequeo: 625 + 687,5 + 37,5 = 1350."
+     ],
+     "ans": "Compran 25, sobran 15 · 625 y 37,5",
+     "hint": "Con piso, manda la demanda.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "intervp"
+      ],
+      [
+       "exccons",
+       "dwl"
+      ],
+      [
+       "intervp"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "b15e10",
+     "lvl": 2,
+     "title": "Eficiencia y externalidades",
+     "q": "<p>Una fábrica contamina un río y no paga por ese daño (semana 9). ¿El equilibrio del mercado es eficiente?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "No: la oferta solo cuenta el costo privado, así que se produce más de lo eficiente",
+        "Sí: todo equilibrio competitivo es eficiente",
+        "No: se produce menos de lo eficiente",
+        "Sí, si la empresa es pequeña",
+        "Depende solo del precio"
+       ]
+      }
+     ],
+     "steps": [
+      "La «máxima torta» del equilibrio supone que la oferta refleja todo el costo. Con contaminación, el costo social es mayor que el privado.",
+      "Se producen unidades cuyo costo social supera lo que valen: hay pérdida de bienestar. Por eso se corrige con impuestos o regulación (Pigou)."
+     ],
+     "ans": "No: se produce de más",
+     "hint": "Costo privado vs. social.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "eficien"
+      ],
+      [
+       "eficien"
+      ]
+     ]
+    },
+    {
+     "id": "b15e11",
+     "lvl": 2,
+     "title": "La feria de chocotejas",
+     "q": "<p>Imagina que en la feria (el juego de arriba, en 🧪) los compradores valoran la chocoteja en S/ 10, 9, 8, 7, 5, 4, 3 y 2, y los puestos tienen costos de S/ 2, 3, 4, 5, 7, 8, 9 y 10. Se fija el precio en <b>S/ 4</b>.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "Chocotejas que se venden",
+         "a": 3
+        },
+        {
+         "l": "Bienestar total",
+         "a": 18,
+         "u": "S/"
+        },
+        {
+         "l": "Pérdida frente al máximo",
+         "a": 2,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "A S/ 4 quieren comprar 6 personas (10, 9, 8, 7, 5, 4), pero solo venden 3 puestos (costos 2, 3, 4): se venden 3.",
+      "Compran los que más la valoran: excedente (10 − 4) + (9 − 4) + (8 − 4) = 15; puestos (4 − 2) + (4 − 3) + 0 = 3. Total 18.",
+      "El máximo es 20 (en el equilibrio, con precio entre 5 y 7, se venden 4). Se pierde el intercambio entre quien la valoraba en 7 y el puesto de costo 5: S/ 2."
+     ],
+     "ans": "3 · 18 · 2",
+     "hint": "Cuenta quién quiere comprar y quién quiere vender.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "intervp"
+      ],
+      [
+       "exccons",
+       "excprod"
+      ],
+      [
+       "dwl"
+      ]
+     ]
+    }
+   ],
+   "tools": [
+    {
+     "w": "feria",
+     "t": "¿Quién compra? La feria de chocotejas",
+     "p": "Mueve el precio y cumple los retos. Luego toca «Ver como gráfico»: los escalones son las curvas de demanda y oferta.",
+     "o": {}
+    },
+    {
+     "w": "exc",
+     "t": "Excedentes en vivo",
+     "p": "Elige un modo y mueve el deslizador: mira cómo cambian los excedentes y la pérdida irrecuperable (rojo).",
+     "o": {
+      "a": 100,
+      "b": 2,
+      "c": 10,
+      "d": 1,
+      "mode": "q"
+     }
+    }
+   ]
   }
  ],
  "figs": {},
@@ -7641,6 +8299,36 @@
    "f": "Cooperar conviene a ambos, traicionar a cada uno",
    "x": "Por eso los carteles son inestables; repetir el juego puede sostener la cooperación.",
    "home": "o13"
+  },
+  "exccons": {
+   "n": "Excedente del consumidor",
+   "f": "Disposición a pagar − precio",
+   "x": "Área bajo la demanda y sobre el precio.",
+   "home": "b15"
+  },
+  "excprod": {
+   "n": "Excedente del productor",
+   "f": "Precio − costo",
+   "x": "Área sobre la oferta y bajo el precio.",
+   "home": "b15"
+  },
+  "eficien": {
+   "n": "Eficiencia",
+   "f": "Equilibrio competitivo → EC + EP máximo",
+   "x": "Se hacen todos los intercambios que valen más de lo que cuestan.",
+   "home": "b15"
+  },
+  "impexc": {
+   "n": "Impuesto y bienestar",
+   "f": "Recaudación \\(t\\cdot Q\\) + triángulo perdido",
+   "x": "El comprador paga más, el vendedor recibe menos y se vende menos.",
+   "home": "b15"
+  },
+  "intervp": {
+   "n": "Precios máximos y mínimos",
+   "f": "Tope bajo → escasez · piso alto → sobra",
+   "x": "Ambos reducen la cantidad vendida y causan pérdida irrecuperable.",
+   "home": "b15"
   }
  },
  "simEx": [
@@ -8408,7 +9096,7 @@
     ]
    },
    {
-    "pts": 3,
+    "pts": 2,
     "name": "Sem. 9: externalidades",
     "pool": [
      "xg3",
@@ -8422,7 +9110,7 @@
     ]
    },
    {
-    "pts": 3,
+    "pts": 2,
     "name": "Sem. 10: bienes públicos",
     "pool": [
      "g10e2",
@@ -8444,7 +9132,7 @@
     ]
    },
    {
-    "pts": 4,
+    "pts": 3,
     "name": "Sem. 12: monopolio y competencia monopolística",
     "pool": [
      "m12e2",
@@ -8462,6 +9150,17 @@
      "o13e4",
      "o13e5",
      "o13e6"
+    ]
+   },
+   {
+    "pts": 3,
+    "name": "Sem. 15: economía del bienestar",
+    "pool": [
+     "b15e4",
+     "b15e5",
+     "b15e6",
+     "b15e9",
+     "b15e11"
     ]
    }
   ]

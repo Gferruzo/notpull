@@ -245,3 +245,84 @@ LW.poliz=(b,o)=>{const N=5,R=5,E=10,TH=30,BEN=15;const w=el('div','pzw');b.appen
       '<p>Eso es el <b>problema del polizón</b>: como nadie puede ser excluido del parque, a cada uno le conviene que paguen los otros. Por eso los bienes públicos suelen financiarse con <b>impuestos</b>.</p>'));
       const rs=el('button','lwb on','⟲ Jugar otra vez');rs.type='button';rs.onclick=reset;w.append(rs)}}
   reset()};
+/* ---------- excedentes en vivo (Micro sem. 15) ----------
+   LW.exc {"w":"exc","o":{"a":100,"b":2,"c":10,"d":1 (D: P=a−bQ, O: P=c+dQ, c≥0),"mode":"q"|"max"|"min"|"imp","modes":[…],"u":"S/"}}
+   Modos: q = mover la cantidad intercambiada · max = precio máximo · min = precio mínimo · imp = impuesto por unidad. */
+const excF=x=>{const r=Math.round(x*100)/100;let t=String(r).replace('.',',');if(Math.abs(r)>=1000)t=t.replace(/\B(?=(\d{3})+(?!\d))/g,' ');return t};
+const EXC_M={q:'Cantidad',max:'Precio máximo',min:'Precio mínimo',imp:'Impuesto'};
+LW.exc=(b,o)=>{const a=o.a,bb=o.b,c=o.c||0,d=o.d,u=o.u||'S/';const D=q=>a-bb*q,S=q=>c+d*q;const Qe=(a-c)/(bb+d),Pe=D(Qe);const W0=(a-c)*Qe/2;
+  const Qm=Math.min(a/bb,Qe*2),W=320,H=250,L=34,R=10,T=10,B=26,X=q=>L+(W-L-R)*q/Qm,Y=p=>T+(H-T-B)*(1-p/(a*1.02));
+  const w=el('div','exw');const top=el('div','plctl'),fig=el('div','plfig'),ctl=el('div','plctl'),ro=el('div','acro');w.append(top,fig,ctl,ro);b.append(w);
+  let mode=o.mode||'q',v;const modes=o.modes||['q','max','min','imp'];
+  const sp=(a-c)>=40?1:(a-c)>=10?0.5:0.1,sq=Qm>=20?1:Qm>=5?0.5:0.1,rd=(x,st)=>Math.round(x/st)*st;
+  const cfg=()=>mode==='q'?{min:sq,max:rd(Qm,sq),st:sq,v0:rd(Qe*0.5,sq),l:'Q ='}:mode==='max'?{min:rd(c+(Pe-c)*0.1,sp),max:rd(a*0.95,sp),st:sp,v0:rd(c+(Pe-c)*0.6,sp),l:'Tope ='}:
+    mode==='min'?{min:rd(c+(Pe-c)*0.2,sp),max:rd(a*0.9,sp),st:sp,v0:rd(Pe+(a-Pe)*0.4,sp),l:'Piso ='}:{min:0,max:rd((a-c)*0.9,sp),st:sp,v0:rd((a-c)*0.3,sp),l:'t ='};
+  const pts=ps=>ps.map(([q,p])=>X(q).toFixed(1)+','+Y(p).toFixed(1)).join(' ');
+  function calc(){let Q,Pb,Ps,msg='';
+    if(mode==='q'){Q=v;Pb=Ps=null}
+    else if(mode==='max'){if(v>=Pe){Q=Qe;Pb=Ps=Pe;msg='El tope está <b>por encima</b> del equilibrio: no es efectivo, el mercado sigue en P = '+excF(Pe)+'.'}
+      else{Q=(v-c)/d;Pb=Ps=v;msg='Precio máximo efectivo: los consumidores quieren '+excF((a-v)/bb)+' pero solo se ofrece '+excF(Q)+' → <b>escasez de '+excF((a-v)/bb-Q)+'</b>.'}}
+    else if(mode==='min'){if(v<=Pe){Q=Qe;Pb=Ps=Pe;msg='El piso está <b>por debajo</b> del equilibrio: no es efectivo.'}
+      else{Q=(a-v)/bb;Pb=Ps=v;msg='Precio mínimo efectivo: se ofrece '+excF((v-c)/d)+' pero solo se compra '+excF(Q)+' → <b>sobran '+excF((v-c)/d-Q)+'</b>.'}}
+    else{Q=Math.max(0,(a-c-v)/(bb+d));Pb=D(Q);Ps=Pb-v;msg='El comprador paga '+u+' '+excF(Pb)+', el vendedor recibe '+u+' '+excF(Ps)+': la diferencia (t) va al Estado.'}
+    return{Q,Pb,Ps,msg}}
+  function draw(){const {Q,Pb,Ps,msg}=calc();let s='<svg class="pls" viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">';
+    let ec=0,ep=0,rec=0,pi=0,tot;
+    if(mode==='q'){const q1=Math.min(Q,Qe);tot=(a-c)*q1-(bb+d)*q1*q1/2;
+      s+='<polygon class="exa tot" points="'+pts([[0,a],[q1,D(q1)],[q1,S(q1)],[0,c]])+'"/>';
+      if(Q<Qe){pi=W0-tot;s+='<polygon class="exa pi" points="'+pts([[Q,D(Q)],[Qe,Pe],[Q,S(Q)]])+'"/>'}
+      else if(Q>Qe){pi=(bb+d)*(Q-Qe)*(Q-Qe)/2;tot=W0-pi;s+='<polygon class="exa pi" points="'+pts([[Qe,Pe],[Q,S(Q)],[Q,D(Q)]])+'"/>'}}
+    else{ec=(a-Pb)*Q-bb*Q*Q/2;ep=(Ps-c)*Q-d*Q*Q/2;rec=(Pb-Ps)*Q;pi=W0-ec-ep-rec;tot=ec+ep+rec;
+      s+='<polygon class="exa ec" points="'+pts([[0,a],[0,Pb],[Q,Pb],[Q,D(Q)]])+'"/><polygon class="exa ep" points="'+pts([[0,Ps],[Q,Ps],[Q,S(Q)],[0,c]])+'"/>';
+      if(rec>1e-9)s+='<polygon class="exa rec" points="'+pts([[0,Pb],[Q,Pb],[Q,Ps],[0,Ps]])+'"/>';
+      if(pi>1e-6)s+='<polygon class="exa pi" points="'+pts([[Q,D(Q)],[Qe,Pe],[Q,S(Q)]])+'"/>';
+      if(mode!=='imp')s+='<line class="exp" x1="'+X(0)+'" y1="'+Y(v)+'" x2="'+X(Qm)+'" y2="'+Y(v)+'"/>'}
+    s+='<path class="gl" d="M'+L+' '+T+'V'+(H-B)+'H'+(W-R)+'" style="fill:none;stroke:var(--ink)"/>';
+    const qd=Math.min(Qm,a/bb),qs=Math.min(Qm,(a-c)/d);
+    s+='<line class="qm dd" x1="'+X(0)+'" y1="'+Y(a)+'" x2="'+X(qd)+'" y2="'+Y(D(qd))+'"/><line class="qm cmg" x1="'+X(0)+'" y1="'+Y(c)+'" x2="'+X(qs)+'" y2="'+Y(S(qs))+'"/>';
+    s+='<line class="qmq" x1="'+X(Q)+'" y1="'+T+'" x2="'+X(Q)+'" y2="'+(H-B)+'"/><circle class="qmp" cx="'+X(Qe)+'" cy="'+Y(Pe)+'" r="3"/>';
+    s+='<text class="qml dd" x="'+(X(qd)-2)+'" y="'+(Y(D(qd))-5)+'" text-anchor="end">D</text><text class="qml cmg" x="'+(X(qs)-2)+'" y="'+(Y(S(qs))+12)+'" text-anchor="end">O</text>';
+    s+='<text class="qml" x="'+(W-R)+'" y="'+(H-8)+'" text-anchor="end">Q</text><text class="qml" x="4" y="'+(T+8)+'">'+u+'</text></svg>';fig.innerHTML=s;
+    const row=(cl,n,x)=>'<tr><td><span class="exk '+cl+'"></span>'+n+'</td><td>'+u+' '+excF(x)+'</td></tr>';
+    let t='<div class="tbl"><table class="pott ext">';
+    if(mode==='q')t+=row('tot','Bienestar total (EC + EP)',tot)+row('pi','Pérdida irrecuperable',pi);
+    else t+=row('ec','Excedente del consumidor',ec)+row('ep','Excedente del productor',ep)+(mode==='imp'?row('rec','Recaudación',rec):'')+row('pi','Pérdida irrecuperable',pi)+'<tr><td><b>Bienestar total</b></td><td><b>'+u+' '+excF(tot)+'</b></td></tr>';
+    t+='</table></div>';
+    const note=mode==='q'?(Math.abs(Q-Qe)<Qm/80?'<b>Q = '+excF(Qe)+': el equilibrio.</b> Se hacen todos los intercambios que valen más de lo que cuestan: el bienestar es el máximo ('+u+' '+excF(W0)+').':
+      Q<Qe?'Con Q = '+excF(Q)+' faltan unidades que los consumidores valoran más de lo que cuestan: se pierde el triángulo rojo.':'Con Q = '+excF(Q)+' se producen unidades que cuestan más de lo que valen: también se pierde bienestar.'):msg;
+    ro.innerHTML=t+'<p>'+note+'</p><p class="note">Sin intervenir: EC + EP = '+u+' '+excF(W0)+' (equilibrio Q = '+excF(Qe)+', P = '+excF(Pe)+').</p>'}
+  function setup(){ctl.innerHTML='';const g=cfg();v=g.v0;const r=el('label','acsl');r.append(el('span','plrl',g.l));const i=el('input','plrg');i.type='range';i.min=g.min;i.max=g.max;i.step=g.st;i.value=v;i.setAttribute('aria-label',EXC_M[mode]);
+    const vv=el('b',null,excF(v));i.oninput=()=>{v=+i.value;vv.textContent=excF(v);draw()};r.append(i,vv);ctl.append(r);draw()}
+  if(modes.length>1)modes.forEach(m=>{const x=el('button','lwb'+(m===mode?' on':''),EXC_M[m]);x.type='button';x.onclick=()=>{mode=m;top.querySelectorAll('.lwb').forEach(z=>z.classList.toggle('on',z===x));setup()};top.append(x)});
+  setup()};
+/* ---------- ¿Quién compra? (feria de chocotejas, Micro sem. 15) ----------
+   LW.feria {"w":"feria","o":{"buy":[[nombre,valoración]…],"sell":[[nombre,costo]…],"pmin":1,"pmax":11,"step":0.5,"item":"chocoteja"}} */
+LW.feria=(b,o)=>{const BU=(o.buy||[['Ana',10],['Beto',9],['Carla',8],['Diego',7],['Elena',5],['Fito',4],['Gabi',3],['Hugo',2]]).slice().sort((x,y)=>y[1]-x[1]);
+  const SE=(o.sell||[['Puesto 1',2],['Puesto 2',3],['Puesto 3',4],['Puesto 4',5],['Puesto 5',7],['Puesto 6',8],['Puesto 7',9],['Puesto 8',10]]).slice().sort((x,y)=>x[1]-y[1]);
+  const it=o.item||'chocoteja';let maxW=0;for(let k=0;k<Math.min(BU.length,SE.length);k++)if(BU[k][1]>=SE[k][1])maxW+=BU[k][1]-SE[k][1];
+  const w=el('div','frw');b.append(w);const intro=el('p','pzh','Eres quien organiza la feria. Cada comprador paga como máximo su <b>valoración</b>; cada puesto vende solo si el precio cubre su <b>costo</b>. Mueve el precio y mira quién compra, quién vende y cuánto gana cada uno.');
+  const ctl=el('div','plctl'),cards=el('div','frc'),fig=el('div','plfig'),ro=el('div','acro'),ret=el('div','frr');w.append(intro,ctl,cards,ro,fig,ret);
+  let P=o.p0!=null?o.p0:9;const done={eq:false,low:false,max:false};
+  const r=el('label','acsl');r.append(el('span','plrl','Precio ='));const i=el('input','plrg');i.type='range';i.min=o.pmin||1;i.max=o.pmax||11;i.step=o.step||0.5;i.value=P;i.setAttribute('aria-label','Precio');
+  const vv=el('b',null,'S/ '+excF(P));i.oninput=()=>{P=+i.value;vv.textContent='S/ '+excF(P);draw()};r.append(i,vv);ctl.append(r);
+  const gb=el('button','lwb','📈 Ver como gráfico');gb.type='button';let showG=false;gb.onclick=()=>{showG=!showG;gb.classList.toggle('on',showG);draw()};ctl.append(gb);
+  function draw(){const wb=BU.filter(x=>x[1]>=P),ws=SE.filter(x=>x[1]<=P);const Q=Math.min(wb.length,ws.length);
+    let ec=0,ep=0;const cb=BU.map((x,k)=>{const want=x[1]>=P,got=want&&k<Q;if(got)ec+=x[1]-P;return '<div class="frk '+(got?'got':want?'miss':'out')+'"><b>🧑 '+x[0]+'</b><span>valora S/ '+excF(x[1])+'</span><em>'+(got?'compra · gana S/ '+excF(x[1]-P):want?'quiere, pero no alcanza':'no compra: muy caro')+'</em></div>'}).join('');
+    const cs=SE.map((x,k)=>{const want=x[1]<=P,got=want&&k<Q;if(got)ep+=P-x[1];return '<div class="frk s '+(got?'got':want?'miss':'out')+'"><b>🏪 '+x[0]+'</b><span>costo S/ '+excF(x[1])+'</span><em>'+(got?'vende · gana S/ '+excF(P-x[1]):want?'quiere vender, pero nadie más compra':'no vende: no cubre su costo')+'</em></div>'}).join('');
+    cards.innerHTML='<div><p class="frh">Compradores</p>'+cb+'</div><div><p class="frh">Puestos</p>'+cs+'</div>';
+    const tot=ec+ep,gap=wb.length-ws.length;
+    ro.innerHTML='<div class="tbl"><table class="pott"><tr><th>Se venden</th><th>Excedente de compradores</th><th>Excedente de puestos</th><th>Total</th></tr><tr><td>'+Q+'</td><td>S/ '+excF(ec)+'</td><td>S/ '+excF(ep)+'</td><td><b>S/ '+excF(tot)+'</b></td></tr></table></div>'+
+      '<p>'+(gap>0?'Faltan '+gap+' '+it+'s: hay más gente que quiere comprar que puestos dispuestos a vender (<b>escasez</b>).':gap<0?'Sobran '+(-gap)+' '+it+'s: hay puestos que quieren vender y no tienen a quién (<b>exceso de oferta</b>).':'Todos los que quieren comprar a ese precio encuentran quién les venda: <b>equilibrio</b>.')+
+      (tot<maxW-1e-9?' Se pierden S/ '+excF(maxW-tot)+' de bienestar frente al máximo posible.':' El bienestar total es el <b>máximo posible</b>.')+'</p>';
+    if(showG){const n=Math.max(BU.length,SE.length),Wd=320,Hd=210,L=30,R=8,T=8,Bm=22,top=Math.max(BU[0][1],SE[SE.length-1][1])+1;const X=q=>L+(Wd-L-R)*q/n,Y=p=>T+(Hd-T-Bm)*(1-p/top);
+      let s='<svg class="pls" viewBox="0 0 '+Wd+' '+Hd+'" xmlns="http://www.w3.org/2000/svg">';
+      for(let k=0;k<Q;k++){s+='<rect class="exa ec" x="'+X(k)+'" y="'+Y(BU[k][1])+'" width="'+(X(1)-X(0))+'" height="'+(Y(P)-Y(BU[k][1]))+'"/><rect class="exa ep" x="'+X(k)+'" y="'+Y(P)+'" width="'+(X(1)-X(0))+'" height="'+(Y(SE[k][1])-Y(P))+'"/>'}
+      const stair=(arr,cl)=>{let d='';arr.forEach((x,k)=>{d+=(k?'L':'M')+X(k)+' '+Y(x[1])+'H'+X(k+1)});return '<path class="qm '+cl+'" d="'+d+'"/>'};
+      s+=stair(BU,'dd')+stair(SE,'cmg')+'<line class="exp" x1="'+X(0)+'" y1="'+Y(P)+'" x2="'+X(n)+'" y2="'+Y(P)+'"/><path class="gl" d="M'+L+' '+T+'V'+(Hd-Bm)+'H'+(Wd-R)+'" style="fill:none;stroke:var(--ink)"/>';
+      s+='<text class="qml dd" x="'+(X(n)-2)+'" y="'+(Y(BU[BU.length-1][1])-5)+'" text-anchor="end">Demanda (valoraciones)</text><text class="qml cmg" x="'+(X(n)-2)+'" y="'+(Y(SE[SE.length-1][1])-5)+'" text-anchor="end">Oferta (costos)</text>';
+      s+='<text class="qml" x="'+(Wd-R)+'" y="'+(Hd-6)+'" text-anchor="end">'+it+'s</text><text class="qml" x="2" y="'+(T+8)+'">S/</text></svg>';
+      fig.innerHTML=s+'<p class="note">Cada escalón es una persona. Azul: lo que ganan los compradores (valoración − precio). Naranja: lo que ganan los puestos (precio − costo). Juntos forman los triángulos que verás en la teoría.</p>'}else fig.innerHTML='';
+    if(gap===0&&Q>0)done.eq=true;if(P<=SE[Math.floor(SE.length/2)-1][1]&&gap>0)done.low=true;if(Math.abs(tot-maxW)<1e-9&&Q>0)done.max=true;
+    const R=[['eq','Encuentra un precio donde no falte ni sobre nadie.'],['low','Baja el precio hasta que falten '+it+'s: ¿quién se queda sin comprar aunque la valoraba mucho?'],['max','Logra el bienestar total máximo: S/ '+excF(maxW)+'.']];
+    ret.innerHTML='<p class="frh">Retos</p>'+R.map(([k,t])=>'<p>'+(done[k]?'✅':'⬜')+' '+t+'</p>').join('')+(done.eq&&done.low&&done.max?'<div class="pzend"><p><b>¡Listo!</b> En el equilibrio se hacen justo los intercambios que valen la pena: los que valoran más que el costo. Si el precio se aleja, se pierden intercambios y bienestar (y con escasez, puede quedarse sin comprar alguien que la valoraba mucho).</p></div>':'')}
+  draw()};
