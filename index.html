@@ -182,6 +182,7 @@ mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 .nvi .nvk{padding:1px 8px;border-radius:999px;background:#D9483B;color:#fff;font-weight:800;text-transform:uppercase;letter-spacing:.03em;font-size:.68rem}
 .nvi .nvk.upd{background:#2F6FB5}
 .nvi .nvx{font-weight:600;line-height:1.4}
+.nvhead{position:sticky;top:-22px;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--card);margin:-22px -22px 0;padding:18px 22px 6px}.nvhead h2{margin:0}.nvx2{flex:none;width:40px;height:40px;border:1.5px solid var(--ink);border-radius:999px;background:var(--card);color:var(--ink);font:800 1.1rem Figtree,sans-serif;cursor:pointer}
 .nvi .nvadd{margin-top:8px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:8px;padding:5px 12px;font:800 .8rem Figtree;cursor:pointer}
 :root[data-theme="dark"] .bell{border-color:#DCE3EE;background:#131D30;color:#E6ECF5}
 :root[data-theme="dark"] .bell:hover{background:#E6ECF5;color:#0F1726}
@@ -403,8 +404,8 @@ body.snMini #snav .tbtn,body.snMini #snav .simbtn{justify-content:center;padding
 .badge.done{border-color:var(--l2);color:var(--l2)}
 .badge.ready{border-color:var(--ok);color:#fff;background:var(--ok)}
 .badge.top{border-color:#B8860B;background:linear-gradient(135deg,#F7D774,#D4A017);color:#3a2800}
-.ovl{position:fixed;inset:0;z-index:50;background:rgba(10,18,32,.55);display:grid;place-items:center;padding:calc(env(safe-area-inset-top,0px) + 16px) 16px calc(env(safe-area-inset-bottom,0px) + 16px)}
-.modal{background:var(--card);color:var(--ink);border:1.5px solid var(--ink);border-radius:14px;box-shadow:6px 6px 0 var(--ink);width:min(560px,100%);max-height:100%;overflow:auto;padding:22px}
+.ovl{position:fixed;inset:0;z-index:50;background:rgba(10,18,32,.55);display:grid;place-items:center;padding:calc(env(safe-area-inset-top,0px) + 16px) 16px calc(env(safe-area-inset-bottom,0px) + 16px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.modal{background:var(--card);color:var(--ink);border:1.5px solid var(--ink);border-radius:14px;box-shadow:6px 6px 0 var(--ink);width:min(560px,100%);max-height:calc(100vh - 32px);max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 32px);overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:22px}
 .modal h2{font:600 1.7rem/1.15 Newsreader,serif;margin:.1em 0 .3em}
 .modal .sub{color:var(--muted);margin:0 0 12px}
 .kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:12px 0}
@@ -2895,7 +2896,7 @@ function bellUI(){const b=$('bellbtn'),c=$('bellct');if(!b)return;const k=NOTI?n
   c.hidden=!k;c.textContent=k>9?'9+':k;b.setAttribute('aria-label',k?'Novedades: '+k+' sin leer':'Novedades');
   if(k&&!bellRung){bellRung=true;b.classList.add('ring')}}
 const nvAgo=f=>{const d=Math.round((new Date().setHours(0,0,0,0)-nvDay(f))/864e5);return d<=0?'Hoy':d===1?'Ayer':'Hace '+d+' días'};
-function bellModal(){const n=el('div');n.append(el('h2',null,'Novedades'));const L=nvList();
+function bellModal(){const n=el('div');const hd=el('div','nvhead');hd.append(el('h2',null,'Novedades'));const x=el('button','nvx2','✕');x.type='button';x.setAttribute('aria-label','Cerrar');x.onclick=closeModal;hd.append(x);n.append(hd);const L=nvList();
   if(!L.length)n.append(el('p','sub','No hay novedades en los últimos '+NV_DIAS+' días.'));
   else{n.append(el('p','sub','Novedades de la app, cursos nuevos y actualizaciones de los últimos '+NV_DIAS+' días. Toca una para verla.'));
     const box=el('div','nvlist');const esc=t=>String(t||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'})[c]);
@@ -2906,7 +2907,7 @@ function bellModal(){const n=el('div');n.append(el('h2',null,'Novedades'));const
       b.onclick=go;b.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}};
       if(!up&&MIS&&g&&!nvMine(it)){const ad=el('button','nvadd','Agregar a Mis cursos');ad.onclick=e=>{e.stopPropagation();setMis(MIS.sel.concat(it.curso));ad.replaceWith(el('span','nvt','✓ Agregado a Mis cursos'));renderMenu()};b.append(ad)}
       box.append(b)});n.append(box)}
-  const bt=el('div','mbtns');const cl=el('button',null,'Cerrar');cl.onclick=closeModal;bt.append(cl);n.append(bt);openModal(n);
+  const bt=el('div','mbtns');const cl=el('button',null,'Cerrar');cl.onclick=closeModal;bt.append(cl);n.append(bt);const mm=openModal(n);mm.scrollTop=0;
   if(NOTI){const add=L.map(x=>x.id).filter(i=>!NOTI.seen.includes(i));if(add.length){NOTI.seen.push(...add);notiSave()}}
   $('bellbtn').classList.remove('ring');bellUI()}
 $('bellbtn').onclick=bellModal;
