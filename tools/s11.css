@@ -47,3 +47,27 @@
 .potsvg .potl{fill:var(--tan);font:600 10px Figtree,sans-serif}
 .potsvg .potl.b{fill:var(--bad);font-size:12px}
 .pott td,.pott th{padding:2px 8px;font-size:.85rem}
+.nst{border-collapse:collapse;margin:.3em 0}
+.nst th,.nst td{border:1px solid var(--line);padding:5px 4px;text-align:center;font-size:.84rem}
+.nscell{white-space:nowrap}
+.nst th.nsc{font-size:.72rem;color:var(--muted);font-weight:600}
+.nscell.nstap{cursor:pointer}
+.nscell.on{background:var(--teo-bg)}
+.nscell.ne{outline:3px solid var(--ok);outline-offset:-3px}
+.nscell.good{background:var(--ok-bg)}.nscell.bad{background:var(--bad-bg)}
+.nsp{border:none;background:none;font:700 .95rem Figtree,sans-serif;padding:2px 4px;border-radius:4px;color:inherit;cursor:pointer}
+.nsp.p1,.nsleg .p1{color:var(--curve)}.nsp.p2,.nsleg .p2{color:var(--tan)}
+.nsp:disabled{cursor:default}
+.nsp.on,.nsp.br{text-decoration:underline 3px;background:var(--grid)}
+.nsp.good{background:var(--ok-bg)}.nsp.bad{background:var(--bad-bg)}
+.nsleg{font-size:.8rem;margin:.2em 0}
+.qmw .qm{fill:none;stroke-width:2.2}
+.qm.dd{stroke:var(--curve)}.qm.img{stroke:var(--curve);stroke-dasharray:5 4}.qm.cmg{stroke:var(--bad)}.qm.cme{stroke:var(--tan)}
+.qmq{stroke:var(--ink);stroke-dasharray:3 3}
+.qmp{fill:var(--ink)}
+.qmr.pos{fill:color-mix(in srgb,var(--ok) 30%,transparent)}.qmr.neg{fill:color-mix(in srgb,var(--bad) 30%,transparent)}
+.qml{font:600 10px Figtree,sans-serif;fill:var(--muted)}
+.qml.cmg{fill:var(--bad)}.qml.cme{fill:var(--tan)}.qml.dd,.qml.img{fill:var(--curve)}
+.pzh{font-size:.9rem}
+.pzt td{white-space:nowrap}
+.pzend{border-left:4px solid var(--ok);padding:4px 10px;margin:.5em 0;background:var(--ok-bg);border-radius:6px}

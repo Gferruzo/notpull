@@ -1,0 +1,3634 @@
+{
+ "formSim": false,
+ "code": "AD1002",
+ "name": "Microeconomía Aplicada",
+ "guide": true,
+ "id": "micro-pc2",
+ "exam": "Práctica Calificada 2 (semana 14)",
+ "short": "PC2",
+ "sub": "Sem. 9 a 13",
+ "intro": "Bloque de la <b>Práctica Calificada 2</b> (semana 14, 20 % de la nota): externalidades (semana 9) y las semanas 10 a 13. <b>📖 Las semanas 10 a 13 están adelantadas según el sílabo</b>, porque el profesor aún no sube esas clases: se armaron con la bibliografía del curso (Krugman y Pindyck) y se ajustarán cuando llegue su material. Cada tema empieza con un calentamiento de la semana anterior para que no se te olvide. Hay juego del polizón, buscador del beneficio máximo y matriz de pagos interactiva.",
+ "form": "<p class=\"note\">Hoja de repaso de la PC2: semana 9 y las semanas 10 a 13 (adelantadas según el sílabo).</p><div class=\"fgrid\"><div><b>Externalidad</b><br>Efecto no compensado sobre un tercero</div><div><b>Negativa</b><br>Costo social &gt; privado · \\(Q_m\\gt Q^*\\) · impuesto</div><div><b>Positiva</b><br>Valor social &gt; privado · \\(Q_m\\lt Q^*\\) · subsidio</div><div><b>Gráfico</b><br>Negativa: sube la oferta · positiva: sube la demanda</div><div><b>Pigou</b><br>Impuesto por unidad = costo externo</div><div><b>Políticas públicas</b><br>Órdenes y controles · mercado (impuestos, subsidios, permisos) · educación</div><div><b>Permisos</b><br>Total fijo; reduce quien lo hace más barato</div><div><b>Coase</b><br>Negociación sin costos + derechos claros ⇒ eficiencia sin Estado</div><div><b>Tipos de bienes</b><br>¿excluible? ¿rival? · público: no y no → polizón</div><div><b>Costo–beneficio</b><br>proveer si Σ valoraciones ≥ costo</div><div><b>Máximo beneficio</b><br>\\(IMg=CMg\\) · \\(\\pi=(P-CMe)Q\\)</div><div><b>Competencia perfecta</b><br>\\(P=CMg\\) · largo plazo beneficio 0</div><div><b>Monopolio</b><br>\\(IMg=a-2bQ\\) · Q con IMg = CMg, P en la demanda · pérdida irrecuperable</div><div><b>Comp. monopolística</b><br>diferenciado + libre entrada → beneficio 0, P &gt; CMg</div><div><b>Teoría de juegos</b><br>subraya mejores respuestas → Nash · dominante · dilema del prisionero</div></div>",
+ "topics": [
+  {
+   "id": "x9def",
+   "name": "Sem. 9 · Externalidades: definición y tipos",
+   "teo": "<p>Los mercados hacen bien muchas cosas, pero no todo: una <strong>falla de mercado</strong> es cuando la economía no asigna los recursos eficientemente por sí misma.</p><p>Una <strong>externalidad</strong> es el efecto no compensado de las acciones de una persona sobre el bienestar de un tercero. Es <strong>negativa</strong> si le genera un costo (contaminación, ruido, tráfico) y <strong>positiva</strong> si le genera un beneficio (edificios históricos restaurados, investigación, seguridad).</p>",
+   "form": [
+    "Externalidad: efecto no compensado sobre un tercero",
+    "Negativa: costo para otros",
+    "Positiva: beneficio para otros",
+    "Una misma actividad puede tener ambas"
+   ],
+   "lesson": "<h3>Idea central</h3><p>La clave es el <strong>tercero</strong>: alguien que no participa en la compra o venta y aun así gana o pierde, sin compensación.</p><h3>Caso de la clase</h3><p>Una fábrica de papel emite dioxina (cancerígena). La «mano invisible» no la regula: la empresa no paga ese costo. Pero eliminar las fábricas tampoco es la solución: el papel también genera valor. Lo que se busca es la <strong>cantidad óptima</strong>.</p><div class=\"ej\"><b>Ejemplos:</b> tubo de escape (negativa), edificio histórico restaurado (positiva), perro que ladra en un departamento (negativa), investigación de nuevas tecnologías (positiva).</div><div class=\"err\"><b>Error común:</b> llamar externalidad a un efecto que sí se paga en el precio (eso es el mercado funcionando).</div>",
+   "ex": [
+    {
+     "id": "xd1",
+     "lvl": 1,
+     "title": "Definición",
+     "q": "<p>Una externalidad es…</p>",
+     "checks": [
+      {
+       "p": "Definición",
+       "o": [
+        "El efecto no compensado de las acciones de una persona sobre el bienestar de un tercero",
+        "Cualquier aumento del precio de un bien",
+        "Un impuesto que cobra el Estado",
+        "El costo de producir una unidad adicional",
+        "Un acuerdo entre comprador y vendedor"
+       ]
+      }
+     ],
+     "steps": [
+      "Lo clave: afecta a un tercero y no se compensa en el precio."
+     ],
+     "ans": "Efecto no compensado sobre un tercero",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extern"
+      ]
+     ]
+    },
+    {
+     "id": "xd9",
+     "lvl": 1,
+     "title": "¿Positiva, negativa o ninguna?",
+     "q": "<p>Clasifica cada efecto sobre terceros.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "¿Qué tipo de externalidad es?",
+       "cats": [
+        "Negativa",
+        "Positiva",
+        "No es externalidad"
+       ],
+       "items": [
+        {
+         "x": "Un teatro nuevo atrae tránsito que afecta al barrio: $5 por boleto.",
+         "c": 0
+        },
+        {
+         "x": "El ir y venir de actores mejora la seguridad de las calles: $2 por boleto.",
+         "c": 1
+        },
+        {
+         "x": "Una fábrica química aumenta emisiones que deterioran el aire del vecindario.",
+         "c": 0
+        },
+        {
+         "x": "Un vecino planta un jardín: sube el valor de las casas y las abejas polinizan otros jardines.",
+         "c": 1
+        },
+        {
+         "x": "El tubo de escape de los autos.",
+         "c": 0
+        },
+        {
+         "x": "Se restaura un edificio histórico del barrio.",
+         "c": 1
+        },
+        {
+         "x": "Una empresa investiga una tecnología que luego usan otras.",
+         "c": 1
+        },
+        {
+         "x": "Un perro ladra toda la noche en un departamento.",
+         "c": 0
+        },
+        {
+         "x": "Pagas S/ 2 más por tu café porque subió el precio del grano.",
+         "c": 2,
+         "e": "Ese efecto sí se paga en el precio: es el mercado funcionando."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Negativa: impone un <strong>costo</strong> a un tercero que no participa (tránsito, contaminación, ruido, humo).",
+      "Positiva: da un <strong>beneficio</strong> a un tercero que no paga (seguridad, jardín, edificio restaurado, investigación).",
+      "Si el efecto se paga en el precio, no hay tercero sin compensar: no es externalidad."
+     ],
+     "ans": "N, P, N, P, N, P, P, N, ninguna",
+     "hint": "¿Hay un tercero que gana o pierde sin compensación?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extern",
+       "extneg"
+      ],
+      [
+       "extpos"
+      ],
+      [
+       "extern"
+      ]
+     ]
+    },
+    {
+     "id": "xd4",
+     "lvl": 2,
+     "title": "Teatro: efecto neto",
+     "q": "<p>Con las dos externalidades del teatro (costo de $5 y beneficio de $2 por boleto), ¿cuál es el efecto externo neto y qué corregiría al mercado?</p>",
+     "checks": [
+      {
+       "p": "Resultado",
+       "o": [
+        "Negativa de $3 por boleto: un impuesto de $3 por boleto",
+        "Positiva de $3: un subsidio de $3",
+        "Negativa de $7: impuesto de $7",
+        "Neutra: no hace falta nada",
+        "Negativa de $5: impuesto de $5"
+       ]
+      }
+     ],
+     "steps": [
+      "Neto: \\(2-5=-3\\) dólares por boleto: externalidad negativa.",
+      "Un impuesto pigouviano igual al costo externo neto (\\$3) internaliza el efecto."
+     ],
+     "ans": "−$3: impuesto de $3",
+     "hint": "Suma costos y beneficios externos.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extneg"
+      ],
+      [
+       "pigou"
+      ]
+     ]
+    },
+    {
+     "id": "xd7",
+     "lvl": 2,
+     "title": "Campus universitario",
+     "q": "<p>Un campus nuevo impulsa los comercios cercanos y atrae inversión, pero trae más tráfico y ruido nocturno a los residentes. ¿Cómo se clasifica?</p>",
+     "checks": [
+      {
+       "p": "Tipo",
+       "o": [
+        "Tiene externalidades positivas y negativas a la vez",
+        "Solo positiva",
+        "Solo negativa",
+        "No tiene externalidades",
+        "Es una falla del Estado"
+       ]
+      }
+     ],
+     "steps": [
+      "Beneficios para la comunidad (dinamismo, inversión) y costos para los residentes (tráfico, ruido).",
+      "Una misma actividad puede generar ambos tipos."
+     ],
+     "ans": "Ambas",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extpos"
+      ],
+      [
+       "extneg"
+      ]
+     ]
+    },
+    {
+     "id": "xd8",
+     "lvl": 2,
+     "title": "¿Cerrar las fábricas de papel?",
+     "q": "<p>Si la fábrica de papel emite dioxina, ¿eliminar todas las fábricas de papel sería lo mejor para la sociedad?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "No: el papel genera valor; lo eficiente es reducir la producción a la cantidad óptima que considera el costo social",
+        "Sí: así desaparece la externalidad",
+        "Sí: la mano invisible lo hará sola",
+        "No: las externalidades no importan",
+        "Sí: toda producción con externalidades debe prohibirse"
+       ]
+      }
+     ],
+     "steps": [
+      "El objetivo no es cero producción, sino la cantidad socialmente óptima, donde se considera el costo de la contaminación."
+     ],
+     "ans": "No: buscar la cantidad óptima",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "internal"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x9graf",
+   "name": "Sem. 9 · Externalidades en el gráfico",
+   "teo": "<p><strong>Negativa</strong> (mercado del aluminio): la oferta social \\(O_2\\) = costo privado + costo externo está por encima de la oferta privada. El mercado produce \\(Q_{mercado}\\gt Q_{óptima}\\).</p><p><strong>Positiva</strong> (mercado educativo): la demanda social \\(D_2\\) = valor privado + beneficio externo está por encima de la privada. El mercado produce \\(Q_{mercado}\\lt Q_{óptima}\\).</p><p>Solución del Estado: <strong>internalizar</strong> con impuestos (negativas) o subsidios (positivas).</p>",
+   "form": [
+    "Negativa: \\(O_{social}=O_{privada}+\\) costo externo",
+    "Positiva: \\(D_{social}=D_{privada}+\\) beneficio externo",
+    "Negativa: \\(Q_m\\gt Q^*\\) · Positiva: \\(Q_m\\lt Q^*\\)",
+    "Impuesto = costo externo por unidad · subsidio = beneficio externo por unidad"
+   ],
+   "lesson": "<h3>Idea central</h3><p>El mercado iguala costos y valores <strong>privados</strong>; el óptimo social iguala costos y valores <strong>sociales</strong>. La distancia entre ambas curvas es el efecto externo por unidad.</p><h3>Cómo resolverlo</h3><ul><li><strong>1.</strong> Equilibrio de mercado: \\(D=O_{privada}\\).</li><li><strong>2.</strong> Desplaza la curva que corresponde (oferta hacia arriba si es costo, demanda hacia arriba si es beneficio).</li><li><strong>3.</strong> Óptimo: corta la curva social con la otra.</li></ul><div class=\"err\"><b>Error común:</b> desplazar la demanda en una externalidad negativa de producción (se desplaza la oferta social).</div>",
+   "ex": [
+    {
+     "id": "xg1",
+     "lvl": 1,
+     "title": "Negativa: ¿cuánto produce el mercado?",
+     "q": "<p>Con una externalidad negativa, el mercado produce…</p>",
+     "checks": [
+      {
+       "p": "Cantidad",
+       "o": [
+        "Más que la cantidad socialmente óptima",
+        "Menos que la óptima",
+        "Exactamente la óptima",
+        "Cero",
+        "Depende solo del precio"
+       ]
+      }
+     ],
+     "steps": [
+      "Las empresas no consideran el costo externo: su oferta está «por debajo» de la social, y producen de más."
+     ],
+     "ans": "Más que la óptima",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extneg"
+      ]
+     ]
+    },
+    {
+     "id": "xg2",
+     "lvl": 1,
+     "title": "Positiva: ¿cuánto produce el mercado?",
+     "q": "<p>Con una externalidad positiva (por ejemplo, educación), el mercado produce…</p>",
+     "checks": [
+      {
+       "p": "Cantidad",
+       "o": [
+        "Menos que la cantidad socialmente óptima",
+        "Más que la óptima",
+        "Exactamente la óptima",
+        "Infinito",
+        "Lo mismo que sin externalidad"
+       ]
+      }
+     ],
+     "steps": [
+      "Los compradores no valoran el beneficio que reciben otros: la demanda privada está por debajo de la social."
+     ],
+     "ans": "Menos que la óptima",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extpos"
+      ]
+     ]
+    },
+    {
+     "id": "xg7",
+     "lvl": 2,
+     "title": "Dibuja el costo social (aluminio)",
+     "q": "<p>Las fábricas de aluminio contaminan: cada unidad genera un costo externo. Arrastra la curva del <strong>costo social</strong> (empieza encima de la oferta privada) hasta donde corresponde.</p>",
+     "checks": [
+      {
+       "t": "shift",
+       "p": "Mueve la oferta social. El punto gris es el equilibrio de mercado.",
+       "none": false,
+       "eq": [
+        [
+         0,
+         2
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "ax": [
+        "Q",
+        "P"
+       ],
+       "c": [
+        {
+         "k": "D",
+         "tp": "d",
+         "a": 0,
+         "fix": true
+        },
+        {
+         "k": "O privada",
+         "s": "Opriv",
+         "tp": "o",
+         "a": 0,
+         "fix": true,
+         "lp": "m"
+        },
+        {
+         "k": "O social",
+         "s": "Osoc",
+         "tp": "o",
+         "a": -1,
+         "e": "El costo social = costo privado + costo externo: queda <b>arriba</b> (a la izquierda) de la oferta privada."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "El costo social suma el costo externo al privado: a cada cantidad, cuesta más. La oferta social queda <strong>por encima</strong> de la privada (se ve como un desplazamiento a la izquierda).",
+      "Su cruce con la demanda es el óptimo social: menos cantidad y más precio que el equilibrio de mercado. El mercado produce de más."
+     ],
+     "ans": "O social arriba de la privada: Q óptima < Q mercado",
+     "hint": "Costo social = privado + externo.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extneg"
+      ],
+      [
+       "extneg"
+      ]
+     ]
+    },
+    {
+     "id": "xg8",
+     "lvl": 2,
+     "title": "Dibuja el valor social (educación)",
+     "q": "<p>La educación da un beneficio externo. Arrastra la curva del <strong>valor social</strong> (empieza encima de la demanda privada) hasta donde corresponde.</p>",
+     "checks": [
+      {
+       "t": "shift",
+       "p": "Mueve la demanda social. El punto gris es el equilibrio de mercado.",
+       "none": false,
+       "eq": [
+        [
+         2,
+         0
+        ],
+        [
+         1,
+         0
+        ]
+       ],
+       "ax": [
+        "Q",
+        "P"
+       ],
+       "c": [
+        {
+         "k": "O",
+         "tp": "o",
+         "a": 0,
+         "fix": true
+        },
+        {
+         "k": "D privada",
+         "s": "Dpriv",
+         "tp": "d",
+         "a": 0,
+         "fix": true,
+         "lp": "m"
+        },
+        {
+         "k": "D social",
+         "s": "Dsoc",
+         "tp": "d",
+         "a": 1,
+         "e": "El valor social = valor privado + beneficio externo: queda <b>arriba</b> (a la derecha) de la demanda privada."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "El valor social suma el beneficio externo al privado: la demanda social queda <strong>por encima</strong> de la privada (a la derecha).",
+      "Su cruce con la oferta es el óptimo: más cantidad que la del mercado. El mercado produce de menos; se corrige con un subsidio."
+     ],
+     "ans": "D social arriba de la privada: Q óptima > Q mercado",
+     "hint": "Valor social = privado + externo.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extpos"
+      ],
+      [
+       "extpos",
+       "internal"
+      ]
+     ]
+    },
+    {
+     "id": "xg9",
+     "lvl": 2,
+     "title": "Toca el gráfico del aluminio",
+     "q": "<p>Demanda \\(P=100-Q\\), oferta privada \\(P=20+Q\\) y oferta social \\(P=30+Q\\).</p>",
+     "checks": [
+      {
+       "t": "tap",
+       "p": "Toca el equilibrio de mercado.",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 240\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V200H292\"/><text class=\"dl\" x=\"12\" y=\"22\">P</text><text class=\"dl\" x=\"282\" y=\"222\">Q</text><line x1=\"81.3\" y1=\"32.6\" x2=\"288.0\" y2=\"125.6\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"274.0\" y=\"117.6\">D</text><line x1=\"40.0\" y1=\"162.8\" x2=\"288.0\" y2=\"51.2\" style=\"stroke:var(--exe);stroke-width:2.4\"/><text class=\"dl\" x=\"97.9\" y=\"152.8\">O priv.</text><line x1=\"40.0\" y1=\"144.2\" x2=\"288.0\" y2=\"32.6\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"48.3\" y=\"110.4\">O social</text><line class=\"dsh\" x1=\"184.7\" y1=\"79.1\" x2=\"184.7\" y2=\"200\"/><line class=\"dsh\" x1=\"205.3\" y1=\"88.4\" x2=\"205.3\" y2=\"200\"/><rect data-z=\"opt\" x=\"43.0\" y=\"204\" width=\"138.7\" height=\"12\" rx=\"4\"/><rect data-z=\"exc\" x=\"186.7\" y=\"204\" width=\"16.6\" height=\"12\" rx=\"4\"/><circle data-z=\"em\" cx=\"205.3\" cy=\"88.4\" r=\"8\"/><circle data-z=\"eopt\" cx=\"184.7\" cy=\"79.1\" r=\"8\"/><circle data-z=\"x1\" cx=\"205.3\" cy=\"69.8\" r=\"8\"/><circle data-z=\"x2\" cx=\"184.7\" cy=\"97.7\" r=\"8\"/></svg>",
+       "a": [
+        "em"
+       ],
+       "e": "El mercado iguala la demanda con la oferta <b>privada</b>."
+      },
+      {
+       "t": "tap",
+       "p": "Toca el óptimo social.",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 240\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V200H292\"/><text class=\"dl\" x=\"12\" y=\"22\">P</text><text class=\"dl\" x=\"282\" y=\"222\">Q</text><line x1=\"81.3\" y1=\"32.6\" x2=\"288.0\" y2=\"125.6\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"274.0\" y=\"117.6\">D</text><line x1=\"40.0\" y1=\"162.8\" x2=\"288.0\" y2=\"51.2\" style=\"stroke:var(--exe);stroke-width:2.4\"/><text class=\"dl\" x=\"97.9\" y=\"152.8\">O priv.</text><line x1=\"40.0\" y1=\"144.2\" x2=\"288.0\" y2=\"32.6\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"48.3\" y=\"110.4\">O social</text><line class=\"dsh\" x1=\"184.7\" y1=\"79.1\" x2=\"184.7\" y2=\"200\"/><line class=\"dsh\" x1=\"205.3\" y1=\"88.4\" x2=\"205.3\" y2=\"200\"/><rect data-z=\"opt\" x=\"43.0\" y=\"204\" width=\"138.7\" height=\"12\" rx=\"4\"/><rect data-z=\"exc\" x=\"186.7\" y=\"204\" width=\"16.6\" height=\"12\" rx=\"4\"/><circle data-z=\"em\" cx=\"205.3\" cy=\"88.4\" r=\"8\"/><circle data-z=\"eopt\" cx=\"184.7\" cy=\"79.1\" r=\"8\"/><circle data-z=\"x1\" cx=\"205.3\" cy=\"69.8\" r=\"8\"/><circle data-z=\"x2\" cx=\"184.7\" cy=\"97.7\" r=\"8\"/></svg>",
+       "a": [
+        "eopt"
+       ],
+       "e": "El óptimo iguala la demanda con la oferta <b>social</b>."
+      },
+      {
+       "t": "tap",
+       "p": "Toca el tramo del eje que mide lo que se produce de más.",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 240\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V200H292\"/><text class=\"dl\" x=\"12\" y=\"22\">P</text><text class=\"dl\" x=\"282\" y=\"222\">Q</text><line x1=\"81.3\" y1=\"32.6\" x2=\"288.0\" y2=\"125.6\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"274.0\" y=\"117.6\">D</text><line x1=\"40.0\" y1=\"162.8\" x2=\"288.0\" y2=\"51.2\" style=\"stroke:var(--exe);stroke-width:2.4\"/><text class=\"dl\" x=\"97.9\" y=\"152.8\">O priv.</text><line x1=\"40.0\" y1=\"144.2\" x2=\"288.0\" y2=\"32.6\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"48.3\" y=\"110.4\">O social</text><line class=\"dsh\" x1=\"184.7\" y1=\"79.1\" x2=\"184.7\" y2=\"200\"/><line class=\"dsh\" x1=\"205.3\" y1=\"88.4\" x2=\"205.3\" y2=\"200\"/><rect data-z=\"opt\" x=\"43.0\" y=\"204\" width=\"138.7\" height=\"12\" rx=\"4\"/><rect data-z=\"exc\" x=\"186.7\" y=\"204\" width=\"16.6\" height=\"12\" rx=\"4\"/><circle data-z=\"em\" cx=\"205.3\" cy=\"88.4\" r=\"8\"/><circle data-z=\"eopt\" cx=\"184.7\" cy=\"79.1\" r=\"8\"/><circle data-z=\"x1\" cx=\"205.3\" cy=\"69.8\" r=\"8\"/><circle data-z=\"x2\" cx=\"184.7\" cy=\"97.7\" r=\"8\"/></svg>",
+       "a": [
+        "exc"
+       ],
+       "e": "Es la diferencia entre Q de mercado y Q óptima."
+      }
+     ],
+     "steps": [
+      "Equilibrio de mercado: demanda con oferta privada (Q = 40, P = 60).",
+      "Óptimo social: demanda con oferta social (Q = 35, P = 65).",
+      "La producción en exceso es el tramo entre \\(Q^*=35\\) y \\(Q_m=40\\): 5 unidades."
+     ],
+     "ans": "Mercado (40; 60); óptimo (35; 65); exceso de 5",
+     "hint": "Privada → mercado. Social → óptimo.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extneg"
+      ],
+      [
+       "extneg"
+      ],
+      [
+       "extneg"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "xg3",
+     "lvl": 2,
+     "title": "Aluminio con números",
+     "q": "<p>Demanda: \\(P=100-Q\\). Oferta privada: \\(P=20+Q\\). Cada unidad genera un costo externo de 10. Halla \\(Q\\) de mercado y \\(Q\\) óptima.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Halla las cantidades",
+       "f": [
+        {
+         "l": "Q de mercado",
+         "a": 40,
+         "e": "iguala la demanda con la oferta privada: 100 − Q = 20 + Q."
+        },
+        {
+         "l": "Q óptima",
+         "a": 35,
+         "e": "la oferta social es 30 + Q (privada + 10)."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Mercado: \\(100-Q=20+Q\\Rightarrow Q_m=40\\) (\\(P=60\\)).",
+      "Oferta social: \\(P=30+Q\\). Óptimo: \\(100-Q=30+Q\\Rightarrow Q^*=35\\) (\\(P=65\\)).",
+      "Se produce 5 unidades de más."
+     ],
+     "ans": "Q_m = 40; Q* = 35",
+     "hint": "Suma el costo externo a la oferta.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [],
+      [
+       "extneg"
+      ],
+      []
+     ]
+    },
+    {
+     "id": "xg4",
+     "lvl": 2,
+     "title": "Impuesto que corrige",
+     "q": "<p>En el mercado anterior (costo externo de 10 por unidad), ¿qué impuesto por unidad lleva al óptimo?</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Impuesto que corrige",
+       "f": [
+        {
+         "l": "Impuesto",
+         "a": 10,
+         "u": "por unidad",
+         "e": "el impuesto ideal es igual al costo externo por unidad."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Un impuesto pigouviano igual al costo externo desplaza la oferta privada hasta la social.",
+      "Con \\(t=10\\): \\(100-Q=20+Q+10\\Rightarrow Q=35\\): el óptimo."
+     ],
+     "ans": "t = 10",
+     "hint": "Impuesto = costo externo por unidad.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "pigou"
+      ],
+      [
+       "internal"
+      ]
+     ]
+    },
+    {
+     "id": "xg5",
+     "lvl": 2,
+     "title": "Educación con números",
+     "q": "<p>Demanda privada de cursos: \\(P=80-Q\\). Oferta: \\(P=20+Q\\). Cada curso genera un beneficio externo de 10. Halla \\(Q\\) de mercado, \\(Q\\) óptima y el subsidio que corrige.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Resultado",
+       "f": [
+        {
+         "l": "Q de mercado",
+         "a": 30,
+         "e": "iguala 80 − Q = 20 + Q."
+        },
+        {
+         "l": "Q óptima",
+         "a": 35,
+         "e": "la demanda social es 90 − Q (privada + 10)."
+        },
+        {
+         "l": "Subsidio",
+         "a": 10,
+         "u": "por curso",
+         "e": "igual al beneficio externo."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Mercado: \\(80-Q=20+Q\\Rightarrow Q_m=30\\).",
+      "Demanda social: \\(P=90-Q\\). Óptimo: \\(90-Q=20+Q\\Rightarrow Q^*=35\\).",
+      "Subsidio igual al beneficio externo: 10 por curso."
+     ],
+     "ans": "Q_m = 30; Q* = 35; subsidio 10",
+     "hint": "Suma el beneficio externo a la demanda.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [],
+      [
+       "extpos"
+      ],
+      [
+       "internal"
+      ]
+     ]
+    },
+    {
+     "id": "xg6",
+     "lvl": 2,
+     "title": "¿Qué curva se desplaza?",
+     "q": "<p>En el gráfico del aluminio, la curva «O₂» de la clase representa…</p>",
+     "checks": [
+      {
+       "p": "O₂",
+       "o": [
+        "El costo privado de producir más el costo de la externalidad (costo social)",
+        "La demanda de los consumidores",
+        "Solo el costo privado",
+        "El beneficio externo",
+        "El impuesto del Estado sin relación con el costo"
+       ]
+      }
+     ],
+     "steps": [
+      "O₂ incluye el costo externo: es la oferta social. Su corte con la demanda da la cantidad óptima, menor a la de mercado."
+     ],
+     "ans": "Costo social",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extneg"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x9pol",
+   "name": "Sem. 9 · Políticas públicas: regulación, Pigou y permisos",
+   "teo": "<p>Objetivo: reasignar recursos para alcanzar el óptimo social. Tres tipos de política pública:</p><ul><li><strong>Órdenes y controles:</strong> regulaciones directas y normas (límites de emisión).</li><li><strong>Basadas en el mercado:</strong> impuestos pigouvianos, subsidios y permisos negociables de emisión.</li><li><strong>Concienciación y educación:</strong> campañas y etiquetado (tabaco, etiquetado ambiental).</li></ul><p>Un impuesto correctivo ideal es igual al costo social de la externalidad.</p>",
+   "form": [
+    "Regulación: límite fijo para todos",
+    "Pigou: impuesto = costo externo",
+    "Subsidio: para externalidades positivas",
+    "Permisos: se compran y venden; reduce quien lo hace más barato",
+    "Educación: campañas y etiquetado"
+   ],
+   "lesson": "<h3>Idea central</h3><p>Las políticas <strong>basadas en el mercado</strong> alinean los incentivos privados con la eficiencia social: cada empresa decide cuánto reducir según su propio costo.</p><h3>Ejemplo de la clase</h3><p>Dos fábricas (papel y acero) botan 500 t al río. (1) Ordenar a cada una bajar a 300 t, o (2) cobrar 50 000 UM por tonelada. El impuesto deja que reduzca más la que puede hacerlo más barato: se logra la reducción con menor costo total.</p><div class=\"ej\"><b>Impuesto a la gasolina:</b> corrige tres externalidades negativas a la vez: congestión, accidentes y contaminación.</div><div class=\"err\"><b>Error común:</b> creer que un permiso de contaminación «premia» al que contamina: el total de contaminación queda fijado por el Estado.</div>",
+   "ex": [
+    {
+     "id": "xp8",
+     "lvl": 1,
+     "title": "Clasifica la política",
+     "q": "<p>¿Qué tipo de política es cada una?</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica cada política.",
+       "cats": [
+        "Órdenes y controles",
+        "Impuesto pigouviano",
+        "Permisos negociables",
+        "Subsidio",
+        "Concienciación"
+       ],
+       "items": [
+        {
+         "x": "Ninguna fábrica puede botar más de 300 toneladas al año.",
+         "c": 0
+        },
+        {
+         "x": "Se cobra un impuesto por cada tonelada de CO₂ emitida.",
+         "c": 1
+        },
+        {
+         "x": "Los productos llevan una etiqueta que informa su huella ambiental.",
+         "c": 4
+        },
+        {
+         "x": "El Estado fija el total de emisiones y las empresas compran y venden permisos.",
+         "c": 2
+        },
+        {
+         "x": "El Estado paga parte de la matrícula para que más personas estudien.",
+         "c": 3
+        },
+        {
+         "x": "Campaña contra el tabaco en los colegios.",
+         "c": 4
+        },
+        {
+         "x": "Impuesto a la gasolina.",
+         "c": 1
+        },
+        {
+         "x": "Prohibir emitir dioxina por encima de un nivel.",
+         "c": 0
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Órdenes y controles: normas y límites directos (300 t, nivel máximo de dioxina).",
+      "Basadas en el mercado: impuesto pigouviano (CO₂, gasolina), permisos negociables y subsidios (matrícula).",
+      "Concienciación y educación: campañas y etiquetado."
+     ],
+     "ans": "OyC, Pigou, conc., permisos, subsidio, conc., Pigou, OyC",
+     "hint": "¿Obliga, cobra, permite negociar, paga o informa?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "pigou"
+      ],
+      [
+       "pigou",
+       "permisos"
+      ],
+      []
+     ]
+    },
+    {
+     "id": "xp4",
+     "lvl": 2,
+     "title": "¿Orden o impuesto?",
+     "q": "<p>Dos fábricas botan 500 t al año cada una. (1) Ordenar que cada una baje a 300 t o (2) cobrar 50 000 UM por tonelada. ¿Por qué los economistas suelen preferir el impuesto?</p>",
+     "checks": [
+      {
+       "p": "Razón",
+       "o": [
+        "Porque reduce más la fábrica a la que le cuesta menos reducir: se logra la reducción al menor costo total",
+        "Porque el impuesto siempre elimina toda la contaminación",
+        "Porque la orden es ilegal",
+        "Porque con el impuesto ninguna fábrica reduce",
+        "Porque el impuesto no cambia incentivos"
+       ]
+      }
+     ],
+     "steps": [
+      "La orden obliga a ambas a reducir lo mismo, aunque a una le cueste mucho más.",
+      "Con el impuesto, cada una compara el costo de reducir con el impuesto: reduce más la que puede hacerlo barato."
+     ],
+     "ans": "Reducción al menor costo",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "permisos"
+      ],
+      [
+       "pigou"
+      ]
+     ]
+    },
+    {
+     "id": "xp5",
+     "lvl": 2,
+     "title": "Venta de permisos",
+     "q": "<p>Con un límite de 300 t para cada fábrica, la de acero quiere contaminar 100 t más y la de papel acepta reducir 100 t si recibe 5 millones de UM. ¿Debería el Estado aceptarlo?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Sí: la contaminación total sigue en 600 t y ambas mejoran (la reducción la hace quien puede hacerlo más barato)",
+        "No: aumenta la contaminación total",
+        "No: los acuerdos entre empresas siempre son ineficientes",
+        "Sí, pero solo si la contaminación total sube",
+        "No: el Estado debe cobrar los 5 millones"
+       ]
+      }
+     ],
+     "steps": [
+      "Total: acero 400 + papel 200 = 600 t, igual que antes.",
+      "Si ambas aceptan, el acuerdo les conviene: es la lógica de los permisos negociables."
+     ],
+     "ans": "Sí",
+     "hint": "¿Cambia el total?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "permisos"
+      ],
+      []
+     ]
+    },
+    {
+     "id": "xp6",
+     "lvl": 1,
+     "title": "Impuesto a la gasolina",
+     "q": "<p>¿Qué externalidades negativas busca corregir el impuesto a la gasolina, según la clase?</p>",
+     "checks": [
+      {
+       "p": "Externalidades",
+       "o": [
+        "Congestión vehicular, accidentes de tránsito y contaminación",
+        "Solo la contaminación",
+        "El precio internacional del petróleo",
+        "La inflación",
+        "Los costos de las refinerías"
+       ]
+      }
+     ],
+     "steps": [
+      "Es un impuesto correctivo sobre tres externalidades negativas del uso del auto."
+     ],
+     "ans": "Congestión, accidentes, contaminación",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "pigou"
+      ]
+     ]
+    },
+    {
+     "id": "xp7",
+     "lvl": 2,
+     "title": "Externalidades positivas: qué hace el Estado",
+     "q": "<p>Para el mercado educativo (externalidad positiva), ¿qué política corresponde?</p>",
+     "checks": [
+      {
+       "p": "Política",
+       "o": [
+        "Subsidios para aumentar la inversión en educación",
+        "Un impuesto pigouviano a la educación",
+        "Prohibir la educación privada",
+        "Permisos para contaminar",
+        "No hacer nada: el mercado produce de más"
+       ]
+      }
+     ],
+     "steps": [
+      "Con externalidades positivas se produce menos de lo óptimo: el subsidio aumenta la cantidad."
+     ],
+     "ans": "Subsidios",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extpos",
+       "internal"
+      ]
+     ]
+    },
+    {
+     "id": "xp9",
+     "lvl": 2,
+     "title": "Ordena: cómo corrige un impuesto pigouviano",
+     "q": "<p>Una fábrica contamina un río. Ordena la cadena desde el problema hasta la solución.</p>",
+     "checks": [
+      {
+       "t": "order",
+       "p": "Toca los pasos en orden.",
+       "items": [
+        "La fábrica no paga el costo que impone a los vecinos.",
+        "El costo social queda por encima del costo privado.",
+        "El mercado produce más que la cantidad óptima.",
+        "El Estado cobra un impuesto igual al costo externo por unidad.",
+        "Producir cuesta más y la cantidad baja hasta el óptimo social."
+       ]
+      }
+     ],
+     "steps": [
+      "El problema: un costo sin compensar (externalidad negativa).",
+      "Por eso el costo social supera al privado.",
+      "Como el mercado solo mira el costo privado, produce de más.",
+      "El impuesto ideal es igual al costo externo: internaliza la externalidad.",
+      "Con el impuesto, la oferta privada coincide con la social y se llega al óptimo."
+     ],
+     "ans": "Costo sin pagar → social > privado → exceso → impuesto → óptimo",
+     "hint": "Empieza por el problema, termina en la solución.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extern"
+      ],
+      [
+       "extneg"
+      ],
+      [
+       "extneg"
+      ],
+      [
+       "pigou"
+      ],
+      [
+       "internal"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x9coase",
+   "name": "Sem. 9 · Soluciones privadas y teorema de Coase",
+   "teo": "<p>Las <strong>políticas privadas</strong> surgen de acuerdos voluntarios entre los afectados, sin intervención del Estado.</p><p><strong>Teorema de Coase:</strong> si los agentes pueden negociar sin costos y los derechos de propiedad están bien definidos, pueden resolver la externalidad por sí mismos y llegar a una asignación eficiente.</p>",
+   "form": [
+    "Coase: negociación sin costos",
+    "Derechos de propiedad claros",
+    "Resultado: asignación eficiente sin el Estado",
+    "Falla si negociar es caro o hay muchos afectados"
+   ],
+   "lesson": "<h3>Idea central</h3><p>Si las partes pueden negociar, la que más valora el resultado puede «comprarlo» a la otra.</p><h3>Ejemplos de la clase</h3><ul><li><strong>Perro que ladra:</strong> los vecinos pueden pagar el entrenamiento del perro en lugar de pedir una regulación.</li><li><strong>Apicultor y productor de manzanas:</strong> las abejas polinizan los manzanos y las flores dan néctar; pueden acordar ubicar juntos sus negocios o compartir costos.</li></ul><div class=\"err\"><b>Error común:</b> creer que Coase siempre funciona: con muchos afectados (la contaminación de una ciudad) negociar es carísimo.</div>",
+   "ex": [
+    {
+     "id": "xc1",
+     "lvl": 1,
+     "title": "Condiciones de Coase",
+     "q": "<p>¿Qué condiciones requiere el teorema de Coase?</p>",
+     "checks": [
+      {
+       "p": "Condiciones",
+       "o": [
+        "Negociación sin costos y derechos de propiedad bien definidos",
+        "Un impuesto pigouviano",
+        "Intervención del Estado",
+        "Que solo haya externalidades positivas",
+        "Que el mercado sea monopolio"
+       ]
+      }
+     ],
+     "steps": [
+      "Si negociar no cuesta y está claro quién tiene el derecho, las partes llegan a un acuerdo eficiente."
+     ],
+     "ans": "Sin costos de negociación + derechos claros",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "coase"
+      ]
+     ]
+    },
+    {
+     "id": "xc2",
+     "lvl": 1,
+     "title": "El perro del departamento",
+     "q": "<p>Un perro ladra mucho y molesta a los vecinos. ¿Cuál es una solución tipo Coase?</p>",
+     "checks": [
+      {
+       "p": "Solución",
+       "o": [
+        "Los vecinos negocian con el dueño y le pagan el entrenamiento del perro",
+        "Pedir una ley que prohíba perros",
+        "Un impuesto municipal a los perros",
+        "Una campaña nacional de concienciación",
+        "No hacer nada"
+       ]
+      }
+     ],
+     "steps": [
+      "Es un acuerdo voluntario entre las partes, sin intervención externa."
+     ],
+     "ans": "Negociación privada",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "coase"
+      ]
+     ]
+    },
+    {
+     "id": "xc3",
+     "lvl": 2,
+     "title": "Apicultor y manzanas",
+     "q": "<p>Las abejas de un apicultor polinizan los manzanos vecinos y los manzanos dan néctar a las abejas. ¿Qué tipo de externalidad y qué solución privada hay?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Positiva en ambas direcciones; pueden acordar trabajar juntos o fusionarse y así internalizarla",
+        "Negativa; el Estado debe prohibir las abejas",
+        "No hay externalidad",
+        "Negativa; impuesto al apicultor",
+        "Positiva; solo el Estado puede resolverla"
+       ]
+      }
+     ],
+     "steps": [
+      "Cada uno beneficia al otro sin cobrar: externalidades positivas.",
+      "Un acuerdo (o una sola empresa con ambos negocios) internaliza esos beneficios."
+     ],
+     "ans": "Positiva mutua; acuerdo privado",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extpos"
+      ],
+      [
+       "coase"
+      ]
+     ]
+    },
+    {
+     "id": "xc4",
+     "lvl": 2,
+     "title": "¿Cuándo falla Coase?",
+     "q": "<p>¿En qué caso es <strong>menos</strong> probable que funcione una solución tipo Coase?</p>",
+     "checks": [
+      {
+       "p": "Caso",
+       "o": [
+        "La contaminación del aire de una fábrica que afecta a 500 000 habitantes",
+        "Dos vecinos y un perro que ladra",
+        "Un apicultor y un productor de manzanas",
+        "Dos empresas que comparten un muelle",
+        "Un compañero de cuarto que pone música alta"
+       ]
+      }
+     ],
+     "steps": [
+      "Con muchísimos afectados, los costos de negociar son enormes: no se cumple la condición de negociación sin costos."
+     ],
+     "ans": "Muchos afectados",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "coase"
+      ]
+     ]
+    },
+    {
+     "id": "xc5",
+     "lvl": 2,
+     "title": "Pública o privada",
+     "q": "<p>¿Cuál es la diferencia principal entre una política pública y una privada frente a una externalidad?</p>",
+     "checks": [
+      {
+       "p": "Diferencia",
+       "o": [
+        "La pública la impone o incentiva el Estado; la privada surge de acuerdos voluntarios entre los afectados",
+        "La privada siempre es más cara",
+        "La pública solo usa campañas",
+        "La privada requiere impuestos",
+        "No hay diferencia"
+       ]
+      }
+     ],
+     "steps": [
+      "Públicas: regulación, impuestos, subsidios, permisos, educación. Privadas: acuerdos y soluciones cooperativas."
+     ],
+     "ans": "Quién la impulsa",
+     "hint": "",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "coase"
+      ]
+     ]
+    },
+    {
+     "id": "xc6",
+     "lvl": 2,
+     "title": "¿Funcionaría Coase?",
+     "q": "<p>¿En qué casos es probable que una negociación privada resuelva la externalidad?</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica cada caso.",
+       "cats": [
+        "Probablemente funciona",
+        "Probablemente falla"
+       ],
+       "items": [
+        {
+         "x": "Un perro ladra y molesta a los vecinos del piso.",
+         "c": 0
+        },
+        {
+         "x": "Un apicultor y un productor de manzanas vecinos.",
+         "c": 0
+        },
+        {
+         "x": "El humo de una fábrica afecta a 500 000 habitantes.",
+         "c": 1,
+         "e": "Con tantos afectados, negociar es carísimo."
+        },
+        {
+         "x": "Un árbol tapa la vista del vecino y está claro de quién es el terreno.",
+         "c": 0
+        },
+        {
+         "x": "Nadie sabe quién es el dueño del río que se contamina.",
+         "c": 1,
+         "e": "Sin derechos de propiedad definidos, no hay qué negociar."
+        },
+        {
+         "x": "Miles de conductores generan congestión en una avenida.",
+         "c": 1
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Coase necesita negociación <strong>sin costos</strong> (pocas partes) y <strong>derechos de propiedad</strong> bien definidos.",
+      "Falla con muchos afectados (ciudad, conductores) o si no se sabe de quién es el derecho (el río)."
+     ],
+     "ans": "Sí, sí, no, sí, no, no",
+     "hint": "¿Pocas partes y derechos claros?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "coase"
+      ],
+      [
+       "coase"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g10",
+   "name": "Sem. 10 · 📖 Bienes públicos y el problema del polizón",
+   "teo": "<div class=\"note\" style=\"border-left:4px solid var(--tan);padding:6px 10px;margin-bottom:.6em\">📖 <b>Adelantado según el sílabo.</b> El profesor todavía no subió esta clase: este tema se armó con el orden del sílabo y su bibliografía (Krugman y Pindyck). Cuando suba su material, se ajustarán los ejemplos y la notación.</div><p>Para clasificar un bien se hacen dos preguntas:</p><ul><li><b>¿Es excluible?</b> ¿Se puede impedir que lo use quien no paga? (una entrada al cine sí; el alumbrado de la calle no).</li><li><b>¿Es rival?</b> ¿Si yo lo uso, a ti te queda menos? (un pan sí; una señal de radio no).</li></ul><div class=\"tbl\"><table><tr><th></th><th>Rival</th><th>No rival</th></tr><tr><th>Excluible</th><td><b>Privado</b>: pan, ropa, un menú</td><td><b>De club</b>: Netflix, TV por cable, un gimnasio</td></tr><tr><th>No excluible</th><td><b>Recurso común</b>: la anchoveta en el mar, el agua de un río</td><td><b>Público</b>: alumbrado, defensa nacional, un faro</td></tr></table></div><p><b>Problema del polizón</b> (free rider): como nadie puede ser excluido de un bien público, a cada uno le conviene que paguen los demás. Si depende de aportes voluntarios, el mercado lo produce de menos o no lo produce. Por eso suele proveerlo el <b>Estado</b>, financiado con impuestos, cuando el beneficio total supera el costo (<b>análisis costo–beneficio</b>: se suman las valoraciones de todos).</p><p><b>Tragedia de los comunes:</b> con los recursos comunes pasa lo contrario: cada uno usa de más porque no paga el desgaste que causa a los demás (sobrepesca). Se corrige con cuotas, vedas, permisos o derechos de propiedad.</p><p>Igual que las externalidades (semana 9), son <b>fallas de mercado</b>: el mercado solo no llega a la cantidad eficiente.</p>",
+   "form": [
+    "Excluible: se puede impedir el uso a quien no paga",
+    "Rival: mi uso reduce el tuyo",
+    "Público: no rival y no excluible · común: rival y no excluible",
+    "Polizón: usar sin pagar → se produce de menos",
+    "Proveer si Σ valoraciones ≥ costo",
+    "Comunes: se sobreexplotan → cuotas, vedas"
+   ],
+   "lesson": "<h3>La idea en una frase</h3><p>Si no se puede excluir a nadie, nadie quiere pagar: el mercado falla y suele entrar el Estado.</p><h3>Claves</h3><ul><li><b>Dos preguntas</b> (¿excluible?, ¿rival?) dan los cuatro tipos de bienes.</li><li><b>Polizón:</b> disfrutar sin pagar. Lo viviste en el juego: cuando uno deja de aportar, los demás también.</li><li><b>Costo–beneficio:</b> un bien público vale la pena si la <i>suma</i> de lo que vale para cada persona supera su costo.</li><li><b>Recursos comunes:</b> la anchoveta peruana se protege con cuotas y vedas del Produce para evitar la tragedia de los comunes.</li></ul><div class=\"ej\"><b>En 30 segundos:</b> Bien público = no rival + no excluible → polizón → lo financia el Estado. Recurso común = rival + no excluible → sobreuso → cuotas.</div><div class=\"err\"><b>Error común:</b> decir que un bien es público porque lo produce el Estado. Lo que importa son sus características: el agua potable de Sedapal es excluible (te pueden cortar) y rival.</div>",
+   "ex": [
+    {
+     "id": "g10e1",
+     "lvl": 1,
+     "title": "Calentamiento: semana 9",
+     "q": "<p>Recordando la semana pasada: una fábrica contamina un río y los pescadores pierden ingresos. ¿Qué es?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Una externalidad negativa: el mercado produce más que lo óptimo",
+        "Una externalidad positiva: el mercado produce menos",
+        "Un bien público",
+        "El mercado funcionando bien",
+        "Un recurso de club"
+       ]
+      }
+     ],
+     "steps": [
+      "El pescador es un tercero que pierde sin ser compensado: externalidad negativa.",
+      "El costo social supera al privado y el mercado produce de más. Hoy veremos otra falla de mercado: los bienes públicos."
+     ],
+     "ans": "Externalidad negativa",
+     "hint": "¿Hay un tercero afectado?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "extneg"
+      ],
+      [
+       "extneg"
+      ]
+     ]
+    },
+    {
+     "id": "g10e2",
+     "lvl": 1,
+     "title": "Los cuatro tipos de bienes",
+     "q": "<p>Clasifica cada bien con las dos preguntas: ¿excluible? ¿rival?</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Privado",
+        "De club",
+        "Recurso común",
+        "Público"
+       ],
+       "items": [
+        {
+         "x": "Un pan francés",
+         "c": 0
+        },
+        {
+         "x": "Netflix",
+         "c": 1,
+         "e": "Excluible (sin cuenta no lo ves) y no rival (que tú lo veas no me quita nada)."
+        },
+        {
+         "x": "La anchoveta en el mar",
+         "c": 2,
+         "e": "No se puede excluir fácilmente a los barcos, pero lo que uno pesca ya no lo pesca otro."
+        },
+        {
+         "x": "El alumbrado público",
+         "c": 3
+        },
+        {
+         "x": "La defensa nacional",
+         "c": 3
+        },
+        {
+         "x": "Una autopista con peaje y sin tráfico",
+         "c": 1,
+         "e": "Con peaje es excluible; sin congestión no es rival."
+        },
+        {
+         "x": "Un almuerzo en un restaurante",
+         "c": 0
+        },
+        {
+         "x": "El agua de un río sin control",
+         "c": 2
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Excluible + rival → privado; excluible + no rival → club; no excluible + rival → común; no excluible + no rival → público.",
+      "Ojo: una autopista congestionada se vuelve rival (mi auto te quita espacio)."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "Dos preguntas: ¿excluible? ¿rival?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "tipbien"
+      ],
+      [
+       "tipbien"
+      ]
+     ]
+    },
+    {
+     "id": "g10e3",
+     "lvl": 1,
+     "title": "¿Qué significa «no rival»?",
+     "q": "<p>Un faro guía a todos los barcos que pasan. Que sea <strong>no rival</strong> significa que…</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Que un barco lo use no reduce lo que pueden usar los demás",
+        "No se puede impedir que un barco lo use",
+        "Lo produce el Estado",
+        "Es gratis",
+        "Nadie lo valora"
+       ]
+      }
+     ],
+     "steps": [
+      "No rival: el consumo de uno no reduce el de otro. No excluible es otra cosa: no se puede impedir el uso.",
+      "El faro es ambas cosas, por eso es el ejemplo clásico de bien público."
+     ],
+     "ans": "Mi uso no reduce el tuyo",
+     "hint": "Rival ≠ excluible.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "tipbien"
+      ],
+      [
+       "tipbien"
+      ]
+     ]
+    },
+    {
+     "id": "g10e4",
+     "lvl": 2,
+     "title": "Lo que pasó en el juego",
+     "q": "<p>Después de jugar al polizón (arriba, en 🧪): en la primera ronda tú no aportaste y los vecinos sí, y el parque se construyó. ¿Por qué luego cayeron los aportes?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Los vecinos también vieron que les convenía no pagar si igual disfrutan el parque",
+        "El parque se volvió rival",
+        "El parque dejó de ser útil",
+        "El Estado prohibió el parque",
+        "Los vecinos se quedaron sin dinero"
+       ]
+      }
+     ],
+     "steps": [
+      "Ser polizón te dio más en la ronda 1 (te quedaste tus S/ 10 y además disfrutaste el parque).",
+      "Pero los demás razonan igual: bajan sus aportes, no se junta lo necesario y todos terminan peor que si hubieran cooperado. Es el problema del polizón."
+     ],
+     "ans": "Todos quieren que paguen los demás",
+     "hint": "Piensa como un vecino más.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "polizon"
+      ],
+      [
+       "polizon"
+      ]
+     ]
+    },
+    {
+     "id": "g10e5",
+     "lvl": 2,
+     "title": "¿Vale la pena el alumbrado?",
+     "q": "<p>Tres vecinos valoran poner un poste de luz en su pasaje en S/ 40, S/ 30 y S/ 50. El poste cuesta S/ 100.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "Beneficio total",
+         "a": 120,
+         "u": "S/"
+        },
+        {
+         "l": "Beneficio neto social",
+         "a": 20,
+         "u": "S/"
+        }
+       ]
+      },
+      {
+       "p": "¿Se debe construir?",
+       "o": [
+        "Sí conviene, pero quizás nadie lo pague solo: ninguno lo valora en S/ 100",
+        "No conviene: cada uno lo valora en menos de S/ 100",
+        "Conviene solo si lo paga el que más lo valora",
+        "No conviene porque es no excluible",
+        "Da igual"
+       ]
+      }
+     ],
+     "steps": [
+      "En un bien público se <b>suman</b> las valoraciones (todos lo disfrutan a la vez): 40 + 30 + 50 = 120.",
+      "Beneficio total 120 &gt; costo 100: socialmente conviene (neto +20).",
+      "Pero ninguno lo valora en 100 por sí solo y cada uno espera que pague otro (polizón). Una solución: que el municipio lo construya y cobre, por ejemplo, arbitrios."
+     ],
+     "ans": "Total 120, neto 20: conviene",
+     "hint": "Suma las valoraciones.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "costben"
+      ],
+      [
+       "costben"
+      ],
+      [
+       "polizon"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "g10e6",
+     "lvl": 2,
+     "title": "Repartir con un impuesto",
+     "q": "<p>Cinco vecinos valoran un parque en S/ 30 cada uno. Cuesta S/ 100 y la municipalidad lo financia cobrando lo mismo a todos.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "Pago de cada vecino",
+         "a": 20,
+         "u": "S/"
+        },
+        {
+         "l": "Ganancia neta de cada uno",
+         "a": 10,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Cada uno paga 100 / 5 = S/ 20.",
+      "Cada uno recibe un parque que valora en 30: gana 30 − 20 = S/ 10. Todos mejoran, y el impuesto evita que haya polizones."
+     ],
+     "ans": "S/ 20 y S/ 10",
+     "hint": "Divide el costo.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "costben"
+      ],
+      [
+       "polizon"
+      ]
+     ]
+    },
+    {
+     "id": "g10e7",
+     "lvl": 2,
+     "title": "Tragedia de los comunes",
+     "q": "<p>Si nadie controla la pesca de anchoveta, cada barco pesca lo más que puede. ¿Qué medida ataca mejor el problema?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Cuotas de pesca por barco y vedas en época de reproducción",
+        "Subsidiar la compra de más barcos",
+        "Bajar el precio de la anchoveta",
+        "Prohibir exportar harina de pescado",
+        "Dejar que cada barco decida"
+       ]
+      }
+     ],
+     "steps": [
+      "La anchoveta es un recurso común: rival y no excluible. Cada barco no paga el daño que causa a los demás al agotar el recurso.",
+      "Las cuotas y vedas (como las que fija el Produce en el Perú) limitan el uso total. Subsidiar barcos empeoraría la sobrepesca."
+     ],
+     "ans": "Cuotas y vedas",
+     "hint": "Rival + no excluible.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "comunes"
+      ],
+      [
+       "comunes"
+      ]
+     ]
+    },
+    {
+     "id": "g10e8",
+     "lvl": 1,
+     "title": "¿Por qué el mercado no lo produce?",
+     "q": "<p>¿Por qué una empresa privada casi nunca ofrece alumbrado público por su cuenta?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "No puede cobrar a quien no paga: todos lo usarían gratis",
+        "Es demasiado barato de producir",
+        "Es rival",
+        "La demanda es cero",
+        "Está prohibido"
+       ]
+      }
+     ],
+     "steps": [
+      "Si no se puede excluir, la empresa no puede cobrar: cada uno espera usarlo gratis.",
+      "Sin ingresos no hay incentivo a producirlo, aunque la sociedad lo valore: es una falla de mercado."
+     ],
+     "ans": "No puede excluir ni cobrar",
+     "hint": "No excluible.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "polizon"
+      ],
+      [
+       "tipbien"
+      ]
+     ]
+    },
+    {
+     "id": "g10e9",
+     "lvl": 2,
+     "title": "Ordena el análisis costo–beneficio",
+     "q": "<p>Una municipalidad decide si construir un puente peatonal. Ordena los pasos.</p>",
+     "checks": [
+      {
+       "t": "order",
+       "p": "Toca los pasos en orden",
+       "items": [
+        "Estimar cuánto vale el puente para cada grupo de usuarios",
+        "Sumar esas valoraciones (beneficio total)",
+        "Compararlo con el costo de construirlo y mantenerlo",
+        "Construir solo si el beneficio total supera el costo, y financiarlo con impuestos"
+       ]
+      }
+     ],
+     "steps": [
+      "Primero se estiman las valoraciones individuales y se suman, porque todos lo usan a la vez.",
+      "Si el total supera el costo, conviene; se financia con impuestos para evitar el polizón."
+     ],
+     "ans": "Valorar → sumar → comparar → decidir",
+     "hint": "Empieza por los usuarios.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "costben"
+      ],
+      [
+       "costben"
+      ]
+     ]
+    }
+   ],
+   "tools": [
+    {
+     "w": "poliz",
+     "t": "Juego del polizón",
+     "p": "Eres uno de cinco vecinos. Decide cuánto aportas cada ronda y mira qué hacen los demás.",
+     "o": {}
+    }
+   ]
+  },
+  {
+   "id": "m11",
+   "name": "Sem. 11 · 📖 Maximización de beneficios y competencia perfecta",
+   "teo": "<div class=\"note\" style=\"border-left:4px solid var(--tan);padding:6px 10px;margin-bottom:.6em\">📖 <b>Adelantado según el sílabo.</b> El profesor todavía no subió esta clase: este tema se armó con el orden del sílabo y su bibliografía (Krugman y Pindyck). Cuando suba su material, se ajustarán los ejemplos y la notación.</div><p><b>Beneficio</b> = ingreso total − costo total: \\(\\pi=IT-CT\\), con \\(IT=P\\cdot Q\\) (y, como viste en la semana 7, el costo incluye el costo de oportunidad).</p><p>Para decidir cuánto producir se mira <b>la próxima unidad</b>: el <b>ingreso marginal</b> \\(IMg\\) (cuánto suma al ingreso) y el <b>costo marginal</b> \\(CMg\\) (cuánto suma al costo). Si \\(IMg\\gt CMg\\), conviene producir más; si \\(IMg\\lt CMg\\), menos. El beneficio es máximo donde \\(IMg=CMg\\).</p><p><b>Competencia perfecta:</b> muchos compradores y vendedores, producto homogéneo, información completa y libre entrada y salida (se acerca: limones o papas en el mercado mayorista). Cada empresa es <b>precio-aceptante</b>: vende lo que quiera al precio del mercado, así que \\(IMg=P\\) y produce donde \\(P=CMg\\).</p><ul><li>Gana si \\(P\\gt CMe\\): beneficio \\(=(P-CMe)\\cdot Q\\). Pierde si \\(P\\lt CMe\\).</li><li>Corto plazo: si \\(P\\) no cubre ni el costo variable medio mínimo, conviene <b>cerrar</b> (solo pierde el costo fijo).</li><li>Largo plazo: si hay beneficios, entran empresas, el precio baja hasta \\(P=CMe\\) mínimo y el <b>beneficio económico es cero</b>.</li></ul>",
+   "form": [
+    "\\(\\pi=IT-CT\\), \\(IT=P\\cdot Q\\)",
+    "Máximo beneficio: \\(IMg=CMg\\)",
+    "Competencia perfecta: \\(IMg=P\\Rightarrow P=CMg\\)",
+    "Beneficio \\(=(P-CMe)\\cdot Q\\)",
+    "Cerrar (corto plazo): \\(P\\lt CVMe\\) mínimo",
+    "Largo plazo: \\(P=CMe\\) mínimo, beneficio 0"
+   ],
+   "lesson": "<h3>La idea en una frase</h3><p>Produce una unidad más mientras sume más de lo que cuesta: el máximo está donde IMg = CMg.</p><h3>Claves</h3><ul><li><b>Piensa en lo marginal:</b> lo ya gastado no cambia la decisión sobre la próxima unidad.</li><li><b>Precio-aceptante:</b> el mercado pone el precio, así que cada unidad extra te da exactamente P.</li><li><b>En el gráfico:</b> el beneficio es el rectángulo entre P y CMe, de ancho Q (en la herramienta: verde si ganas, rojo si pierdes).</li><li><b>Largo plazo:</b> la libre entrada se come los beneficios hasta que P = CMe mínimo.</li></ul><div class=\"ej\"><b>En 30 segundos:</b> Máximo beneficio con IMg = CMg; en competencia perfecta IMg = P, así que P = CMg. Ganancia = (P − CMe)·Q. Con libre entrada, a largo plazo el beneficio es cero.</div><div class=\"err\"><b>Error común:</b> elegir la Q donde el beneficio <i>por unidad</i> (P − CMe) es máximo: lo que se maximiza es el beneficio total.</div>",
+   "ex": [
+    {
+     "id": "m11e1",
+     "lvl": 1,
+     "title": "Calentamiento: semana 10",
+     "q": "<p>¿Qué tipo de bien es la señal de una radio abierta?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Público: no rival y no excluible",
+        "Privado",
+        "De club",
+        "Recurso común",
+        "Depende del precio"
+       ]
+      }
+     ],
+     "steps": [
+      "Que tú escuches no me quita señal (no rival) y no se puede impedir que alguien la sintonice (no excluible).",
+      "Por eso las radios abiertas viven de la publicidad: no pueden cobrarle al oyente."
+     ],
+     "ans": "Público",
+     "hint": "¿Excluible? ¿Rival?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "tipbien"
+      ],
+      [
+       "polizon"
+      ]
+     ]
+    },
+    {
+     "id": "m11e2",
+     "lvl": 1,
+     "title": "¿Competencia perfecta?",
+     "q": "<p>Clasifica cada mercado.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Se acerca a competencia perfecta",
+        "No es competencia perfecta"
+       ],
+       "items": [
+        {
+         "x": "Limones en el mercado mayorista",
+         "c": 0
+        },
+        {
+         "x": "Papa blanca en Lima",
+         "c": 0
+        },
+        {
+         "x": "Huevos a granel",
+         "c": 0
+        },
+        {
+         "x": "Agua potable de la ciudad",
+         "c": 1,
+         "e": "Una sola empresa: monopolio (natural)."
+        },
+        {
+         "x": "Telefonía móvil",
+         "c": 1,
+         "e": "Pocas empresas grandes: oligopolio."
+        },
+        {
+         "x": "Zapatillas de marca",
+         "c": 1,
+         "e": "Producto diferenciado por marca: no es homogéneo."
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Competencia perfecta: muchos vendedores pequeños, producto homogéneo y libre entrada; nadie puede poner su precio.",
+      "Si hay una sola empresa, pocas, o productos diferenciados por marca, ya no lo es (semanas 12 y 13)."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "¿Muchos vendedores con el mismo producto?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "compperf"
+      ],
+      [
+       "compperf"
+      ]
+     ]
+    },
+    {
+     "id": "m11e3",
+     "lvl": 2,
+     "title": "Tabla: ¿cuánto producir?",
+     "q": "<p>Una empresa precio-aceptante vende a \\(P=10\\). Completa el costo marginal y el beneficio, y elige la cantidad.</p>",
+     "checks": [
+      {
+       "t": "fill",
+       "p": "Completa (CMg = CT de esa fila − CT de la anterior; beneficio = 10·Q − CT)",
+       "head": [
+        "Q",
+        "CT",
+        "CMg",
+        "Beneficio"
+       ],
+       "rows": [
+        [
+         "0",
+         "10",
+         "—",
+         {
+          "a": -10
+         }
+        ],
+        [
+         "1",
+         "15",
+         {
+          "a": 5
+         },
+         {
+          "a": -5
+         }
+        ],
+        [
+         "2",
+         "18",
+         {
+          "a": 3
+         },
+         {
+          "a": 2
+         }
+        ],
+        [
+         "3",
+         "22",
+         {
+          "a": 4
+         },
+         {
+          "a": 8
+         }
+        ],
+        [
+         "4",
+         "28",
+         {
+          "a": 6
+         },
+         {
+          "a": 12
+         }
+        ],
+        [
+         "5",
+         "37",
+         {
+          "a": 9
+         },
+         {
+          "a": 13
+         }
+        ],
+        [
+         "6",
+         "49",
+         {
+          "a": 12
+         },
+         {
+          "a": 11
+         }
+        ]
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Decisión",
+       "f": [
+        {
+         "l": "Q que maximiza el beneficio",
+         "a": 5
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "CMg: 5, 3, 4, 6, 9, 12. Beneficio: -10, -5, 2, 8, 12, 13, 11.",
+      "Regla marginal: la 5.ª unidad cuesta 9 &lt; 10 (conviene); la 6.ª cuesta 12 &gt; 10 (no conviene). Q = 5, con el mayor beneficio (13). Fíjate que con Q = 0 se pierde el costo fijo (10)."
+     ],
+     "ans": "Q = 5 (beneficio 13)",
+     "hint": "Compara cada CMg con P = 10.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "maxben"
+      ],
+      [
+       "maxben"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "m11e4",
+     "lvl": 2,
+     "title": "Busca la Q del beneficio máximo",
+     "q": "<p>Una empresa en competencia perfecta vende a S/ 40 y su costo es \\(CT=50+4Q+Q^2\\). Mueve Q hasta maximizar el beneficio.</p>",
+     "checks": [
+      {
+       "t": "qmax",
+       "p": "Mueve Q",
+       "mode": "pc",
+       "P": 40,
+       "F": 50,
+       "c": 4,
+       "d": 1,
+       "qmax": 30,
+       "q0": 6,
+       "ans": 18,
+       "tol": 0.51,
+       "e": "Busca donde la recta P cruza al CMg."
+      },
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "Beneficio máximo",
+         "a": 274,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(CMg=4+2Q\\). Con \\(P=CMg\\): \\(40=4+2Q\\Rightarrow Q=18\\).",
+      "\\(\\pi=40\\cdot18-(50+72+324)\\) \\(=720-446=274\\). En la herramienta: a la izquierda de 18, IMg &gt; CMg (conviene más); a la derecha, al revés."
+     ],
+     "ans": "Q = 18, beneficio 274",
+     "hint": "P = CMg.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "maxben"
+      ],
+      [
+       "maxben"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "m11e5",
+     "lvl": 1,
+     "title": "P = CMg con números",
+     "q": "<p>El precio de mercado es S/ 60 y el costo marginal de una empresa es \\(CMg=10+5Q\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "Q óptima",
+         "a": 10
+        },
+        {
+         "l": "Ingreso total",
+         "a": 600,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Precio-aceptante: \\(IMg=P=60\\). \\(60=10+5Q\\Rightarrow Q=10\\).",
+      "\\(IT=60\\cdot10=600\\)."
+     ],
+     "ans": "Q = 10, IT = 600",
+     "hint": "Iguala P y CMg.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "maxben"
+      ],
+      [
+       "compperf"
+      ]
+     ]
+    },
+    {
+     "id": "m11e6",
+     "lvl": 2,
+     "title": "Toca el gráfico de la empresa",
+     "q": "<p>El gráfico muestra una empresa precio-aceptante (P = 10) con sus curvas de costo marginal y costo medio.</p>",
+     "checks": [
+      {
+       "t": "tap",
+       "p": "Toca el punto donde la empresa maximiza su beneficio.",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 240\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V200H292\"/><text class=\"dl\" x=\"14\" y=\"20\">P</text><text class=\"dl\" x=\"282\" y=\"230\">Q</text><path d=\"M46.3 154.7L50.0 152.3L53.8 149.9L57.5 147.4L61.2 145.0L64.9 142.6L68.7 140.1L72.4 137.7L76.1 135.3L79.8 132.8L83.6 130.4L87.3 128.0L91.0 125.5L94.8 123.1L98.5 120.7L102.2 118.2L105.9 115.8L109.7 113.4L113.4 110.9L117.1 108.5L120.9 106.1L124.6 103.6L128.3 101.2L132.0 98.8L135.8 96.3L139.5 93.9L143.2 91.5L146.9 89.0L150.7 86.6L154.4 84.1L158.1 81.7L161.9 79.3L165.6 76.8L169.3 74.4L173.0 72.0L176.8 69.5L180.5 67.1L184.2 64.7L187.9 62.2L191.7 59.8L195.4 57.4L199.1 54.9L202.9 52.5L206.6 50.1L210.3 47.6L214.0 45.2L217.8 42.8L221.5 40.3L225.2 37.9L228.9 35.5L232.7 33.0L236.4 30.6L240.1 28.2L243.9 25.7L247.6 23.3L251.3 20.9L255.0 18.4L258.8 16.0L262.5 13.6L266.2 11.1L269.9 8.7\" style=\"fill:none;stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"267.9\" y=\"2.7\" text-anchor=\"end\">CMg</text><path d=\"M81.0 18.9L84.5 27.8L88.0 35.2L91.5 41.4L95.0 46.7L98.5 51.2L102.1 55.1L105.6 58.4L109.1 61.3L112.6 63.8L116.1 65.9L119.6 67.8L123.2 69.4L126.7 70.7L130.2 71.9L133.7 72.9L137.2 73.8L140.7 74.5L144.3 75.1L147.8 75.6L151.3 75.9L154.8 76.2L158.3 76.4L161.9 76.5L165.4 76.6L168.9 76.6L172.4 76.5L175.9 76.3L179.4 76.1L183.0 75.9L186.5 75.6L190.0 75.3L193.5 75.0L197.0 74.6L200.5 74.1L204.1 73.7L207.6 73.2L211.1 72.7L214.6 72.2L218.1 71.6L221.7 71.0L225.2 70.4L228.7 69.8L232.2 69.1L235.7 68.5L239.2 67.8L242.8 67.1L246.3 66.4L249.8 65.6L253.3 64.9L256.8 64.1L260.3 63.4L263.9 62.6L267.4 61.8L270.9 61.0L274.4 60.2L277.9 59.4L281.4 58.5L285.0 57.7L288.5 56.9L292.0 56.0\" style=\"fill:none;stroke:var(--tan);stroke-width:2.4\"/><text class=\"dl\" x=\"290.0\" y=\"50.0\" text-anchor=\"end\">CMe</text><line x1=\"40.0\" y1=\"62.9\" x2=\"292.0\" y2=\"62.9\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"105.3\" y=\"56.9\" text-anchor=\"end\">P = IMg</text><line class=\"dsh\" x1=\"187.0\" y1=\"200.0\" x2=\"187.0\" y2=\"62.9\"/><text class=\"dm\" x=\"36\" y=\"66.9\" text-anchor=\"end\">10</text><circle data-z=\"opt\" cx=\"187.0\" cy=\"62.9\" r=\"9\"/><circle data-z=\"x1\" cx=\"111.3\" cy=\"62.9\" r=\"9\"/><circle data-z=\"x2\" cx=\"262.7\" cy=\"62.9\" r=\"9\"/><circle data-z=\"x3\" cx=\"166.0\" cy=\"76.6\" r=\"9\"/></svg>",
+       "a": [
+        "opt"
+       ],
+       "e": "Es donde la recta del precio corta al costo marginal (no al costo medio)."
+      }
+     ],
+     "steps": [
+      "La regla es \\(P=CMg\\): el cruce de la recta de precio con la curva CMg (Q ≈ 4,7).",
+      "Los cruces con el CMe solo marcan dónde el beneficio sería cero; el mínimo del CMe (Q = 4) es donde lo corta el CMg. Como en Q* el precio está por encima del CMe, la empresa gana."
+     ],
+     "ans": "El cruce de P con CMg",
+     "hint": "P = CMg.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "maxben"
+      ],
+      [
+       "compperf"
+      ]
+     ]
+    },
+    {
+     "id": "m11e7",
+     "lvl": 2,
+     "title": "¿Cerrar o seguir?",
+     "q": "<p>En el corto plazo, el precio bajó a S/ 6. El costo variable medio mínimo de la empresa es S/ 8 y tiene costos fijos. ¿Qué le conviene?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Cerrar: con P menor que el CVMe mínimo, ni siquiera cubre los costos variables",
+        "Seguir produciendo para cubrir el costo fijo",
+        "Subir su precio a S/ 8",
+        "Producir el doble",
+        "Da igual"
+       ]
+      }
+     ],
+     "steps": [
+      "Si produce, cada unidad pierde costo variable además del fijo. Si cierra, solo pierde el costo fijo.",
+      "Regla de corto plazo: cerrar si \\(P\\lt CVMe\\) mínimo. Subir el precio no es opción: es precio-aceptante."
+     ],
+     "ans": "Cerrar",
+     "hint": "Compara P con el CVMe mínimo.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "cierre"
+      ],
+      [
+       "cierre"
+      ]
+     ]
+    },
+    {
+     "id": "m11e8",
+     "lvl": 2,
+     "title": "El largo plazo",
+     "q": "<p>Las empresas de un mercado de competencia perfecta ganan beneficios económicos. ¿Qué pasa a largo plazo?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Entran empresas, el precio baja y el beneficio económico llega a cero (P = CMe mínimo)",
+        "Los beneficios crecen para siempre",
+        "Salen empresas y el precio sube",
+        "El Estado fija el precio",
+        "Las empresas se fusionan en un monopolio"
+       ]
+      }
+     ],
+     "steps": [
+      "Con libre entrada, los beneficios atraen nuevas empresas: la oferta del mercado aumenta y el precio baja.",
+      "Se detiene cuando \\(P=CMe\\) mínimo: beneficio económico cero (las empresas siguen cubriendo su costo de oportunidad)."
+     ],
+     "ans": "Beneficio económico cero",
+     "hint": "Libre entrada.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "cierre"
+      ],
+      [
+       "compperf"
+      ]
+     ]
+    },
+    {
+     "id": "m11e9",
+     "lvl": 1,
+     "title": "Beneficio con el rectángulo",
+     "q": "<p>Una empresa precio-aceptante vende 5 unidades a S/ 10 y su costo medio en esa cantidad es S/ 8.</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "Beneficio",
+         "a": 10,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Beneficio = \\((P-CMe)\\cdot Q\\).",
+      "\\((10-8)\\cdot5=10\\): el rectángulo de altura 2 y ancho 5."
+     ],
+     "ans": "S/ 10",
+     "hint": "(P − CMe)·Q.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "maxben"
+      ],
+      [
+       "maxben"
+      ]
+     ]
+    }
+   ],
+   "tools": [
+    {
+     "w": "qmax",
+     "t": "Busca el beneficio máximo",
+     "p": "Mueve Q y mira cuándo IMg = CMg y cómo cambia el rectángulo de beneficio.",
+     "o": {
+      "presets": [
+       [
+        "Competencia perfecta (P = 40)",
+        {
+         "mode": "pc",
+         "P": 40,
+         "F": 50,
+         "c": 4,
+         "d": 1,
+         "qmax": 30,
+         "q0": 6
+        }
+       ],
+       [
+        "Precio bajo (P = 15): pierde",
+        {
+         "mode": "pc",
+         "P": 15,
+         "F": 50,
+         "c": 4,
+         "d": 1,
+         "qmax": 20,
+         "q0": 3
+        }
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "m12",
+   "name": "Sem. 12 · 📖 Monopolio y competencia monopolística",
+   "teo": "<div class=\"note\" style=\"border-left:4px solid var(--tan);padding:6px 10px;margin-bottom:.6em\">📖 <b>Adelantado según el sílabo.</b> El profesor todavía no subió esta clase: este tema se armó con el orden del sílabo y su bibliografía (Krugman y Pindyck). Cuando suba su material, se ajustarán los ejemplos y la notación.</div><p><b>Monopolio:</b> un solo vendedor de un producto sin sustitutos cercanos, protegido por <b>barreras de entrada</b>: legales (patentes, concesiones), control de un recurso clave o <b>economías de escala</b> tan grandes que una sola empresa produce más barato que varias (<b>monopolio natural</b>: el agua potable de una ciudad).</p><p>El monopolista es <b>precio-decisor</b>, pero enfrenta toda la demanda: para vender una unidad más debe bajar el precio a <i>todas</i>. Por eso \\(IMg\\lt P\\). Con demanda lineal \\(P=a-bQ\\): \\(IMg=a-2bQ\\) (misma ordenada, doble pendiente).</p><p><b>Receta:</b> (1) \\(IMg=CMg\\) da la cantidad; (2) el precio se lee en la <b>demanda</b>; (3) beneficio \\(=(P-CMe)\\cdot Q\\).</p><p>Comparado con la competencia perfecta, el monopolio produce <b>menos</b> y cobra <b>más</b>. Las unidades que se dejan de producir (valen más de lo que cuestan) son la <b>pérdida irrecuperable de eficiencia</b>: el triángulo entre la demanda y el CMg. Por eso se regula (en el Perú, por ejemplo, Sunass fija las tarifas del agua) y se vigila la competencia (Indecopi).</p><p><b>Competencia monopolística:</b> muchas empresas con productos <b>diferenciados</b> (bodegas, chifas, peluquerías) y libre entrada. Cada una tiene un poco de poder de precio (su demanda tiene pendiente), así que en el corto plazo se comporta como un pequeño monopolio. En el largo plazo entran competidores hasta que el <b>beneficio es cero</b> (\\(P=CMe\\)), pero con \\(P\\gt CMg\\) y algo de <b>exceso de capacidad</b>.</p>",
+   "form": [
+    "Monopolio: \\(IMg\\lt P\\); lineal \\(IMg=a-2bQ\\)",
+    "\\(IMg=CMg\\) → Q; el precio sale de la demanda",
+    "Monopolio: menos Q y más P que la competencia",
+    "Pérdida irrecuperable: triángulo entre D y CMg",
+    "Monopolio natural: economías de escala → se regula",
+    "Comp. monopolística: diferenciado + libre entrada → beneficio 0 a largo plazo"
+   ],
+   "lesson": "<h3>La idea en una frase</h3><p>El monopolista también iguala IMg y CMg, pero como su IMg está debajo de la demanda, produce menos y cobra más.</p><h3>Claves</h3><ul><li><b>IMg &lt; P</b> porque para vender una más baja el precio a todas.</li><li><b>Dos pasos:</b> la cantidad con IMg = CMg; el precio subiendo hasta la demanda (no hasta el IMg).</li><li><b>Pérdida irrecuperable:</b> el triángulo de unidades que la sociedad valora más que su costo y no se producen.</li><li><b>Competencia monopolística:</b> como la bodega de tu barrio: tiene clientes fieles (poder de precio), pero si gana mucho, abren otras.</li></ul><div class=\"ej\"><b>En 30 segundos:</b> Monopolio: Q donde IMg = CMg, P en la demanda; produce menos y cobra más que la competencia; triángulo de pérdida irrecuperable. Competencia monopolística: diferenciación + libre entrada → beneficio cero a largo plazo.</div><div class=\"err\"><b>Error común:</b> leer el precio del monopolista en la curva de IMg o en el CMg. El precio se lee en la demanda, a la cantidad elegida.</div>",
+   "ex": [
+    {
+     "id": "m12e1",
+     "lvl": 1,
+     "title": "Calentamiento: semana 11",
+     "q": "<p>En competencia perfecta, ¿dónde produce la empresa para maximizar su beneficio?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Donde P = CMg",
+        "Donde P = CMe",
+        "Donde el CMe es mínimo",
+        "Donde el ingreso total es máximo",
+        "Donde CMg = 0"
+       ]
+      }
+     ],
+     "steps": [
+      "La regla general es IMg = CMg, y en competencia perfecta IMg = P.",
+      "Hoy verás que el monopolista usa la misma regla, pero su IMg ya no es igual al precio."
+     ],
+     "ans": "P = CMg",
+     "hint": "IMg = P.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "maxben"
+      ],
+      [
+       "monop"
+      ]
+     ]
+    },
+    {
+     "id": "m12e2",
+     "lvl": 2,
+     "title": "El monopolista con números",
+     "q": "<p>Un monopolista enfrenta la demanda \\(P=100-2Q\\) y tiene costo marginal constante \\(CMg=20\\) (sin costo fijo).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Monopolio",
+       "f": [
+        {
+         "l": "Q del monopolio",
+         "a": 20
+        },
+        {
+         "l": "P del monopolio",
+         "a": 60,
+         "u": "S/"
+        },
+        {
+         "l": "Beneficio",
+         "a": 800,
+         "u": "S/"
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Comparación",
+       "f": [
+        {
+         "l": "Q si fuera competencia perfecta",
+         "a": 40
+        },
+        {
+         "l": "Pérdida irrecuperable",
+         "a": 400,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(IMg=100-4Q\\). Con \\(IMg=CMg\\): \\(100-4Q=20\\Rightarrow Q=20\\); en la demanda: \\(P=100-40=60\\).",
+      "Beneficio \\(=(60-20)\\cdot20=800\\).",
+      "En competencia: \\(P=CMg\\Rightarrow100-2Q=20\\Rightarrow Q=40\\). Pérdida irrecuperable = triángulo \\(\\frac12(60-20)(40-20)=400\\)."
+     ],
+     "ans": "Q = 20, P = 60, π = 800; competencia Q = 40; pérdida 400",
+     "hint": "IMg tiene el doble de pendiente.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "monop"
+      ],
+      [
+       "monop"
+      ],
+      [
+       "dwl"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "m12e3",
+     "lvl": 2,
+     "title": "Busca la Q del monopolista",
+     "q": "<p>Con la misma demanda \\(P=100-2Q\\) y \\(CMg=20\\), mueve Q hasta el beneficio máximo. Fíjate en el punto de la demanda (el precio).</p>",
+     "checks": [
+      {
+       "t": "qmax",
+       "p": "Mueve Q",
+       "mode": "mon",
+       "a": 100,
+       "b": 2,
+       "F": 0,
+       "c": 20,
+       "d": 0,
+       "qmax": 50,
+       "q0": 8,
+       "ans": 20,
+       "tol": 0.51,
+       "e": "Busca donde el IMg (punteado) corta al CMg."
+      }
+     ],
+     "steps": [
+      "La línea punteada es el IMg: está debajo de la demanda. Cuando IMg = CMg (Q = 20), el beneficio es máximo.",
+      "El precio se lee en la demanda: 60. Si sigues hasta Q = 40 (donde D corta al CMg) el beneficio cae: el monopolista no llega ahí."
+     ],
+     "ans": "Q = 20",
+     "hint": "IMg = CMg.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "monop"
+      ],
+      [
+       "monop"
+      ]
+     ]
+    },
+    {
+     "id": "m12e4",
+     "lvl": 2,
+     "title": "Toca la pérdida irrecuperable",
+     "q": "<p>Mismo monopolio: \\(D\\): \\(P=100-2Q\\), \\(CMg=20\\). El monopolista produce 20 y cobra 60.</p>",
+     "checks": [
+      {
+       "t": "tap",
+       "p": "Toca el área de la pérdida irrecuperable de eficiencia.",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 240\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V200H292\"/><text class=\"dl\" x=\"14\" y=\"20\">P</text><text class=\"dl\" x=\"282\" y=\"230\">Q</text><line x1=\"40.0\" y1=\"17.1\" x2=\"282.3\" y2=\"200.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"263.8\" y=\"183.0\" text-anchor=\"end\">D</text><line x1=\"40.0\" y1=\"17.1\" x2=\"161.2\" y2=\"200.0\" style=\"stroke:var(--exe);stroke-width:2.4\"/><text class=\"dl\" x=\"152.3\" y=\"183.0\" text-anchor=\"end\">IMg</text><line x1=\"40.0\" y1=\"163.4\" x2=\"292.0\" y2=\"163.4\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"288.0\" y=\"157.4\" text-anchor=\"end\">CMg</text><line class=\"dsh\" x1=\"136.9\" y1=\"200.0\" x2=\"136.9\" y2=\"90.3\"/><line class=\"dsh\" x1=\"40.0\" y1=\"90.3\" x2=\"136.9\" y2=\"90.3\"/><text class=\"dm\" x=\"136.9\" y=\"214\" text-anchor=\"middle\">20</text><text class=\"dm\" x=\"233.8\" y=\"214\" text-anchor=\"middle\">40</text><text class=\"dm\" x=\"36\" y=\"94.3\" text-anchor=\"end\">60</text><text class=\"dm\" x=\"36\" y=\"167.4\" text-anchor=\"end\">20</text><polygon data-z=\"ec\" points=\"40.0,17.1 40.0,90.3 136.9,90.3\"/><polygon data-z=\"ben\" points=\"40.0,90.3 136.9,90.3 136.9,163.4 40.0,163.4\"/><polygon data-z=\"dwl\" points=\"136.9,90.3 136.9,163.4 233.8,163.4\"/><polygon data-z=\"ct\" points=\"40.0,163.4 136.9,163.4 136.9,200.0 40.0,200.0\"/></svg>",
+       "a": [
+        "dwl"
+       ],
+       "e": "Es lo que se pierde por las unidades entre 20 y 40 que no se producen."
+      },
+      {
+       "t": "tap",
+       "p": "Ahora toca el beneficio del monopolista.",
+       "svg": "<svg class=\"dg\" viewBox=\"0 0 300 240\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"gl\" d=\"M40 8V200H292\"/><text class=\"dl\" x=\"14\" y=\"20\">P</text><text class=\"dl\" x=\"282\" y=\"230\">Q</text><line x1=\"40.0\" y1=\"17.1\" x2=\"282.3\" y2=\"200.0\" style=\"stroke:var(--curve);stroke-width:2.4\"/><text class=\"dl\" x=\"263.8\" y=\"183.0\" text-anchor=\"end\">D</text><line x1=\"40.0\" y1=\"17.1\" x2=\"161.2\" y2=\"200.0\" style=\"stroke:var(--exe);stroke-width:2.4\"/><text class=\"dl\" x=\"152.3\" y=\"183.0\" text-anchor=\"end\">IMg</text><line x1=\"40.0\" y1=\"163.4\" x2=\"292.0\" y2=\"163.4\" style=\"stroke:var(--bad);stroke-width:2.4\"/><text class=\"dl\" x=\"288.0\" y=\"157.4\" text-anchor=\"end\">CMg</text><line class=\"dsh\" x1=\"136.9\" y1=\"200.0\" x2=\"136.9\" y2=\"90.3\"/><line class=\"dsh\" x1=\"40.0\" y1=\"90.3\" x2=\"136.9\" y2=\"90.3\"/><text class=\"dm\" x=\"136.9\" y=\"214\" text-anchor=\"middle\">20</text><text class=\"dm\" x=\"233.8\" y=\"214\" text-anchor=\"middle\">40</text><text class=\"dm\" x=\"36\" y=\"94.3\" text-anchor=\"end\">60</text><text class=\"dm\" x=\"36\" y=\"167.4\" text-anchor=\"end\">20</text><polygon data-z=\"ec\" points=\"40.0,17.1 40.0,90.3 136.9,90.3\"/><polygon data-z=\"ben\" points=\"40.0,90.3 136.9,90.3 136.9,163.4 40.0,163.4\"/><polygon data-z=\"dwl\" points=\"136.9,90.3 136.9,163.4 233.8,163.4\"/><polygon data-z=\"ct\" points=\"40.0,163.4 136.9,163.4 136.9,200.0 40.0,200.0\"/></svg>",
+       "a": [
+        "ben"
+       ]
+      }
+     ],
+     "steps": [
+      "Las unidades entre Q = 20 y Q = 40 valen más para los consumidores (demanda) de lo que cuestan (CMg) y no se producen: ese triángulo es la pérdida irrecuperable.",
+      "El beneficio es el rectángulo entre el precio (60) y el costo (20), de ancho 20. Arriba queda el excedente del consumidor."
+     ],
+     "ans": "El triángulo entre 20 y 40",
+     "hint": "Busca las unidades que faltan.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "dwl"
+      ],
+      [
+       "monop"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "m12e5",
+     "lvl": 2,
+     "title": "Monopolio con costo creciente",
+     "q": "<p>Demanda \\(P=50-Q\\) y costo total \\(CT=10Q+Q^2\\).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Calcula",
+       "f": [
+        {
+         "l": "Q",
+         "a": 10
+        },
+        {
+         "l": "P",
+         "a": 40,
+         "u": "S/"
+        },
+        {
+         "l": "Beneficio",
+         "a": 200,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "\\(IMg=50-2Q\\) y \\(CMg=10+2Q\\). Igualando: \\(50-2Q=10+2Q\\Rightarrow Q=10\\).",
+      "\\(P=50-10=40\\); \\(\\pi=40\\cdot10-(100+100)=200\\)."
+     ],
+     "ans": "Q = 10, P = 40, π = 200",
+     "hint": "Deriva CT para el CMg.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "monop"
+      ],
+      [
+       "monop"
+      ]
+     ]
+    },
+    {
+     "id": "m12e6",
+     "lvl": 1,
+     "title": "¿Qué estructura es?",
+     "q": "<p>Clasifica cada mercado (pensando en el Perú).</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Competencia perfecta",
+        "Competencia monopolística",
+        "Oligopolio",
+        "Monopolio"
+       ],
+       "items": [
+        {
+         "x": "Limones en el mercado mayorista",
+         "c": 0
+        },
+        {
+         "x": "Bodegas de un barrio",
+         "c": 1
+        },
+        {
+         "x": "Chifas de una avenida",
+         "c": 1
+        },
+        {
+         "x": "Telefonía móvil",
+         "c": 2
+        },
+        {
+         "x": "Agua potable de la ciudad",
+         "c": 3,
+         "e": "Una sola empresa con enormes economías de escala: monopolio natural (regulado)."
+        },
+        {
+         "x": "Un medicamento con patente vigente",
+         "c": 3,
+         "e": "La patente es una barrera legal."
+        },
+        {
+         "x": "Peluquerías",
+         "c": 1
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Muchos con producto igual → competencia perfecta; muchos con producto diferenciado → competencia monopolística.",
+      "Pocos grandes que se vigilan entre sí → oligopolio (semana 13); uno solo con barreras → monopolio."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "¿Cuántos vendedores y qué tan distinto es el producto?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "compmon"
+      ],
+      [
+       "monop"
+      ]
+     ]
+    },
+    {
+     "id": "m12e7",
+     "lvl": 1,
+     "title": "¿Por qué IMg < P?",
+     "q": "<p>¿Por qué el ingreso marginal del monopolista es menor que el precio?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Para vender una unidad más debe bajar el precio de todas las que vende",
+        "Porque el Estado le cobra impuestos",
+        "Porque sus costos son altos",
+        "Porque es precio-aceptante",
+        "No es cierto: IMg = P"
+       ]
+      }
+     ],
+     "steps": [
+      "Si vende 10 a S/ 50 y para vender 11 debe bajar a S/ 48, gana 48 por la nueva unidad pero pierde S/ 2 en cada una de las 10 anteriores.",
+      "IMg = 48 − 20 = 28 &lt; 48. En competencia perfecta no pasa porque el precio no depende de cuánto venda una empresa."
+     ],
+     "ans": "Baja el precio a todas",
+     "hint": "Piensa en la unidad 11.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "monop"
+      ],
+      [
+       "monop"
+      ]
+     ]
+    },
+    {
+     "id": "m12e8",
+     "lvl": 2,
+     "title": "Monopolio natural",
+     "q": "<p>Una ciudad tiene una sola empresa de agua potable porque construir dos redes de tuberías sería carísimo. ¿Qué se suele hacer?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Regularla: un organismo (Sunass en el Perú) fija tarifas para que no cobre como monopolista",
+        "Obligar a que entren más empresas con otra red",
+        "Dejarla cobrar lo que quiera",
+        "Prohibirla",
+        "Convertirla en competencia perfecta por ley"
+       ]
+      }
+     ],
+     "steps": [
+      "Es un monopolio natural: por las economías de escala, una sola red es lo más barato. Dividirla subiría los costos.",
+      "Para evitar precios de monopolio y la pérdida irrecuperable, se regula la tarifa."
+     ],
+     "ans": "Regular la tarifa",
+     "hint": "Economías de escala.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "monop"
+      ],
+      [
+       "dwl"
+      ]
+     ]
+    },
+    {
+     "id": "m12e9",
+     "lvl": 2,
+     "title": "Competencia monopolística a largo plazo",
+     "q": "<p>Las pollerías de un distrito ganan mucho este año. Si hay libre entrada, ¿qué pasa a largo plazo?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Abren más pollerías, a cada una le quedan menos clientes y el beneficio económico llega a cero",
+        "Las pollerías ganan cada vez más",
+        "Se forma un monopolio",
+        "El precio baja hasta el costo marginal",
+        "Todas cierran"
+       ]
+      }
+     ],
+     "steps": [
+      "Los beneficios atraen nuevas pollerías: la demanda de cada una se reduce.",
+      "Se detiene cuando P = CMe (beneficio cero). A diferencia de la competencia perfecta, P sigue siendo mayor que el CMg y queda capacidad ociosa."
+     ],
+     "ans": "Beneficio cero, con P > CMg",
+     "hint": "Libre entrada.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "compmon"
+      ],
+      [
+       "compmon"
+      ]
+     ]
+    }
+   ],
+   "tools": [
+    {
+     "w": "qmax",
+     "t": "Monopolio vs. competencia",
+     "p": "Mueve Q: el monopolista se detiene donde IMg = CMg (Q = 20). En Q = 40 (donde la demanda corta al CMg) produciría la competencia.",
+     "o": {
+      "presets": [
+       [
+        "Monopolio: P = 100 − 2Q, CMg = 20",
+        {
+         "mode": "mon",
+         "a": 100,
+         "b": 2,
+         "F": 0,
+         "c": 20,
+         "d": 0,
+         "qmax": 50,
+         "q0": 8
+        }
+       ],
+       [
+        "P = 50 − Q, CT = 10Q + Q²",
+        {
+         "mode": "mon",
+         "a": 50,
+         "b": 1,
+         "F": 0,
+         "c": 10,
+         "d": 1,
+         "qmax": 30,
+         "q0": 4
+        }
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "o13",
+   "name": "Sem. 13 · 📖 Oligopolio y teoría de juegos",
+   "teo": "<div class=\"note\" style=\"border-left:4px solid var(--tan);padding:6px 10px;margin-bottom:.6em\">📖 <b>Adelantado según el sílabo.</b> El profesor todavía no subió esta clase: este tema se armó con el orden del sílabo y su bibliografía (Krugman y Pindyck). Cuando suba su material, se ajustarán los ejemplos y la notación.</div><p><b>Oligopolio:</b> pocas empresas grandes (telefonía móvil, cerveza, cemento) y barreras de entrada. Lo clave es la <b>interdependencia</b>: lo que le conviene a una depende de lo que haga la otra. Por eso se analiza con <b>teoría de juegos</b>.</p><p><b>Cooperar o competir.</b> Si se ponen de acuerdo (<b>colusión</b> o <b>cartel</b>), pueden actuar como un monopolio y repartirse un beneficio grande. Pero cada una tiene incentivo a romper el acuerdo (bajar un poco su precio o producir más) para quedarse con más clientes. En el Perú los acuerdos de precios están prohibidos y los sanciona Indecopi.</p><p><b>Matriz de pagos:</b> filas = estrategias del jugador 1, columnas = las del jugador 2; en cada casilla, (pago de 1, pago de 2).</p><ul><li><b>Mejor respuesta:</b> lo mejor que puedo hacer dado lo que hace el otro (se subraya mi mejor pago en cada columna o fila).</li><li><b>Estrategia dominante:</b> la que es mejor respuesta a todo lo que haga el otro.</li><li><b>Equilibrio de Nash:</b> casilla donde ambos están en su mejor respuesta: nadie gana cambiando solo.</li></ul><p><b>Dilema del prisionero:</b> ambos tienen una estrategia dominante (traicionar, bajar el precio) que los lleva a un resultado peor para los dos que si cooperaran. Es la misma lógica del polizón de la semana 10. Cuando el juego se <b>repite</b> muchas veces, la cooperación puede sostenerse con estrategias como <b>ojo por ojo</b> (coopero mientras tú cooperes).</p>",
+   "form": [
+    "Oligopolio: pocas empresas, interdependencia",
+    "Cartel: actuar como monopolio; inestable por el incentivo a romperlo",
+    "Mejor respuesta: subraya tu mejor pago dado lo del otro",
+    "Nash: ambos en su mejor respuesta",
+    "Dominante: mejor respuesta a todo",
+    "Dilema del prisionero: dominante → peor para ambos"
+   ],
+   "lesson": "<h3>La idea en una frase</h3><p>En un oligopolio cada empresa decide pensando en la otra; la tentación de traicionar el acuerdo hace que cooperar sea difícil.</p><h3>Claves</h3><ul><li><b>Matriz de pagos:</b> primer número para la fila, segundo para la columna.</li><li><b>Para hallar el equilibrio:</b> subraya las mejores respuestas de cada uno; la casilla con los dos subrayados es un equilibrio de Nash.</li><li><b>Dilema del prisionero:</b> lo racional para cada uno (precio bajo) deja a ambos peor que el acuerdo (precio alto).</li><li><b>Repetición:</b> si juegan muchas veces, castigar la traición (ojo por ojo) puede sostener la cooperación.</li></ul><div class=\"ej\"><b>En 30 segundos:</b> Oligopolio = pocas empresas interdependientes. Nash = nadie quiere cambiar solo. En el dilema del prisionero la estrategia dominante lleva a un resultado peor para todos; por eso los carteles se rompen (y además son ilegales).</div><div class=\"err\"><b>Error común:</b> creer que el equilibrio de Nash es el mejor resultado para los dos. En el dilema del prisionero es justamente el peor conjunto: solo es estable.</div>",
+   "ex": [
+    {
+     "id": "o13e1",
+     "lvl": 1,
+     "title": "Calentamiento: semana 12",
+     "q": "<p>¿Dónde lee el monopolista su precio?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "En la demanda, a la cantidad donde IMg = CMg",
+        "En el IMg",
+        "En el CMg",
+        "Donde la demanda corta al CMg",
+        "En el CMe mínimo"
+       ]
+      }
+     ],
+     "steps": [
+      "Primero la cantidad (IMg = CMg); luego sube hasta la demanda para ver cuánto pagan los consumidores por esa cantidad.",
+      "Hoy: ¿qué pasa cuando no hay una empresa, sino pocas que se vigilan?"
+     ],
+     "ans": "En la demanda",
+     "hint": "Dos pasos.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "monop"
+      ],
+      [
+       "oligop"
+      ]
+     ]
+    },
+    {
+     "id": "o13e2",
+     "lvl": 2,
+     "title": "Dilema del prisionero: precios",
+     "q": "<p>Dos empresas eligen precio alto o bajo. La tabla muestra sus beneficios (en miles de soles).</p>",
+     "checks": [
+      {
+       "t": "nash",
+       "p": "Parte 1: subraya las mejores respuestas",
+       "step": "br",
+       "pn": [
+        "Empresa A",
+        "Empresa B"
+       ],
+       "rows": [
+        "Precio alto",
+        "Precio bajo"
+       ],
+       "cols": [
+        "Precio alto",
+        "Precio bajo"
+       ],
+       "pay": [
+        [
+         [
+          60,
+          60
+         ],
+         [
+          10,
+          80
+         ]
+        ],
+        [
+         [
+          80,
+          10
+         ],
+         [
+          30,
+          30
+         ]
+        ]
+       ]
+      },
+      {
+       "t": "nash",
+       "p": "Parte 2: toca el equilibrio de Nash",
+       "step": "ne",
+       "pn": [
+        "Empresa A",
+        "Empresa B"
+       ],
+       "rows": [
+        "Precio alto",
+        "Precio bajo"
+       ],
+       "cols": [
+        "Precio alto",
+        "Precio bajo"
+       ],
+       "pay": [
+        [
+         [
+          60,
+          60
+         ],
+         [
+          10,
+          80
+         ]
+        ],
+        [
+         [
+          80,
+          10
+         ],
+         [
+          30,
+          30
+         ]
+        ]
+       ]
+      },
+      {
+       "p": "Parte 3: ¿por qué es un «dilema»?",
+       "o": [
+        "Ambas ganarían más con precio alto (60 cada una), pero ninguna se fía de la otra",
+        "El equilibrio es lo mejor para las dos",
+        "A gana más que B en el equilibrio",
+        "No hay equilibrio",
+        "Les conviene precio alto a ambas como estrategia dominante"
+       ]
+      }
+     ],
+     "steps": [
+      "Si B pone precio alto, a A le conviene bajo (80 &gt; 60); si B pone bajo, también bajo (30 &gt; 10). Precio bajo es <b>dominante</b> para A, y lo mismo para B.",
+      "Ambos eligen precio bajo: equilibrio de Nash (30, 30).",
+      "Si cooperaran con precio alto ganarían 60 cada uno: el equilibrio es peor para ambos. Esa es la lógica de por qué los carteles son difíciles de sostener."
+     ],
+     "ans": "Nash: (precio bajo, precio bajo) = (30, 30)",
+     "hint": "Mira columna por columna.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "nash"
+      ],
+      [
+       "nash"
+      ],
+      [
+       "cartel"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "o13e3",
+     "lvl": 2,
+     "title": "¿Por qué los carteles se rompen?",
+     "q": "<p>Dos empresas acuerdan repartirse el mercado como un monopolio. ¿Por qué el acuerdo suele durar poco?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Cada una gana más si rompe el acuerdo mientras la otra lo cumple",
+        "Porque el monopolio da pérdidas",
+        "Porque los consumidores lo exigen",
+        "Porque cooperar es una estrategia dominante",
+        "Porque sus costos suben"
+       ]
+      }
+     ],
+     "steps": [
+      "Si la otra respeta el precio alto, vender un poco más barato te lleva sus clientes: hay incentivo a traicionar.",
+      "Como ambas lo saben, el acuerdo es inestable (además es ilegal: Indecopi sanciona la colusión)."
+     ],
+     "ans": "Incentivo a traicionar",
+     "hint": "Mira la matriz del ejercicio anterior.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "cartel"
+      ],
+      [
+       "cartel"
+      ]
+     ]
+    },
+    {
+     "id": "o13e4",
+     "lvl": 3,
+     "title": "Cartel con números",
+     "q": "<p>Dos empresas venden un producto con demanda total \\(P=100-Q\\) y costo cero. Acuerdan producir 25 cada una (lo que haría un monopolista: Q = 50).</p>",
+     "checks": [
+      {
+       "t": "num",
+       "p": "Parte 1: el acuerdo",
+       "f": [
+        {
+         "l": "Precio del acuerdo",
+         "a": 50,
+         "u": "S/"
+        },
+        {
+         "l": "Beneficio de cada una",
+         "a": 1250,
+         "u": "S/"
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Parte 2: A rompe el acuerdo",
+       "f": [
+        {
+         "l": "Precio si A produce 35 y B 25",
+         "a": 40,
+         "u": "S/"
+        },
+        {
+         "l": "Beneficio de A",
+         "a": 1400,
+         "u": "S/"
+        },
+        {
+         "l": "Beneficio de B",
+         "a": 1000,
+         "u": "S/"
+        }
+       ]
+      },
+      {
+       "t": "num",
+       "p": "Parte 3: ambas rompen",
+       "f": [
+        {
+         "l": "Beneficio de cada una si ambas producen 35",
+         "a": 1050,
+         "u": "S/"
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "Acuerdo: Q = 50 → P = 50; cada una \\(50\\cdot25=1250\\).",
+      "Si A produce 35: Q = 60 → P = 40. A gana \\(40\\cdot35=1400\\) (más que 1250) y B \\(40\\cdot25=1000\\).",
+      "Si ambas traicionan: Q = 70 → P = 30 → \\(30\\cdot35=1050\\) cada una: peor que el acuerdo. Es un dilema del prisionero con números."
+     ],
+     "ans": "1250; 1400 y 1000; 1050",
+     "hint": "Suma las cantidades y usa la demanda.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "cartel"
+      ],
+      [
+       "cartel"
+      ],
+      [
+       "nash"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "o13e5",
+     "lvl": 2,
+     "title": "Dos equilibrios: coordinación",
+     "q": "<p>Ana y Beto deben elegir el mismo estándar de cargador para su negocio; si eligen distinto, nadie gana.</p>",
+     "checks": [
+      {
+       "t": "nash",
+       "p": "Toca todos los equilibrios de Nash",
+       "step": "ne",
+       "pn": [
+        "Ana",
+        "Beto"
+       ],
+       "rows": [
+        "Estándar A",
+        "Estándar B"
+       ],
+       "cols": [
+        "Estándar A",
+        "Estándar B"
+       ],
+       "pay": [
+        [
+         [
+          50,
+          50
+         ],
+         [
+          0,
+          0
+         ]
+        ],
+        [
+         [
+          0,
+          0
+         ],
+         [
+          40,
+          40
+         ]
+        ]
+       ]
+      }
+     ],
+     "steps": [
+      "Si Beto elige A, a Ana le conviene A (50 &gt; 0); si Beto elige B, le conviene B (40 &gt; 0). Igual para Beto.",
+      "Hay <b>dos</b> equilibrios: (A, A) y (B, B). Ninguno tiene estrategia dominante: lo importante es coordinarse."
+     ],
+     "ans": "(A, A) y (B, B)",
+     "hint": "Puede haber más de uno.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "nash"
+      ],
+      [
+       "nash"
+      ]
+     ]
+    },
+    {
+     "id": "o13e6",
+     "lvl": 2,
+     "title": "Publicidad",
+     "q": "<p>Dos empresas deciden si hacen publicidad (beneficios en miles).</p>",
+     "checks": [
+      {
+       "t": "nash",
+       "p": "Parte 1: subraya las mejores respuestas",
+       "step": "br",
+       "pn": [
+        "Empresa A",
+        "Empresa B"
+       ],
+       "rows": [
+        "Publicidad",
+        "Sin publicidad"
+       ],
+       "cols": [
+        "Publicidad",
+        "Sin publicidad"
+       ],
+       "pay": [
+        [
+         [
+          20,
+          30
+         ],
+         [
+          50,
+          20
+         ]
+        ],
+        [
+         [
+          10,
+          40
+         ],
+         [
+          30,
+          45
+         ]
+        ]
+       ]
+      },
+      {
+       "t": "nash",
+       "p": "Parte 2: toca el equilibrio de Nash",
+       "step": "ne",
+       "pn": [
+        "Empresa A",
+        "Empresa B"
+       ],
+       "rows": [
+        "Publicidad",
+        "Sin publicidad"
+       ],
+       "cols": [
+        "Publicidad",
+        "Sin publicidad"
+       ],
+       "pay": [
+        [
+         [
+          20,
+          30
+         ],
+         [
+          50,
+          20
+         ]
+        ],
+        [
+         [
+          10,
+          40
+         ],
+         [
+          30,
+          45
+         ]
+        ]
+       ]
+      },
+      {
+       "p": "Parte 3: estrategias dominantes",
+       "o": [
+        "Solo A tiene estrategia dominante (publicidad)",
+        "Ambas tienen estrategia dominante",
+        "Solo B tiene estrategia dominante",
+        "Ninguna tiene",
+        "Las dos: no hacer publicidad"
+       ]
+      }
+     ],
+     "steps": [
+      "A: si B hace publicidad, 20 &gt; 10; si no, 50 &gt; 30 → publicidad siempre (dominante).",
+      "B: si A hace publicidad, le conviene publicidad (30 &gt; 20); si A no, le conviene no hacer (45 &gt; 40): no tiene dominante.",
+      "B anticipa que A hará publicidad y responde con publicidad: equilibrio (Publicidad, Publicidad) = (20, 30)."
+     ],
+     "ans": "Nash: (publicidad, publicidad); solo A tiene dominante",
+     "hint": "Revisa cada columna y cada fila.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "nash"
+      ],
+      [
+       "domin"
+      ],
+      [
+       "domin"
+      ]
+     ],
+     "chain": true
+    },
+    {
+     "id": "o13e7",
+     "lvl": 1,
+     "title": "Estrategia dominante",
+     "q": "<p>¿Qué es una estrategia dominante?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "La que es la mejor respuesta sin importar lo que haga el otro",
+        "La que da el mayor pago posible de la tabla",
+        "La que elige la empresa más grande",
+        "La que hace ganar a ambos",
+        "La del equilibrio de Nash siempre"
+       ]
+      }
+     ],
+     "steps": [
+      "Es mejor para mí en <b>cada</b> columna (o fila): no necesito adivinar al otro.",
+      "Si ambos tienen una, ese par es el equilibrio de Nash; pero puede haber equilibrio sin estrategias dominantes (como en la coordinación)."
+     ],
+     "ans": "Mejor respuesta a todo",
+     "hint": "«Sin importar».",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "domin"
+      ],
+      [
+       "nash"
+      ]
+     ]
+    },
+    {
+     "id": "o13e8",
+     "lvl": 2,
+     "title": "Juegos que se repiten",
+     "q": "<p>Dos empresas compiten en precios todos los meses durante años. ¿Qué estrategia puede sostener la cooperación (precio alto)?</p>",
+     "checks": [
+      {
+       "p": "Respuesta",
+       "o": [
+        "Ojo por ojo: coopero este mes si tú cooperaste el anterior; si traicionas, te castigo",
+        "Bajar siempre el precio",
+        "Subir el precio sin mirar al otro",
+        "Cambiar al azar cada mes",
+        "Nunca castigar"
+       ]
+      }
+     ],
+     "steps": [
+      "En un juego que se repite, traicionar hoy trae castigo mañana: la ganancia de un mes se pierde en los siguientes.",
+      "«Ojo por ojo» premia la cooperación y castiga la traición, y por eso puede sostener precios altos (y por eso las autoridades vigilan los mercados con pocas empresas)."
+     ],
+     "ans": "Ojo por ojo",
+     "hint": "Piensa en el futuro.",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "cartel"
+      ],
+      [
+       "oligop"
+      ]
+     ]
+    },
+    {
+     "id": "o13e9",
+     "lvl": 1,
+     "title": "Rasgos del oligopolio",
+     "q": "<p>Clasifica cada rasgo.</p>",
+     "checks": [
+      {
+       "t": "cls",
+       "p": "Clasifica",
+       "cats": [
+        "Oligopolio",
+        "Competencia perfecta"
+       ],
+       "items": [
+        {
+         "x": "Pocas empresas grandes",
+         "c": 0
+        },
+        {
+         "x": "Muchas empresas pequeñas",
+         "c": 1
+        },
+        {
+         "x": "Cada empresa mira lo que hacen las otras",
+         "c": 0
+        },
+        {
+         "x": "Nadie puede influir en el precio",
+         "c": 1
+        },
+        {
+         "x": "Barreras de entrada importantes",
+         "c": 0
+        },
+        {
+         "x": "Libre entrada y salida",
+         "c": 1
+        }
+       ]
+      }
+     ],
+     "steps": [
+      "La interdependencia es lo que define al oligopolio: por eso se usa teoría de juegos.",
+      "En competencia perfecta cada empresa es tan pequeña que no necesita pensar en las demás."
+     ],
+     "ans": "Clasificación correcta",
+     "hint": "¿Pocas o muchas?",
+     "fig": null,
+     "draw": false,
+     "solfig": null,
+     "tags": [
+      [
+       "oligop"
+      ],
+      [
+       "oligop"
+      ]
+     ]
+    }
+   ],
+   "tools": [
+    {
+     "w": "nash",
+     "t": "Matriz de pagos",
+     "p": "Elige un juego y toca «Mostrar mejores respuestas»: la casilla con borde verde es el equilibrio de Nash.",
+     "o": {
+      "presets": [
+       [
+        "Dilema: precios",
+        {
+         "pn": [
+          "Empresa A",
+          "Empresa B"
+         ],
+         "rows": [
+          "Precio alto",
+          "Precio bajo"
+         ],
+         "cols": [
+          "Precio alto",
+          "Precio bajo"
+         ],
+         "pay": [
+          [
+           [
+            60,
+            60
+           ],
+           [
+            10,
+            80
+           ]
+          ],
+          [
+           [
+            80,
+            10
+           ],
+           [
+            30,
+            30
+           ]
+          ]
+         ],
+         "txt": "Precio bajo es dominante para ambos: el equilibrio (30, 30) es peor que cooperar (60, 60)."
+        }
+       ],
+       [
+        "Coordinación",
+        {
+         "pn": [
+          "Ana",
+          "Beto"
+         ],
+         "rows": [
+          "Estándar A",
+          "Estándar B"
+         ],
+         "cols": [
+          "Estándar A",
+          "Estándar B"
+         ],
+         "pay": [
+          [
+           [
+            50,
+            50
+           ],
+           [
+            0,
+            0
+           ]
+          ],
+          [
+           [
+            0,
+            0
+           ],
+           [
+            40,
+            40
+           ]
+          ]
+         ],
+         "txt": "Dos equilibrios: lo importante es coordinarse."
+        }
+       ],
+       [
+        "Publicidad",
+        {
+         "pn": [
+          "Empresa A",
+          "Empresa B"
+         ],
+         "rows": [
+          "Publicidad",
+          "Sin publicidad"
+         ],
+         "cols": [
+          "Publicidad",
+          "Sin publicidad"
+         ],
+         "pay": [
+          [
+           [
+            20,
+            30
+           ],
+           [
+            50,
+            20
+           ]
+          ],
+          [
+           [
+            10,
+            40
+           ],
+           [
+            30,
+            45
+           ]
+          ]
+         ],
+         "txt": "Solo A tiene estrategia dominante; B responde a lo que anticipa de A."
+        }
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "figs": {},
+ "simEx": [
+  {
+   "id": "xs1",
+   "lvl": 3,
+   "title": "Caso: discoteca en el barrio",
+   "q": "<p>Una discoteca genera ruido que cuesta a los vecinos S/ 4 por entrada vendida, y su seguridad privada reduce robos en la cuadra con un beneficio de S/ 1 por entrada. ¿Qué tipo de externalidad neta hay y qué impuesto por entrada corregiría el mercado?</p>",
+   "checks": [
+    {
+     "p": "Respuesta",
+     "o": [
+      "Negativa neta de S/ 3: impuesto de S/ 3 por entrada",
+      "Positiva neta de S/ 3: subsidio de S/ 3",
+      "Negativa de S/ 5: impuesto de S/ 5",
+      "Negativa de S/ 4: impuesto de S/ 4",
+      "No hay externalidad neta"
+     ]
+    }
+   ],
+   "steps": [
+    "Neto: \\(1-4=-3\\) por entrada: negativa.",
+    "Impuesto pigouviano igual al costo externo neto: S/ 3."
+   ],
+   "ans": "Negativa S/ 3; impuesto S/ 3",
+   "hint": "",
+   "fig": null,
+   "draw": false,
+   "solfig": null,
+   "tags": [
+    [
+     "extneg"
+    ],
+    [
+     "pigou"
+    ]
+   ]
+  },
+  {
+   "id": "xs2",
+   "lvl": 3,
+   "title": "Caso: vacunas",
+   "q": "<p>Demanda privada de vacunas: \\(P=60-Q\\). Oferta: \\(P=Q\\). Cada vacuna da un beneficio externo de 20 (menos contagios). ¿\\(Q\\) de mercado, \\(Q\\) óptima y política?</p>",
+   "checks": [
+    {
+     "p": "Respuesta",
+     "o": [
+      "\\(Q_m=30\\), \\(Q^*=40\\), subsidio de 20 por vacuna",
+      "\\(Q_m=40\\), \\(Q^*=30\\), impuesto de 20",
+      "\\(Q_m=30\\), \\(Q^*=20\\), impuesto de 10",
+      "\\(Q_m=Q^*=30\\)",
+      "\\(Q_m=30\\), \\(Q^*=50\\), subsidio de 20"
+     ]
+    }
+   ],
+   "steps": [
+    "Mercado: \\(60-Q=Q\\Rightarrow Q_m=30\\).",
+    "Demanda social: \\(P=80-Q\\Rightarrow80-Q=Q\\Rightarrow Q^*=40\\).",
+    "Subsidio igual al beneficio externo: 20."
+   ],
+   "ans": "Q_m = 30; Q* = 40; subsidio 20",
+   "hint": "",
+   "fig": null,
+   "draw": false,
+   "solfig": null,
+   "tags": [
+    [],
+    [
+     "extpos"
+    ],
+    [
+     "internal"
+    ]
+   ]
+  },
+  {
+   "id": "xs3",
+   "lvl": 2,
+   "title": "Caso: elegir la política",
+   "q": "<p>Una ciudad quiere reducir la contaminación de 10 empresas con costos de reducción muy distintos, al menor costo total. ¿Qué política elige?</p>",
+   "checks": [
+    {
+     "p": "Política",
+     "o": [
+      "Permisos negociables de emisión (o un impuesto por tonelada)",
+      "Que cada empresa reduzca exactamente lo mismo",
+      "Una campaña de concienciación únicamente",
+      "Esperar a que negocien con cada vecino (Coase)",
+      "No hacer nada"
+     ]
+    }
+   ],
+   "steps": [
+    "Con costos distintos, conviene que reduzca más quien puede hacerlo barato: permisos o impuesto lo logran.",
+    "Coase no es práctico con miles de afectados."
+   ],
+   "ans": "Permisos o impuesto",
+   "hint": "",
+   "fig": null,
+   "draw": false,
+   "solfig": null,
+   "tags": [
+    [
+     "permisos"
+    ],
+    [
+     "coase"
+    ]
+   ]
+  },
+  {
+   "id": "xs4",
+   "lvl": 3,
+   "title": "Caso: curtiembre en el río",
+   "q": "<p>Mercado del cuero: demanda \\(P=120-Q\\) y oferta privada \\(P=30+Q\\). Cada unidad contamina el río con un costo externo de 20.</p>",
+   "checks": [
+    {
+     "t": "num",
+     "p": "Cantidades",
+     "f": [
+      {
+       "l": "Q de mercado",
+       "a": 45,
+       "e": "iguala 120 − Q = 30 + Q."
+      },
+      {
+       "l": "Q óptima",
+       "a": 35,
+       "e": "la oferta social es 50 + Q."
+      }
+     ]
+    },
+    {
+     "t": "shift",
+     "p": "En el gráfico, mueve la oferta social.",
+     "none": false,
+     "eq": [
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "c": [
+      {
+       "k": "D",
+       "tp": "d",
+       "a": 0,
+       "fix": true
+      },
+      {
+       "k": "O privada",
+       "s": "Opriv",
+       "tp": "o",
+       "a": 0,
+       "fix": true,
+       "lp": "m"
+      },
+      {
+       "k": "O social",
+       "s": "Osoc",
+       "tp": "o",
+       "a": -1
+      }
+     ]
+    },
+    {
+     "t": "num",
+     "p": "Impuesto que lleva al óptimo",
+     "f": [
+      {
+       "l": "Impuesto",
+       "a": 20,
+       "u": "por unidad",
+       "e": "el impuesto ideal es igual al costo externo."
+      }
+     ]
+    }
+   ],
+   "steps": [
+    "Mercado: \\(120-Q=30+Q\\Rightarrow Q_m=45\\) (P = 75).",
+    "Oferta social = 30 + Q + 20 = 50 + Q: queda arriba de la privada.",
+    "Óptimo: \\(120-Q=50+Q\\Rightarrow Q^*=35\\) (P = 85). Un impuesto de 20 por unidad iguala la oferta privada con la social."
+   ],
+   "ans": "Qm = 45, Q* = 35; O social arriba; impuesto 20",
+   "hint": "Costo social = privado + 20.",
+   "fig": null,
+   "draw": false,
+   "solfig": null,
+   "tags": [
+    [
+     "extneg"
+    ],
+    [
+     "extneg"
+    ],
+    [
+     "pigou",
+     "internal"
+    ]
+   ],
+   "chain": true
+  }
+ ],
+ "concepts": {
+  "extern": {
+   "n": "Externalidad",
+   "f": "Efecto no compensado sobre el bienestar de un tercero",
+   "x": "Quien decide no paga (o no cobra) por el efecto que causa a otros.",
+   "home": "x9def"
+  },
+  "extneg": {
+   "n": "Externalidad negativa",
+   "f": "Costo social > costo privado → Q mercado > Q óptima",
+   "x": "Se produce más de lo socialmente deseable (contaminación, ruido, tráfico).",
+   "home": "x9graf"
+  },
+  "extpos": {
+   "n": "Externalidad positiva",
+   "f": "Valor social > valor privado → Q mercado < Q óptima",
+   "x": "Se produce menos de lo socialmente deseable (educación, investigación, vacunas).",
+   "home": "x9graf"
+  },
+  "internal": {
+   "n": "Internalizar",
+   "f": "Cambiar incentivos para que se considere el efecto externo",
+   "x": "Con impuestos (negativas) o subsidios (positivas) la oferta o la demanda incluyen el costo o beneficio externo.",
+   "home": "x9graf"
+  },
+  "pigou": {
+   "n": "Impuesto pigouviano",
+   "f": "Impuesto por unidad = costo externo por unidad",
+   "x": "Hace que el contaminador pague el costo social; alinea el incentivo privado con el óptimo social.",
+   "home": "x9pol"
+  },
+  "permisos": {
+   "n": "Permisos negociables",
+   "f": "Mercado de derechos de emisión",
+   "x": "Quien puede reducir barato reduce y vende; quien no, compra. La contaminación total es la misma, pero al menor costo.",
+   "home": "x9pol"
+  },
+  "coase": {
+   "n": "Teorema de Coase",
+   "f": "Negociación sin costos + derechos de propiedad claros ⇒ solución eficiente privada",
+   "x": "Las partes pueden resolver la externalidad sin el Estado; falla si negociar es costoso o hay muchos afectados.",
+   "home": "x9coase"
+  },
+  "tipbien": {
+   "n": "Tipos de bienes",
+   "f": "¿Excluible? ¿Rival? → privado, club, común, público",
+   "x": "Bien público: no rival y no excluible (alumbrado, defensa).",
+   "home": "g10"
+  },
+  "polizon": {
+   "n": "Problema del polizón",
+   "f": "Usar sin pagar",
+   "x": "Con bienes no excluibles cada uno espera que paguen los demás: el mercado produce de menos.",
+   "home": "g10"
+  },
+  "costben": {
+   "n": "Costo–beneficio",
+   "f": "Proveer si Σ valoraciones ≥ costo",
+   "x": "En un bien público se suman las valoraciones de todos.",
+   "home": "g10"
+  },
+  "comunes": {
+   "n": "Tragedia de los comunes",
+   "f": "Rival + no excluible → sobreuso",
+   "x": "Se corrige con cuotas, vedas, permisos o derechos de propiedad.",
+   "home": "g10"
+  },
+  "maxben": {
+   "n": "Maximización de beneficios",
+   "f": "\\(IMg=CMg\\); \\(\\pi=(P-CMe)Q\\)",
+   "x": "Producir mientras la próxima unidad sume más de lo que cuesta.",
+   "home": "m11"
+  },
+  "compperf": {
+   "n": "Competencia perfecta",
+   "f": "Precio-aceptante: \\(IMg=P\\Rightarrow P=CMg\\)",
+   "x": "Muchas empresas, producto homogéneo, libre entrada.",
+   "home": "m11"
+  },
+  "cierre": {
+   "n": "Cierre y largo plazo",
+   "f": "Cerrar si \\(P\\lt CVMe\\) mín. · largo plazo \\(P=CMe\\) mín.",
+   "x": "Con libre entrada el beneficio económico tiende a cero.",
+   "home": "m11"
+  },
+  "monop": {
+   "n": "Monopolio",
+   "f": "\\(IMg\\lt P\\); \\(IMg=CMg\\), P en la demanda",
+   "x": "Produce menos y cobra más que la competencia; barreras de entrada.",
+   "home": "m12"
+  },
+  "dwl": {
+   "n": "Pérdida irrecuperable",
+   "f": "Triángulo entre D y CMg",
+   "x": "Unidades que valen más de lo que cuestan y no se producen.",
+   "home": "m12"
+  },
+  "compmon": {
+   "n": "Competencia monopolística",
+   "f": "Diferenciación + libre entrada",
+   "x": "Poder de precio a corto plazo; beneficio cero a largo plazo, con P > CMg.",
+   "home": "m12"
+  },
+  "oligop": {
+   "n": "Oligopolio",
+   "f": "Pocas empresas interdependientes",
+   "x": "Se analiza con teoría de juegos.",
+   "home": "o13"
+  },
+  "nash": {
+   "n": "Equilibrio de Nash",
+   "f": "Ambos en su mejor respuesta",
+   "x": "Nadie gana cambiando solo; puede no ser el mejor resultado conjunto.",
+   "home": "o13"
+  },
+  "domin": {
+   "n": "Estrategia dominante",
+   "f": "Mejor respuesta a todo",
+   "x": "No hace falta adivinar al otro.",
+   "home": "o13"
+  },
+  "cartel": {
+   "n": "Cartel y dilema del prisionero",
+   "f": "Cooperar conviene a ambos, traicionar a cada uno",
+   "x": "Por eso los carteles son inestables; repetir el juego puede sostener la cooperación.",
+   "home": "o13"
+  }
+ },
+ "sim": {
+  "minutes": 90,
+  "intro": "Simulacro de la PC2: 90 minutos y 20 puntos, una pregunta por semana (9 a 13). Las semanas 10 a 13 están adelantadas según el sílabo.",
+  "slots": [
+   {
+    "pts": 4,
+    "name": "Sem. 9: externalidades",
+    "pool": [
+     "xg3",
+     "xg4",
+     "xg5",
+     "xs2",
+     "xp4",
+     "xp5"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Sem. 10: bienes públicos",
+    "pool": [
+     "g10e2",
+     "g10e5",
+     "g10e6",
+     "g10e7",
+     "g10e9"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Sem. 11: maximización y competencia perfecta",
+    "pool": [
+     "m11e3",
+     "m11e4",
+     "m11e5",
+     "m11e6",
+     "m11e9"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Sem. 12: monopolio y competencia monopolística",
+    "pool": [
+     "m12e2",
+     "m12e3",
+     "m12e4",
+     "m12e5"
+    ]
+   },
+   {
+    "pts": 4,
+    "name": "Sem. 13: oligopolio y teoría de juegos",
+    "pool": [
+     "o13e2",
+     "o13e4",
+     "o13e5",
+     "o13e6"
+    ]
+   }
+  ]
+ }
+}
